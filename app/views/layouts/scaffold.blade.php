@@ -53,12 +53,19 @@
             </div> <!--end span8-->
             <div class="span2">
                 <div class="blog-inner-container">
-                    {{Form::open(array('action' => 'Tai_khoansController@dangnhap','method' => 'post'))}}
-					{{Form::text('username')}}
-					{{Form::password('password')}}
-					{{Form::submit('Login')}}
-					{{Form::close()}}
-					
+                   @if(!Session::has('user'))
+                            {{Form::open(array('url' => 'login'))}}
+                            {{Form::label('Đăng Nhập')}}
+                            {{Form::text('username')}}
+                            {{Form::password('password')}}
+                            {{Form::submit('Login')}}
+                            {{Form::close()}}
+                    @else
+                        <p>logot</p>
+                    
+                    @endif
+                    
+              
                 </div>
             </div>
         </div>  

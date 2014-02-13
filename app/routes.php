@@ -13,15 +13,16 @@
 
 Route::get('/', function()
 {
+	return View::make('bai_viets.index');
+});
+Route::get('login',function()
+{
 	return View::make('layouts.scaffold');
 });
-Route::post('/', array('before' => 'csrf', 'uses' => 'Tai_khoansController@dangnhap'));
 
-Route::get('logout',function(){
-	Auth::logout();
-	return Redirect::to('login');
-});
-
+Route::post('login', array('before' => 'csrf', 'uses' => 'Tai_khoansController@login'));
+ 
+ 
 Route::resource('tai_khoans', 'Tai_khoansController');
 
 Route::resource('bai_viets', 'Bai_vietsController');

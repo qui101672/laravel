@@ -91,7 +91,7 @@ class Tai_khoansController extends BaseController {
 			return Redirect::route('tai_khoans.index');
 		}
 
-		return View::make('tai_khoans.edit', compact('tai_khoan'));
+		
 	}
 
 	/**
@@ -131,12 +131,14 @@ class Tai_khoansController extends BaseController {
 
 		return Redirect::route('tai_khoans.index');
 	}
-	public function dangnhap(){
+	public function login(){
 		$userdata = array(
 		'username' => Input::get('username') , 
 		'password' => Input::get('password'));
 			if (Auth::attempt($userdata)) {
-				return View::Make('modules.login');
+				$user = DB::table('tai_khoans')->where('username', $userdata['username'])->first();
+				Session::put('user', $user);
+				return View::make('modules.user.login', compact('tai_khoan'));
 			}else{
 				echo "Try again sucka!";
 			}

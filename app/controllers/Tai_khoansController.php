@@ -136,7 +136,7 @@ class Tai_khoansController extends BaseController {
 		'username' => Input::get('username') , 
 		'password' => Input::get('password'));
 			if (Auth::attempt($userdata)) {
-				return Redirect::to('dashboard');
+				return View::Make('modules.login');
 			}else{
 				echo "Try again sucka!";
 			}

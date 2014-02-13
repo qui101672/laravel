@@ -13,11 +13,10 @@
 
 Route::get('/', function()
 {
-	return View::make('tai_khoans.index');
+	return View::make('layouts.scaffold');
 });
-Route::get('login', function(){return View::make('tai_khoans.index');});
-Route::post('login', array('before' => 'csrf', 'uses' => 'Tai_khoansController@dangnhap'));
 Route::post('/', array('before' => 'csrf', 'uses' => 'Tai_khoansController@dangnhap'));
+
 Route::get('logout',function(){
 	Auth::logout();
 	return Redirect::to('login');

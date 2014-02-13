@@ -15,20 +15,20 @@
         <!-- end: Mobile Specific -->
 
         <!-- start: CSS -->
-        <link href="<?php echo asset('admin/css/bootstrap.min.css'); ?>" rel="stylesheet" />
-        <link href="<?php echo asset('admin/css/bootstrap-responsive.min.css'); ?>" rel="stylesheet" />
-        <link href="<?php echo asset('admin/css/style.min.css '); ?>" rel="stylesheet" />
-        <link href="<?php echo asset('admin/css/style-responsive.min.css'); ?>" rel="stylesheet" />
-        <link href="<?php echo asset('admin/css/retina.css'); ?>" rel="stylesheet" />
+        <link href="<?php echo asset('public/admin/css/bootstrap.min.css'); ?>" rel="stylesheet" />
+        <link href="<?php echo asset('public/admin/css/bootstrap-responsive.min.css'); ?>" rel="stylesheet" />
+        <link href="<?php echo asset('public/admin/css/style.min.css '); ?>" rel="stylesheet" />
+        <link href="<?php echo asset('public/admin/css/style-responsive.min.css'); ?>" rel="stylesheet" />
+        <link href="<?php echo asset('public/admin/css/retina.css'); ?>" rel="stylesheet" />
         <!-- end: CSS -->
 
 
         <!-- start: Favicon and Touch Icons -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo asset('admin/ico/apple-touch-icon-144-precomposed.png'); ?>" />
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo asset('admin/ico/apple-touch-icon-114-precomposed.png'); ?>" />
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo asset('admin/ico/apple-touch-icon-72-precomposed.png'); ?>" />
-        <link rel="apple-touch-icon-precomposed" href="<?php echo asset('admin/ico/apple-touch-icon-57-precomposed.png'); ?>" />
-        <link rel="shortcut icon" href="<?php echo asset('admin/favicon.ico'); ?>" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo asset('public/admin/ico/apple-touch-icon-144-precomposed.png'); ?>" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo asset('public/admin/ico/apple-touch-icon-114-precomposed.png'); ?>" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo asset('public/admin/ico/apple-touch-icon-72-precomposed.png'); ?>" />
+        <link rel="apple-touch-icon-precomposed" href="<?php echo asset('public/admin/ico/apple-touch-icon-57-precomposed.png'); ?>" />
+        <link rel="shortcut icon" href="<?php echo asset('public/admin/favicon.ico'); ?>" />
         <!-- end: Favicon and Touch Icons -->   
 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
@@ -54,7 +54,7 @@
                             <!-- start: User Dropdown -->
                             <li class="dropdown">
                                 <a class="btn account dropdown-toggle" data-toggle="dropdown" href="#">
-                                    <div class="avatar"><img src="<?php echo asset('admin/img/avatar.jpg'); ?>" alt="Avatar" /></div>
+                                    <div class="avatar"><img src="<?php echo asset('public/admin/img/avatar.jpg'); ?>" alt="Avatar" /></div>
                                     <div class="user">
                                         <span class="hello">Welcome!</span>
                                         <span class="name">Nguyá»…n Ngá»c Qui</span>
@@ -167,44 +167,44 @@
             </div><!--/.fluid-container-->
 
             <!-- start: JavaScript-->
-            <script src="<?php echo asset('admin/js/jquery-1.10.2.min.js') ?>"></script>
-            <script src="<?php echo asset('admin/js/jquery-migrate-1.2.1.min.js') ?>"></script> 
-            <script src="<?php echo asset('admin/js/jquery-ui-1.10.3.custom.min.js') ?>"></script>  
-            <script src="<?php echo asset('admin/js/jquery.ui.touch-punch.js') ?>"></script>    
-            <script src="<?php echo asset('admin/js/modernizr.js') ?>"></script>    
-            <script src="<?php echo asset('admin/js/bootstrap.min.js') ?>"></script>    
-            <script src="<?php echo asset('admin/js/jquery.cookie.js') ?>"></script>    
-            <script src="<?php echo asset('admin/js/fullcalendar.min.js') ?>"></script> 
-            <script src="<?php echo asset('admin/js/jquery.dataTables.min.js') ?>"></script>
-            <script src="<?php echo asset('admin/js/excanvas.js') ?>"></script>
-            <script src="<?php echo asset('admin/js/jquery.flot.js') ?>"></script>
-            <script src="<?php echo asset('admin/js/jquery.flot.pie.js') ?>"></script>
-            <script src="<?php echo asset('admin/js/jquery.flot.stack.js') ?>"></script>
-            <script src="<?php echo asset('admin/js/jquery.flot.resize.min.js') ?>"></script>
-            <script src="<?php echo asset('admin/js/jquery.flot.time.js') ?>"></script>
-            <script src="<?php echo asset('admin/js/jquery.chosen.min.js') ?>"></script>    
-            <script src="<?php echo asset('admin/js/jquery.uniform.min.js') ?>"></script>       
-            <script src="<?php echo asset('admin/js/jquery.cleditor.min.js') ?>"></script>  
-            <script src="<?php echo asset('admin/js/jquery.noty.js') ?>"></script>  
-            <script src="<?php echo asset('admin/js/jquery.elfinder.min.js') ?>"></script>  
-            <script src="<?php echo asset('admin/js/jquery.raty.min.js') ?>"></script>  
-            <script src="<?php echo asset('admin/js/jquery.iphone.toggle.js') ?>"></script> 
-            <script src="<?php echo asset('admin/js/jquery.uploadify-3.1.min.js') ?>"></script> 
-            <script src="<?php echo asset('admin/js/jquery.gritter.min.js') ?>"></script>   
-            <script src="<?php echo asset('admin/js/jquery.imagesloaded.js') ?>"></script>  
-            <script src="<?php echo asset('admin/js/jquery.masonry.min.js') ?>"></script>   
-            <script src="<?php echo asset('admin/js/jquery.knob.modified.js') ?>"></script> 
-            <script src="<?php echo asset('admin/js/jquery.sparkline.min.js') ?>"></script> 
-            <script src="<?php echo asset('admin/js/counter.min.js') ?>"></script>  
-            <script src="<?php echo asset('admin/js/raphael.2.1.0.min.js') ?>"></script>
-            <script src="<?php echo asset('admin/js/justgage.1.0.1.min.js') ?>"></script>   
-            <script src="<?php echo asset('admin/js/jquery.autosize.min.js') ?>"></script>  
-            <script src="<?php echo asset('admin/js/retina.js') ?>"></script>
-            <script src="<?php echo asset('admin/js/jquery.placeholder.min.js') ?>"></script>
-            <script src="<?php echo asset('admin/js/wizard.min.js') ?>"></script>
-            <script src="<?php echo asset('admin/js/core.min.js') ?>"></script> 
-            <script src="<?php echo asset('admin/js/charts.min.js') ?>"></script>   
-            <script src="<?php echo asset('admin/js/custom.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery-1.10.2.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery-migrate-1.2.1.min.js') ?>"></script> 
+            <script src="<?php echo asset('public/admin/js/jquery-ui-1.10.3.custom.min.js') ?>"></script>  
+            <script src="<?php echo asset('public/admin/js/jquery.ui.touch-punch.js') ?>"></script>    
+            <script src="<?php echo asset('public/admin/js/modernizr.js') ?>"></script>    
+            <script src="<?php echo asset('public/admin/js/bootstrap.min.js') ?>"></script>    
+            <script src="<?php echo asset('public/admin/js/jquery.cookie.js') ?>"></script>    
+            <script src="<?php echo asset('public/admin/js/fullcalendar.min.js') ?>"></script> 
+            <script src="<?php echo asset('public/admin/js/jquery.dataTables.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/excanvas.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.flot.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.flot.pie.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.flot.stack.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.flot.resize.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.flot.time.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.chosen.min.js') ?>"></script>    
+            <script src="<?php echo asset('public/admin/js/jquery.uniform.min.js') ?>"></script>       
+            <script src="<?php echo asset('public/admin/js/jquery.cleditor.min.js') ?>"></script>  
+            <script src="<?php echo asset('public/admin/js/jquery.noty.js') ?>"></script>  
+            <script src="<?php echo asset('public/admin/js/jquery.elfinder.min.js') ?>"></script>  
+            <script src="<?php echo asset('public/admin/js/jquery.raty.min.js') ?>"></script>  
+            <script src="<?php echo asset('public/admin/js/jquery.iphone.toggle.js') ?>"></script> 
+            <script src="<?php echo asset('public/admin/js/jquery.uploadify-3.1.min.js') ?>"></script> 
+            <script src="<?php echo asset('public/admin/js/jquery.gritter.min.js') ?>"></script>   
+            <script src="<?php echo asset('public/admin/js/jquery.imagesloaded.js') ?>"></script>  
+            <script src="<?php echo asset('public/admin/js/jquery.masonry.min.js') ?>"></script>   
+            <script src="<?php echo asset('public/admin/js/jquery.knob.modified.js') ?>"></script> 
+            <script src="<?php echo asset('public/admin/js/jquery.sparkline.min.js') ?>"></script> 
+            <script src="<?php echo asset('public/admin/js/counter.min.js') ?>"></script>  
+            <script src="<?php echo asset('public/admin/js/raphael.2.1.0.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/justgage.1.0.1.min.js') ?>"></script>   
+            <script src="<?php echo asset('public/admin/js/jquery.autosize.min.js') ?>"></script>  
+            <script src="<?php echo asset('public/admin/js/retina.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.placeholder.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/wizard.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/core.min.js') ?>"></script> 
+            <script src="<?php echo asset('public/admin/js/charts.min.js') ?>"></script>   
+            <script src="<?php echo asset('public/admin/js/custom.min.js') ?>"></script>
             <!-- end: JavaScript-->
 
     </body>

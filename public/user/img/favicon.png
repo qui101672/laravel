@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="en-US" class="msie msie6 html_stretched ">
+<head>
+<meta charset="UTF-8" />
+<link rel="icon" href="../../../../templatation.com/images/templatation-favicon.ico" type="image/x-icon">
+
+
+<!-- page title, displayed in your browser bar -->
+<title>Page Not Found - Templatation</title>
+
+<!-- add feeds, pingback and stuff-->
+<link rel="profile" href="../../../../gmpg.org/xfn/11" />
+<link rel="alternate" type="application/rss+xml" title="Templatation RSS2 Feed" href="../../../../feeds.feedburner.com/templatation-blog" />
+<link rel="pingback" href="http://templatation.com/xmlrpc.php" />
+
+
+<!-- add css stylesheets -->
+<link rel="stylesheet" type="text/css" media="all" href="../../../../templatation.com/wp-content/themes/propulsion-child/style.css" />
+<link rel="stylesheet" href="../../../../templatation.com/wp-content/themes/propulsion/css/grid.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="../../../../templatation.com/wp-content/themes/propulsion/css/base.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="../../../../templatation.com/wp-content/themes/propulsion/css/layout.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="../../../../templatation.com/wp-content/themes/propulsion/css/slideshow.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="../../../../templatation.com/wp-content/themes/propulsion/css/shortcodes.css" type="text/css" media="screen"/>
+
+
+
+<link rel="stylesheet" href="../../../../templatation.com/wp-content/themes/propulsion/js/prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="../../../../templatation.com/wp-content/themes/propulsion/js/projekktor/theme/style.css" type="text/css" media="screen"/>
+
+
+<!-- mobile setting -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<!-- plugin and theme output with wp_head() -->
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.4.13 - http://yoast.com/wordpress/seo/ -->
+<link rel="publisher" href="../../../../https@plus.google.com/100251853209692170900"/>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel='stylesheet' id='cptchStylesheet-css'  href='../../../../templatation.com/wp-content/plugins/captcha/css/style.css@ver=3.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='cntctfrmStylesheet-css'  href='../../../../templatation.com/wp-content/plugins/contact-form-plugin/css/style.css@ver=3.5.1' type='text/css' media='all' />
+<script type='text/javascript' src='../../../../templatation.com/wp-includes/js/jquery/jquery.js@ver=1.8.3'></script>
+<script type='text/javascript' src='../../../../templatation.com/wp-content/themes/propulsion/js/projekktor/projekktor.min.js@ver=1'></script>
+<script type='text/javascript' src='../../../../templatation.com/wp-content/themes/propulsion/js/avia.js@ver=1'></script>
+<meta name="generator" content="WordPress 3.5.1" />
+
+
+<!--
+Debugging Info for Theme support: 
+
+Theme: Child of Propulsion
+Version: 1.0
+Installed: propulsion
+AviaFramework Version: 1.7.4
+-->
+
+
+<!-- custom styles set at your backend-->
+<style type='text/css' id='dynamic-styles'>
+#top .site-fontcolor, html, body, .blog-meta .post-meta-infos a, .blog-meta .post-meta-infos a span{
+color:#222222;
+}
+
+#top .meta-color, div .meta-color a, .main_menu ul li a, #top .comment-container a, #top .widget ul li a, .minitext, .form-allowed-tags, div .pagination, #comments span, .minitext, .commentmetadata a, .blog-tags, .blog-tags a, .title_container #s, .wp-caption, blockquote:before, blockquote:after, blockquote small, blockquote cite, .hero-text, .js_active .tab, .news-time, .contentSlideControlls a, #js_sort_items a, .text-sep, .template-search a.post-entry .news-excerpt, ul.borderlist>li, .post_nav, .post_nav a, .quote-content, #top .widget_nav_menu li, .tweet-time, #top .avia_parnter_empty, .avia_socialcount a span, td, #top th.nobg, caption, .page-title{
+color:#919191;
+}
+
+strong, #top .main-color, .main_menu ul:first-child > li.current-menu-item > a, .main_menu ul:first-child > li.current_page_item > a,  #top blockquote p, #top .main_menu .menu li a:hover, h1, h2, h3, h4, h5, h6, .js_active .tab.active_tab, #top #wrap_all .current_page_item>a, .first-quote, div .callout{
+color:#111111;
+}
+
+#top .search-result-counter{
+color:#f8f8f8;
+}
+
+#top .site-background, html, body, .comment-reply-link, .main_menu .menu ul li, .title_container #searchsubmit:hover, .isotope .entry-content, .image_overlay_effect, .tagcloud a, .news-thumb, .tweet-thumb a, fieldset, pre{
+background-color:#ffffff;
+}
+
+tr:nth-child(even) td, tr:nth-child(even) th{
+background-color:#ffffff;
+}
+
+#top .on-primary-color, #top .on-primary-color a, .dropcap2, div .button, input[type="submit"], #submit, .info_text_header, .info_text_header a, .info_text_header a:hover, .contentSlideControlls a.activeItem, #top .related_posts .contentSlideControlls a.activeItem, .contentSlideControlls a:hover, #top .related_posts .contentSlideControlls a:hover, #top th, #top th a,  a.button:hover, #top #wrap_all .sub_menu .menu > .current_page_item > a{
+color:#ffffff;
+}
+
+#top .aside-background, div .gravatar img, .slideshow, #top .main_menu .menu li ul a:hover, .related_posts_default_image, div .numeric_controls a, .title_container #searchsubmit, .title_container #s, .tab_content.active_tab_content, .js_active #top  .active_tab, .toggler.activeTitle, .contentSlideControlls a{
+background-color:#f8f8f8;
+}
+
+tr:nth-child(odd) td, tr:nth-child(odd) th{
+background-color:#f8f8f8;
+}
+
+#top .primary-background, .dropcap2, div .button, input[type="submit"], #submit, .info_text_header, .numeric_controls a:hover, .numeric_controls .active_item, .contentSlideControlls a.activeItem, #top th, #top .related_posts .contentSlideControlls a.activeItem, #top .arrow_controls a, #main .content #searchsubmit:hover, .callout a{
+background-color:#2997ab;
+}
+
+#top .primary-color, a, #cancel-comment-reply-link, .blog-tags a:hover, .relThumb a:hover strong, .flex_column h1, .flex_column h2, .flex_column h3, .flex_column h4, .flex_column h5, .flex_column h6, #top #wrap_all .tweet-text a, #top #js_sort_items a.active_sort{
+color:#2997ab;
+}
+
+#top .primary-border, div .main_menu ul:first-child > li.current-menu-item > a, div .main_menu ul:first-child > li.current_page_item > a, div .button, input[type="submit"], #submit, #top .main_menu .menu ul, .info_text_header{
+border-color:#2997ab;
+}
+
+h1, h2, h3, h4, h5, h6, .hero-text, blockquote, legend, #top .slideshow_caption h1{
+font-family:Terminal Dosis, 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+#top .extralight-border, div #header .container, div .pagination, #top .pagination span, div .pagination a, div .gravatar img, #top div .commentlist ul, div .children .children .says, div .commentlist>.comment, div .input-text, input[type="text"], input[type="password"], input[type="email"], textarea, select, #top .main_menu .menu li, pre, code, div .numeric_controls a, div .pullquote_boxed, div .news-thumb, div .tweet-thumb a, #top ul.borderlist>li, .post_nav, #top .wp-caption, .slideshow,  .widget a, .widget li, .widget span, .widget div, table, td, tr, th, #footer .container, #socket .container, #top fieldset{
+border-color:#e1e1e1;
+}
+
+#top .highlight-background, div .button:hover, input[type="submit"]:hover, #submit:hover, .contentSlideControlls a:hover, #top .related_posts .contentSlideControlls a:hover, #top .caption-slideshow-button:hover, #top .arrow_controls a:hover, #main .content #searchsubmit{
+background-color:#23b5cf;
+}
+
+a:hover, #top .widget ul li a:hover, #top .widget ul li .news-link:hover strong, #top #wrap_all .tweet-text a:hover, #js_sort_items a:hover{
+color:#23b5cf;
+}
+
+#top .caption-slideshow-button:hover{
+border-color:#23b5cf;
+}
+
+#footer{
+background-color:#f8f8f8;
+}
+
+#top #wrap_all #footer a, #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer .tabcontainer span, #top #footer table, #top #footer table td, #top #footer table caption{
+color:#8a8a8a;
+}
+
+#footer, #footer div, #footer p, #footer span, #top #wrap_all #footer a:hover strong{
+color:#A6A6A6;
+}
+
+#footer a, #footer div, #footer span, #footer li, #footer ul{
+border-color:#DDDDDD;
+}
+
+#footer table, #footer td, #footer tr, #footer th #footer img{
+border-color:#A6A6A6;
+}
+
+#top #footer .tagcloud a, #footer .tab_content.active_tab_content, .js_active #top #footer .active_tab, #footer .news-thumb, #footer .tweet-thumb a{
+background-color:#DDDDDD;
+}
+
+#footer tr:nth-child(odd) td, #footer tr:nth-child(odd) th{
+background-color:#DDDDDD;
+}
+
+#socket, #socket a, html.html_stretched, #lang_sel_footer{
+background-color:#2997ab;
+}
+
+#socket, #socket a, #lang_sel_footer, #lang_sel_footer a{
+color:#ffffff;
+}
+
+::-moz-selection{
+background-color:#2997ab;
+}
+
+::-webkit-selection{
+background-color:#2997ab;
+}
+
+::selection{
+background-color:#2997ab;
+}
+
+::-moz-selection{
+color:#ffffff;
+}
+
+::-webkit-selection{
+color:#ffffff;
+}
+
+::selection{
+color:#ffffff;
+}
+
+.template-blog .date-container {
+display: none;
+}
+
+.news-time {
+display: none;
+}
+
+#top .offset-by-three, .h1 {
+font-size: 24px;
+padding-left: 50px;
+}
+</style>
+
+<!-- end custom styles-->
+
+
+<!-- google webfont font replacement -->
+<link id="google_webfont_1" rel="stylesheet" type="text/css" href="../../../../fonts.googleapis.com/css@family=Terminal+Dosis" />
+
+<link rel="stylesheet" href="../../../../templatation.com/wp-content/themes/propulsion/css/custom.css" type="text/css" media="screen"/>
+
+</head>
+
+
+
+
+
+<body id="top" class="error404 stretched"><script type="text/javascript">
+//<![CDATA[
+new Image().src = "../../../cdn-cgi/ping@cf%5blocation%5d=404&cf%5bjs%5d=1";
+//]]>
+</script>
+<noscript>
+<img src="../../../cdn-cgi/ping@cf%5blocation%5d=404&cf%5bjs%5d=0" alt=""/>
+</noscript>
+
+	<div id='wrap_all'>
+
+			<div class='container_wrap info_text_header' id='shop_header'><div class='container'></div></div><div class='relative_pos container_wrap info_text_header' id='info_text_header' data-hash='08485dea9c3c21fcdeb1a7a454996e13' data-cookiename='Child of Propulsion_avia_banner'><div class='container no_css_transition'><div class='infotext'>We've got awesome WordPress stuff, Zencart themes and HTML templates for you in <a href="../../../../themeforest.net/user/Templatation/portfolio@ref=templatation">Themeforest.net</a> <a class='close_info_text rounded' href='#close'>close</a></div></div></div>
+			<!-- ####### HEAD CONTAINER ####### -->
+
+				<div class='container_wrap' id='header'>
+
+						<div class='container'>
+
+						<h1 class='logo'><a href='../../../../templatation.com/default.htm'><img src=../../../../templatation.com/images/templatation-logo.png alt='' /></a></h1><div class='main_menu' data-selectname='Select a page'><div class="menu-primary-menu-container"><ul id="menu-primary-menu" class="menu"><li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-22"><a href="../../../../templatation.com/default.htm">Home</a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="../../../../templatation.com/portfolio/default.htm">Portfolio</a></li>
+<li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a href="../../../../templatation.com/blog/default.htm">Blog</a></li>
+<li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="../../../../templatation.com/support/default.htm">Support</a></li>
+</ul></div></div>
+						</div><!-- end container-->
+
+				</div><!-- end container_wrap-->
+
+			<!-- ####### END HEAD CONTAINER ####### -->
+
+			
+		
+		<!-- ####### MAIN CONTAINER ####### -->
+		<div class='container_wrap sidebar_right' id='main'>
+						
+			<div class='container'>
+			
+				<div class=' title_container extralight-border'><h1 class="page-title meta-color">Error 404 - page not found</h1><div class='title_meta'><form action="http://templatation.com/" id="searchform" method="get">
+	<div>
+		<input type="submit" value="" id="searchsubmit" class="button"/>
+		<input type="text" id="s" name="s" value="search site"/>
+	</div>
+</form><!-- end searchform--><ul class="social_bookmarks"><li class='twitter'><a href='../../../../twitter.com/templatation'>Follow us on Twitter</a></li><li class='facebook'><a href='../../../../https@www.facebook.com/Templatation'>Join our Facebook Group</a></li>	<li class="rss"><a href="../../../../feeds.feedburner.com/templatation-blog">RSS</a></li></ul></div></div>
+				<div class='template-page content nine alpha units'>
+				
+					<div class="entry entry-content" id='search-fail'>
+					
+
+<p><strong>Nothing Found</strong><br/>
+
+Sorry, the post you are looking for is not available. Maybe you want to perform a search?</p>
+<form action="http://templatation.com/" id="searchform" method="get">
+	<div>
+		<input type="submit" value="" id="searchsubmit" class="button"/>
+		<input type="text" id="s" name="s" value="search site"/>
+	</div>
+</form><!-- end searchform-->
+
+
+<div class='hr_invisible'></div>  
+
+For best search results, mind the following suggestions:</p>
+<ul class='borderlist'>
+	<li>Always double check your spelling.</li>
+	<li>Try similar keywords, for example: tablet instead of laptop.</li>
+	<li>Try using more than one keyword.</li>
+</ul>
+
+<div class='hr_invisible'></div>
+
+<h3 class=''>Feel like browsing some posts instead?</h3>
+
+<div class="widget avia_combo_widget"><div class='tabcontainer border_tabs top_tab tab_initial_open tab_initial_open__1'><div class="tab first_tab active_tab widget_tab_popular"><span>Popular</span></div><div class='tab_content active_tab_content'><ul class="news-wrap"><li class="news-content post-format-standard"><a class='news-link' title='Clean, modern and minimalistic html Template layout specially made for forums' href='../../../../templatation.com/clean-modern-and-minimalistic-html-template-layout-specially-made-for-forums/default.htm'><span class='news-thumb'><img src='../../../../templatation.com/wp-content/uploads/2013/02/indulge_590x300-36x36.png' title='indulge_590x300' alt='' /></span><strong class='news-headline'>Clean, modern and minimalistic html Template layout specially…<span class='news-time'>November 9, 2012 - 8:59 am</span></strong></a></li><li class="news-content post-format-standard"><a class='news-link' title='Freshly introduced &#8220;bShop&#8221; is our dark themed html shopping cart website template' href='../../../../templatation.com/freshly-introduced-bshop-dark-themed-html-shopping-cart-website-template/default.htm'><span class='news-thumb'><img src='../../../../templatation.com/wp-content/uploads/2013/05/bshop_590x300-36x36.jpg' title='bshop_590x300' alt='' /></span><strong class='news-headline'>Freshly introduced &#8220;bShop&#8221; is our dark themed…<span class='news-time'>May 8, 2013 - 11:41 am</span></strong></a></li><li class="news-content post-format-standard"><a class='news-link' title='Latest theme for phpbb forum software from us is a brand new one called &#8220;Indulge&#8221;' href='../../../../templatation.com/latest-theme-for-phpbb-forum-software-brand-new-indulge/default.htm'><span class='news-thumb'><img src='../../../../templatation.com/wp-content/uploads/2013/05/indulge-phpbb_590x300-36x36.png' title='indulge-phpbb_590x300' alt='' /></span><strong class='news-headline'>Latest theme for phpbb forum software from us is a brand…<span class='news-time'>May 3, 2013 - 9:08 am</span></strong></a></li><li class="news-content post-format-standard"><a class='news-link' title='An exciting fresh-looking html site template &#8220;aTourist&#8221; for hotels and Travel Booking' href='../../../../templatation.com/exciting-fresh-looking-html-site-template-atourist-for-hotels-travel-booking/default.htm'><span class='news-thumb'><img src='../../../../templatation.com/wp-content/uploads/2013/05/atourist_590x300-36x36.jpg' title='atourist_590x300' alt='' /></span><strong class='news-headline'>An exciting fresh-looking html site template &#8220;aTourist&#8221;…<span class='news-time'>April 19, 2013 - 11:51 am</span></strong></a></li></ul></div><div class="tab widget_tab_recent"><span>Recent</span></div><div class='tab_content'><ul class="news-wrap"><li class="news-content post-format-standard"><a class='news-link' title='Feature-packed with brilliant design &#8220;JustShop&#8221; is a premium beautiful woocommerce wordpress theme' href='../../../../templatation.com/feature-packed-brilliant-design-justshop-premium-beautiful-woocommerce-wordpress-theme/default.htm'><span class='news-thumb'></span><strong class='news-headline'>Feature-packed with brilliant design &#8220;JustShop&#8221;…<span class='news-time'>May 23, 2013 - 8:52 am</span></strong></a></li><li class="news-content post-format-standard"><a class='news-link' title='Freshly introduced &#8220;bShop&#8221; is our dark themed html shopping cart website template' href='../../../../templatation.com/freshly-introduced-bshop-dark-themed-html-shopping-cart-website-template/default.htm'><span class='news-thumb'><img src='../../../../templatation.com/wp-content/uploads/2013/05/bshop_590x300-36x36.jpg' title='bshop_590x300' alt='' /></span><strong class='news-headline'>Freshly introduced &#8220;bShop&#8221; is our dark themed…<span class='news-time'>May 8, 2013 - 11:41 am</span></strong></a></li><li class="news-content post-format-standard"><a class='news-link' title='Latest theme for phpbb forum software from us is a brand new one called &#8220;Indulge&#8221;' href='../../../../templatation.com/latest-theme-for-phpbb-forum-software-brand-new-indulge/default.htm'><span class='news-thumb'><img src='../../../../templatation.com/wp-content/uploads/2013/05/indulge-phpbb_590x300-36x36.png' title='indulge-phpbb_590x300' alt='' /></span><strong class='news-headline'>Latest theme for phpbb forum software from us is a brand…<span class='news-time'>May 3, 2013 - 9:08 am</span></strong></a></li><li class="news-content post-format-standard"><a class='news-link' title='An exciting fresh-looking html site template &#8220;aTourist&#8221; for hotels and Travel Booking' href='../../../../templatation.com/exciting-fresh-looking-html-site-template-atourist-for-hotels-travel-booking/default.htm'><span class='news-thumb'><img src='../../../../templatation.com/wp-content/uploads/2013/05/atourist_590x300-36x36.jpg' title='atourist_590x300' alt='' /></span><strong class='news-headline'>An exciting fresh-looking html site template &#8220;aTourist&#8221;…<span class='news-time'>April 19, 2013 - 11:51 am</span></strong></a></li></ul></div><div class="tab widget_tab_comments"><span>Comments</span></div><div class='tab_content'></div><div class="tab last_tab widget_tab_tags"><span>Tags</span></div><div class='tab_content tagcloud'><a href='../../../../templatation.com/tag/clean/default.htm' class='tag-link-14' title='1 topic' style='font-size: 12px;'>clean</a>
+<a href='../../../../templatation.com/tag/forum/default.htm' class='tag-link-16' title='1 topic' style='font-size: 12px;'>forum</a>
+<a href='../../../../templatation.com/tag/light-weight/default.htm' class='tag-link-17' title='1 topic' style='font-size: 12px;'>light-weight</a>
+<a href='../../../../templatation.com/tag/modern/default.htm' class='tag-link-15' title='1 topic' style='font-size: 12px;'>modern</a></div></div></div>				</div>
+				
+				
+				<!--end content-->
+				</div>
+				
+				<div class='sidebar units sidebar_right three'><div class='inner_sidebar extralight-border'><div id="portfoliobox-3" class="widget newsbox"><h3 class="widgettitle">Items from Our Portfolio</h3><ul class="news-wrap image_size_widget"><li class="news-content post-format-standard"><a class='news-link' title='JustShop Premium WooCommerce WordPress Theme' href='../../../../templatation.com/portfolio-item/justshop-premium-woocommerce-wordpress-theme/default.htm'><span class='news-thumb'><img src='../../../../templatation.com/wp-content/uploads/2013/05/450x229-36x36.jpg' title='450x229' alt='' /></span><strong class='news-headline'>JustShop Premium WooCommerce WordPress Theme<span class='news-time'>May 29, 2013 - 7:57 am</span></strong></a></li><li class="news-content post-format-standard"><a class='news-link' title='bShop Shopping Cart HTML Template' href='../../../../templatation.com/portfolio-item/bshop-shopping-cart-html-template/default.htm'><span class='news-thumb'><img src='../../../../templatation.com/wp-content/uploads/2013/05/bshop-coverimg-36x36.jpg' title='bshop-coverimg' alt='' /></span><strong class='news-headline'>bShop Shopping Cart HTML Template<span class='news-time'>May 11, 2013 - 9:29 am</span></strong></a></li><li class="news-content post-format-standard"><a class='news-link' title='Indulge Phpbb forum theme' href='../../../../templatation.com/portfolio-item/indulge-phpbb-forum-theme/default.htm'><span class='news-thumb'><img src='../../../../templatation.com/wp-content/uploads/2013/05/indulge-phpbb_coverimg-36x36.jpg' title='indulge-phpbb_coverimg' alt='' /></span><strong class='news-headline'>Indulge Phpbb forum theme<span class='news-time'>May 11, 2013 - 6:57 am</span></strong></a></li></ul><span class="seperator extralight-border"></span></div><div id="newsbox-2" class="widget newsbox"><h3 class="widgettitle">From our blog</h3><ul class="news-wrap image_size_widget"><li class="news-content post-format-standard"><a class='news-link' title='Feature-packed with brilliant design &#8220;JustShop&#8221; is a premium beautiful woocommerce wordpress theme' href='../../../../templatation.com/feature-packed-brilliant-design-justshop-premium-beautiful-woocommerce-wordpress-theme/default.htm'><span class='news-thumb'></span><strong class='news-headline'>Feature-packed with brilliant design &#8220;JustShop&#8221; is a premium beautiful woocommerce wordpress theme<span class='news-time'>May 23, 2013 - 8:52 am</span></strong></a></li><li class="news-content post-format-standard"><a class='news-link' title='Freshly introduced &#8220;bShop&#8221; is our dark themed html shopping cart website template' href='../../../../templatation.com/freshly-introduced-bshop-dark-themed-html-shopping-cart-website-template/default.htm'><span class='news-thumb'><img src='../../../../templatation.com/wp-content/uploads/2013/05/bshop_590x300-36x36.jpg' title='bshop_590x300' alt='' /></span><strong class='news-headline'>Freshly introduced &#8220;bShop&#8221; is our dark themed html shopping cart website template<span class='news-time'>May 8, 2013 - 11:41 am</span></strong></a></li></ul><span class="seperator extralight-border"></span></div><div id="archives-3" class="widget widget_archive"><h3 class="widgettitle">Archives</h3>		<ul>
+			<li><a href='../../../../templatation.com/2013/05/default.htm' title='May 2013'>May 2013</a></li>
+	<li><a href='../../../../templatation.com/2013/04/default.htm' title='April 2013'>April 2013</a></li>
+	<li><a href='../../../../templatation.com/2013/03/default.htm' title='March 2013'>March 2013</a></li>
+	<li><a href='../../../../templatation.com/2013/02/default.htm' title='February 2013'>February 2013</a></li>
+	<li><a href='../../../../templatation.com/2013/01/default.htm' title='January 2013'>January 2013</a></li>
+	<li><a href='../../../../templatation.com/2012/12/default.htm' title='December 2012'>December 2012</a></li>
+	<li><a href='../../../../templatation.com/2012/11/default.htm' title='November 2012'>November 2012</a></li>
+		</ul>
+<span class="seperator extralight-border"></span></div></div></div>	          				
+			</div><!--end container-->
+
+	</div>
+	<!-- ####### END MAIN CONTAINER ####### -->
+
+
+			
+			
+			<!-- ####### FOOTER CONTAINER ####### -->
+			<div class='container_wrap ' id='footer'>
+				<div class='container'>
+				
+					<div class='one_third first'><div id="tweetbox-2" class="widget tweetbox"><h3 class="widgettitle"><a href='../../../../twitter.com/Templatation/default.htm' title='Latest Tweets'>Latest Tweets</a></h3><ul class='tweets'><li class="tweet"><div class="tweet-thumb"><a href="../../../../twitter.com/Templatation" title=""><img src="../../../../a0.twimg.com/profile_images/3081602788/ff33e0d90677daaf5c716c25519cd57b_normal.png" alt="" /></a></div><div class="tweet-text avatar_yes">Freshly released, pleasant looking <a class="twitter-link" href="../../../../search.twitter.com/search@q=Justshop">#Justshop</a> is a Premium Beautiful <a class="twitter-link" href="../../../../search.twitter.com/search@q=WooCommerce">#WooCommerce</a> <a class="twitter-link" href="../../../../search.twitter.com/search@q=WordPressTheme">#WordPressTheme</a>
+<a href="../../../../t.co/9E8qc0HFO5" class="twitter-link">http://t.co/9E8qc0HFO5</a></div></li><li class="tweet"><div class="tweet-thumb"><a href="../../../../twitter.com/Templatation" title=""><img src="../../../../a0.twimg.com/profile_images/3081602788/ff33e0d90677daaf5c716c25519cd57b_normal.png" alt="" /></a></div><div class="tweet-text avatar_yes">Indulge is a great <a class="twitter-link" href="../../../../search.twitter.com/search@q=forum">#forum</a> and <a class="twitter-link" href="../../../../search.twitter.com/search@q=blogs">#blogs</a> <a class="twitter-link" href="../../../../search.twitter.com/search@q=sitetemplate">#sitetemplate</a> <a href="../../../../t.co/GfB3WXcyNM" class="twitter-link">http://t.co/GfB3WXcyNM</a></div></li><li class="tweet"><div class="tweet-thumb"><a href="../../../../twitter.com/Templatation" title=""><img src="../../../../a0.twimg.com/profile_images/3081602788/ff33e0d90677daaf5c716c25519cd57b_normal.png" alt="" /></a></div><div class="tweet-text avatar_yes">Clean, modern and <a class="twitter-link" href="../../../../search.twitter.com/search@q=minimalistic">#minimalistic</a> <a class="twitter-link" href="../../../../search.twitter.com/search@q=htmltemplate">#htmltemplate</a> layout specially made for <a class="twitter-link" href="../../../../search.twitter.com/search@q=forums">#forums</a> <a class="twitter-link" href="../../../../search.twitter.com/search@q=Indulge">#Indulge</a> <a href="../../../../t.co/H9wavcRhx7" class="twitter-link">http://t.co/H9wavcRhx7</a></div></li></ul><span class="seperator extralight-border"></span></div></div><div class='one_third '><div id="text-3" class="widget widget_text"><h3 class="widgettitle">About Us</h3>			<div class="textwidget"><p>At Templatation.com, we strive to provide high quality design and templates. We try to be as unique as possible and also include features that are user friendly and most desirable by humans. We also keep updating our products so make sure to check back soon :)</p>
+
+<!-- Place this tag where you want the widget to render. -->
+<div class="g-page" data-width="259" data-href="../../../../plus.google.com/100251853209692170900" data-layout="landscape" data-rel="publisher"></div>
+
+</div>
+		<span class="seperator extralight-border"></span></div></div><div class='one_third '><div id="text-4" class="widget widget_text">			<div class="textwidget"><a href="../../../../https@twitter.com/Templatation" class="twitter-follow-button" data-show-count="true">Follow @Templatation</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'_3A/platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+		<span class="seperator extralight-border"></span></div><div id="text-5" class="widget widget_text">			<div class="textwidget"><iframe src="../../../../www.facebook.com/plugins/likebox.php@href=http_253A_252F_252Fwww.facebook.com_252FTemplatation&width=232&height=228&show_faces=true&colorscheme=light&stream=false&show_border=false&header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:232px; height:228px;" allowTransparency="true"></iframe>
+
+<!-- Place this tag after the last widget tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = '../../../../https@apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script></div>
+		<span class="seperator extralight-border"></span></div></div>
+					
+				</div>
+				
+			</div>
+		<!-- ####### END FOOTER CONTAINER ####### -->
+		
+		<!-- ####### SOCKET CONTAINER ####### -->
+			<div class='container_wrap ' id='socket'>
+				<div class='container'>
+					<span class='copyright'>&copy; Copyright 2013 - <a href='../../../../templatation.com/default.htm'>Templatation</a> All Rights Reserved &reg;</span>
+				
+					<ul class="social_bookmarks">
+							<li class='twitter'><a href='../../../../twitter.com/templatation'>Follow us on Twitter</a></li><li class='facebook'><a href='../../../../https@www.facebook.com/Templatation'>Join our Facebook Group</a></li>							
+							<li class='rss'><a href="../../../../feeds.feedburner.com/templatation-blog">Subscribe to our RSS Feed</a></li>
+
+									
+						</ul>
+						<!-- end social_bookmarks-->
+				
+				</div>
+			</div>
+			<!-- ####### END SOCKET CONTAINER ####### -->
+		
+		</div><!-- end wrap_all -->
+		
+		
+		
+				
+
+
+ <script type='text/javascript'>
+ /* <![CDATA[ */  
+var avia_framework_globals = avia_framework_globals || {};
+    avia_framework_globals.frameworkUrl = '../../../../templatation.com/wp-content/themes/propulsion/framework/default.htm';
+    avia_framework_globals.installedAt = '../../../../templatation.com/wp-content/themes/propulsion/default.htm';
+    avia_framework_globals.ajaxurl = '../../../../templatation.com/wp-admin/admin-ajax.php';
+/* ]]> */ 
+</script>
+ 
+ <script type='text/javascript' src='../../../../templatation.com/wp-content/themes/propulsion/js/prettyPhoto/js/jquery.prettyPhoto.js@ver=3.0.1'></script>
+<script type='text/javascript' src='../../../../templatation.com/wp-content/themes/propulsion/js/adaptavia.js@ver=1.0.0'></script>
+</body>
+</html>

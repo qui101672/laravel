@@ -130,13 +130,17 @@
         <!-- ============================  Main Tagline Start ============================ -->
         <div class="row-fluid">
             <div class="blog-inner-container">
-                <div class="span8">
+                <div class="span10">
 					@yield('main')
 					</div> <!--end row-fluid-->
             </div> <!--end span8-->
             <div class="span2">
                 <div class="blog-inner-container">
-                     
+                     {{Form::open(array('url'=>'login'))}}
+					{{Form::text('username')}}
+					{{Form::password('password')}}
+					{{Form::submit('Login')}}
+					{{Form::close()}}
                 </div>
             </div>
         </div>  

@@ -43,7 +43,11 @@ class Tai_khoansController extends BaseController {
 	 */
 	public function store()
 	{
-		$input = Input::all();
+		$input = array(
+			'username' => Input::get('username'),
+			'password' => Hash::Make(Input::get('password')),
+			'ma_quyen' => Input::get('ma_quyen')
+			);
 		$validation = Validator::make($input, Tai_khoan::$rules);
 
 		if ($validation->passes())
@@ -126,6 +130,16 @@ class Tai_khoansController extends BaseController {
 		$this->tai_khoan->find($id)->delete();
 
 		return Redirect::route('tai_khoans.index');
+	}
+	public function dangnhap(){
+		$userdata = array(
+		'username' => Input::get('username') , 
+		'password' => Input::get('password'));
+			if (Auth::attempt($userdata)) {
+				return Redirect::to('dashboard');
+			}else{
+				echo "Try again sucka!";
+			}
 	}
 
 }

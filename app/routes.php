@@ -11,18 +11,24 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('bai_viets.index');
-});
-Route::get('login',function()
-{
-	return View::make('layouts.scaffold');
-});
+ 
 
-Route::post('login', array('before' => 'csrf', 'uses' => 'Tai_khoansController@login'));
  
  
 Route::resource('tai_khoans', 'Tai_khoansController');
 
 Route::resource('bai_viets', 'Bai_vietsController');
+
+Route::get('/', array('as' => 'home', function () {
+    return View::make('home');
+}));
+Route::post('login', array('before' => 'csrf', 'uses' => 'Tai_khoansController@login'));
+Route::get('login', array('as' => 'login', function () { 
+	return View::make('login');
+}))->before('guest');
+
+Route::get('logout', array('as' => 'logout', function () { }))->before('auth');
+
+Route::get('profile', array('as' => 'profile', function () {
+    return View::make('profile');
+}))->before('auth');

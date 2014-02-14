@@ -46,26 +46,14 @@
 		@include('modules.user.menu')
         <!-- ============================  Main Tagline Start ============================ -->
         <div class="row-fluid">
-            <div class="blog-inner-container">
-                <div class="span9">
+            <div class="span9">
+                <div class="blog-inner-container">
 					@yield('main')
-					</div> <!--end row-fluid-->
+				</div> <!--end row-fluid-->
             </div> <!--end span8-->
             <div class="span2">
                 <div class="blog-inner-container">
-                   @if(!Session::has('user'))
-                            {{Form::open(array('url' => 'login'))}}
-                            {{Form::label('Đăng Nhập')}}
-                            {{Form::text('username')}}
-                            {{Form::password('password')}}
-                            {{Form::submit('Login')}}
-                            {{Form::close()}}
-                    @else
-                        <p>logot</p>
-                    
-                    @endif
-                    
-              
+                
                 </div>
             </div>
         </div>  

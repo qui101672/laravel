@@ -132,16 +132,20 @@ class Tai_khoansController extends BaseController {
 		return Redirect::route('tai_khoans.index');
 	}
 	public function login(){
-		$userdata = array(
-		'username' => Input::get('username') , 
-		'password' => Input::get('password'));
-			if (Auth::attempt($userdata)) {
-				$user = DB::table('tai_khoans')->where('username', $userdata['username'])->first();
-				Session::put('user', $user);
-				return View::make('modules.user.login', compact('tai_khoan'));
-			}else{
-				echo "Try again sucka!";
-			}
+		$user = array(
+            'username' => Input::get('username'),
+            'password' => Input::get('password')
+        );
+        
+        if (Auth::attempt($user)) {
+            return Redirect::route('home')
+                ->with('flash_notice', 'You are successfully logged in.');
+        }
+        
+        // authentication failure! lets go back to the login page
+        return Redirect::route('login')
+            ->with('flash_error', 'Your username/password combination was incorrect.')
+            ->withInput();
 	}
 
 }

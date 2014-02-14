@@ -57,15 +57,15 @@
                                     <div class="avatar"><img src="<?php echo asset('public/admin/img/avatar.jpg'); ?>" alt="Avatar" /></div>
                                     <div class="user">
                                         <span class="hello">Welcome!</span>
-                                        <span class="name">Nguyá»…n Ngá»c Qui</span>
+                                        <span class="name">Nguyễn Ngọc Qui</span>
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown-menu-title">
 
                                     </li>
-                                    <li><a href="#"><i class="icon-user"></i> ThÃ´ng Tin CÃ¡ NhÃ¢n</a></li>
-                                    <li><a href="#"><i class="icon-off"></i> ÄÄƒng Xuáº¥t</a></li>
+                                    <li><a href="#"><i class="icon-user"></i>Thông Tin Cá Nhân</a></li>
+                                    <li><a href="#"><i class="icon-off"></i>Đăng Xuất</a></li>
                                 </ul>
                             </li>
                             <!-- end: User Dropdown -->
@@ -87,19 +87,19 @@
                             <li>
                                 <a class="dropmenu" href="#">
                                     <i class="icon-tags"></i>
-                                    <span class="hidden-tablet">Quáº£n LÃ½ Danh Má»¥c</span>
+                                    <span class="hidden-tablet">Quản Lý Danh Mục</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="dropmenu" href="#">
                                     <i class="icon-music"></i>
-                                    <span class="hidden-tablet">Quáº£n LÃ½ BÃ i HÃ¡t</span>
+                                    <span class="hidden-tablet">Quản Lý Bài Viết</span>
                                 </a>    
                             </li>
                             <li>
                                 <a class="dropmenu" href="#">
                                     <i class="icon-star"></i>
-                                    <span class="hidden-tablet">Quáº£n LÃ½ Há»™i Thi</span>
+                                    <span class="hidden-tablet">Quản Lý Hội Thi</span>
                                     <span class="label"><i class=" icon-share-alt"></i></span>
                                 </a>
                                 <ul>
@@ -112,7 +112,7 @@
                             <li>
                                 <a class="dropmenu" href="#">
                                     <i class="icon-user"></i>
-                                    <span class="hidden-tablet">Quáº£n LÃ½ NgÆ°á»i DÃ¹ng</span>
+                                    <span class="hidden-tablet">Quản Lý Người Dùng</span>
                                 </a>
                             </li>
                         </ul>
@@ -126,13 +126,10 @@
                     <div class="row-fluid">
                         <div class="box span10">
                             <div class="box-header">
-                                <h2>
-                                    <i class="icon-file"></i> Khá»Ÿi Táº¡o Há»™i Thi VÄƒn Nghá»‡
-                                </h2>
+                                
                             </div>
                             <div class="box-content">
-                                
-                                
+                                @yield('main')                                
                             </div>
                         </div>
                     </div>

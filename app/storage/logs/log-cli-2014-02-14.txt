@@ -1,0 +1,38 @@
+[2014-02-14 08:20:48] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot redeclare class CreateTaiKhoansTable' in D:\xampp\htdocs\lvtn-thdhct\app\database\migrations\2014_02_13_214248_create_tai_khoans_table.php:35
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-14 08:21:20] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot redeclare class CreateTaiKhoansTable' in D:\xampp\htdocs\lvtn-thdhct\app\database\migrations\2014_02_13_214248_create_tai_khoans_table.php:35
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-14 08:30:56] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'User' not found' in D:\xampp\htdocs\lvtn-thdhct\vendor\laravel\framework\src\Illuminate\Foundation\Console\TinkerCommand.php(42) : eval()'d code:1
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-14 08:31:30] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'User' not found' in D:\xampp\htdocs\lvtn-thdhct\vendor\laravel\framework\src\Illuminate\Foundation\Console\TinkerCommand.php(42) : eval()'d code:1
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-14 08:37:02] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'Route' (T_STRING)' in D:\xampp\htdocs\lvtn-thdhct\app\routes.php:31
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-14 08:48:11] log.ERROR: exception 'InvalidArgumentException' with message 'Model does not exist!' in D:\xampp\htdocs\lvtn-thdhct\vendor\way\generators\src\Way\Generators\Commands\FormDumperCommand.php:55
+Stack trace:
+#0 D:\xampp\htdocs\lvtn-thdhct\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Way\Generators\Commands\FormDumperCommand->fire()
+#1 D:\xampp\htdocs\lvtn-thdhct\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\xampp\htdocs\lvtn-thdhct\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\xampp\htdocs\lvtn-thdhct\vendor\symfony\console\Symfony\Component\Console\Application.php(898): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\xampp\htdocs\lvtn-thdhct\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Way\Generators\Commands\FormDumperCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 D:\xampp\htdocs\lvtn-thdhct\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 D:\xampp\htdocs\lvtn-thdhct\artisan(59): Symfony\Component\Console\Application->run()
+#7 {main} [] []
+[2014-02-14 08:48:46] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'User' not found' in D:\xampp\htdocs\lvtn-thdhct\vendor\laravel\framework\src\Illuminate\Foundation\Console\TinkerCommand.php(42) : eval()'d code:1
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-14 12:04:32] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function before() on a non-object' in D:\xampp\htdocs\lvtn-thdhct\app\routes.php:34
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

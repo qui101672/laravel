@@ -1,44 +1,30 @@
 @extends('layouts.scaffold')
 
 @section('main')
-
-<h1>All Bai_viets</h1>
-
-<p>{{ link_to_route('bai_viets.create', 'Add new bai_viet') }}</p>
-
 @if ($bai_viets->count())
-	<table class="table table-striped table-bordered">
-		<thead>
-			<tr>
-				<th>Ma_bai_viet</th>
-				<th>Ten_bai_viet</th>
-				<th>Noi_dung_bai_viet</th>
-				<th>Id_nguoi_sua</th>
-				<th>Id_ma_the_loai_bv</th>
-				<th>Id_nguoi_tao</th>
-				<th>Tag</th>
-				<th>Ghi_chu</th>
-			</tr>
-		</thead>
-
-		<tbody>
 			@foreach ($bai_viets as $bai_viet)
-				<tr>
-					<td>{{{ $bai_viet->ma_bai_viet }}}</td>
-					<td>{{{ $bai_viet->ten_bai_viet }}}</td>
-					<td>{{{ $bai_viet->noi_dung_bai_viet }}}</td>
-					<td>{{{ $bai_viet->id_nguoi_sua }}}</td>
-					<td>{{{ $bai_viet->id_ma_the_loai_bv }}}</td>
-					<td>{{{ $bai_viet->id_nguoi_tao }}}</td>
-					<td>{{{ $bai_viet->tag }}}</td>
-					<td>{{{ $bai_viet->ghi_chu }}}</td>
-                    <td>{{ link_to_route('bai_viets.edit', 'Edit', array($bai_viet->id), array('class' => 'btn btn-info')) }}</td>
-                    <td>
-                        {{ Form::open(array('method' => 'DELETE', 'route' => array('bai_viets.destroy', $bai_viet->id))) }}
-                            {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}
-                        {{ Form::close() }}
-                    </td>
-				</tr>
+		<div class="row-fluid">
+             <article class="post-container v2">
+	            <div class="span3">
+	                    <figure class="post-image">
+	                        <img src="img/work/9-b.png" alt="alt" />
+	                    </figure> <!--end post-image-->
+	            </div> <!--end span7-->
+	        
+	            <div class="span9">
+	                <div class="post-content">
+	                    <h4 class="title"><a href="#">{{ link_to_route('bai_viets.show', $bai_viet->ten_bai_viet, array($bai_viet->id)) }}</a></h4>
+	                    <ul class="unstyled post-meta v2 inline">
+	                        <li><i class="icon-user"></i> <span class="info">{{{$bai_viet->id_nguoi_tao_bai_viet}}}</span></li>
+	                        <li><i class="icon-calendar"></i> <span class="info">{{{$bai_viet->created_at}}}</span></li>
+	                    </ul> <!--end post-meta-->
+	                    <p>{{{ $bai_viet->noi_dung_bai_viet }}}</p>
+	                    <a href="#" class="read-more" title="Read More ...">Read More &hellip;  &nbsp; &nbsp; <img src="img/read-more.png" alt="img"></a>
+	                </div> <!--end post-content-->
+	            </div><!-- end span5-->
+	        </article> <!--end post-container-->
+	         </div> <!--end row-fluid-->
+	  			<hr>
 			@endforeach
 		</tbody>
 	</table>

@@ -35,10 +35,11 @@ App::after(function($request, $response)
 
 Route::filter('auth', function()
 {
-	if (Auth::guest())
+            if (Auth::guest()) {
                 return Redirect::route('login')
-                        ->with('flash_error', 'You must be logged in to view this page!');
-
+                                ->with('error_message', 'Vui lòng đăng nhập hệ thống bằng tài khoản thư viên cung cấp.');
+            }
+          
 });
 
 
@@ -60,9 +61,9 @@ Route::filter('auth.basic', function()
 
 Route::filter('guest', function()
 {
-	if (Auth::check()) 
-                return Redirect::route('home')
-                        ->with('flash_notice', 'You are already logged in!');
+            if (Auth::check()) {
+                return Redirect::route('home')->with('flash_notice','You are already logged in');
+            }
 });
 
 /*
@@ -78,8 +79,5 @@ Route::filter('guest', function()
 
 Route::filter('csrf', function()
 {
-	if (Session::token() != Input::get('_token'))
-	{
-		throw new Illuminate\Session\TokenMismatchException;
-	}
+	 
 });

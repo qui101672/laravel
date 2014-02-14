@@ -1,0 +1,64 @@
+
+<?php $__env->startSection('main'); ?>
+
+<h1>Create Bai_viet</h1>
+
+<?php echo Form::open(array('route' => 'bai_viets.store')); ?>
+	<ul>
+        <li>
+            <?php echo Form::label('ma_bai_viet', 'Ma_bai_viet:'); ?>
+            <?php echo Form::text('ma_bai_viet'); ?>
+        </li>
+
+        <li>
+            <?php echo Form::label('ten_bai_viet', 'Ten_bai_viet:'); ?>
+            <?php echo Form::text('ten_bai_viet'); ?>
+        </li>
+
+        <li>
+            <?php echo Form::label('noi_dung_bai_viet', 'Noi_dung_bai_viet:'); ?>
+            <?php echo Form::text('noi_dung_bai_viet'); ?>
+        </li>
+
+        <li>
+            <?php echo Form::label('id_nguoi_sua', 'Id_nguoi_sua:'); ?>
+            <?php echo Form::input('number', 'id_nguoi_sua'); ?>
+        </li>
+
+        <li>
+            <?php echo Form::label('tag', 'Tag:'); ?>
+            <?php echo Form::text('tag'); ?>
+        </li>
+
+        <li>
+            <?php echo Form::label('ghi_chu', 'Ghi_chu:'); ?>
+            <?php echo Form::text('ghi_chu'); ?>
+        </li>
+
+        <li>
+            <?php echo Form::label('id_the_loai_bai_viet', 'Id_the_loai_bai_viet:'); ?>
+            <?php echo Form::input('number', 'id_the_loai_bai_viet'); ?>
+        </li>
+
+        <li>
+            <?php echo Form::label('id_nguoi_tao_bai_viet', 'Id_nguoi_tao_bai_viet:'); ?>
+            <?php echo Form::input('number', 'id_nguoi_tao_bai_viet'); ?>
+        </li>
+
+		<li>
+			<?php echo Form::submit('Submit', array('class' => 'btn btn-info')); ?>
+		</li>
+	</ul>
+<?php echo Form::close(); ?>
+
+<?php if ($errors->any()): ?>
+	<ul>
+		<?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
+	</ul>
+<?php endif; ?>
+
+<?php $__env->stopSection(); ?>
+
+
+
+<?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

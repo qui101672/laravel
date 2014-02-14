@@ -1,0 +1,1270 @@
+[2013-12-05 01:36:25] log.ERROR: exception 'ErrorException' with message 'Undefined variable: dstailieus' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php:36
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(36): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'C:\xampp\htdocs...', 36, Array)
+#1 [internal function]: NguoiMuonTraCuuSach->index()
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-12-05 01:37:42] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE lib_cit_1.4.tim_luan_van does not exist' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Query\Expression), Array)
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#3 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(27): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(27): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#9 [internal function]: NguoiMuonTraCuuSach->index()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE lib_cit_1.4.tim_luan_van does not exist (SQL: CALL tim_luan_van('',1,28,28,12);) (Bindings: array (
+))' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), Object(Illuminate\Database\Query\Expression), Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#2 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#6 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(27): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(27): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#8 [internal function]: NguoiMuonTraCuuSach->index()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-12-05 01:39:51] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1)' at line 1' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('CALL tim_tai_li...')
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Query\Expression), Array)
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#3 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(12): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(12): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#9 [internal function]: NguoiMuonTraCuuSach->index()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1)' at line 1 (SQL: CALL tim_tai_lieu_tham_khao('',,1);) (Bindings: array (
+))' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), Object(Illuminate\Database\Query\Expression), Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#2 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#6 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(12): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(12): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#8 [internal function]: NguoiMuonTraCuuSach->index()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-12-05 01:46:05] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',)' at line 1' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('CALL tim_kiem_l...')
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Query\Expression), Array)
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#3 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(31): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(31): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#9 [internal function]: NguoiMuonTraCuuSach->index()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',)' at line 1 (SQL: CALL tim_kiem_luan_van('',0,,,);) (Bindings: array (
+))' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), Object(Illuminate\Database\Query\Expression), Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#2 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#6 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(31): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(31): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#8 [internal function]: NguoiMuonTraCuuSach->index()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-12-05 11:20:06] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,)' at line 1' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('CALL tim_kiem_l...')
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Query\Expression), Array)
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#3 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(31): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(31): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#9 [internal function]: NguoiMuonTraCuuSach->index()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,)' at line 1 (SQL: CALL tim_kiem_luan_van('',,,,);) (Bindings: array (
+))' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), Object(Illuminate\Database\Query\Expression), Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#2 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#6 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(31): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(31): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#8 [internal function]: NguoiMuonTraCuuSach->index()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-12-05 11:21:39] log.ERROR: exception 'ErrorException' with message 'Undefined variable: dstailieus' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php:59
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(59): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'C:\xampp\htdocs...', 59, Array)
+#1 [internal function]: NguoiMuonTraCuuSach->index()
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-12-05 11:21:45] log.ERROR: exception 'ErrorException' with message 'Undefined variable: dstailieus' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php:59
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(59): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'C:\xampp\htdocs...', 59, Array)
+#1 [internal function]: NguoiMuonTraCuuSach->index()
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-12-05 11:27:33] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,)' at line 1' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('CALL tim_kiem_l...')
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Query\Expression), Array)
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#3 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(44): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(44): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#9 [internal function]: NguoiMuonTraCuuSach->index()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,)' at line 1 (SQL: CALL tim_kiem_luan_van('',,,,);) (Bindings: array (
+))' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), Object(Illuminate\Database\Query\Expression), Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#2 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#6 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(44): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(44): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#8 [internal function]: NguoiMuonTraCuuSach->index()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-12-05 11:27:58] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '16,16,12)' at line 1' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('CALL tim_kiem_l...')
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Query\Expression), Array)
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#3 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(44): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(44): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#9 [internal function]: NguoiMuonTraCuuSach->index()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '16,16,12)' at line 1 (SQL: CALL tim_kiem_luan_van('4343',,16,16,12);) (Bindings: array (
+))' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), Object(Illuminate\Database\Query\Expression), Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#2 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#6 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(44): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(44): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#8 [internal function]: NguoiMuonTraCuuSach->index()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-12-05 11:30:24] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '28,28,9)' at line 1' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('CALL tim_kiem_l...')
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Query\Expression), Array)
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#3 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(58): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(58): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#9 [internal function]: NguoiMuonTraCuuSach->index()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '28,28,9)' at line 1 (SQL: CALL tim_kiem_luan_van('',,28,28,9);) (Bindings: array (
+))' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), Object(Illuminate\Database\Query\Expression), Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#2 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#6 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(58): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(58): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#8 [internal function]: NguoiMuonTraCuuSach->index()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-12-05 11:31:04] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '28,28,9)' at line 1' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('CALL tim_kiem_l...')
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Query\Expression), Array)
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#3 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(62): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(62): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#9 [internal function]: NguoiMuonTraCuuSach->index()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '28,28,9)' at line 1 (SQL: CALL tim_kiem_luan_van('',,28,28,9);) (Bindings: array (
+))' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), Object(Illuminate\Database\Query\Expression), Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#2 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#6 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(62): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(62): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#8 [internal function]: NguoiMuonTraCuuSach->index()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-12-05 11:31:24] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,)' at line 1' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('CALL tim_kiem_l...')
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Query\Expression), Array)
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#3 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(62): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(62): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#9 [internal function]: NguoiMuonTraCuuSach->index()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,)' at line 1 (SQL: CALL tim_kiem_luan_van('',,,,);) (Bindings: array (
+))' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), Object(Illuminate\Database\Query\Expression), Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#2 [internal function]: Illuminate\Database\Connection->select(Object(Illuminate\Database\Query\Expression))
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('select', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->select(Object(Illuminate\Database\Query\Expression))
+#6 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(62): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(62): Illuminate\Support\Facades\DB::select(Object(Illuminate\Database\Query\Expression))
+#8 [internal function]: NguoiMuonTraCuuSach->index()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-12-05 12:19:21] log.ERROR: exception 'ErrorException' with message 'Undefined offset: 0' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php:83
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(83): Illuminate\Exception\Handler->handleError(8, 'Undefined offse...', 'C:\xampp\htdocs...', 83, Array)
+#1 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(31): NguoiMuonTraCuuSach->getDauSachNguoiMuon(Array)
+#2 [internal function]: NguoiMuonTraCuuSach->index()
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-05 12:19:31] log.ERROR: exception 'ErrorException' with message 'Undefined offset: 0' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php:83
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(83): Illuminate\Exception\Handler->handleError(8, 'Undefined offse...', 'C:\xampp\htdocs...', 83, Array)
+#1 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(31): NguoiMuonTraCuuSach->getDauSachNguoiMuon(Array)
+#2 [internal function]: NguoiMuonTraCuuSach->index()
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-05 12:26:14] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select count(*)...')
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select count(*)...', Array)
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1025): Illuminate\Database\Connection->select('select count(*)...', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1015): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1002): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1366): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1308): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1278): Illuminate\Database\Query\Builder->count()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1252): Illuminate\Database\Query\Builder->getPaginationCount()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1203): Illuminate\Database\Query\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 16, Array)
+#11 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(107): Illuminate\Database\Query\Builder->paginate(16)
+#12 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(31): NguoiMuonTraCuuSach->getDauSachNguoiMuon(Array)
+#13 [internal function]: NguoiMuonTraCuuSach->index()
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 (SQL: select count(*) as aggregate from `dau_sach` left join `luan_van` on `luan_van`.`id_dau_sach` = `dau_sach`.`id` left join `tai_lieu` on `tai_lieu`.`id_dau_sach` = `dau_sach`.`id` where `dau_sach`.`id` in ()) (Bindings: array (
+))' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1025): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1015): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1002): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1366): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1308): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1278): Illuminate\Database\Query\Builder->count()
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1252): Illuminate\Database\Query\Builder->getPaginationCount()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1203): Illuminate\Database\Query\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 16, Array)
+#10 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(107): Illuminate\Database\Query\Builder->paginate(16)
+#11 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(31): NguoiMuonTraCuuSach->getDauSachNguoiMuon(Array)
+#12 [internal function]: NguoiMuonTraCuuSach->index()
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-12-05 12:28:17] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select count(*)...')
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select count(*)...', Array)
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1025): Illuminate\Database\Connection->select('select count(*)...', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1015): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1002): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1366): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1308): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1278): Illuminate\Database\Query\Builder->count()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1252): Illuminate\Database\Query\Builder->getPaginationCount()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1203): Illuminate\Database\Query\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 16, Array)
+#11 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(107): Illuminate\Database\Query\Builder->paginate(16)
+#12 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(31): NguoiMuonTraCuuSach->getDauSachNguoiMuon(Array)
+#13 [internal function]: NguoiMuonTraCuuSach->index()
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 (SQL: select count(*) as aggregate from `dau_sach` left join `luan_van` on `luan_van`.`id_dau_sach` = `dau_sach`.`id` left join `tai_lieu` on `tai_lieu`.`id_dau_sach` = `dau_sach`.`id` where `dau_sach`.`id` in ()) (Bindings: array (
+))' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1025): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1015): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1002): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1366): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1308): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1278): Illuminate\Database\Query\Builder->count()
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1252): Illuminate\Database\Query\Builder->getPaginationCount()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1203): Illuminate\Database\Query\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 16, Array)
+#10 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(107): Illuminate\Database\Query\Builder->paginate(16)
+#11 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(31): NguoiMuonTraCuuSach->getDauSachNguoiMuon(Array)
+#12 [internal function]: NguoiMuonTraCuuSach->index()
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-12-05 13:20:18] log.ERROR: exception 'ErrorException' with message 'Undefined variable: tenSach' in C:\xampp\htdocs\libary_it_1.1\app\storage\views\d55cd79bba269015b35a7e4c81b7d5cc:181
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\app\storage\views\d55cd79bba269015b35a7e4c81b7d5cc(181): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'C:\xampp\htdocs...', 181, Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-12-05 13:42:45] log.ERROR: exception 'ErrorException' with message 'Undefined offset: 0' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php:318
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(318): Illuminate\Exception\Handler->handleError(8, 'Undefined offse...', 'C:\xampp\htdocs...', 318, Array)
+#1 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(71): Illuminate\View\View->__call('withInput', Array)
+#2 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(71): Illuminate\View\View->withInput()
+#3 [internal function]: NguoiMuonTraCuuSach->index()
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-12-05 13:43:04] log.ERROR: exception 'ErrorException' with message 'Undefined offset: 0' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php:318
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(318): Illuminate\Exception\Handler->handleError(8, 'Undefined offse...', 'C:\xampp\htdocs...', 318, Array)
+#1 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(71): Illuminate\View\View->__call('withInput', Array)
+#2 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(71): Illuminate\View\View->withInput()
+#3 [internal function]: NguoiMuonTraCuuSach->index()
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-12-05 13:51:42] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Maximum execution time of 30 seconds exceeded' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 14:04:13] log.ERROR: exception 'ErrorException' with message 'Object of class Illuminate\Database\Eloquent\Collection could not be converted to int' in C:\xampp\htdocs\libary_it_1.1\app\storage\views\3341168f2b50b27b68ca870bb1003521:155
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\app\storage\views\3341168f2b50b27b68ca870bb1003521(155): Illuminate\Exception\Handler->handleError(8, 'Object of class...', 'C:\xampp\htdocs...', 155, Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 C:\xampp\htdocs\libary_it_1.1\app\storage\views\d55cd79bba269015b35a7e4c81b7d5cc(37): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-12-05 14:04:44] log.ERROR: exception 'ErrorException' with message 'Object of class Illuminate\Database\Eloquent\Collection could not be converted to int' in C:\xampp\htdocs\libary_it_1.1\app\storage\views\3341168f2b50b27b68ca870bb1003521:155
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\app\storage\views\3341168f2b50b27b68ca870bb1003521(155): Illuminate\Exception\Handler->handleError(8, 'Object of class...', 'C:\xampp\htdocs...', 155, Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 C:\xampp\htdocs\libary_it_1.1\app\storage\views\d55cd79bba269015b35a7e4c81b7d5cc(37): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-12-05 14:05:04] log.ERROR: exception 'ErrorException' with message 'Object of class Illuminate\Database\Eloquent\Collection could not be converted to int' in C:\xampp\htdocs\libary_it_1.1\app\storage\views\3341168f2b50b27b68ca870bb1003521:155
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\app\storage\views\3341168f2b50b27b68ca870bb1003521(155): Illuminate\Exception\Handler->handleError(8, 'Object of class...', 'C:\xampp\htdocs...', 155, Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 C:\xampp\htdocs\libary_it_1.1\app\storage\views\d55cd79bba269015b35a7e4c81b7d5cc(37): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-12-05 14:05:56] log.ERROR: exception 'ErrorException' with message 'Object of class Illuminate\Database\Eloquent\Collection could not be converted to int' in C:\xampp\htdocs\libary_it_1.1\app\storage\views\3341168f2b50b27b68ca870bb1003521:155
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\app\storage\views\3341168f2b50b27b68ca870bb1003521(155): Illuminate\Exception\Handler->handleError(8, 'Object of class...', 'C:\xampp\htdocs...', 155, Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 C:\xampp\htdocs\libary_it_1.1\app\storage\views\d55cd79bba269015b35a7e4c81b7d5cc(37): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-12-05 14:06:12] log.ERROR: exception 'ErrorException' with message 'Object of class Illuminate\Database\Eloquent\Collection could not be converted to int' in C:\xampp\htdocs\libary_it_1.1\app\storage\views\3341168f2b50b27b68ca870bb1003521:155
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\app\storage\views\3341168f2b50b27b68ca870bb1003521(155): Illuminate\Exception\Handler->handleError(8, 'Object of class...', 'C:\xampp\htdocs...', 155, Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 C:\xampp\htdocs\libary_it_1.1\app\storage\views\d55cd79bba269015b35a7e4c81b7d5cc(37): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2013-12-05 14:19:51] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Function name must be a string' in C:\xampp\htdocs\libary_it_1.1\app\views\modules\navbar.php:37
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 14:21:52] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Function name must be a string' in C:\xampp\htdocs\libary_it_1.1\app\views\modules\navbar.php:37
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 14:25:49] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Function name must be a string' in C:\xampp\htdocs\libary_it_1.1\app\views\modules\navbar.php:37
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 14:35:24] log.ERROR: exception 'ErrorException' with message 'Undefined variable: array_ct_phieu_muon' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php:146
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(146): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'C:\xampp\htdocs...', 146, Array)
+#1 [internal function]: NguoiMuonTraCuuSach->create()
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('create', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'create', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-12-05 14:58:32] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ngon_ngu_sach' in 'field list'' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select distinct...')
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select distinct...', Array)
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select distinct...', Array, Object(Closure))
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1025): Illuminate\Database\Connection->select('select distinct...', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1015): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1002): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(262): Illuminate\Database\Eloquent\Builder->get()
+#9 C:\xampp\htdocs\libary_it_1.1\app\storage\views\3341168f2b50b27b68ca870bb1003521(104): NguoiMuonTraCuuSach::getNgonNgu()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#14 C:\xampp\htdocs\libary_it_1.1\app\storage\views\d55cd79bba269015b35a7e4c81b7d5cc(37): Illuminate\View\View->render()
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#19 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#20 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#21 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#22 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#23 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#24 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#25 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#26 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#27 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#28 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#29 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#30 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#31 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#32 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ngon_ngu_sach' in 'field list' (SQL: select distinct `ngon_ngu_sach` from `luan_van` order by `ngon_ngu_sach` asc) (Bindings: array (
+))' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select distinct...', Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select distinct...', Array, Object(Closure))
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1025): Illuminate\Database\Connection->select('select distinct...', Array)
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1015): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1002): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuSach.php(262): Illuminate\Database\Eloquent\Builder->get()
+#8 C:\xampp\htdocs\libary_it_1.1\app\storage\views\3341168f2b50b27b68ca870bb1003521(104): NguoiMuonTraCuuSach::getNgonNgu()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#13 C:\xampp\htdocs\libary_it_1.1\app\storage\views\d55cd79bba269015b35a7e4c81b7d5cc(37): Illuminate\View\View->render()
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#19 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#20 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#21 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#22 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#23 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#24 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#25 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#26 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#27 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#28 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#29 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#30 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#31 {main} [] []
+[2013-12-05 16:13:26] log.ERROR: exception 'ErrorException' with message 'A non well formed numeric value encountered' in C:\xampp\htdocs\libary_it_1.1\app\storage\views\f16f905c71c1502fcaf86dc46f41c7a9:42
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(8, 'A non well form...', 'C:\xampp\htdocs...', 42, Array)
+#1 C:\xampp\htdocs\libary_it_1.1\app\storage\views\f16f905c71c1502fcaf86dc46f41c7a9(42): date('d/m/Y', '2013-12-06')
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-12-05 17:17:09] log.ERROR: exception 'ErrorException' with message 'Undefined offset: 0' in C:\xampp\htdocs\libary_it_1.1\app\models\chitietphieumuonsach.php:13
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\app\models\chitietphieumuonsach.php(13): Illuminate\Exception\Handler->handleError(8, 'Undefined offse...', 'C:\xampp\htdocs...', 13, Array)
+#1 C:\xampp\htdocs\libary_it_1.1\app\storage\views\f16f905c71c1502fcaf86dc46f41c7a9(49): ChiTietPhieuMuonSach::kiemTraTrangThai(5)
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-12-05 17:27:49] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-12-05 17:42:07] log.ERROR: exception 'InvalidArgumentException' with message 'View [nguoimuon_nguoitra.index_giahan] not found.' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\FileViewFinder.php:135
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\FileViewFinder.php(76): Illuminate\View\FileViewFinder->findInPaths('nguoimuon_nguoi...', Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Environment.php(115): Illuminate\View\FileViewFinder->find('nguoimuon_nguoi...')
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\View\Environment->make('nguoimuon_nguoi...')
+#3 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuMuonTra.php(24): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiMuonTraCuuMuonTra.php(24): Illuminate\Support\Facades\View::make('nguoimuon_nguoi...')
+#5 [internal function]: NguoiMuonTraCuuMuonTra->giaHan()
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('giaHan', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'giaHan', Array)
+#9 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-12-05 18:02:16] log.ERROR: exception 'ErrorException' with message 'A non well formed numeric value encountered' in C:\xampp\htdocs\libary_it_1.1\app\storage\views\681c7ae1de5726656b4bfdc7a84f62d7:22
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(8, 'A non well form...', 'C:\xampp\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\libary_it_1.1\app\storage\views\681c7ae1de5726656b4bfdc7a84f62d7(22): date('Y-m-d', '2013-12-12')
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'giaHan', Object(Illuminate\View\View))
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'giaHan', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-12-05 18:12:35] log.ERROR: exception 'ErrorException' with message 'Undefined property: stdClass::$id' in C:\xampp\htdocs\libary_it_1.1\app\storage\views\681c7ae1de5726656b4bfdc7a84f62d7:24
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\app\storage\views\681c7ae1de5726656b4bfdc7a84f62d7(24): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', 'C:\xampp\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'giaHan', Object(Illuminate\View\View))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'giaHan', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-12-05 18:32:23] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Routing\Router::to()' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php:203
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 18:41:04] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Routing\Router::to()' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php:206
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 18:45:05] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Routing\Router::to()' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php:206
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 19:55:43] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function getClientOriginalName() on a non-object' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:15
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 19:56:25] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function getClientOriginalName() on a non-object' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:15
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 20:08:04] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function getClientOriginalName() on a non-object' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:16
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 20:08:26] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function move() on a non-object' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 20:08:51] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function move() on a non-object' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 20:09:17] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function move() on a non-object' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 20:13:38] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function getClientOriginalName() on a non-object' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:16
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 20:17:23] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function getClientOriginalName() on a non-object' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:16
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 20:22:15] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function move() on a non-object' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 20:22:58] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function move() on a non-object' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 20:24:20] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function move() on a non-object' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 20:24:29] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function move() on a non-object' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 20:29:05] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function move() on a non-object' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 20:31:46] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function move() on a non-object' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 20:32:44] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function move() on a non-object' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 20:33:09] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function move() on a non-object' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 21:03:11] log.ERROR: exception 'ErrorException' with message 'A non well formed numeric value encountered' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:24
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(8, 'A non well form...', 'C:\xampp\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php(24): date('Y-m-d', '1992-06-30')
+#2 [internal function]: NguoiDungHoSo->store()
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-05 21:04:32] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE lib_cit_1.4.update_profile; expected 8, got 9' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:331
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Query\Expression), Array)
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#3 [internal function]: Illuminate\Database\Connection->statement(Object(Illuminate\Database\Query\Expression))
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('statement', Array)
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->statement(Object(Illuminate\Database\Query\Expression))
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php(24): Illuminate\Support\Facades\Facade::__callStatic('statement', Array)
+#8 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php(24): Illuminate\Support\Facades\DB::statement(Object(Illuminate\Database\Query\Expression))
+#9 [internal function]: NguoiDungHoSo->store()
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE lib_cit_1.4.update_profile; expected 8, got 9 (SQL: CALL update_profile(4,'C:\xampp\htdocs\libary_it_1.1\public/images/1101669/1101669jpg','Hoàng Trọng Phương',0,'1992-06-30','Bạc Liêu','0907896678','Đại Học Cần Thơ','phuong101669@student.ctu.edu.vn');) (Bindings: array (
+))' in C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), Object(Illuminate\Database\Query\Expression), Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run(Object(Illuminate\Database\Query\Expression), Array, Object(Closure))
+#2 [internal function]: Illuminate\Database\Connection->statement(Object(Illuminate\Database\Query\Expression))
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('statement', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->statement(Object(Illuminate\Database\Query\Expression))
+#6 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php(24): Illuminate\Support\Facades\Facade::__callStatic('statement', Array)
+#7 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php(24): Illuminate\Support\Facades\DB::statement(Object(Illuminate\Database\Query\Expression))
+#8 [internal function]: NguoiDungHoSo->store()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-12-05 21:10:42] log.ERROR: exception 'Symfony\Component\HttpFoundation\File\Exception\FileException' with message 'Unable to create the "http://localhost/libary_it_1.1//images/profiles/1101669" directory' in C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\File\File.php:134
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\File\UploadedFile.php(243): Symfony\Component\HttpFoundation\File\File->getTargetFile('http://localhos...', '1101669')
+#1 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php(16): Symfony\Component\HttpFoundation\File\UploadedFile->move('http://localhos...', '1101669')
+#2 [internal function]: NguoiDungHoSo->store()
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-05 21:10:56] log.ERROR: exception 'Symfony\Component\HttpFoundation\File\Exception\FileException' with message 'Unable to create the "http://localhost/libary_it_1.1/images/profiles/1101669" directory' in C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\File\File.php:134
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\File\UploadedFile.php(243): Symfony\Component\HttpFoundation\File\File->getTargetFile('http://localhos...', '1101669')
+#1 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php(16): Symfony\Component\HttpFoundation\File\UploadedFile->move('http://localhos...', '1101669')
+#2 [internal function]: NguoiDungHoSo->store()
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-05 21:11:25] log.ERROR: exception 'Symfony\Component\HttpFoundation\File\Exception\FileException' with message 'Unable to create the "http://localhost/libary_it_1.1/images/profiles/1101669" directory' in C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\File\File.php:134
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\File\UploadedFile.php(243): Symfony\Component\HttpFoundation\File\File->getTargetFile('http://localhos...', '1101669')
+#1 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php(16): Symfony\Component\HttpFoundation\File\UploadedFile->move('http://localhos...', '1101669')
+#2 [internal function]: NguoiDungHoSo->store()
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-05 21:12:23] log.ERROR: exception 'Symfony\Component\HttpFoundation\File\Exception\FileException' with message 'Unable to create the "http://localhost/libary_it_1.1/images/profiles/1101669/" directory' in C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\File\File.php:134
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\File\UploadedFile.php(243): Symfony\Component\HttpFoundation\File\File->getTargetFile('http://localhos...', '1101669')
+#1 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php(16): Symfony\Component\HttpFoundation\File\UploadedFile->move('http://localhos...', '1101669')
+#2 [internal function]: NguoiDungHoSo->store()
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-05 21:12:43] log.ERROR: exception 'Symfony\Component\HttpFoundation\File\Exception\FileException' with message 'Unable to create the "http://localhost/libary_it_1.1/public/images/profiles/1101669/" directory' in C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\File\File.php:134
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\File\UploadedFile.php(243): Symfony\Component\HttpFoundation\File\File->getTargetFile('http://localhos...', '1101669')
+#1 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php(16): Symfony\Component\HttpFoundation\File\UploadedFile->move('http://localhos...', '1101669')
+#2 [internal function]: NguoiDungHoSo->store()
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-05 21:17:55] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function getClientOriginalName() on a non-object' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:15
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-05 21:19:04] log.ERROR: exception 'ErrorException' with message 'Undefined variable: destinationPath' in C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php:27
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\app\controllers\NguoiDungHoSo.php(27): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'C:\xampp\htdocs...', 27, Array)
+#1 [internal function]: NguoiDungHoSo->store()
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-12-05 22:34:49] log.ERROR: exception 'ErrorException' with message 'Array to string conversion' in C:\xampp\htdocs\libary_it_1.1\app\storage\views\0a0db32abd264b62ab7646e515ef90a0:16
+Stack trace:
+#0 C:\xampp\htdocs\libary_it_1.1\app\storage\views\0a0db32abd264b62ab7646e515ef90a0(16): Illuminate\Exception\Handler->handleError(8, 'Array to string...', 'C:\xampp\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\xampp\htdocs...', Array)
+#3 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\libary_it_1.1\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#10 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\libary_it_1.1\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\xampp\htdocs\libary_it_1.1\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []

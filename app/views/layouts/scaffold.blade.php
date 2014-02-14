@@ -47,14 +47,39 @@
         <!-- ============================  Main Tagline Start ============================ -->
         <div class="row-fluid">
             <div class="span9">
-                <div class="blog-inner-container">
+                <div style="background-color: #fff;
+                            background-image: none;
+                            border: 1px solid #dde0e3;
+                            filter: none;
+                            box-shadow: none;
+                            padding: 10px;
+                            margin: 0px 0px 10px 0px;"  > 
 					@yield('main')
-				</div> <!--end row-fluid-->
-            </div> <!--end span8-->
-            <div class="span2">
-                <div class="blog-inner-container">
-                
                 </div>
+            </div> <!--end span8-->
+            <div class="span3">
+            <div style="background-color: #fff;
+                            background-image: none;
+                            border: 1px solid #dde0e3;
+                            filter: none;
+                            box-shadow: none;  
+                            "> 
+                <ul>
+                    
+                    @if(Auth::check())
+                        <p>Xin Chào! {{Auth::user()->username;}}</p>
+                        {{ link_to_route('logout', 'Đăng Xuất',array(), array('class' => 'btn btn-info')) }}
+                    @else
+                        {{ link_to_route('login', 'Đăng Nhập',array(), array('class' => 'btn btn-info')) }}
+                    @endif
+                </ul>
+
+                @if(Session::has('flash_notice'))
+                    <div id="flash_notice">{{ Session::get('flash_notice') }}</div>
+                @endif
+            </div>
+                
+
             </div>
         </div>  
 

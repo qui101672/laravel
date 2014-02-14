@@ -1,31 +1,24 @@
 @extends('layouts.scaffold')
 
-@section('content')
+@section('main')
 
-    <h1>Login</h1>
-
+<form action="" method="POST" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <legend>Đăng Nhập</legend>
+                    </div>
+                        {{ Form::label('username', 'Mã Số Sinh Viên/ Cán Bộ') }} 
+                        {{ Form::text('username', Input::old('username')) }}
+                        {{ Form::label('password', 'Mật Khẩu') }} 
+                        {{ Form::password('password') }}
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <button type="submit" class="btn btn-primary">Đăng Nhập</button>
+                        </div>
+                    </div>
+            </form>
     <!-- check for login error flash var -->
     @if (Session::has('flash_error'))
         <div id="flash_error">{{ Session::get('flash_error') }}</div>
     @endif
-
-    {{Form::open()}}
-
-    <!-- username field -->
-    <p>
-        {{ Form::label('username', 'Username') }}<br/>
-        {{ Form::text('username', Input::old('username')) }}
-    </p>
-
-    <!-- password field -->
-    <p>
-        {{ Form::label('password', 'Password') }}<br/>
-        {{ Form::password('password') }}
-    </p>
-
-    <!-- submit button -->
-    <p>{{ Form::submit('Login') }}</p>
-
-    {{ Form::close() }}
 
 @stop

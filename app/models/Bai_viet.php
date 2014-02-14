@@ -8,9 +8,9 @@ class Bai_viet extends Eloquent {
 		'ten_bai_viet' => 'required',
 		'noi_dung_bai_viet' => 'required',
 		'id_nguoi_sua' => 'required',
-		'id_ma_the_loai_bv' => 'required',
-		'id_nguoi_tao' => 'required',
 		'tag' => 'required',
-		'ghi_chu' => 'required'
+		'ghi_chu' => 'required',
+		'id_the_loai_bai_viet' => 'required',
+		'id_nguoi_tao_bai_viet' => 'required'
 	);
 }

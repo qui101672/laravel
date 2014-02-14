@@ -18,10 +18,10 @@ class CreateBaiVietsTable extends Migration {
 			$table->string('ten_bai_viet');
 			$table->string('noi_dung_bai_viet');
 			$table->integer('id_nguoi_sua');
-			$table->integer('id_ma_the_loai_bv');
-			$table->integer('id_nguoi_tao');
 			$table->string('tag');
-			$table->text('ghi_chu');
+			$table->string('ghi_chu');
+			$table->integer('id_the_loai_bai_viet');
+			$table->integer('id_nguoi_tao_bai_viet');
 			$table->timestamps();
 		});
 	}

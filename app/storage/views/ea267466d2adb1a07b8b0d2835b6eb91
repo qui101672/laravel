@@ -1,0 +1,44 @@
+
+<?php $__env->startSection('main'); ?>
+<div class="box spam12">
+    <div class="box-header">
+       <h2><i class="icon-user"> </i>Danh Sách Tài Khoản</h2>
+
+    </div>
+    <div class="box-content">
+
+			<?php if ($tai_khoans->count()): ?>
+				<table class="table table-striped table-bordered">
+					<thead>
+						<tr>
+							<th>Username</th>
+							<th>Password</th>
+							<th>PhanQuyen_Id</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<?php foreach ($tai_khoans as $tai_khoan): ?>
+							<tr>
+								<td><?php echo e($tai_khoan->username); ?></td>
+								<td><?php echo e($tai_khoan->password); ?></td>
+								<td><?php echo e($tai_khoan->PhanQuyen_Id); ?></td>
+			                    <td><?php echo link_to_route('tai_khoans.edit', 'Edit', array($tai_khoan->id), array('class' => 'btn btn-info')); ?></td>
+			                    <td>
+			                        <?php echo Form::open(array('method' => 'DELETE', 'route' => array('tai_khoans.destroy', $tai_khoan->id))); ?>
+			                            <?php echo Form::submit('Delete', array('class' => 'btn btn-danger')); ?>
+			                        <?php echo Form::close(); ?>
+			                    </td>
+							</tr>
+						<?php endforeach; ?>
+					</tbody>
+				</table>
+			<?php else: ?>
+				There are no tai_khoans
+			<?php endif; ?>
+			<p><?php echo link_to_route('tai_khoans.create', 'Tạo Tài Khoản',array(),array('class'=>'btn btn-primary')); ?></p>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

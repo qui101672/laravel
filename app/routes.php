@@ -10,6 +10,7 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+include('config/constant/roles.php');
 
 Route::get('/', array('as' => 'home', 'uses' => 'Bai_vietsController@index'));
 
@@ -30,7 +31,9 @@ Route::get('profile', array('as' => 'profile', function () {
 }))->before('auth');
 
 Route::get('bai_viets/create', array('uses' => 'Bai_vietsController@create'))->before('auth');
-Route::get('bai_viets/{id}/edit', array('uses' => 'Bai_vietsController@create'))->before('auth');
+
+Route::get('bai_viets/danhsachbaiviet', array('uses' => 'Bai_vietsController@danhsachbaiviet'))->before('auth');
+
 Route::post('bai_viets/store', array('uses' => 'Bai_vietsController@store'))->before('auth');
 
 Route::resource('tai_khoans', 'Tai_khoansController');

@@ -4,7 +4,7 @@
 
         <!-- start: Meta -->
         <meta charset="utf-8" />
-        <title>HeTHong</title>
+        <title>Hệ Thống Quản Lý Văn Nghệ Trường Đại Học Cần Thơ</title>
         <meta name="description" content="He Thong Quan Ly Van Nghe Truong Dai Hoc Can Tho" />
         <meta name="author" content="Nguyen Ngoc Qui" />
         <meta name="keyword" content="van nghe, he thong, qua ly van nghe, dai hoc can tho" />
@@ -79,47 +79,7 @@
 
         <div class="container-fluid-full">
             <div class="row-fluid">
-                <!-- start: Main Menu -->
-                <div id="sidebar-left" class="span2">
-                    <div class="row-fluid actions"></div>   
-                    <div class="nav-collapse sidebar-nav">
-                        <ul class="nav nav-tabs nav-stacked main-menu">
-                            <li>
-                                <a class="dropmenu" href="#">
-                                    <i class="icon-tags"></i>
-                                    <span class="hidden-tablet">Quản Lý Danh Mục</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropmenu" href="#">
-                                    <i class="icon-music"></i>
-                                    <span class="hidden-tablet">Quản Lý Bài Viết</span>
-                                </a>    
-                            </li>
-                            <li>
-                                <a class="dropmenu" href="#">
-                                    <i class="icon-star"></i>
-                                    <span class="hidden-tablet">Quản Lý Hội Thi</span>
-                                    <span class="label"><i class=" icon-share-alt"></i></span>
-                                </a>
-                                <ul>
-                                    <li><a class="submenu" href="#"><i class="icon-list"></i><span class="hidden-tablet">Thể Loại</span></a></li>
-                                    <li><a class="submenu" href="#"><i class="icon-spinner"></i><span class="hidden-tablet">Vòng Thi</span></a></li> 
-                                    <li><a class="submenu" href="#"><i class="icon-trophy"></i><span class="hidden-tablet">Giải Thuong</span></a></li>
-                                    <li><a class="submenu" href="#"><i class="icon-group"></i><span class="hidden-tablet">Thành Viên BTC</span></a></li>
-                                    <li><a class="submenu" href="#"><i class="icon-group"></i><span class="hidden-tablet">Thành Viên BGK</span></a></li>
-                                </ul>   
-                            </li>
-                            <li>
-                                <a class="dropmenu" href="#">
-                                    <i class="icon-user"></i>
-                                    <span class="hidden-tablet">Quản Lý Người Dùng</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- end: Main Menu -->
+                <?php echo $__env->make('modules.admin.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
                 <!-- start: Content -->
                 <div id="content" class="span12">

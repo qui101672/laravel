@@ -21,7 +21,7 @@ class Bai_vietsController extends BaseController {
 	 */
 	public function index()
 	{
-		$bai_viets = $this->bai_viet->all();
+		$bai_viets = $this->bai_viet->orderBy('id','desc')->get();
 
 		return View::make('bai_viets.index', compact('bai_viets'));
 	}
@@ -43,7 +43,18 @@ class Bai_vietsController extends BaseController {
 	 */
 	public function store()
 	{
-		$input = Input::all();
+		$input = array(
+			'ma_bai_viet' => Input::get('ma_bai_viet'),
+			'tieu_de_bai_viet' => Input::get('tieu_de_bai_viet'),
+			'noi_dung_bai_viet' => Input::get('noi_dung_bai_viet'),
+			'id_nguoi_sua' => '',
+			'TheLoaiBaiViets_Id' => Input::get('TheLoaiBaiViets_Id'),
+			'TaiKhoans_Id' => Auth::user()->id,
+			'updated_at' => Input::get('updated_at'),
+			'created_at' => Input::get('created_at'),
+			'tag' => Input::get('tag'),
+			'ghi_chu' => Input::get('ghi_chu')
+			);
 		$validation = Validator::make($input, Bai_viet::$rules);
 
 		if ($validation->passes())
@@ -71,6 +82,8 @@ class Bai_vietsController extends BaseController {
 
 		return View::make('bai_viets.show', compact('bai_viet'));
 	}
+
+	
 
 	/**
 	 * Show the form for editing the specified resource.
@@ -100,7 +113,6 @@ class Bai_vietsController extends BaseController {
 	{
 		$input = array_except(Input::all(), '_method');
 		$validation = Validator::make($input, Bai_viet::$rules);
-
 		if ($validation->passes())
 		{
 			$bai_viet = $this->bai_viet->find($id);
@@ -125,7 +137,15 @@ class Bai_vietsController extends BaseController {
 	{
 		$this->bai_viet->find($id)->delete();
 
-		return Redirect::route('bai_viets.index');
+		return Redirect::route('bai_viets.list');
 	}
 
+
+	public function danhsachbaiviet()
+		{
+			 
+			$bai_viets = $this->bai_viet->orderBy('id','desc')->get();
+
+			return View::make('bai_viets.list', compact('bai_viets'));
+		}
 }

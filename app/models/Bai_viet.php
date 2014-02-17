@@ -4,7 +4,6 @@ class Bai_viet extends Eloquent {
 	protected $guarded = array();
 
 	public static $rules = array(
-		'id' => 'required',
 		'ma_bai_viet' => 'required',
 		'tieu_de_bai_viet' => 'required',
 		'noi_dung_bai_viet' => 'required',
@@ -12,7 +11,7 @@ class Bai_viet extends Eloquent {
 		'TheLoaiBaiViets_Id' => 'required',
 		'TaiKhoans_Id' => 'required',
 		'updated_at' => '',
-		'created_at' => 'required',
+		'created_at' => '',
 		'tag' => '',
 		'ghi_chu' => ''
 	);

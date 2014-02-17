@@ -1,0 +1,39 @@
+
+<?php $__env->startSection('main'); ?>
+<div class="box spam12">
+    <div class="box-header">
+       <h2><i class="icon-edit"> </i>Tạo Thể Loại Bài Viết</h2>
+
+    </div>
+    <div class="box-content">
+        <?php echo Form::open(array('route' => 'the_loai_bai_viets.store')); ?>
+     
+            <?php echo Form::label('ma_the_loai_bai_viet', 'Mã Thể Loại Bài Viết:'); ?>
+            <?php echo Form::text('ma_the_loai_bai_viet'); ?>
+        
+            <?php echo Form::label('ten_the_loai_bai_viet', 'Thể Loại Bài Viết:'); ?>
+            <?php echo Form::text('ten_the_loai_bai_viet'); ?>
+        
+            <?php echo Form::label('ghi_chu', 'Ghi Chú:'); ?>
+            <?php echo Form::textarea('ghi_chu'); ?>
+      
+            <?php echo Form::submit('Tạo', array('class' => 'btn btn-info')); ?>
+        
+<?php echo Form::close(); ?>
+
+<?php if ($errors->any()): ?>
+    <ul>
+        <?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
+    </ul>
+<?php endif; ?>
+    </div>
+</div>
+
+
+
+
+<?php $__env->stopSection(); ?>
+
+
+
+<?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

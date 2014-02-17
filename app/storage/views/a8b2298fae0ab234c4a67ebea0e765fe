@@ -1,0 +1,35 @@
+
+<?php $__env->startSection('main'); ?>
+<div class="box spam12">
+    <div class="box-header">
+       <h2><i class="icon-edit"> </i>Sửa Thể Loại Bài Viết</h2>
+
+    </div>
+    <div class="box-content">
+
+<?php echo Form::model($the_loai_bai_viet, array('method' => 'PATCH', 'route' => array('the_loai_bai_viets.update', $the_loai_bai_viet->id))); ?>
+ 
+            <?php echo Form::label('ma_the_loai_bai_viet', 'Ma_the_loai_bai_viet:'); ?>
+            <?php echo Form::text('ma_the_loai_bai_viet'); ?>
+ 
+            <?php echo Form::label('ten_the_loai_bai_viet', 'Ten_the_loai_bai_viet:'); ?>
+            <?php echo Form::text('ten_the_loai_bai_viet'); ?>
+ 
+            <?php echo Form::label('ghi_chu', 'Ghi_chu:'); ?>
+            <?php echo Form::textarea('ghi_chu'); ?>
+ 
+			<?php echo Form::submit('Update', array('class' => 'btn btn-info')); ?>
+			<?php echo link_to_route('the_loai_bai_viets.show', 'Cancel', $the_loai_bai_viet->id, array('class' => 'btn')); ?>
+ 
+<?php echo Form::close(); ?>
+
+<?php if ($errors->any()): ?>
+	<ul>
+		<?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
+	</ul>
+<?php endif; ?>
+    </div>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

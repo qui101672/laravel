@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-        <title>He Thong</title>
+        <title>Hệ Thống Quản Lý Văn Nghệ Trường Đại Học Cần Thơ</title>
 
         <!-- Bootstrap Styles -->
         <link href="<?php echo asset('public/user/css/bootstrap.min.css'); ?>" rel="stylesheet">

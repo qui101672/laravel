@@ -1,0 +1,37 @@
+
+<?php $__env->startSection('main'); ?>
+
+<div class="box span6">
+      <div class="box-header">
+            <h2><i class="icon-edit"></i><span>Chỉnh Sửa Tài Khoản</span></h2>
+      </div>
+      <div class="box-content">
+            <?php echo Form::model($tai_khoan, array('method' => 'PATCH', 'route' => array('tai_khoans.update', $tai_khoan->id))); ?>
+
+            <?php echo Form::label('username', 'Username:'); ?>
+            <?php echo Form::text('username'); ?>
+
+            <?php echo Form::label('password', 'Password:'); ?>
+            <?php echo Form::text('password'); ?>
+ 
+            <?php echo Form::label('PhanQuyen_Id', 'PhanQuyen_Id:'); ?>
+            <?php echo Form::input('number', 'PhanQuyen_Id'); ?>
+
+            <?php echo Form::submit('Update', array('class' => 'btn btn-info')); ?>
+            <?php echo link_to_route('tai_khoans.show', 'Cancel', $tai_khoan->id, array('class' => 'btn')); ?>
+
+<?php echo Form::close(); ?>
+
+<?php if ($errors->any()): ?>
+      <ul>
+            <?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
+      </ul>
+<?php endif; ?>
+      </div>
+</div>
+
+
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

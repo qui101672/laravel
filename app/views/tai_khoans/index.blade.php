@@ -14,7 +14,7 @@
 						<tr>
 							<th>Username</th>
 							<th>Password</th>
-							<th>PhanQuyen_Id</th>
+							<th>Quyền</th>
 						</tr>
 					</thead>
 
@@ -23,7 +23,11 @@
 							<tr>
 								<td>{{{ $tai_khoan->username }}}</td>
 								<td>{{{ $tai_khoan->password }}}</td>
-								<td>{{{ $tai_khoan->PhanQuyen_Id }}}</td>
+								<?php 
+									$quyen = DB::table('phan_quyens')->where('id',$tai_khoan->PhanQuyen_Id)->first();
+									echo '<td>'.$quyen->ten_quyen.'</td>';
+								?>
+								
 			                    <td>{{ link_to_route('tai_khoans.edit', 'Edit', array($tai_khoan->id), array('class' => 'btn btn-info')) }}</td>
 			                    <td>
 			                        {{ Form::open(array('method' => 'DELETE', 'route' => array('tai_khoans.destroy', $tai_khoan->id))) }}

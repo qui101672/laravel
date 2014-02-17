@@ -88,9 +88,10 @@ class Tai_khoansController extends BaseController {
 
 		if (is_null($tai_khoan))
 		{
-			return Redirect::route('tai_khoans.index');
+			return Redirect::route('tai_khoans.edit');
 		}
 
+		return View::make('tai_khoans.edit', compact('tai_khoan'));
 		
 	}
 

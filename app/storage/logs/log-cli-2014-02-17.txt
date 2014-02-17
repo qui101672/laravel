@@ -1,0 +1,11 @@
+[2014-02-17 14:58:48] log.ERROR: exception 'RuntimeException' with message 'Too many arguments.' in D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php:181
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(90): Symfony\Component\Console\Input\ArgvInput->parseArgument('div')
+#1 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Input\Input.php(60): Symfony\Component\Console\Input\ArgvInput->parse()
+#2 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(226): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(898): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Way\Generators\Commands\FormDumperCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 D:\xampp\htdocs\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#8 {main} [] []

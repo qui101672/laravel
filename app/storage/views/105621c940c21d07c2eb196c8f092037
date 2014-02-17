@@ -1,0 +1,50 @@
+
+<?php $__env->startSection('main'); ?>
+
+<h1>Show Sinh_vien</h1>
+
+<p><?php echo link_to_route('sinh_viens.index', 'Return to all sinh_viens'); ?></p>
+
+<table class="table table-striped table-bordered">
+	<thead>
+		<tr>
+			<th>Mssv</th>
+				<th>Ho_ten</th>
+				<th>Gioi_tinh</th>
+				<th>Ngay_sinh</th>
+				<th>Dia_chi</th>
+				<th>Que_quan</th>
+				<th>Email</th>
+				<th>Sdt</th>
+				<th>Ghi_chu</th>
+				<th>Lops_Id</th>
+				<th>TaiKhoans_Id</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+			<td><?php echo e($sinh_vien->mssv); ?></td>
+					<td><?php echo e($sinh_vien->ho_ten); ?></td>
+					<td><?php echo e($sinh_vien->gioi_tinh); ?></td>
+					<td><?php echo e($sinh_vien->ngay_sinh); ?></td>
+					<td><?php echo e($sinh_vien->dia_chi); ?></td>
+					<td><?php echo e($sinh_vien->que_quan); ?></td>
+					<td><?php echo e($sinh_vien->email); ?></td>
+					<td><?php echo e($sinh_vien->sdt); ?></td>
+					<td><?php echo e($sinh_vien->ghi_chu); ?></td>
+					<td><?php echo e($sinh_vien->Lops_Id); ?></td>
+					<td><?php echo e($sinh_vien->TaiKhoans_Id); ?></td>
+                    <td><?php echo link_to_route('sinh_viens.edit', 'Edit', array($sinh_vien->id), array('class' => 'btn btn-info')); ?></td>
+                    <td>
+                        <?php echo Form::open(array('method' => 'DELETE', 'route' => array('sinh_viens.destroy', $sinh_vien->id))); ?>
+                            <?php echo Form::submit('Delete', array('class' => 'btn btn-danger')); ?>
+                        <?php echo Form::close(); ?>
+                    </td>
+		</tr>
+	</tbody>
+</table>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

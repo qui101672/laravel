@@ -1,70 +1,66 @@
 @extends('layouts.scaffold')
 
 @section('main')
-
-<h1>Edit Sinh_vien</h1>
+<div class="box">
+    <div class="box-header">
+        <h2><i class="icon-user"></i><span>Chỉnh Sửa Thông Tin Sinh Viên</span></h2>
+    </div>
+    <div class="box-content">
 {{ Form::model($sinh_vien, array('method' => 'PATCH', 'route' => array('sinh_viens.update', $sinh_vien->id))) }}
-	<ul>
-        <li>
-            {{ Form::label('mssv', 'Mssv:') }}
-            {{ Form::text('mssv') }}
-        </li>
+            <div>
+        {{ Form::label('mssv', 'Mssv:') }}
+        {{ Form::text('mssv') }}
+    </div>
 
-        <li>
-            {{ Form::label('ho_ten', 'Ho_ten:') }}
-            {{ Form::text('ho_ten') }}
-        </li>
+    <div>
+        {{ Form::label('ho_ten', 'Ho ten:') }}
+        {{ Form::text('ho_ten') }}
+    </div>
 
-        <li>
-            {{ Form::label('gioi_tinh', 'Gioi_tinh:') }}
-            {{ Form::text('gioi_tinh') }}
-        </li>
+    <div>
+        {{ Form::label('ngay_sinh', 'Ngay sinh:') }}
+        {{ Form::text('ngay_sinh') }}
+    </div>
 
-        <li>
-            {{ Form::label('ngay_sinh', 'Ngay_sinh:') }}
-            {{ Form::text('ngay_sinh') }}
-        </li>
+    <div>
+        {{ Form::label('gioi_tinh', 'Gioi tinh:') }}
+        {{ Form::text('gioi_tinh') }}
+    </div>
 
-        <li>
-            {{ Form::label('dia_chi', 'Dia_chi:') }}
-            {{ Form::text('dia_chi') }}
-        </li>
+    <div>
+        {{ Form::label('dia_chi', 'Dia chi:') }}
+        {{ Form::text('dia_chi') }}
+    </div>
 
-        <li>
-            {{ Form::label('que_quan', 'Que_quan:') }}
-            {{ Form::text('que_quan') }}
-        </li>
+    <div>
+        {{ Form::label('que_quan', 'Que quan:') }}
+        {{ Form::text('que_quan') }}
+    </div>
 
-        <li>
-            {{ Form::label('email', 'Email:') }}
-            {{ Form::text('email') }}
-        </li>
+    <div>
+        {{ Form::label('email', 'Email:') }}
+        {{ Form::text('email') }}
+    </div>
 
-        <li>
-            {{ Form::label('sdt', 'Sdt:') }}
-            {{ Form::text('sdt') }}
-        </li>
+    <div>
+        {{ Form::label('sdt', 'Sdt:') }}
+        {{ Form::text('sdt') }}
+    </div>
 
-        <li>
-            {{ Form::label('ghi_chu', 'Ghi_chu:') }}
-            {{ Form::text('ghi_chu') }}
-        </li>
-
-        <li>
+    <div>
+        {{ Form::label('ghi_chu', 'Ghi chu:') }}
+        {{ Form::text('ghi_chu') }}
+    </div>
+ 
             {{ Form::label('Lops_Id', 'Lops_Id:') }}
             {{ Form::input('number', 'Lops_Id') }}
-        </li>
-
-        <li>
+   
             {{ Form::label('TaiKhoans_Id', 'TaiKhoans_Id:') }}
             {{ Form::input('number', 'TaiKhoans_Id') }}
-        </li>
 
-		<li>
 			{{ Form::submit('Update', array('class' => 'btn btn-info')) }}
 			{{ link_to_route('sinh_viens.show', 'Cancel', $sinh_vien->id, array('class' => 'btn')) }}
-		</li>
-	</ul>
+
 {{ Form::close() }}
 
 @if ($errors->any())
@@ -72,5 +68,13 @@
 		{{ implode('', $errors->all('<li class="error">:message</li>')) }}
 	</ul>
 @endif
-
+</div>
+</div>
 @stop
+
+
+ 
+
+    
+
+ 

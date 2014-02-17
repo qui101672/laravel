@@ -1,9 +1,12 @@
 
 <?php $__env->startSection('main'); ?>
 
-<h1>All Sinh_viens</h1>
-
-<p><?php echo link_to_route('sinh_viens.create', 'Add new sinh_vien'); ?></p>
+<div class="box span12">
+	<div class="box-header">
+		<h2><i class="icon-user"></i><span>Danh Sách Sinh Viên</span></h2>
+	</div>
+	<div class="box-content">
+		<p><?php echo link_to_route('sinh_viens.create', 'Add new sinh_vien'); ?></p>
 
 <?php if ($sinh_viens->count()): ?>
 	<table class="table table-striped table-bordered">
@@ -14,10 +17,8 @@
 				<th>Gioi_tinh</th>
 				<th>Ngay_sinh</th>
 				<th>Dia_chi</th>
-				<th>Que_quan</th>
 				<th>Email</th>
 				<th>Sdt</th>
-				<th>Ghi_chu</th>
 				<th>Lops_Id</th>
 				<th>TaiKhoans_Id</th>
 			</tr>
@@ -31,10 +32,8 @@
 					<td><?php echo e($sinh_vien->gioi_tinh); ?></td>
 					<td><?php echo e($sinh_vien->ngay_sinh); ?></td>
 					<td><?php echo e($sinh_vien->dia_chi); ?></td>
-					<td><?php echo e($sinh_vien->que_quan); ?></td>
 					<td><?php echo e($sinh_vien->email); ?></td>
 					<td><?php echo e($sinh_vien->sdt); ?></td>
-					<td><?php echo e($sinh_vien->ghi_chu); ?></td>
 					<td><?php echo e($sinh_vien->Lops_Id); ?></td>
 					<td><?php echo e($sinh_vien->TaiKhoans_Id); ?></td>
                     <td><?php echo link_to_route('sinh_viens.edit', 'Edit', array($sinh_vien->id), array('class' => 'btn btn-info')); ?></td>
@@ -50,7 +49,11 @@
 <?php else: ?>
 	There are no sinh_viens
 <?php endif; ?>
+	</div>
+</div>
+
+
 
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.scaffold', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

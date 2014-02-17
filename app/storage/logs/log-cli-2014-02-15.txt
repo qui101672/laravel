@@ -1,0 +1,12 @@
+[2014-02-15 10:27:46] log.ERROR: exception 'ErrorException' with message 'Undefined offset: 1' in D:\xampp\htdocs\lvtn-thdhct\vendor\way\generators\src\Way\Generators\Cache.php:56
+Stack trace:
+#0 D:\xampp\htdocs\lvtn-thdhct\vendor\way\generators\src\Way\Generators\Cache.php(56): Illuminate\Exception\Handler->handleError(8, 'Undefined offse...', 'D:\xampp\htdocs...', 56, Array)
+#1 D:\xampp\htdocs\lvtn-thdhct\vendor\way\generators\src\Way\Generators\Commands\ResourceGeneratorCommand.php(76): Way\Generators\Cache->fields('ma_the_loai_bai...')
+#2 D:\xampp\htdocs\lvtn-thdhct\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Way\Generators\Commands\ResourceGeneratorCommand->fire()
+#3 D:\xampp\htdocs\lvtn-thdhct\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\xampp\htdocs\lvtn-thdhct\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 D:\xampp\htdocs\lvtn-thdhct\vendor\symfony\console\Symfony\Component\Console\Application.php(898): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 D:\xampp\htdocs\lvtn-thdhct\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Way\Generators\Commands\ScaffoldGeneratorCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 D:\xampp\htdocs\lvtn-thdhct\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 D:\xampp\htdocs\lvtn-thdhct\artisan(59): Symfony\Component\Console\Application->run()
+#9 {main} [] []

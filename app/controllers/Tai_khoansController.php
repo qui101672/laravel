@@ -46,7 +46,7 @@ class Tai_khoansController extends BaseController {
 		$input = array(
 			'username' => Input::get('username'),
 			'password' => Hash::Make(Input::get('password')),
-			'ma_quyen' => Input::get('ma_quyen')
+			'PhanQuyen_Id' => Input::get('PhanQuyen_Id')
 			);
 		$validation = Validator::make($input, Tai_khoan::$rules);
 
@@ -139,12 +139,12 @@ class Tai_khoansController extends BaseController {
         
         if (Auth::attempt($user)) {
             return Redirect::route('home')
-                ->with('flash_notice', 'You are successfully logged in.');
+                ->with('flash_notice', 'Bạn đã đăng nhập thành công!!!');
         }
         
         // authentication failure! lets go back to the login page
         return Redirect::route('login')
-            ->with('flash_error', 'Your username/password combination was incorrect.')
+            ->with('flash_error', 'Username hoặc Password không đúng')
             ->withInput();
 	}
 

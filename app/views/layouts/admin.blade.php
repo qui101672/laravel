@@ -103,10 +103,11 @@
                                     <span class="label"><i class=" icon-share-alt"></i></span>
                                 </a>
                                 <ul>
-                                    <li><a class="submenu" href="#"><i class="icon-list"></i><span class="hidden-tablet">Thá»ƒ Loáº¡i</span></a></li>
-                                    <li><a class="submenu" href="#"><i class="icon-spinner"></i><span class="hidden-tablet">VÃ²ng Thi</span></a></li> 
-                                    <li><a class="submenu" href="#"><i class="icon-trophy"></i><span class="hidden-tablet">Giáº£i ThÆ°á»Ÿng</span></a></li>
-                                    <li><a class="submenu" href="#"><i class="icon-group"></i><span class="hidden-tablet">ThÃ nh ViÃªn BTC</span></a></li>
+                                    <li><a class="submenu" href="#"><i class="icon-list"></i><span class="hidden-tablet">Thể Loại</span></a></li>
+                                    <li><a class="submenu" href="#"><i class="icon-spinner"></i><span class="hidden-tablet">Vòng Thi</span></a></li> 
+                                    <li><a class="submenu" href="#"><i class="icon-trophy"></i><span class="hidden-tablet">Giải Thuong</span></a></li>
+                                    <li><a class="submenu" href="#"><i class="icon-group"></i><span class="hidden-tablet">Thành Viên BTC</span></a></li>
+                                    <li><a class="submenu" href="#"><i class="icon-group"></i><span class="hidden-tablet">Thành Viên BGK</span></a></li>
                                 </ul>   
                             </li>
                             <li>
@@ -121,17 +122,10 @@
                 <!-- end: Main Menu -->
 
                 <!-- start: Content -->
-                <div id="content" class="span10">
+                <div id="content" class="span12">
 
                     <div class="row-fluid">
-                        <div class="box span10">
-                            <div class="box-header">
-                                
-                            </div>
-                            <div class="box-content">
                                 @yield('main')                                
-                            </div>
-                        </div>
                     </div>
                     <!-- end: Content -->
 

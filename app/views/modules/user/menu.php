@@ -18,10 +18,15 @@
 		                            Home  
 		                        </a>
 		                    </li>
-		                    
+		                    <li>
+		                        <a href="">
+		                            <i class="icon-edit"></i>
+		                            Tin Tức  
+		                        </a>
+		                    </li>
 		                    <?php
 					            if(Auth::check()){
-					            	switch (Auth::user()->ma_quyen) {
+					            	switch (Auth::user()->PhanQuyen_Id) {
 					                    case 1:  
 					                        ?>
 					                        <li class="dropdown">
@@ -48,6 +53,32 @@
 						                    </li>
 					                        <?php
 					                        break;
+				                        case 3:  
+				                        ?>
+				                        <li class="dropdown">
+					                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">CB <i class="icon-angle-down"></i></a>
+					                            <ul class="dropdown-menu">
+					                                <li><span class="list-circle"></span> <a href="about-us.html">About Us</a></li>
+					                                <li><span class="list-circle"></span> <a href="services.html">Services</a></li>
+					                                <li><span class="list-circle"></span> <a href="shortcodes.html">Shortcodes</a></li>
+					                                <li><span class="list-circle"></span> <a href="404.html">404 Error</a></li>
+					                            </ul>
+					                    </li>
+				                        <?php
+				                        break;
+				                        case 4:  
+				                        ?>
+				                        <li class="dropdown">
+					                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">CB <i class="icon-angle-down"></i></a>
+					                            <ul class="dropdown-menu">
+					                                <li><span class="list-circle"></span> <a href="about-us.html">About Us</a></li>
+					                                <li><span class="list-circle"></span> <a href="services.html">Services</a></li>
+					                                <li><span class="list-circle"></span> <a href="shortcodes.html">Shortcodes</a></li>
+					                                <li><span class="list-circle"></span> <a href="404.html">404 Error</a></li>
+					                            </ul>
+					                    </li>
+				                        <?php
+				                        break;
 					                    
 					                }
 					            }

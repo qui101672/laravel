@@ -7,11 +7,11 @@ class Tai_khoan extends Eloquent implements UserInterface, RemindableInterface{
 	public static $rules = array(
 		'username' => 'required',
 		'password' => 'required',
-		'ma_quyen' => 'required'
+		'PhanQuyen_Id' => 'required'
 	);
 	protected $table = 'tai_khoans';
 	protected $hidden = array('password');
-	protected $fillable = array('username','password','ma_quyen');
+	protected $fillable = array('username','password','PhanQuyen_Id');
 
 	/**
 	 * Get the unique identifier for the user.

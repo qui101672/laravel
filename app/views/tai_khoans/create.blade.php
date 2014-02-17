@@ -1,30 +1,25 @@
-@extends('layouts.scaffold')
+@extends('layouts.admin')
 
 @section('main')
+<div class="box spam12">
+    <div class="box-header">
+       <h2><i class="icon-user"> </i>Tạo Tài Khoản</h2>
 
-<h1>Create Tai_khoan</h1>
+    </div>
+    <div class="box-content">
 
 {{ Form::open(array('route' => 'tai_khoans.store')) }}
-	<ul>
-        <li>
+
             {{ Form::label('username', 'Username:') }}
             {{ Form::text('username') }}
-        </li>
 
-        <li>
             {{ Form::label('password', 'Password:') }}
             {{ Form::text('password') }}
-        </li>
+            {{ Form::label('PhanQuyen_Id', 'PhanQuyen_Id:') }}
+            {{ Form::input('number', 'PhanQuyen_Id') }}
 
-        <li>
-            {{ Form::label('ma_quyen', 'Ma_quyen:') }}
-            {{ Form::input('number', 'ma_quyen') }}
-        </li>
-
-		<li>
 			{{ Form::submit('Submit', array('class' => 'btn btn-info')) }}
-		</li>
-	</ul>
+
 {{ Form::close() }}
 
 @if ($errors->any())
@@ -32,7 +27,8 @@
 		{{ implode('', $errors->all('<li class="error">:message</li>')) }}
 	</ul>
 @endif
-
+</div>
+</div>
 @stop
 
 

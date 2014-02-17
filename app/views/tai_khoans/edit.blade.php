@@ -1,4 +1,4 @@
-@extends('layouts.scaffold')
+@extends('layouts.admin')
 
 @section('main')
 
@@ -16,8 +16,8 @@
         </li>
 
         <li>
-            {{ Form::label('ma_quyen', 'Ma_quyen:') }}
-            {{ Form::input('number', 'ma_quyen') }}
+            {{ Form::label('PhanQuyen_Id', 'PhanQuyen_Id:') }}
+            {{ Form::input('number', 'PhanQuyen_Id') }}
         </li>
 
 		<li>

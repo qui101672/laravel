@@ -37,7 +37,7 @@ Route::filter('auth', function()
 {
             if (Auth::guest()) {
                 return Redirect::route('login')
-                                ->with('error_message', 'Vui lòng đăng nhập hệ thống bằng tài khoản thư viên cung cấp.');
+                                ->with('error_message', 'Vui lòng đăng nhập vào hệ thống bằng tài khoản CTU.');
             }
           
 });
@@ -62,7 +62,7 @@ Route::filter('auth.basic', function()
 Route::filter('guest', function()
 {
             if (Auth::check()) {
-                return Redirect::route('home')->with('flash_notice','You are already logged in');
+                return Redirect::route('home')->with('flash_notice','Đăng Nhập Thành Công');
             }
 });
 

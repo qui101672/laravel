@@ -14,6 +14,11 @@ class DatabaseSeeder extends Seeder {
 		// $this->call('UserTableSeeder');
 		$this->call('Tai_khoansTableSeeder');
 		$this->call('Bai_vietsTableSeeder');
+		$this->call('The_loai_bai_vietsTableSeeder');
+		$this->call('NganhsTableSeeder');
+		$this->call('Don_visTableSeeder');
+		$this->call('Sinh_viensTableSeeder');
+		$this->call('Can_bosTableSeeder');
 	}
 
 }

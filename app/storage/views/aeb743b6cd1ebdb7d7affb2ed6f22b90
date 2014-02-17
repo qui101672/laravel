@@ -1,0 +1,12 @@
+<div class="modules"> 
+        <center style="margin:10px;"><?php if(Auth::check()): ?>
+            <p>Xin Chào! <?php echo Auth::user()->username;; ?></p>
+            <?php echo link_to_route('logout', 'Đăng Xuất',array(), array('class' => 'btn btn-info')); ?>
+        <?php else: ?>
+            <?php echo link_to_route('login', 'Đăng Nhập',array(), array('class' => 'btn btn-info')); ?>
+        <?php endif; ?>
+
+    <?php if(Session::has('flash_notice')): ?>
+        <div id="flash_notice"><?php echo Session::get('flash_notice'); ?></div>
+    <?php endif; ?></center>
+</div>

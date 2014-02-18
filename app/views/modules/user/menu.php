@@ -19,7 +19,7 @@
 		                        </a>
 		                    </li>
 		                    <li>
-		                        <a href="">
+		                        <a href="<?php echo asset('tin_tuc') ?>">
 		                            <i class="icon-edit"></i>
 		                            <span>Tin Tức</span>  
 		                        </a>

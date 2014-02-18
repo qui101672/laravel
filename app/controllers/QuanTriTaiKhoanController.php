@@ -14,8 +14,9 @@ class QuanTriTaiKhoanController extends BaseController {
 		$this->tai_khoan = $tai_khoan;
 	}
 	public function index()
-	{
-        return View::make('quantritaikhoans.index');
+	{	
+ 		$tai_khoan = $this->tai_khoan->all();
+        return View::make('quantritaikhoan.index', compact('tai_khoan'));
 	}
 
 	/**
@@ -25,7 +26,7 @@ class QuanTriTaiKhoanController extends BaseController {
 	 */
 	public function create()
 	{
-        return View::make('quantritaikhoans.create');
+        return View::make('quantritaikhoan.create');
 	}
 
 	/**
@@ -46,7 +47,9 @@ class QuanTriTaiKhoanController extends BaseController {
 	 */
 	public function show($id)
 	{
-        return View::make('quantritaikhoans.show');
+        $tai_khoan = $this->tai_khoan->findOrFail($id);
+
+		return View::make('quantritaikhoan.show', compact('tai_khoan'));
 	}
 
 	/**
@@ -57,7 +60,15 @@ class QuanTriTaiKhoanController extends BaseController {
 	 */
 	public function edit($id)
 	{
-        return View::make('quantritaikhoans.edit');
+		$tai_khoan = $this->tai_khoan->find($id);
+		
+		if (is_null($tai_khoan))
+		{
+			return Redirect::route('quantritaikhoan.edit');
+		}
+
+		return View::make('quantritaikhoan.edit', compact('tai_khoan'));
+		
 	}
 
 	/**
@@ -68,7 +79,21 @@ class QuanTriTaiKhoanController extends BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$input = array_except(Input::all(), '_method');
+		$validation = Validator::make($input, Tai_khoan::$rules);
+
+		if ($validation->passes())
+		{
+			$tai_khoan = $this->tai_khoan->find($id);
+			$tai_khoan->update($input);
+
+			return Redirect::route('tai_khoan.show', $id);
+		}
+
+		return Redirect::route('tai_khoan.edit', $id)
+			->withInput()
+			->withErrors($validation)
+			->with('message', 'There were validation errors.');
 	}
 
 	/**
@@ -79,7 +104,9 @@ class QuanTriTaiKhoanController extends BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		$this->tai_khoan->find($id)->delete();
+
+		return Redirect::route('tai_khoan.index');
 	}
 
 }

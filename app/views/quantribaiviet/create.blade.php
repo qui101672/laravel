@@ -12,7 +12,12 @@
                 <div class="control-group">
                     {{ Form::label('the_loai_bai_viet', 'Thể Loại Bài Viết',array('class'=>'control-label')) }}
                   <div class="controls">
-                    {{ Form::text('the_loai_bai_viet',null,array('class'=> 'help-inline')) }}
+                    <select name="TheLoaiBaiViets_Id">
+                    <?php
+                      foreach ($the_loai_bai_viet as $the_loai_bai_viet)
+                      echo '<option value='.$the_loai_bai_viet->id.'>'.$the_loai_bai_viet->ten_the_loai_bai_viet.'</option>';                        
+                    ?>
+                    </select>
                   </div>
                 </div>
                 <div class="control-group">
@@ -32,12 +37,6 @@
                     {{ Form::label('noi_dung_bai_viet', 'Nội Dung Bài Viết:',array('class'=>'control-label')) }}
                   <div class="controls">
                     {{ Form::textarea('noi_dung_bai_viet',null,array('class'=> 'cleditor')) }}
-                  </div>
-                </div>
-                <div class="control-group">
-                    {{ Form::label('tieu_de_bai_viet', 'Tiêu Đề:',array('class'=>'control-label')) }}
-                  <div class="controls">
-                    {{ Form::text('tieu_de_bai_viet',null,array('class'=> 'help-inline')) }}
                   </div>
                 </div>
                 <div class="control-group">

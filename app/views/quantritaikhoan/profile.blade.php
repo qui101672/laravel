@@ -44,20 +44,19 @@
 				<td>{{{ $info_user->Lops_Id }}}</td>
 			</tr>
 	 		<tr>
-	 		<td colspan="2">
-	 		{{ link_to_route('thong_tin.edit', 'Edit', array($info_user->id), array('class' => 'btn btn-info')) }}
-	        </td> 
+	 		<td>{{ link_to_route('sinh_viens.edit', 'Edit', array($info_user->id), array('class' => 'btn btn-info')) }}
+	                    </td> 
 	        </tr>
 		</tbody>
 	
-	@elseif(Auth::user()->doi_tuong == 'Cán Bộ')
+	@else
 		<tbody>
 			<tr>
 				<td colspan="2"><center><h2>Thông Tin Cán Bộ</h2></center></td>
 			</tr>
 			<tr>
 				<td>Mã Số Cán Bộ</td>
-				<td>{{{ $info_user->mscb}}}</td>
+				<td>{{{ $info_user->mscb }}}</td>
 			</tr>
 			<tr>
 				<td>Họ Tên</td>
@@ -96,11 +95,10 @@
 				<td>{{{ $info_user->DonVis_Id }}}</td>
 			</tr>
 	 		<tr>
-	 		<td colspan="2">
-	 		{{ link_to_route('thong_tin.edit', 'Edit', array($info_user->id), array('class' => 'btn btn-info')) }}
-	        </td> 
+	 		<td>{{ link_to_route('sinh_viens.edit', 'Edit', array($info_user->id), array('class' => 'btn btn-info')) }}
+	                    </td> 
 	        </tr>
-
+	 		 
 		</tbody>
 	
 	@endif

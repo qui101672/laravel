@@ -19,17 +19,19 @@
 */
 include('config/constant/roles.php');
 
+Route::group(array('before' => 'guest'), function()
+{
+    Route::post('login', array('before' => 'csrf', 'uses' => 'NguoiDungTaiKhoanController@login'));
 
-
-
-
-
-
-
-
-
+    Route::get('login', array('as' => 'login', function () { 
+        return View::make('nguoidungtaikhoan.login');
+    }));
+    
+});
+Route::resource('tin_tuc', 'NguoiDungBaiVietController');
 Route::get('/', array('as' => 'home', 'uses' => 'NguoiDungBaiVietController@index'));
 
+Route::resource('tai_khoan','QuanTriTaiKhoanController');
 
 Route::group(array('before' => 'auth'), function()
 {
@@ -39,13 +41,14 @@ Route::group(array('before' => 'auth'), function()
 	    return Redirect::route('home')
 	        ->with('flash_notice', 'Bạn đã đăng xuất khỏi hệ thống!!!');
 		}));
-    //nguoi dung
-    Route::get('profile', array('uses' => 'NguoiDungTaiKhoanController@profile'));
-    Route::resource('thong_tin','NguoiDungTaiKhoanController');
+        //nguoi dung
+        Route::get('profile', array('uses' => 'NguoiDungTaiKhoanController@profile'));
+        Route::resource('thong_tin','NguoiDungTaiKhoanController');
+
 
     if(Session::get('role') == 'admin'){
     	//quan ly bai viet
-    Route::resource('bai_viet','QuanTriBaiVietController');
+        Route::resource('bai_viet','QuanTriBaiVietController');
     } elseif(Session::get('role') == 'sinhvien'){
 
     } elseif(Session::get('role') == 'canbo'){
@@ -61,14 +64,3 @@ Route::group(array('before' => 'auth'), function()
     }
 });
 
-Route::group(array('before' => 'guest'), function()
-{
- 	
-	Route::post('login', array('before' => 'csrf', 'uses' => 'NguoiDungTaiKhoanController@login'));
-
-	Route::get('login', array('as' => 'login', function () { 
-		return View::make('nguoidungtaikhoan.login');
-	}));
-
-	Route::resource('tin_tuc', 'NguoiDungBaiVietController');
-});

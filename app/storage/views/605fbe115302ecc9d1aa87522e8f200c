@@ -8,7 +8,7 @@
         <?php echo Form::model($bai_viet, array('method' => 'PATCH', 'route' => array('bai_viets.update', $bai_viet->id))); ?>
              
                 <?php echo Form::label('id', 'Id:'); ?>
-                <?php echo Form::input('number', 'id'); ?>
+                <?php echo Form::text( 'id'); ?>
      
                 <?php echo Form::label('ma_bai_viet', 'Mã Bài Viết:'); ?>
                 <?php echo Form::text('ma_bai_viet'); ?>
@@ -20,13 +20,13 @@
                 <?php echo Form::textarea('noi_dung_bai_viet'); ?>
      
                 <?php echo Form::label('TheLoaiBaiViets_Id', 'Thể Loại:'); ?>
-                <?php echo Form::input('number', 'TheLoaiBaiViets_Id'); ?>
+                <?php echo Form::text( 'TheLoaiBaiViets_Id'); ?>
       
                 <?php echo Form::label('TaiKhoans_Id', 'Người Tạo:'); ?>
-                <?php echo Form::input('number', 'TaiKhoans_Id'); ?>
+                <?php echo Form::text( 'TaiKhoans_Id'); ?>
      
                 <?php echo Form::label('id_nguoi_sua', 'Người Sửa:'); ?>
-                <?php echo Form::input('number', 'id_nguoi_sua'); ?>
+                <?php echo Form::text( 'id_nguoi_sua'); ?>
                 <?php echo Form::label('created_at', 'Thời Gian Tạo:'); ?>
                 <input type="text" class="input-xlarge datepicker" id="created_at"/>
                 <?php echo Form::label('updated_at', 'Thời Gian Sửa:'); ?>

@@ -9,7 +9,7 @@ define("ADMIN",
             ),
            array(
                 "MENU_HE_THONG" =>"Quản lý Bài Viết",
-                "LINK" => "bai_viets",
+                "LINK" => "bai_viet",
                 "ICON" => "icon-edit",
                 "CHILD"=>  array(
                     array(
@@ -19,7 +19,7 @@ define("ADMIN",
                     array(
                         "MENU_HE_THONG" =>"Danh sách bài viết",
                         "ICON" => "icon-edit",
-                        "LINK" => "danhsachbaiviet"))
+                        "LINK" => ""))
             ),
            array(
                 "MENU_HE_THONG" =>"Thanh toán cho SV",
@@ -51,3 +51,51 @@ define("ADMIN",
             )
             )));
 
+define("SINH_VIEN", 
+        serialize(array 
+            (array(
+                "MENU_HE_THONG" =>"Trang chủ",
+                "LINK" => "/",
+                "ICON" => "icon-home",
+                "CHILD"=> null
+            ),
+           array(
+                "MENU_HE_THONG" =>"SINH_VIEN",
+                "LINK" => "bai_viets",
+                "ICON" => "icon-edit",
+                "CHILD"=>  array(
+                    )
+            )
+            )));
+define("CAN_BO", 
+        serialize(array 
+            (array(
+                "MENU_HE_THONG" =>"Trang chủ",
+                "LINK" => "/",
+                "ICON" => "icon-home",
+                "CHILD"=> null
+            ),
+           array(
+                "MENU_HE_THONG" =>"CAN_BO",
+                "LINK" => "bai_viets",
+                "ICON" => "icon-edit",
+                "CHILD"=>  array(
+                    )
+            )
+            )));
+define("QUAN_LY", 
+        serialize(array 
+            (array(
+                "MENU_HE_THONG" =>"Trang chủ",
+                "LINK" => "/",
+                "ICON" => "icon-home",
+                "CHILD"=> null
+            ),
+           array(
+                "MENU_HE_THONG" =>"QUAN_LY",
+                "LINK" => "bai_viets",
+                "ICON" => "icon-edit",
+                "CHILD"=>  array(
+                    )
+            )
+            )));

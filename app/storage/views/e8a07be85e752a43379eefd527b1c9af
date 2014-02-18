@@ -1,0 +1,24 @@
+
+<?php $__env->startSection('main'); ?>
+
+<div class="post-content">
+    <h4 class="title"><b><?php echo e($bai_viet->tieu_de_bai_viet); ?></b></a></h4>
+    <ul class="unstyled post-meta v2 inline">
+        <li><i class="icon-user"></i> 
+            <span class="info">
+            	 <?php
+            	 $Tai_khoan = Tai_khoan::find($bai_viet->TaiKhoans_Id);
+					echo $Tai_khoan->username;
+            	 ?> 
+            </span>
+        </li>
+        <li><i class="icon-calendar"></i> <span class="info"><?php echo e($bai_viet->created_at); ?></span></li>
+    </ul> <!--end post-meta-->
+    <p><?php echo e($bai_viet->noi_dung_bai_viet); ?></p>
+    <p><?php echo e($bai_viet->tag); ?></p>
+    <p><?php echo link_to_route('bai_viets.index', 'Quay Lại Trang Chính', array(),array('class' => 'btn btn-primary' )); ?></p>
+    
+</div> <!--end post-content-->
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.scaffold', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

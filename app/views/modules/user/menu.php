@@ -31,7 +31,7 @@
 					                    case 1:  
 					                        ?>
 					                        <li >
-						                            <a href="<?php echo asset('tai_khoans'); ?>"><i class="icon-edit"></i>Trang Quản Trị</a>
+						                            <a href="<?php echo asset('tai_khoan'); ?>"><i class="icon-edit"></i>Trang Quản Trị</a>
 						                    </li>
 					                        <?php
 					                        break;
@@ -67,6 +67,24 @@
 		                 
 		                  
 		                </ul><!-- end nav -->
+		                <ul class="nav pull-right">
+		                 <?php
+			            if(Auth::check())
+			            {
+			            	?>
+		                	<li class="dropdown">
+		                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i><?php echo Auth::user()->username;?> </a>
+		                            <ul class="dropdown-menu">
+		                                <li><span class="list-circle"></span> <a href="<?php echo asset('profile'); ?>">Thông Tin Cá Nhân</a></li>
+		                                <li><span class="list-circle"></span> <a href="#">Lịch Sử Tham Gia</a></li>
+		                                <li><span class="list-circle"></span> <a href="<?php echo asset('logout'); ?>">Đăng Xuất</a></li>
+
+		                            </ul>
+		                    </li>
+	                    <?php
+		                	}
+	                    ?>
+		                </ul>
 		            </div> <!-- end nav-collapse -->
 		        </div> <!-- end navbar-inner -->
 		    </div> <!-- end navbar -->

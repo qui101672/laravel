@@ -4,6 +4,7 @@
     <div class="nav-collapse sidebar-nav">
         <ul class="nav nav-tabs nav-stacked main-menu">
             <?php
+        if(Auth::check()){
         $getroutename = Route::currentRouteName();
         if (trim($getroutename) == 'index') {
             $getroutename = 'news';
@@ -17,14 +18,17 @@
                 break;
             case 4: $menus = unserialize(QUAN_LY); 
                 break;
-        }
-
+            }
         foreach ($menus as $menu) {
             if (is_array($menu["CHILD"])) {
                 $count = count($menu["CHILD"]);
                 ?>
                 <li>
-                    <a href='<?php echo asset($menu['LINK']); ?>' class="dropmenu"><i class="<?= $menu['ICON'] ?>"></i><?php echo $menu['MENU_HE_THONG'] ?><span class="label"><?php echo $count; ?></span></a>
+                    <a href='<?php echo asset($menu['LINK']); ?>' class="dropmenu">
+                        <i class="<?= $menu['ICON'] ?>"></i>
+                        <?php echo $menu['MENU_HE_THONG'] ?>
+                        <span class="label"><?php echo $count; ?></span>
+                    </a>
                     <ul>
                         <?php
                         $children = $menu["CHILD"];
@@ -52,6 +56,8 @@
                 </li>
                 <?php
             }
+        }
+        
         }
         ?>
         </ul>

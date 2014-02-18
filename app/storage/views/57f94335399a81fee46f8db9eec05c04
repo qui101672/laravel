@@ -52,7 +52,7 @@
                 </div>
             </div> <!--end span8-->
             <div class="span3">
-                <?php echo $__env->make('modules.user.info', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+                <?php echo $__env->make('modules.user.login', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
                 <?php echo $__env->make('modules.user.theloaibaiviet', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
             </div>
         </div>  

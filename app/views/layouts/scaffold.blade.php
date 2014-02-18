@@ -52,7 +52,7 @@
                 </div>
             </div> <!--end span8-->
             <div class="span3">
-                @include('modules.user.info')
+                @include('modules.user.login')
                 @include('modules.user.theloaibaiviet')
             </div>
         </div>  

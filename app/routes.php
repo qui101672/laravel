@@ -8,44 +8,67 @@
 | Here is where you can register all of the routes for an application.
 | It's a breeze. Simply tell Laravel the URIs it should respond to
 | and give it the Closure to execute when that URI is requested.
-|
+|GET /bai_viet                   | bai_viet.index    | QuanTriBaiVietController@index      |                |               |
+|        | GET /bai_viet/create            | bai_viet.create   | QuanTriBaiVietController@create     |                |               |
+|        | POST /bai_viet                  | bai_viet.store    | QuanTriBaiVietController@store      |                |               |
+|        | GET /bai_viet/{bai_viet}        | bai_viet.show     | QuanTriBaiVietController@show       |                |               |
+|        | GET /bai_viet/{bai_viet}/edit   | bai_viet.edit     | QuanTriBaiVietController@edit       |                |               |
+|        | PUT /bai_viet/{bai_viet}        | bai_viet.update   | QuanTriBaiVietController@update     |                |               |
+|        | PATCH /bai_viet/{bai_viet}      |                   | QuanTriBaiVietController@update     |                |               |
+|        | DELETE /bai_viet/{bai_viet}     | bai_viet.destroy  | QuanTriBaiVietController@destroy    |      
 */
 include('config/constant/roles.php');
 
-Route::get('/', array('as' => 'home', 'uses' => 'Bai_vietsController@index'));
 
-Route::post('login', array('before' => 'csrf', 'uses' => 'Tai_khoansController@login'));
 
-Route::get('login', array('as' => 'login', function () { 
-	return View::make('login');
-}))->before('guest');
 
-Route::get('logout', array('as' => 'logout', function () { 
-	Auth::logout();
-    return Redirect::route('home')
-        ->with('flash_notice', 'Bạn đã đăng xuất khỏi hệ thống!!!');
-}))->before('auth');
 
-Route::get('profile', array('as' => 'profile', function () {
-    return View::make('profile');
-}))->before('auth');
 
-Route::get('bai_viets/create', array('uses' => 'Bai_vietsController@create'))->before('auth');
 
-Route::get('bai_viets/danhsachbaiviet', array('uses' => 'Bai_vietsController@danhsachbaiviet'))->before('auth');
 
-Route::post('bai_viets/store', array('uses' => 'Bai_vietsController@store'))->before('auth');
 
-Route::resource('tai_khoans', 'Tai_khoansController');
 
-Route::resource('bai_viets', 'Bai_vietsController');
+Route::get('/', array('as' => 'home', 'uses' => 'NguoiDungBaiVietController@index'));
 
-Route::resource('the_loai_bai_viets', 'The_loai_bai_vietsController');
 
-Route::resource('nganhs', 'NganhsController');
+Route::group(array('before' => 'auth'), function()
+{
+    //Dang Xuat
+    Route::get('logout', array('as' => 'logout', function () { 
+		Auth::logout();
+	    return Redirect::route('home')
+	        ->with('flash_notice', 'Bạn đã đăng xuất khỏi hệ thống!!!');
+		}));
+    //nguoi dung
+    Route::get('profile', array('uses' => 'NguoiDungTaiKhoanController@profile'));
+    Route::resource('thong_tin','NguoiDungTaiKhoanController');
 
-Route::resource('don_vis', 'Don_visController');
+    if(Session::get('role') == 'admin'){
+    	//quan ly bai viet
+    Route::resource('bai_viet','QuanTriBaiVietController');
+    } elseif(Session::get('role') == 'sinhvien'){
 
-Route::resource('sinh_viens', 'Sinh_viensController');
+    } elseif(Session::get('role') == 'canbo'){
 
-Route::resource('can_bos', 'Can_bosController');
+    } elseif(Session::get('role') == 'quanly'){
+
+    } elseif(Session::get('role') == 'thuky'){
+
+    } elseif(Session::get('role') == 'bantochuc'){
+
+    } elseif(Session::get('role') == 'bangiamkhao'){
+
+    }
+});
+
+Route::group(array('before' => 'guest'), function()
+{
+ 	
+	Route::post('login', array('before' => 'csrf', 'uses' => 'NguoiDungTaiKhoanController@login'));
+
+	Route::get('login', array('as' => 'login', function () { 
+		return View::make('nguoidungtaikhoan.login');
+	}));
+
+	Route::resource('tin_tuc', 'NguoiDungBaiVietController');
+});

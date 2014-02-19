@@ -44,11 +44,18 @@ Route::group(array('before' => 'auth'), function()
         //nguoi dung
         Route::get('profile', array('uses' => 'NguoiDungTaiKhoanController@profile'));
         Route::resource('thong_tin','NguoiDungTaiKhoanController');
+        //hoi thi
+        Route::get('hoi_thi',array('as' => 'hoi_tho', function () { 
+        return View::make('quantrihoithi.index');
+    }));
 
 
     if(Session::get('role') == 'admin'){
     	//quan ly bai viet
         Route::resource('bai_viet','QuanTriBaiVietController');
+        //quan ly don vi
+        Route::resource('don_vi','QuanTriDonViController');
+        
     } elseif(Session::get('role') == 'sinhvien'){
 
     } elseif(Session::get('role') == 'canbo'){
@@ -63,4 +70,6 @@ Route::group(array('before' => 'auth'), function()
 
     }
 });
+
+
 

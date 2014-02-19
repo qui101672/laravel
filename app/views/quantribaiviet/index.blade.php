@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('main')
-<div class="box spam12">
+<div class="box span12">
     <div class="box-header">
        <h2><i class="icon-edit"> </i>Danh Sách Bài Viết</h2>
 
@@ -25,7 +25,7 @@
 				<tr>
 					<td>{{{ $bai_viet->ma_bai_viet }}}</td>
 					<td>{{{ $bai_viet->tieu_de_bai_viet }}}</td>
-					<td>{{{ $bai_viet->noi_dung_bai_viet }}}</td>
+					<td>{{{ strip_tags($bai_viet->noi_dung_bai_viet) }}}</td>
 					<td>{{{ $bai_viet->ghi_chu }}}</td>
                     <td>{{ link_to_route('bai_viet.edit', 'Edit', array($bai_viet->id), array('class' => 'btn btn-info')) }}
                     </td>

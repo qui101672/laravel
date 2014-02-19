@@ -19,6 +19,8 @@ class DatabaseSeeder extends Seeder {
 		$this->call('Don_visTableSeeder');
 		$this->call('Sinh_viensTableSeeder');
 		$this->call('Can_bosTableSeeder');
+		$this->call('QuantrihoithisTableSeeder');
+		$this->call('Hoi_thisTableSeeder');
 	}
 
 }

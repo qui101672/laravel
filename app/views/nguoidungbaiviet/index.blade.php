@@ -25,7 +25,8 @@
 	                        </li>
 	                        <li><i class="icon-calendar"></i> <span class="info">{{{$bai_viet->created_at}}}</span></li>
 	                    </ul> <!--end post-meta-->
-	                    <p>{{{ $bai_viet->noi_dung_bai_viet }}}</p>
+	                    <p>{{{ strip_tags($bai_viet->noi_dung_bai_viet) }}}</p>
+
 	                    <div style="float:right;">{{ link_to_route('tin_tuc.show', 'Chi Tiết ....	', array($bai_viet->id)) }}
 	                    </div>
 	                    

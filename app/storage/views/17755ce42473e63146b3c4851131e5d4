@@ -1,0 +1,38 @@
+
+<?php $__env->startSection('main'); ?>
+<div class="box span12">
+    <div class="box-header">
+        <h2>
+            <i class="icon-user"></i><span>Chỉnh Sửa Đơn Vị</span>
+        </h2>
+    </div>
+    <div class="box-content">
+         <?php echo Form::model($don_vi, array('method' => 'PATCH', 'route' => array('don_vi.update', $don_vi->id))); ?>
+
+            <?php echo Form::label('ma_don_vi', 'Ma_don_vi:'); ?>
+            <?php echo Form::input('number', 'ma_don_vi'); ?>
+
+            <?php echo Form::label('ten_don_vi', 'Ten_don_vi:'); ?>
+            <?php echo Form::text('ten_don_vi'); ?>
+
+            <?php echo Form::label('ghi_chu', 'Ghi_chu:'); ?>
+            <?php echo Form::text('ghi_chu'); ?>
+
+            <?php echo Form::submit('Update', array('class' => 'btn btn-info')); ?>
+            <?php echo link_to_route('don_vi.show', 'Cancel', $don_vi->id, array('class' => 'btn')); ?>
+
+<?php echo Form::close(); ?>
+
+<?php if ($errors->any()): ?>
+    <ul>
+        <?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
+    </ul>
+<?php endif; ?>
+    </div>
+</div>
+ 
+
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

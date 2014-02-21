@@ -8,12 +8,23 @@
     <div class="box-content">
         {{ Form::model($bai_viet, array('method' => 'PATCH','class'=>'form-horizontal', 'route' => array('bai_viet.update', $bai_viet->id))) }}
                 <fieldset class="col-sm-12">
+                
                 <div class="form-group">
                   <label class="control-label">Thể Loại Bài Viết:</label>
                   <div class="controls row">
                   <div class="input-group col-sm-4">
                     <span class="input-group-addon"><i class="icon-edit"></i></span>
-                    {{ Form::text('TheLoaiBaiViets_Id',null,array('class'=> 'form-control')) }}
+                    <select name='TheLoaiBaiViets_Id' class="form-control" required="required">
+                      <?php
+                      $the_loai_bai_viet = The_loai_bai_viet::all();
+                      foreach ($the_loai_bai_viet as $the_loai_bai_viet){
+                        ?>
+                        <option value="<?php echo $the_loai_bai_viet->id; ?>" <?php if ($bai_viet->TheLoaiBaiViets_Id == $the_loai_bai_viet->id) echo "selected='selected'"; ?>><?php echo $the_loai_bai_viet->ten_the_loai_bai_viet; ?></option>
+                        <?php
+                      }
+                                           
+                    ?>
+                    </select>
                   </div>  
                   </div>
                 </div>

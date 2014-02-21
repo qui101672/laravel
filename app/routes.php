@@ -31,7 +31,6 @@ Route::group(array('before' => 'guest'), function()
 Route::resource('tin_tuc', 'NguoiDungBaiVietController');
 Route::get('/', array('as' => 'home', 'uses' => 'NguoiDungBaiVietController@index'));
 
-Route::resource('tai_khoan','QuanTriTaiKhoanController');
 
 Route::group(array('before' => 'auth'), function()
 {
@@ -57,10 +56,12 @@ Route::group(array('before' => 'auth'), function()
         Route::resource('don_vi','QuanTriDonViController');
         //quan ly lop
         Route::resource('lop', 'QuanTriLopController');
-        //quan ly lop
+        //quan ly nganh
         Route::resource('nganh', 'QuanTriNganhController');
         //quan ly the loai bai viet
         Route::resource('the_loai_bai_viet', 'QuanTriTheLoaiBaiHatController');
+        //quan ly tai khoan
+        Route::resource('tai_khoan','QuanTriTaiKhoanController');
         
     } elseif(Session::get('role') == 'sinhvien'){
 
@@ -76,8 +77,3 @@ Route::group(array('before' => 'auth'), function()
 
     }
 });
-
-
-
-
-

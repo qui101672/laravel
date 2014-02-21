@@ -11,10 +11,10 @@
 	<table class="table table-striped table-bordered">
 		<thead>
 			<tr>
-				<th>Mã Bài Viết</th>
-				<th>Tiêu Đề</th>
-				<th>Nội Dung</th>
-				<th>Ghi Chú</th>
+				<td>Mã Bài Viết</td>
+				<td>Tiêu Đề</td>
+				<td>Nội Dung</td>
+				<td>Ghi Chú</td>
 			</tr>
 		</thead>
 

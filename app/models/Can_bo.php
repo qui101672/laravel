@@ -12,7 +12,7 @@ class Can_bo extends Eloquent {
 		'que_quan' => 'required',
 		'email' => 'required',
 		'sdt' => 'required',
-		'ghi_chu' => 'required',
+		'ghi_chu' => '',
 		'DonVis_Id' => 'required',
 		'TaiKhoans_Id' => 'required',
 		'chuc_vu' => 'required'

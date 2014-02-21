@@ -92,3 +92,221 @@ Stack trace:
 #26 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
 #27 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
 #28 {main} [] []
+[2014-02-21 22:53:28] log.ERROR: exception 'ErrorException' with message 'Undefined variable: baiviet' in D:\xampp\htdocs\laravel\app\storage\views\315216fa831e2c76d1779f8897cbfa43:20
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\storage\views\315216fa831e2c76d1779f8897cbfa43(20): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 20, Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#6 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'edit', Object(Illuminate\View\View))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('6')
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2014-02-21 23:03:11] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Phan_quyen' not found' in D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f:26
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-21 23:03:26] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Phan_quyen' not found' in D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f:26
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-21 23:03:27] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Phan_quyen' not found' in D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f:26
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-21 23:03:37] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Phan_quyen' not found' in D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f:26
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-21 23:05:25] log.ERROR: exception 'ErrorException' with message 'Undefined variable: bai_viet' in D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f:32
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f(32): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 32, Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#6 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'edit', Object(Illuminate\View\View))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1')
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2014-02-21 23:05:38] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Phan_quyen' not found' in D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f:27
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-21 23:06:06] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Phan_quyen' not found' in D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f:27
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-21 23:06:07] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Phan_quyen' not found' in D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f:27
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-21 23:06:07] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Phan_quyen' not found' in D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f:27
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-21 23:07:30] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Phan_quyen' not found' in D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f:27
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-21 23:07:35] log.ERROR: exception 'ErrorException' with message 'Undefined variable: {"id":1,"ma_quyen":"ad","ten_quyen":"Admin","ghi_chu":null}' in D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f:30
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f(30): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 30, Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#6 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'edit', Object(Illuminate\View\View))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('2')
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2014-02-21 23:07:43] log.ERROR: exception 'ErrorException' with message 'Undefined variable: {"id":1,"ma_quyen":"ad","ten_quyen":"Admin","ghi_chu":null}' in D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f:30
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f(30): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 30, Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#6 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'edit', Object(Illuminate\View\View))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1')
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2014-02-21 23:09:03] log.ERROR: exception 'ErrorException' with message 'Undefined variable: {"id":1,"ma_quyen":"ad","ten_quyen":"Admin","ghi_chu":null}' in D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f:30
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f(30): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 30, Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#6 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'edit', Object(Illuminate\View\View))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('3')
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2014-02-21 23:10:15] log.ERROR: exception 'ErrorException' with message 'Undefined variable: {"id":1,"ma_quyen":"ad","ten_quyen":"Admin","ghi_chu":null}' in D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f:30
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\storage\views\c675acf5458eee963ebf554f2be1f33f(30): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 30, Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#6 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'edit', Object(Illuminate\View\View))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('2')
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2014-02-21 23:13:38] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-21 23:13:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-21 23:14:08] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-21 23:14:53] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-21 23:15:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-21 23:16:10] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-21 23:16:50] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []

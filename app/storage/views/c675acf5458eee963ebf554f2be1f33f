@@ -20,19 +20,28 @@
               </div>
               
               <div class="form-group">
-                    <label class="control-label"><h2>ID Quyền:</h2></label>
+                    <label class="control-label"><h2>Quyền:</h2></label>
                     <div class="controls row">
-                    <div class="input-group col-sm-10">
-                      <span class="input-group-addon"><i class="icon-edit"></i></span>
-                      <?php echo Form::text('PhanQuyen_Id',null,array('class'=> 'form-control')); ?>
-                    </div>  
+                    <div class="input-group col-sm-4">
+                            <select name='PhanQuyen_Id' class="form-control" required="required">
+                            <?php
+                              $phan_quyen = Phan_quyen::all();
+                              foreach ($phan_quyen as $phan_quyen){
+                            ?>
+                                <option value="<?php echo $phan_quyen->id; ?>" <?php if ($tai_khoan->PhanQuyen_Id == $phan_quyen->id) echo "selected='selected'"; ?>>
+                                <?php echo $phan_quyen->ten_quyen; ?></option>
+                            <?php
+                              }                   
+                            ?>
+                            </select> 
+                            </div>
                     </div>
               </div>
                 
-
+</legend>
             <?php echo Form::submit('Update', array('class' => 'btn btn-info')); ?>
             <?php echo link_to_route('tai_khoan.show', 'Cancel', $tai_khoan->id, array('class' => 'btn')); ?>
-            </legend>
+          
           <?php echo Form::close(); ?>
 
 <?php if ($errors->any()): ?>

@@ -14,7 +14,7 @@
 
 
         <title>Hệ Thống Quản Lý Văn Nghệ Trường Đại Học Cần Thơ</title>
-
+        <meta name="viewport" content="width=device-width">
         <!-- Bootstrap Styles -->
         <link href="<?php echo asset('public/user/css/bootstrap.min.css'); ?>" rel="stylesheet">
         <link href="<?php echo asset('public/user/css/bootstrap-responsive.min.css'); ?>" rel="stylesheet">

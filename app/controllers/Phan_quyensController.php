@@ -1,17 +1,17 @@
 <?php
 
-class QuanTriLopController extends BaseController {
+class Phan_quyensController extends BaseController {
 
 	/**
-	 * Lop Repository
+	 * Phan_quyen Repository
 	 *
-	 * @var Lop
+	 * @var Phan_quyen
 	 */
-	protected $lop;
+	protected $phan_quyen;
 
-	public function __construct(Lop $lop)
+	public function __construct(Phan_quyen $phan_quyen)
 	{
-		$this->lop = $lop;
+		$this->phan_quyen = $phan_quyen;
 	}
 
 	/**
@@ -21,9 +21,9 @@ class QuanTriLopController extends BaseController {
 	 */
 	public function index()
 	{
-		$lops = $this->lop->all();
+		$phan_quyens = $this->phan_quyen->all();
 
-		return View::make('quantrilop.index', compact('lops'));
+		return View::make('phan_quyens.index', compact('phan_quyens'));
 	}
 
 	/**
@@ -33,8 +33,7 @@ class QuanTriLopController extends BaseController {
 	 */
 	public function create()
 	{
-		$nganh = Nganh::all();
-		return View::make('quantrilop.create',compact('nganh'));
+		return View::make('phan_quyens.create');
 	}
 
 	/**
@@ -45,16 +44,16 @@ class QuanTriLopController extends BaseController {
 	public function store()
 	{
 		$input = Input::all();
-		$validation = Validator::make($input, Lop::$rules);
+		$validation = Validator::make($input, Phan_quyen::$rules);
 
 		if ($validation->passes())
 		{
-			$this->lop->create($input);
+			$this->phan_quyen->create($input);
 
-			return Redirect::route('lop.index');
+			return Redirect::route('phan_quyens.index');
 		}
 
-		return Redirect::route('lop.create')
+		return Redirect::route('phan_quyens.create')
 			->withInput()
 			->withErrors($validation)
 			->with('message', 'There were validation errors.');
@@ -68,9 +67,9 @@ class QuanTriLopController extends BaseController {
 	 */
 	public function show($id)
 	{
-		$lop = $this->lop->findOrFail($id);
+		$phan_quyen = $this->phan_quyen->findOrFail($id);
 
-		return View::make('quantrilop.show', compact('lop'));
+		return View::make('phan_quyens.show', compact('phan_quyen'));
 	}
 
 	/**
@@ -81,14 +80,14 @@ class QuanTriLopController extends BaseController {
 	 */
 	public function edit($id)
 	{
-		$lop = $this->lop->find($id);
+		$phan_quyen = $this->phan_quyen->find($id);
 
-		if (is_null($lop))
+		if (is_null($phan_quyen))
 		{
-			return Redirect::route('lop.index');
+			return Redirect::route('phan_quyens.index');
 		}
 
-		return View::make('quantrilop.edit', compact('lop'));
+		return View::make('phan_quyens.edit', compact('phan_quyen'));
 	}
 
 	/**
@@ -100,17 +99,17 @@ class QuanTriLopController extends BaseController {
 	public function update($id)
 	{
 		$input = array_except(Input::all(), '_method');
-		$validation = Validator::make($input, Lop::$rules);
+		$validation = Validator::make($input, Phan_quyen::$rules);
 
 		if ($validation->passes())
 		{
-			$lop = $this->lop->find($id);
-			$lop->update($input);
+			$phan_quyen = $this->phan_quyen->find($id);
+			$phan_quyen->update($input);
 
-			return Redirect::route('lop.show', $id);
+			return Redirect::route('phan_quyens.show', $id);
 		}
 
-		return Redirect::route('lop.edit', $id)
+		return Redirect::route('phan_quyens.edit', $id)
 			->withInput()
 			->withErrors($validation)
 			->with('message', 'There were validation errors.');
@@ -124,9 +123,9 @@ class QuanTriLopController extends BaseController {
 	 */
 	public function destroy($id)
 	{
-		$this->lop->find($id)->delete();
+		$this->phan_quyen->find($id)->delete();
 
-		return Redirect::route('lop.index');
+		return Redirect::route('phan_quyens.index');
 	}
 
 }

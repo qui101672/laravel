@@ -9,32 +9,42 @@
     <div class="box-content">
             {{ Form::model($sinh_vien, array('method' => 'PATCH', 'route' => array('thong_tin.update', $sinh_vien->id))) }}
             <div>
-                {{ Form::label('mssv', 'Mssv:') }}
+                {{ Form::label('mssv', 'MSSV:') }}
                 {{ Form::text('mssv') }}
             </div>
 
             <div>
-                {{ Form::label('ho_ten', 'Ho ten:') }}
+                {{ Form::label('ho_ten', 'Họ Tên:') }}
                 {{ Form::text('ho_ten') }}
             </div>
-
+            {{ Form::label('Lops_Id', 'Lớp:') }}
+                <select name='Lops_Id' class="form-control" required="required">
+                        <?php
+                          $lop = Lop::all();
+                          foreach ($lop as $lop){
+                            ?>
+                            <option value="<?php echo $lop->id; ?>" <?php if ($sinh_vien->Lops_Id == $lop->id) echo "selected='selected'"; ?>><?php echo $lop->ten_lop; ?></option>
+                            <?php
+                          }
+                          ?>
+                  </select> 
             <div>
-                {{ Form::label('ngay_sinh', 'Ngay sinh:') }}
+                {{ Form::label('ngay_sinh', 'Ngày Sinh:') }}
                 {{ Form::text('ngay_sinh') }}
             </div>
 
             <div>
-                {{ Form::label('gioi_tinh', 'Gioi tinh:') }}
+                {{ Form::label('gioi_tinh', 'Giới Tính:') }}
                 {{ Form::text('gioi_tinh') }}
             </div>
 
             <div>
-                {{ Form::label('dia_chi', 'Dia chi:') }}
+                {{ Form::label('dia_chi', 'Địa Chỉ:') }}
                 {{ Form::text('dia_chi') }}
             </div>
 
             <div>
-                {{ Form::label('que_quan', 'Que quan:') }}
+                {{ Form::label('que_quan', 'Quê Quán:') }}
                 {{ Form::text('que_quan') }}
             </div>
 
@@ -44,20 +54,16 @@
             </div>
 
             <div>
-                {{ Form::label('sdt', 'Sdt:') }}
+                {{ Form::label('sdt', 'SĐT:') }}
                 {{ Form::text('sdt') }}
             </div>
 
             <div>
-                {{ Form::label('ghi_chu', 'Ghi chu:') }}
+                {{ Form::label('ghi_chu', 'Ghi Chú:') }}
                 {{ Form::text('ghi_chu') }}
             </div>
  
-            {{ Form::label('Lops_Id', 'Lops_Id:') }}
-            {{ Form::text( 'Lops_Id') }}
-   
-            {{ Form::label('TaiKhoans_Id', 'TaiKhoans_Id:') }}
-            {{ Form::text( 'TaiKhoans_Id') }}
+            
 
             {{ Form::submit('Update', array('class' => 'btn btn-info')) }}
             
@@ -81,6 +87,21 @@
                 {{ Form::label('chuc_vu', 'Chức Vụ:') }}
                 {{ Form::text('chuc_vu') }}
             </div>
+                    
+
+            <div>
+                {{ Form::label('DonVis_Id', 'Đơn Vị:') }}
+                <select name='DonVis_Id' class="form-control" required="required">
+                        <?php
+                          $donvi = Don_vi::all();
+                          foreach ($donvi as $donvi){
+                            ?>
+                            <option value="<?php echo $donvi->id; ?>" <?php if ($can_bo->DonVis_Id == $donvi->id) echo "selected='selected'"; ?>><?php echo $donvi->ten_don_vi; ?></option>
+                            <?php
+                          }
+                          ?>
+                  </select> 
+            </div>
             <div>
                 {{ Form::label('ngay_sinh', 'Ngày Sinh:') }}
                 {{ Form::text('ngay_sinh') }}
@@ -92,12 +113,12 @@
             </div>
 
             <div>
-                {{ Form::label('dia_chi', 'Dia chi:') }}
+                {{ Form::label('dia_chi', 'Địa Chỉ:') }}
                 {{ Form::text('dia_chi') }}
             </div>
 
             <div>
-                {{ Form::label('que_quan', 'Que quan:') }}
+                {{ Form::label('que_quan', 'Quê Quán:') }}
                 {{ Form::text('que_quan') }}
             </div>
 
@@ -107,22 +128,15 @@
             </div>
 
             <div>
-                {{ Form::label('sdt', 'Sdt:') }}
+                {{ Form::label('sdt', 'SĐT:') }}
                 {{ Form::text('sdt') }}
             </div>
 
             <div>
-                {{ Form::label('ghi_chu', 'Ghi chu:') }}
+                {{ Form::label('ghi_chu', 'Ghi Chú:') }}
                 {{ Form::text('ghi_chu') }}
             </div>
- 
-            {{ Form::label('Lops_Id', 'Lops_Id:') }}
-            {{ Form::text('Lops_Id') }}
-   
-            {{ Form::label('TaiKhoans_Id', 'TaiKhoans_Id:') }}
-            {{ Form::text('TaiKhoans_Id') }}
-
-            {{ Form::submit('Update', array('class' => 'btn btn-info')) }}
+             {{ Form::submit('Update', array('class' => 'btn btn-info')) }}
             
 
             {{ Form::close() }}

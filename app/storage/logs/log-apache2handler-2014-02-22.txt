@@ -1,0 +1,28 @@
+[2014-02-22 00:05:53] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-22 00:06:07] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-22 00:07:58] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Quyen' not found' in D:\xampp\htdocs\laravel\app\storage\views\5ec4473d70376a83844c4cdb3385eeb5:28
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-22 00:31:46] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []

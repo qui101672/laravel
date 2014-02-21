@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder {
 		$this->call('QuantrihoithisTableSeeder');
 		$this->call('Hoi_thisTableSeeder');
 		$this->call('LopsTableSeeder');
+		$this->call('Phan_quyensTableSeeder');
 	}
 
 }

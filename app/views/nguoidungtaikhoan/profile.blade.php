@@ -16,6 +16,15 @@
 				<td>{{{ $info_user->ho_ten }}}</td>
 			</tr>
 			<tr>
+				<td>Lớp</td>
+				<td> 
+				<?php
+            	 $lop = Lop::find($info_user->Lops_Id);
+					echo $lop->ten_lop;
+            	 ?> 
+            	 </td>
+			</tr>
+			<tr>
 				<td>Giới Tính</td>
 				<td>{{{ $info_user->gioi_tinh }}}</td>
 			</tr>
@@ -39,10 +48,7 @@
 				<td>Số Điện Thoại</td>
 				<td>{{{ $info_user->sdt }}}</td>
 			</tr>
-			<tr>
-				<td>Lớp</td>
-				<td>{{{ $info_user->Lops_Id }}}</td>
-			</tr>
+
 	 		<tr>
 	 		<td colspan="2">
 	 		{{ link_to_route('thong_tin.edit', 'Edit', array($info_user->id), array('class' => 'btn btn-info')) }}
@@ -68,6 +74,15 @@
 				<td>{{{ $info_user->chuc_vu }}}</td>
 			</tr>
 			<tr>
+				<td>Đơn Vị</td>
+				<td> 
+				<?php
+            	 $don_vi = Don_vi::find( $info_user->DonVis_Id);
+					echo $don_vi->ten_don_vi;
+            	 ?> 
+            	 </td>
+			</tr>
+			<tr>
 				<td>Giới Tính</td>
 				<td>{{{ $info_user->gioi_tinh }}}</td>
 			</tr>
@@ -90,10 +105,6 @@
 			<tr>
 				<td>Số Điện Thoại</td>
 				<td>{{{ $info_user->sdt }}}</td>
-			</tr>
-			<tr>
-				<td>Đơn Vị</td>
-				<td>{{{ $info_user->DonVis_Id }}}</td>
 			</tr>
 	 		<tr>
 	 		<td colspan="2">

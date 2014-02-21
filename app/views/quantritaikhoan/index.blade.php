@@ -25,7 +25,8 @@
 								<td>{{{ $tai_khoan->username }}}</td>
 								<td>*******************</td>
 								<?php 
-									$quyen = DB::table('phan_quyens')->where('id',$tai_khoan->PhanQuyen_Id)->first();
+									$quyen =  DB::table('phan_quyens')->where('id', $tai_khoan->PhanQuyen_Id)->first();
+									//$quyen = Phan_quyen::find($tai_khoan->PhanQuyen_Id);
 									echo '<td>'.$quyen->ten_quyen.'</td>';
 								?>
 								

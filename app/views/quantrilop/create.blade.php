@@ -52,7 +52,13 @@
                     <div class="controls row">
                     <div class="input-group col-sm-4">
                       <span class="input-group-addon"><i class="icon-edit"></i></span>
-                      {{ Form::text('Nganhs_Id',null,array('class'=> 'form-control')) }}
+                      <select name='Nganhs_Id' class="form-control" required="required">
+                      <?php
+                      foreach ($nganh as $nganh)
+                      echo '<option value='.$nganh->id.'>'.$nganh->ma_nganh.' -- '.$nganh->ten_nganh.'</option>';                        
+                    ?>
+                    </select>
+                   
                     </div>  
                     </div>
                   </div>

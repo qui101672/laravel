@@ -13,9 +13,9 @@
 <table class="table table-striped table-bordered">
 	<thead>
 		<tr>
-			<th>Ma_don_vi</th>
-				<th>Ten_don_vi</th>
-				<th>Ghi_chu</th>
+			<td>Mã Đơn Vị</td>
+				<td>Tên Đơn Vị</td>
+				<td colspan="3">Ghi Chú</td>
 		</tr>
 	</thead>
 

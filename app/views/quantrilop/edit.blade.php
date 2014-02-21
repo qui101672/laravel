@@ -2,46 +2,84 @@
 
 @section('main')
 
-<h1>Edit Lop</h1>
-{{ Form::model($lop, array('method' => 'PATCH', 'route' => array('lop.update', $lop->id))) }}
-	<ul>
-        <li>
-            {{ Form::label('ma_lop', 'Ma_lop:') }}
-            {{ Form::text('ma_lop') }}
-        </li>
+<div class="box span12">
+    <div class="box-header">
+        <h2><i class="icon-edit"></i>Chỉnh Sửa Lớp</h2>
+    </div>
+    <div class="box-content">
+    {{ Form::model($lop, array('method' => 'PATCH','class'=>'form-horizontal', 'route' => array('lop.update', $lop->id))) }}
+        <fieldset class="col-sm-12">
+            <div class="form-group">
+                  <label class="control-label" for="date01">Mã Lớp:</label>
+                  <div class="controls row">
+                  <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="icon-edit"></i></span>
+                    {{ Form::text('ma_lop',null,array('class'=> 'form-control')) }}
+                  </div>  
+                  </div>
+                </div>
+            <div class="form-group">
+                  <label class="control-label" for="date01">Tên Lớp:</label>
+                  <div class="controls row">
+                  <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="icon-edit"></i></span>
+                    {{ Form::text('ten_lop',null,array('class'=> 'form-control')) }}
+                  </div>  
+                  </div>
+                </div>
+            <div class="form-group">
+                  <label class="control-label" for="date01">Số Lượng:</label>
+                  <div class="controls row">
+                  <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="icon-edit"></i></span>
+                    {{ Form::text('so_luong',null,array('class'=> 'form-control')) }}
+                  </div>  
+                  </div>
+                </div>
+            <div class="form-group">
+                  <label class="control-label" for="date01">Khóa Học:</label>
+                  <div class="controls row">
+                  <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="icon-edit"></i></span>
+                    {{ Form::text('khoa_hoc',null,array('class'=> 'form-control')) }}
+                  </div>  
+                  </div>
+                </div>
+            <div class="form-group">
+                  <label class="control-label">Ngành:</label>
+                  <div class="controls row">
+                  <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="icon-edit"></i></span>
+                    <select name='Nganhs_Id' class="form-control" required="required">
+                      <?php
+                      $nganh = Nganh::all();
+                      foreach ($nganh as $nganh){
+                        ?>
+                        <option value="<?php echo $nganh->id; ?>" <?php if ($lop->Nganhs_Id == $nganh->id) echo "selected='selected'"; ?>><?php echo $nganh->ten_nganh; ?></option>
+                        <?php
+                      }                     
+                    ?>
+                    </select>
+                  </div>  
+                  </div>
+                </div>
 
-        <li>
-            {{ Form::label('ten_lop', 'Ten_lop:') }}
-            {{ Form::text('ten_lop') }}
-        </li>
-
-        <li>
-            {{ Form::label('so_luong', 'So_luong:') }}
-            {{ Form::input('number', 'so_luong') }}
-        </li>
-
-        <li>
-            {{ Form::label('khoa_hoc', 'Khoa_hoc:') }}
-            {{ Form::input('number', 'khoa_hoc') }}
-        </li>
-
-        <li>
-            {{ Form::label('Nganhs_Id', 'Nganhs_Id:') }}
-            {{ Form::input('number', 'Nganhs_Id') }}
-        </li>
-
-        <li>
-            {{ Form::label('ghi_chu', 'Ghi_chu:') }}
-            {{ Form::textarea('ghi_chu') }}
-        </li>
-
-		<li>
+            <div class="form-group">
+                  <label class="control-label" for="date01">Ghi Chú:</label>
+                  <div class="controls row">
+                  <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="icon-edit"></i></span>
+                    {{ Form::text('ghi_chu',null,array('class'=> 'form-control')) }}
+                  </div>  
+                  </div>
+                </div>
+        </fieldset>
 			{{ Form::submit('Update', array('class' => 'btn btn-info')) }}
 			{{ link_to_route('lop.show', 'Cancel', $lop->id, array('class' => 'btn')) }}
-		</li>
-	</ul>
-{{ Form::close() }}
-
+ 
+    {{ Form::close() }}
+</div>
+</div>
 @if ($errors->any())
 	<ul>
 		{{ implode('', $errors->all('<li class="error">:message</li>')) }}

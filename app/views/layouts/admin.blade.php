@@ -20,7 +20,7 @@
         <link href="<?php echo asset('public/admin/css/retina.css'); ?>" rel="stylesheet" />
         <!-- end: CSS -->
 
-
+        <meta name="viewport" content="width=device-width">
         <!-- start: Favicon and Touch Icons -->
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo asset('public/admin/ico/apple-touch-icon-144-precomposed.png'); ?>" />
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo asset('public/admin/ico/apple-touch-icon-114-precomposed.png'); ?>" />
@@ -66,8 +66,8 @@
 
                 <footer>
                     <p>
-                        <span style="text-align:left;float:left">&copy; 2013 <a href="http://bootstrapmaster.com" alt="Bootstrap Themes">creativeLabs</a></span>
-                        <span class="hidden-phone" style="text-align:right;float:right">Powered by: <a href="http://admintemplates.co" alt="Bootstrap Admin Templates">SimpliQ</a></span>
+                        <span style="text-align:right;float:right">&copy; 2014 <a href="http://ctu.edu.vn" alt="Đại Học Cần Thơ">Hệ Thống Quản Lý Đăng Ký Văn Nghệ Trường Đại Học Cần Thơ</a></span>
+                         
                     </p>
 
                 </footer>

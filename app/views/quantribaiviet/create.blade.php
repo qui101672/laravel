@@ -14,7 +14,7 @@
                   <div class="controls row">
                   <div class="input-group col-sm-4">
                     <span class="input-group-addon"><i class="icon-star"></i></span>
-                    <select name='TheLoaiBaiViets ' id="the_loai_bai_viet" class="form-control" required="required">
+                    <select name='TheLoaiBaiViets_Id' class="form-control" required="required">
                       <?php
                       foreach ($the_loai_bai_viet as $the_loai_bai_viet)
                       echo '<option value='.$the_loai_bai_viet->id.'>'.$the_loai_bai_viet->ten_the_loai_bai_viet.'</option>';                        

@@ -9,6 +9,6 @@ class Lop extends Eloquent {
 		'so_luong' => 'required',
 		'khoa_hoc' => 'required',
 		'Nganhs_Id' => 'required',
-		'ghi_chu' => 'required'
+		'ghi_chu' => ''
 	);
 }

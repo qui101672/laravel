@@ -14,10 +14,10 @@
 	<table class="table table-striped table-bordered">
 		<thead>
 			<tr>
-				<td>Ma_nganh</td>
-				<td>Ten_nganh</td>
-				<td>DonVis_Id</td>
-				<td colspan="3">Ghi_chu</td>
+				<td>Mã Ngành</td>
+				<td>Tên Ngành</td>
+				<td>Đơn Vị</td>
+				<td colspan="3">Ghi Chú</td>
 			</tr>
 		</thead>
 
@@ -26,7 +26,11 @@
 				<tr>
 					<td>{{{ $nganh->ma_nganh }}}</td>
 					<td>{{{ $nganh->ten_nganh }}}</td>
-					<td>{{{ $nganh->DonVis_Id }}}</td>
+					<?php 
+						$donvi = Don_vi::find($nganh->DonVis_Id);
+						echo '<td>'.$donvi->ten_don_vi.'</td>';
+								?>
+ 
 					<td>{{{ $nganh->ghi_chu }}}</td>
                     <td>{{ link_to_route('nganh.edit', 'Edit', array($nganh->id), array('class' => 'btn btn-info')) }}</td>
                     <td>

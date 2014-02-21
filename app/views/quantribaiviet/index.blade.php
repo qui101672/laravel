@@ -1,14 +1,12 @@
 @extends('layouts.admin')
 
 @section('main')
-<div class="box span12">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<div class="box">
     <div class="box-header">
        <h2><i class="icon-edit"> </i>Danh Sách Bài Viết</h2>
-
     </div>
     <div class="box-content">
-
-
 @if ($bai_viet->count())
 	<table class="table table-striped table-bordered">
 		<thead>
@@ -46,4 +44,6 @@
 @endif
 	</div>
 </div>
+</div>
+
 @stop

@@ -101,10 +101,13 @@ class QuanTriBaiVietController extends BaseController {
 	public function update($id)
 	{
 		$input = array_except(array(
+			'ma_bai_viet' => Input::get('ma_bai_viet'),
 			'tieu_de_bai_viet' => Input::get('tieu_de_bai_viet'),
 			'noi_dung_bai_viet' => Input::get('noi_dung_bai_viet'),
 			'TheLoaiBaiViets_Id' => Input::get('TheLoaiBaiViets_Id'),
+			'TaiKhoans_Id' => Auth::user()->id,
 			'id_nguoi_sua' => Auth::user()->id,
+			'created_at' => '',
 			'updated_at' => '',
 			'tag' => Input::get('tag'),
 			'ghi_chu' => Input::get('ghi_chu')
@@ -115,7 +118,7 @@ class QuanTriBaiVietController extends BaseController {
 			$bai_viet = $this->bai_viet->find($id);
 			$bai_viet->update($input);
 
-			return Redirect::route('bai_viet.show', $id);
+			return Redirect::route('bai_viet.index');
 		}
 
 		return Redirect::route('bai_viet.edit', $id)
@@ -136,6 +139,7 @@ class QuanTriBaiVietController extends BaseController {
 
 		return Redirect::route('bai_viet.index');
 	}
+
 
 
 

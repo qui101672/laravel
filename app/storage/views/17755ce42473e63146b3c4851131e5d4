@@ -7,19 +7,44 @@
         </h2>
     </div>
     <div class="box-content">
-         <?php echo Form::model($don_vi, array('method' => 'PATCH', 'route' => array('don_vi.update', $don_vi->id))); ?>
+         <?php echo Form::model($don_vi, array('method' => 'PATCH','class'=>'form-horizontal', 'route' => array('don_vi.update', $don_vi->id))); ?>
 
-            <?php echo Form::label('ma_don_vi', 'Ma_don_vi:'); ?>
-            <?php echo Form::input('number', 'ma_don_vi'); ?>
+            <fieldset class="col-sm-12">
+ 
+          <div class="form-group">
+            <label class="control-label">Mã Đơn Vị:</label>
+            <div class="controls row">
+            <div class="input-group col-sm-4">
+              <span class="input-group-addon"><i class="icon-edit"></i></span>
+              <?php echo Form::text('ma_don_vi',null,array('class'=> 'form-control')); ?>
+            </div>  
+            </div>
+          </div>
 
-            <?php echo Form::label('ten_don_vi', 'Ten_don_vi:'); ?>
-            <?php echo Form::text('ten_don_vi'); ?>
+          <div class="form-group">
+            <label class="control-label">Tên Đơn Vị:</label>
+            <div class="controls row">
+            <div class="input-group col-sm-4">
+              <span class="input-group-addon"><i class="icon-edit"></i></span>
+              <?php echo Form::text('ten_don_vi',null,array('class'=> 'form-control')); ?>
+            </div>  
+            </div>
+          </div>
 
-            <?php echo Form::label('ghi_chu', 'Ghi_chu:'); ?>
-            <?php echo Form::text('ghi_chu'); ?>
-
-            <?php echo Form::submit('Update', array('class' => 'btn btn-info')); ?>
+          <div class="form-group">
+            <label class="control-label">Ghi Chú:</label>
+            <div class="controls row">
+            <div class="input-group col-sm-4">
+              <span class="input-group-addon"><i class="icon-edit"></i></span>
+              <?php echo Form::text('ghi_chu',null,array('class'=> 'form-control')); ?>
+            </div>  
+            </div>
+          </div>
+        <div class="form-actions">
+           <?php echo Form::submit('Update', array('class' => 'btn btn-info')); ?>
             <?php echo link_to_route('don_vi.show', 'Cancel', $don_vi->id, array('class' => 'btn')); ?>
+        </div>       
+            
 
 <?php echo Form::close(); ?>
 

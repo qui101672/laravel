@@ -1,0 +1,101 @@
+
+<?php $__env->startSection('main'); ?>
+
+<div class="box">
+        <div class="box-header">
+            <h2><i class="icon-edit"></i>Tạo Bài Viết</h2>
+        </div>
+        <div class="box-content">
+            <?php echo Form::open(array('route' => 'bai_viet.store','class'=>'form-horizontal','role'=>'form')); ?>
+            <fieldset class="col-sm-12">
+                <div class="form-group">
+                  <label class="control-label" for="timepicker1">Thể Loại Bài Viết</label>
+                  <div class="controls row">
+                  <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="icon-star"></i></span>
+                    <select name='TheLoaiBaiViets ' id="the_loai_bai_viet" class="form-control" required="required">
+                      <?php
+                      foreach ($the_loai_bai_viet as $the_loai_bai_viet)
+                      echo '<option value='.$the_loai_bai_viet->id.'>'.$the_loai_bai_viet->ten_the_loai_bai_viet.'</option>';                        
+                    ?>
+                    </select>
+                  </div>  
+                  </div>
+                </div>
+
+               <div class="form-group">
+                  <label class="control-label" for="date01">Mã Bài Viết:</label>
+                  <div class="controls row">
+                  <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="icon-edit"></i></span>
+                    <?php echo Form::text('ma_bai_viet',null,array('class'=> 'form-control')); ?>
+                  </div>  
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label" for="date01">Tiêu Đề:</label>
+                  <div class="controls row">
+                  <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="icon-edit"></i></span>
+                    <?php echo Form::text('tieu_de_bai_viet',null,array('class'=> 'form-control')); ?>
+                  </div>  
+                  </div>
+                </div>
+ 
+                <div class="form-group hidden-xs">
+                  <label class="control-label" for="textarea2">Nội Dung Bài Viết:</label>
+                  <div class="controls">
+                  <textarea class="cleditor" id="noi_dung_bai_viet" name='noi_dung_bai_viet' rows="3"></textarea>
+                  </div>
+                </div>
+ 
+                <div class="form-group">
+                  <label class="control-label" for="date01">Thời Gian Tạo:</label>
+                  <div class="controls row">
+                  <div class="input-group date col-sm-4">
+                    <span class="input-group-addon"><i class="icon-calendar"></i></span>
+                    <input type="text" class="form-control date-picker" name='created_at' data-date-format="dd/mm/yyyy"/>
+                  </div>  
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label">Ghi Chú:</label>
+                  <div class="controls row">
+                  <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="icon-edit"></i></span>
+                    <?php echo Form::text('ghi_chu',null,array('class'=> 'form-control')); ?>
+                  </div>  
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label">Tag:</label>
+                  <div class="controls row">
+                  <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="icon-edit"></i></span>
+                    <?php echo Form::text('tag',null,array('class'=> 'form-control')); ?>
+                  </div>  
+                  </div>
+                </div>
+ 
+                <div class="form-actions">
+                    <?php echo Form::submit('Tạo', array('class' => 'btn btn-info')); ?>
+                </div>   
+    			
+        </fieldset>
+            <?php echo Form::close(); ?>
+
+<?php if ($errors->any()): ?>
+	<ul>
+		<?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
+	</ul>
+<?php endif; ?>
+        </div>
+    </div><!--/span-->
+<?php $__env->stopSection(); ?>
+
+
+
+<?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

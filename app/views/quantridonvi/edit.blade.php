@@ -8,19 +8,44 @@
         </h2>
     </div>
     <div class="box-content">
-         {{ Form::model($don_vi, array('method' => 'PATCH', 'route' => array('don_vi.update', $don_vi->id))) }}
+         {{ Form::model($don_vi, array('method' => 'PATCH','class'=>'form-horizontal', 'route' => array('don_vi.update', $don_vi->id))) }}
 
-            {{ Form::label('ma_don_vi', 'Ma_don_vi:') }}
-            {{ Form::input('number', 'ma_don_vi') }}
+            <fieldset class="col-sm-12">
+ 
+          <div class="form-group">
+            <label class="control-label">Mã Đơn Vị:</label>
+            <div class="controls row">
+            <div class="input-group col-sm-4">
+              <span class="input-group-addon"><i class="icon-edit"></i></span>
+              {{ Form::text('ma_don_vi',null,array('class'=> 'form-control')) }}
+            </div>  
+            </div>
+          </div>
 
-            {{ Form::label('ten_don_vi', 'Ten_don_vi:') }}
-            {{ Form::text('ten_don_vi') }}
+          <div class="form-group">
+            <label class="control-label">Tên Đơn Vị:</label>
+            <div class="controls row">
+            <div class="input-group col-sm-4">
+              <span class="input-group-addon"><i class="icon-edit"></i></span>
+              {{ Form::text('ten_don_vi',null,array('class'=> 'form-control')) }}
+            </div>  
+            </div>
+          </div>
 
-            {{ Form::label('ghi_chu', 'Ghi_chu:') }}
-            {{ Form::text('ghi_chu') }}
-
-            {{ Form::submit('Update', array('class' => 'btn btn-info')) }}
+          <div class="form-group">
+            <label class="control-label">Ghi Chú:</label>
+            <div class="controls row">
+            <div class="input-group col-sm-4">
+              <span class="input-group-addon"><i class="icon-edit"></i></span>
+              {{ Form::text('ghi_chu',null,array('class'=> 'form-control')) }}
+            </div>  
+            </div>
+          </div>
+        <div class="form-actions">
+           {{ Form::submit('Update', array('class' => 'btn btn-info')) }}
             {{ link_to_route('don_vi.show', 'Cancel', $don_vi->id, array('class' => 'btn')) }}
+        </div>       
+            
 
 {{ Form::close() }}
 

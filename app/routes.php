@@ -55,6 +55,12 @@ Route::group(array('before' => 'auth'), function()
         Route::resource('bai_viet','QuanTriBaiVietController');
         //quan ly don vi
         Route::resource('don_vi','QuanTriDonViController');
+        //quan ly lop
+        Route::resource('lop', 'QuanTriLopController');
+        //quan ly lop
+        Route::resource('nganh', 'QuanTriNganhController');
+        //quan ly the loai bai viet
+        Route::resource('the_loai_bai_viet', 'QuanTriTheLoaiBaiHatController');
         
     } elseif(Session::get('role') == 'sinhvien'){
 
@@ -70,6 +76,8 @@ Route::group(array('before' => 'auth'), function()
 
     }
 });
+
+
 
 
 

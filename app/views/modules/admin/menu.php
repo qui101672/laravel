@@ -1,7 +1,7 @@
 <!-- start: Main Menu -->
-<div id="sidebar-left" class="span2">
-    <div class="row-fluid actions "></div>   
-    <div class="nav-collapse sidebar-nav">
+<div id="sidebar-left" class="col-lg-2 col-sm-1">
+    
+    <div class="nav-collapse sidebar-nav collapse navbar-collapse bs-navbar-collapse">
         <ul class="nav nav-tabs nav-stacked main-menu">
             <?php
         if(Auth::check()){
@@ -26,7 +26,7 @@
                 <li>
                     <a href='<?php echo asset($menu['LINK']); ?>' class="dropmenu">
                         <i class="<?= $menu['ICON'] ?>"></i>
-                        <?php echo $menu['MENU_HE_THONG'] ?>
+                        <span class='hidden-sm'><?php echo $menu['MENU_HE_THONG'] ?></span>
                         <span class="label"><?php echo $count; ?></span>
                     </a>
                     <ul>
@@ -35,7 +35,10 @@
                         foreach ($children as $child) {
                             ?>
                             <li>
-                                <a class="submenu" href='<?php echo asset($menu["LINK"]) . "/" . $child['LINK']; ?>'><i class="<?= $menu['ICON'] ?>"></i><span class="hidden-tablet"><?php echo $child['MENU_HE_THONG'] ?></span></a>
+                                <a class="submenu" href='<?php echo asset($menu["LINK"]) . "/" . $child['LINK']; ?>'>
+                                    <i class="<?= $menu['ICON'] ?>"></i>
+                                    <span class="hidden-sm"><?php echo $child['MENU_HE_THONG'] ?></span>
+                                </a>
                             </li>
                             <?php
                         }
@@ -52,15 +55,20 @@
                     echo '';
                 }
                 ?>>
-                    <a class="submenu" href='<?php echo asset($menu['LINK']); ?>'><i class="<?= $menu['ICON'] ?>"></i><span class="hidden-tablet"><?php echo $menu['MENU_HE_THONG'] ?></span></a>
+                    <a class="submenu" href='<?php echo asset($menu['LINK']); ?>'>
+                    <i class="<?= $menu['ICON'] ?>"></i>
+                    <span class="hidden-tabmslet"><?php echo $menu['MENU_HE_THONG'] ?></span>
+                    </a>
                 </li>
                 <?php
             }
         }
         
         }
-        ?>
+        ?>   
         </ul>
     </div>
 </div>
 <!-- end: Main Menu -->
+
+

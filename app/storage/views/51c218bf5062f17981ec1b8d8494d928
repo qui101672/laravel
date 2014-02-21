@@ -1,0 +1,52 @@
+
+<?php $__env->startSection('main'); ?>
+
+<h1>Edit Lop</h1>
+<?php echo Form::model($lop, array('method' => 'PATCH', 'route' => array('lop.update', $lop->id))); ?>
+	<ul>
+        <li>
+            <?php echo Form::label('ma_lop', 'Ma_lop:'); ?>
+            <?php echo Form::text('ma_lop'); ?>
+        </li>
+
+        <li>
+            <?php echo Form::label('ten_lop', 'Ten_lop:'); ?>
+            <?php echo Form::text('ten_lop'); ?>
+        </li>
+
+        <li>
+            <?php echo Form::label('so_luong', 'So_luong:'); ?>
+            <?php echo Form::input('number', 'so_luong'); ?>
+        </li>
+
+        <li>
+            <?php echo Form::label('khoa_hoc', 'Khoa_hoc:'); ?>
+            <?php echo Form::input('number', 'khoa_hoc'); ?>
+        </li>
+
+        <li>
+            <?php echo Form::label('Nganhs_Id', 'Nganhs_Id:'); ?>
+            <?php echo Form::input('number', 'Nganhs_Id'); ?>
+        </li>
+
+        <li>
+            <?php echo Form::label('ghi_chu', 'Ghi_chu:'); ?>
+            <?php echo Form::textarea('ghi_chu'); ?>
+        </li>
+
+		<li>
+			<?php echo Form::submit('Update', array('class' => 'btn btn-info')); ?>
+			<?php echo link_to_route('lop.show', 'Cancel', $lop->id, array('class' => 'btn')); ?>
+		</li>
+	</ul>
+<?php echo Form::close(); ?>
+
+<?php if ($errors->any()): ?>
+	<ul>
+		<?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
+	</ul>
+<?php endif; ?>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

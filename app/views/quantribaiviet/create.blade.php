@@ -2,57 +2,87 @@
 
 @section('main')
 
-<div class="box span12">
+<div class="box">
         <div class="box-header">
             <h2><i class="icon-edit"></i>Tạo Bài Viết</h2>
         </div>
         <div class="box-content">
-            {{ Form::open(array('route' => 'bai_viet.store','class'=>'form-horizontal')) }}
-            <fieldset>
-                <div class="control-group">
-                    {{ Form::label('the_loai_bai_viet', 'Thể Loại Bài Viết',array('class'=>'control-label')) }}
-                  <div class="controls">
-                    <select name="TheLoaiBaiViets_Id">
-                    <?php
+            {{ Form::open(array('route' => 'bai_viet.store','class'=>'form-horizontal','role'=>'form')) }}
+            <fieldset class="col-sm-12">
+                <div class="form-group">
+                  <label class="control-label" for="timepicker1">Thể Loại Bài Viết</label>
+                  <div class="controls row">
+                  <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="icon-star"></i></span>
+                    <select name='TheLoaiBaiViets ' id="the_loai_bai_viet" class="form-control" required="required">
+                      <?php
                       foreach ($the_loai_bai_viet as $the_loai_bai_viet)
                       echo '<option value='.$the_loai_bai_viet->id.'>'.$the_loai_bai_viet->ten_the_loai_bai_viet.'</option>';                        
                     ?>
                     </select>
+                  </div>  
                   </div>
                 </div>
-                <div class="control-group">
-                    {{ Form::label('ma_bai_viet', 'Mã Bài Viết:',array('class'=>'control-label')) }}
-                  <div class="controls">
-                    {{ Form::text('ma_bai_viet',null,array('class'=> 'help-inline')) }}
+
+               <div class="form-group">
+                  <label class="control-label" for="date01">Mã Bài Viết:</label>
+                  <div class="controls row">
+                  <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="icon-edit"></i></span>
+                    {{ Form::text('ma_bai_viet',null,array('class'=> 'form-control')) }}
+                  </div>  
                   </div>
                 </div>
-               
-                <div class="control-group">
-                    {{ Form::label('tieu_de_bai_viet', 'Tiêu Đề:',array('class'=>'control-label')) }}
-                  <div class="controls">
-                    {{ Form::text('tieu_de_bai_viet',null,array('class'=> 'help-inline')) }}
+
+                <div class="form-group">
+                  <label class="control-label" for="date01">Tiêu Đề:</label>
+                  <div class="controls row">
+                  <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="icon-edit"></i></span>
+                    {{ Form::text('tieu_de_bai_viet',null,array('class'=> 'form-control')) }}
+                  </div>  
                   </div>
                 </div>
-                <div class="control-group">
-                    {{ Form::label('noi_dung_bai_viet', 'Nội Dung Bài Viết:',array('class'=>'control-label')) }}
+ 
+                <div class="form-group hidden-xs">
+                  <label class="control-label" for="textarea2">Nội Dung Bài Viết:</label>
                   <div class="controls">
-                    {{ Form::textarea('noi_dung_bai_viet',null,array('class'=> 'cleditor')) }}
+                  <textarea class="cleditor" id="noi_dung_bai_viet" name='noi_dung_bai_viet' rows="3"></textarea>
                   </div>
                 </div>
-                <div class="control-group">
-                    {{ Form::label('ghi_chu', 'Ghi Chú:',array('class'=>'control-label')) }}
-                  <div class="controls">
-                    {{ Form::text('ghi_chu',null,array('class'=> 'help-inline')) }}
+ 
+                <div class="form-group">
+                  <label class="control-label" for="date01">Thời Gian Tạo:</label>
+                  <div class="controls row">
+                  <div class="input-group date col-sm-4">
+                    <span class="input-group-addon"><i class="icon-calendar"></i></span>
+                    <input type="text" class="form-control date-picker" name='created_at' data-date-format="dd/mm/yyyy"/>
+                  </div>  
                   </div>
                 </div>
-                <div class="control-group">
-                    {{ Form::label('tag', 'Tag:',array('class'=>'control-label')) }}
-                  <div class="controls">
-                    {{ Form::text('tag',null,array('class'=> 'help-inline')) }}
+
+                <div class="form-group">
+                  <label class="control-label">Ghi Chú:</label>
+                  <div class="controls row">
+                  <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="icon-edit"></i></span>
+                    {{ Form::text('ghi_chu',null,array('class'=> 'form-control')) }}
+                  </div>  
                   </div>
-                </div> 
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label">Tag:</label>
+                  <div class="controls row">
+                  <div class="input-group col-sm-4">
+                    <span class="input-group-addon"><i class="icon-edit"></i></span>
+                    {{ Form::text('tag',null,array('class'=> 'form-control')) }}
+                  </div>  
+                  </div>
+                </div>
+ 
                 <div class="form-actions">
-                    {{ Form::submit('Submit', array('class' => 'btn btn-info')) }}
+                    {{ Form::submit('Tạo', array('class' => 'btn btn-info')) }}
                 </div>   
     			
         </fieldset>

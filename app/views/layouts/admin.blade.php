@@ -16,9 +16,7 @@
 
         <!-- start: CSS -->
         <link href="<?php echo asset('public/admin/css/bootstrap.min.css'); ?>" rel="stylesheet" />
-        <link href="<?php echo asset('public/admin/css/bootstrap-responsive.min.css'); ?>" rel="stylesheet" />
         <link href="<?php echo asset('public/admin/css/style.min.css '); ?>" rel="stylesheet" />
-        <link href="<?php echo asset('public/admin/css/style-responsive.min.css'); ?>" rel="stylesheet" />
         <link href="<?php echo asset('public/admin/css/retina.css'); ?>" rel="stylesheet" />
         <!-- end: CSS -->
 
@@ -36,18 +34,18 @@
     <body>
         @include('modules.admin.navbar')
 
-        <div class="container-fluid-full">
-            <div class="row-fluid">
+        <div class="container">
+            <div class="row">
                 @include('modules.admin.menu')
 
                 <!-- start: Content -->
-                <div id="content" class="span12">
 
-                    <div class="row-fluid">
-                                @yield('main')                                
+                <div id="content" class="col-lg-10 col-sm-11" style="min-height: 590px;">
+
+                    <div class="row">
+                        @yield('main')                                
                     </div>
                     <!-- end: Content -->
-
                 </div><!--/fluid-row-->
 
                 <div class="modal hide fade" id="myModal">
@@ -74,48 +72,39 @@
 
                 </footer>
 
-            </div><!--/.fluid-container-->
-
-            <!-- start: JavaScript-->
-            <script src="<?php echo asset('public/admin/js/jquery-1.10.2.min.js') ?>"></script>
-            <script src="<?php echo asset('public/admin/js/jquery-migrate-1.2.1.min.js') ?>"></script> 
-            <script src="<?php echo asset('public/admin/js/jquery-ui-1.10.3.custom.min.js') ?>"></script>  
-            <script src="<?php echo asset('public/admin/js/jquery.ui.touch-punch.js') ?>"></script>    
-            <script src="<?php echo asset('public/admin/js/modernizr.js') ?>"></script>    
-            <script src="<?php echo asset('public/admin/js/bootstrap.min.js') ?>"></script>    
-            <script src="<?php echo asset('public/admin/js/jquery.cookie.js') ?>"></script>    
-            <script src="<?php echo asset('public/admin/js/fullcalendar.min.js') ?>"></script> 
-            <script src="<?php echo asset('public/admin/js/jquery.dataTables.min.js') ?>"></script>
-            <script src="<?php echo asset('public/admin/js/excanvas.js') ?>"></script>
-            <script src="<?php echo asset('public/admin/js/jquery.flot.js') ?>"></script>
-            <script src="<?php echo asset('public/admin/js/jquery.flot.pie.js') ?>"></script>
-            <script src="<?php echo asset('public/admin/js/jquery.flot.stack.js') ?>"></script>
-            <script src="<?php echo asset('public/admin/js/jquery.flot.resize.min.js') ?>"></script>
-            <script src="<?php echo asset('public/admin/js/jquery.flot.time.js') ?>"></script>
-            <script src="<?php echo asset('public/admin/js/jquery.chosen.min.js') ?>"></script>    
-            <script src="<?php echo asset('public/admin/js/jquery.uniform.min.js') ?>"></script>       
-            <script src="<?php echo asset('public/admin/js/jquery.cleditor.min.js') ?>"></script>  
-            <script src="<?php echo asset('public/admin/js/jquery.noty.js') ?>"></script>  
-            <script src="<?php echo asset('public/admin/js/jquery.elfinder.min.js') ?>"></script>  
-            <script src="<?php echo asset('public/admin/js/jquery.raty.min.js') ?>"></script>  
-            <script src="<?php echo asset('public/admin/js/jquery.iphone.toggle.js') ?>"></script> 
-            <script src="<?php echo asset('public/admin/js/jquery.uploadify-3.1.min.js') ?>"></script> 
-            <script src="<?php echo asset('public/admin/js/jquery.gritter.min.js') ?>"></script>   
-            <script src="<?php echo asset('public/admin/js/jquery.imagesloaded.js') ?>"></script>  
-            <script src="<?php echo asset('public/admin/js/jquery.masonry.min.js') ?>"></script>   
-            <script src="<?php echo asset('public/admin/js/jquery.knob.modified.js') ?>"></script> 
-            <script src="<?php echo asset('public/admin/js/jquery.sparkline.min.js') ?>"></script> 
-            <script src="<?php echo asset('public/admin/js/counter.min.js') ?>"></script>  
-            <script src="<?php echo asset('public/admin/js/raphael.2.1.0.min.js') ?>"></script>
-            <script src="<?php echo asset('public/admin/js/justgage.1.0.1.min.js') ?>"></script>   
-            <script src="<?php echo asset('public/admin/js/jquery.autosize.min.js') ?>"></script>  
-            <script src="<?php echo asset('public/admin/js/retina.js') ?>"></script>
-            <script src="<?php echo asset('public/admin/js/jquery.placeholder.min.js') ?>"></script>
-            <script src="<?php echo asset('public/admin/js/wizard.min.js') ?>"></script>
-            <script src="<?php echo asset('public/admin/js/core.min.js') ?>"></script> 
-            <script src="<?php echo asset('public/admin/js/charts.min.js') ?>"></script>   
-            <script src="<?php echo asset('public/admin/js/custom.min.js') ?>"></script>
-            <!-- end: JavaScript-->
+            </div>
+            <!--/.fluid-container-->
+            <script src="<?php echo asset('public/admin/js/jquery-2.0.3.min.js')?>"></script>
+            <script type="text/javascript">
+            window.jQuery || document.write("<script src='<?php echo asset('public/admin/js/jquery-2.0.3.min.js')?>>"+"<"+"/script>");
+            </script>
+            <script src="<?php echo asset('public/admin/js/jquery-migrate-1.2.1.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/bootstrap.min.js') ?>"></script>
+            <!-- page scripts -->
+                <script src="<?php echo asset('public/admin/js/jquery-ui-1.10.3.custom.min.js') ?>"></script>
+                <script src="<?php echo asset('public/admin/js/jquery.sparkline.min.js') ?>"></script>
+                <script src="<?php echo asset('public/admin/js/jquery.chosen.min.js') ?>"></script>
+                <script src="<?php echo asset('public/admin/js/jquery.cleditor.min.js') ?>"></script>
+                <script src="<?php echo asset('public/admin/js/jquery.autosize.min.js') ?>"></script>
+                <script src="<?php echo asset('public/admin/js/jquery.placeholder.min.js') ?>"></script>
+                <script src="<?php echo asset('public/admin/js/jquery.maskedinput.min.js') ?>"></script>
+                <script src="<?php echo asset('public/admin/js/jquery.inputlimiter.1.3.1.min.js') ?>"></script>
+                <script src="<?php echo asset('public/admin/js/bootstrap-datepicker.min.js') ?>"></script>
+                <script src="<?php echo asset('public/admin/js/bootstrap-timepicker.min.js') ?>"></script>
+                <script src="<?php echo asset('public/admin/js/moment.min.js') ?>"></script>
+                <script src="<?php echo asset('public/admin/js/daterangepicker.min.js') ?>"></script>
+                <script src="<?php echo asset('public/admin/js/jquery.hotkeys.min.js') ?>"></script>
+                <script src="<?php echo asset('public/admin/js/bootstrap-wysiwyg.min.js') ?>"></script>
+                <script src="<?php echo asset('public/admin/js/bootstrap-colorpicker.min.js') ?>"></script>
+                
+                <!-- theme scripts -->
+                <script src="<?php echo asset('public/admin/js/custom.min.js') ?>"></script>
+                <script src="<?php echo asset('public/admin/js/core.min.js') ?>"></script>
+                
+                <!-- inline scripts related to this page -->
+                <script src="<?php echo asset('public/admin/js/pages/form-elements.js') ?>"></script>
+                
+                <!-- end: JavaScript-->
 
     </body>
 </html>

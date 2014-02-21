@@ -22,6 +22,20 @@ define("ADMIN",
                         "ICON" => "icon-edit",
                         "LINK" => ""))
             ),
+           array(
+                "MENU_HE_THONG" =>"Quản lý  Thể Loại Bài Viết",
+                "LINK" => "the_loai_bai_viet",
+                "ICON" => "icon-edit",
+                "CHILD"=>  array(
+                    array(
+                        "MENU_HE_THONG" =>"Thêm Thể Loại bài viết",
+                        "ICON" => "icon-edit",
+                        "LINK" => "create"),
+                    array(
+                        "MENU_HE_THONG" =>"Danh sách Thể Loại bài viết",
+                        "ICON" => "icon-edit",
+                        "LINK" => ""))
+            ),
 
            array(
                 "MENU_HE_THONG" =>"Quản lý Tài Khoản",

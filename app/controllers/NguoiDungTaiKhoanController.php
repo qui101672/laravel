@@ -46,18 +46,24 @@ class NguoiDungTaiKhoanController extends BaseController {
         
         if (Auth::attempt($user)) {
     		switch (Auth::user()->PhanQuyen_Id) {
-                    case 1: Session::put('role', 'admin');break;
-                    case 2: Session::put('role', 'sinhvien');break;
-                    case 3:	Session::put('role', 'canbo');break;
-                    case 4: Session::put('role', 'quanly');break;
-                    case 5: Session::put('role', 'thuky');break;
-                    case 6: Session::put('role', 'bantochuc');break;
-                    case 7: Session::put('role', 'bangiamkhao');break;
+                    case 1: Session::put('role', 'admin');
+                    break;
+                    case 2: Session::put('role', 'sinhvien');
+                    break;
+                    case 3:	Session::put('role', 'canbo');
+                    break;
+                    case 4: Session::put('role', 'quanly');
+                    break;
+                    case 5: Session::put('role', 'thuky');
+                    break;
+                    case 6: Session::put('role', 'bantochuc');
+                    break;
+                    case 7: Session::put('role', 'bangiamkhao');
+                    break;
                 }
             return Redirect::route('home')
                 ->with('flash_notice', 'Bạn đã đăng nhập thành công!!!');
         }
-        
         // authentication failure! lets go back to the login page
         return Redirect::route('login')
             ->with('flash_error', 'Username hoặc Password không đúng')

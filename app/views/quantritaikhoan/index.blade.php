@@ -1,7 +1,8 @@
 @extends('layouts.admin')
 
 @section('main')
-<div class="box spam12">
+<div class="col-lg-12">
+<div class="box">
     <div class="box-header">
        <h2><i class="icon-user"> </i>Danh Sách Tài Khoản</h2>
 
@@ -9,12 +10,12 @@
     <div class="box-content">
 
 			@if ($tai_khoan->count())
-				<table class="table table-striped table-bordered">
+				<table class="table table-striped table-bordered bootstrap-datatable">
 					<thead>
 						<tr>
-							<th>Username</th>
-							<th>Password</th>
-							<th>Quyền</th>
+							<td>Username</td>
+							<td>Password</td>
+							<td colspan="2">Quyền</td>
 						</tr>
 					</thead>
 
@@ -38,5 +39,6 @@
 			@endif
 			<p>{{ link_to_route('tai_khoan.create', 'Tạo Tài Khoản',array(),array('class'=>'btn btn-primary')) }}</p>
 	</div>
+</div>
 </div>
 @stop

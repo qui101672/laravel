@@ -64,7 +64,7 @@ class QuanTriTaiKhoanController extends BaseController {
 		
 		if (is_null($tai_khoan))
 		{
-			return Redirect::route('quantritaikhoan.edit');
+			return Redirect::route('tai_khoan.index');
 		}
 
 		return View::make('quantritaikhoan.edit', compact('tai_khoan'));
@@ -107,6 +107,11 @@ class QuanTriTaiKhoanController extends BaseController {
 		$this->tai_khoan->find($id)->delete();
 
 		return Redirect::route('tai_khoan.index');
+	}
+	public function logout(){
+		Auth::logout();
+	       return Redirect::route('home')
+	           ->with('flash_notice', 'Bạn đã đăng xuất khỏi hệ thống!!!');
 	}
 
 }

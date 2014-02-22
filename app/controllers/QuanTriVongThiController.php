@@ -1,17 +1,17 @@
 <?php
 
-class Phan_quyensController extends BaseController {
+class QuanTriVongThi extends BaseController {
 
 	/**
-	 * Phan_quyen Repository
+	 * Vong_thi Repository
 	 *
-	 * @var Phan_quyen
+	 * @var Vong_thi
 	 */
-	protected $phan_quyen;
+	protected $vong_thi;
 
-	public function __construct(Phan_quyen $phan_quyen)
+	public function __construct(Vong_thi $vong_thi)
 	{
-		$this->phan_quyen = $phan_quyen;
+		$this->vong_thi = $vong_thi;
 	}
 
 	/**
@@ -21,9 +21,9 @@ class Phan_quyensController extends BaseController {
 	 */
 	public function index()
 	{
-		$phan_quyens = $this->phan_quyen->all();
+		$vong_this = $this->vong_thi->all();
 
-		return View::make('phan_quyens.index', compact('phan_quyens'));
+		return View::make('vong_this.index', compact('vong_this'));
 	}
 
 	/**
@@ -33,7 +33,7 @@ class Phan_quyensController extends BaseController {
 	 */
 	public function create()
 	{
-		return View::make('phan_quyens.create');
+		return View::make('vong_this.create');
 	}
 
 	/**
@@ -44,16 +44,16 @@ class Phan_quyensController extends BaseController {
 	public function store()
 	{
 		$input = Input::all();
-		$validation = Validator::make($input, Phan_quyen::$rules);
+		$validation = Validator::make($input, Vong_thi::$rules);
 
 		if ($validation->passes())
 		{
-			$this->phan_quyen->create($input);
+			$this->vong_thi->create($input);
 
-			return Redirect::route('phan_quyens.index');
+			return Redirect::route('vong_this.index');
 		}
 
-		return Redirect::route('phan_quyens.create')
+		return Redirect::route('vong_this.create')
 			->withInput()
 			->withErrors($validation)
 			->with('message', 'There were validation errors.');
@@ -67,9 +67,9 @@ class Phan_quyensController extends BaseController {
 	 */
 	public function show($id)
 	{
-		$phan_quyen = $this->phan_quyen->findOrFail($id);
+		$vong_thi = $this->vong_thi->findOrFail($id);
 
-		return View::make('phan_quyens.show', compact('phan_quyen'));
+		return View::make('vong_this.show', compact('vong_thi'));
 	}
 
 	/**
@@ -80,14 +80,14 @@ class Phan_quyensController extends BaseController {
 	 */
 	public function edit($id)
 	{
-		$phan_quyen = $this->phan_quyen->find($id);
+		$vong_thi = $this->vong_thi->find($id);
 
-		if (is_null($phan_quyen))
+		if (is_null($vong_thi))
 		{
-			return Redirect::route('phan_quyens.index');
+			return Redirect::route('vong_this.index');
 		}
 
-		return View::make('phan_quyens.edit', compact('phan_quyen'));
+		return View::make('vong_this.edit', compact('vong_thi'));
 	}
 
 	/**
@@ -99,17 +99,17 @@ class Phan_quyensController extends BaseController {
 	public function update($id)
 	{
 		$input = array_except(Input::all(), '_method');
-		$validation = Validator::make($input, Phan_quyen::$rules);
+		$validation = Validator::make($input, Vong_thi::$rules);
 
 		if ($validation->passes())
 		{
-			$phan_quyen = $this->phan_quyen->find($id);
-			$phan_quyen->update($input);
+			$vong_thi = $this->vong_thi->find($id);
+			$vong_thi->update($input);
 
-			return Redirect::route('phan_quyens.show', $id);
+			return Redirect::route('vong_this.show', $id);
 		}
 
-		return Redirect::route('phan_quyens.edit', $id)
+		return Redirect::route('vong_this.edit', $id)
 			->withInput()
 			->withErrors($validation)
 			->with('message', 'There were validation errors.');
@@ -123,9 +123,9 @@ class Phan_quyensController extends BaseController {
 	 */
 	public function destroy($id)
 	{
-		$this->phan_quyen->find($id)->delete();
+		$this->vong_thi->find($id)->delete();
 
-		return Redirect::route('phan_quyens.index');
+		return Redirect::route('vong_this.index');
 	}
 
 }

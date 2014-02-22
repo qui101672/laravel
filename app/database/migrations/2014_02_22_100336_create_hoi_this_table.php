@@ -12,14 +12,14 @@ class CreateHoiThisTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('Hoi_this', function(Blueprint $table) {
+		Schema::create('hoi_this', function(Blueprint $table) {
 			$table->increments('id');
-			$table->sring('ten_chuong_trinh', 255);
+			$table->string('ten_chuong_trinh');
 			$table->date('time_start');
 			$table->date('time_end');
-			$table->string('ghi_chu', 255);
+			$table->integer('DanhMucNams_Id');
 			$table->integer('DanhMucHoiThis_Id');
-			$table->Integer('DanhMucNams_Id');
+			$table->string('ghi_chu');
 			$table->timestamps();
 		});
 	}
@@ -32,7 +32,7 @@ class CreateHoiThisTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('Hoi_this');
+		Schema::drop('hoi_this');
 	}
 
 }

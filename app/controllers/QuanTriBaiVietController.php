@@ -81,7 +81,9 @@ class QuanTriBaiVietController extends BaseController {
 	 * @return Response
 	 */
 	public function edit($id)
-	{
+	{	
+		$the_loai_bai_viet = The_loai_bai_viet::all();
+
 		$bai_viet = $this->bai_viet->find($id);
 
 		if (is_null($bai_viet))
@@ -89,7 +91,8 @@ class QuanTriBaiVietController extends BaseController {
 			return Redirect::route('bai_viet.index');
 		}
 
-		return View::make('quantribaiviet.edit', compact('bai_viet'));
+		return View::make('quantribaiviet.edit', compact('bai_viet'))
+							->with('the_loai_bai_viet',$the_loai_bai_viet);
 	}
 
 	/**

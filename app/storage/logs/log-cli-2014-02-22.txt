@@ -1,0 +1,34 @@
+[2014-02-22 08:08:09] log.ERROR: exception 'ErrorException' with message 'Undefined offset: 1' in D:\xampp\htdocs\laravel\vendor\way\generators\src\Way\Generators\Generators\MigrationGenerator.php:253
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\way\generators\src\Way\Generators\Generators\MigrationGenerator.php(253): Illuminate\Exception\Handler->handleError(8, 'Undefined offse...', 'D:\xampp\htdocs...', 253, Array)
+#1 [internal function]: Way\Generators\Generators\MigrationGenerator->addColumn(Object(stdClass))
+#2 D:\xampp\htdocs\laravel\vendor\way\generators\src\Way\Generators\Generators\MigrationGenerator.php(192): array_map(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\way\generators\src\Way\Generators\Generators\MigrationGenerator.php(125): Way\Generators\Generators\MigrationGenerator->setFields('addColumn')
+#4 D:\xampp\htdocs\laravel\vendor\way\generators\src\Way\Generators\Generators\MigrationGenerator.php(24): Way\Generators\Generators\MigrationGenerator->getUpStub()
+#5 D:\xampp\htdocs\laravel\vendor\way\generators\src\Way\Generators\Generators\Generator.php(53): Way\Generators\Generators\MigrationGenerator->getTemplate(NULL, 'Create_vong_thi...')
+#6 D:\xampp\htdocs\laravel\vendor\way\generators\src\Way\Generators\Commands\MigrationGeneratorCommand.php(56): Way\Generators\Generators\Generator->make('D:\xampp\htdocs...', NULL)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Way\Generators\Commands\MigrationGeneratorCommand->fire()
+#8 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArrayInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArrayInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(124): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArrayInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 D:\xampp\htdocs\laravel\vendor\way\generators\src\Way\Generators\Commands\ResourceGeneratorCommand.php(251): Illuminate\Console\Command->call('generate:migrat...', Array)
+#12 D:\xampp\htdocs\laravel\vendor\way\generators\src\Way\Generators\Commands\ResourceGeneratorCommand.php(82): Way\Generators\Commands\ResourceGeneratorCommand->generateMigration()
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Way\Generators\Commands\ResourceGeneratorCommand->fire()
+#14 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(898): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Way\Generators\Commands\ScaffoldGeneratorCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 D:\xampp\htdocs\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#20 {main} [] []
+[2014-02-22 10:33:53] log.ERROR: exception 'RuntimeException' with message 'Too many arguments.' in D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php:181
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(90): Symfony\Component\Console\Input\ArgvInput->parseArgument('lkl')
+#1 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Input\Input.php(60): Symfony\Component\Console\Input\ArgvInput->parse()
+#2 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(226): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(898): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Way\Generators\Commands\FormDumperCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 D:\xampp\htdocs\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#8 {main} [] []

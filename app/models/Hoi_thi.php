@@ -7,8 +7,8 @@ class Hoi_thi extends Eloquent {
 		'ten_chuong_trinh' => 'required',
 		'time_start' => 'required',
 		'time_end' => 'required',
-		'ghi_chu' => '',
+		'DanhMucNams_Id' => 'required',
 		'DanhMucHoiThis_Id' => 'required',
-		'DanhMucNams_Id' => 'required'
+		'ghi_chu' => ''
 	);
 }

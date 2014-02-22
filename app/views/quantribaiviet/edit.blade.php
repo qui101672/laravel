@@ -16,7 +16,7 @@
                     <span class="input-group-addon"><i class="icon-edit"></i></span>
                     <select name='TheLoaiBaiViets_Id' class="form-control" required="required">
                       <?php
-                      $the_loai_bai_viet = The_loai_bai_viet::all();
+                      //Lay du lieu ban the loai bai viet
                       foreach ($the_loai_bai_viet as $the_loai_bai_viet){
                         ?>
                         <option value="<?php echo $the_loai_bai_viet->id; ?>" <?php if ($bai_viet->TheLoaiBaiViets_Id == $the_loai_bai_viet->id) echo "selected='selected'"; ?>><?php echo $the_loai_bai_viet->ten_the_loai_bai_viet; ?></option>

@@ -1,17 +1,17 @@
 <?php
 
-class QuanTriHoiThiController extends BaseController {
+class QuanTriPhanQuyenController extends BaseController {
 
 	/**
-	 * Hoi_thi Repository
+	 * Phan_quyen Repository
 	 *
-	 * @var Hoi_thi
+	 * @var Phan_quyen
 	 */
-	protected $hoi_thi;
+	protected $phan_quyen;
 
-	public function __construct(Hoi_thi $hoi_thi)
+	public function __construct(Phan_quyen $phan_quyen)
 	{
-		$this->hoi_thi = $hoi_thi;
+		$this->phan_quyen = $phan_quyen;
 	}
 
 	/**
@@ -21,9 +21,9 @@ class QuanTriHoiThiController extends BaseController {
 	 */
 	public function index()
 	{
-		$hoi_this = $this->hoi_thi->all();
+		$phan_quyens = $this->phan_quyen->all();
 
-		return View::make('quantrihoithi.index', compact('hoi_this'));
+		return View::make('phan_quyens.index', compact('phan_quyens'));
 	}
 
 	/**
@@ -33,7 +33,7 @@ class QuanTriHoiThiController extends BaseController {
 	 */
 	public function create()
 	{
-		return View::make('quantrihoithi.create');
+		return View::make('phan_quyens.create');
 	}
 
 	/**
@@ -44,16 +44,16 @@ class QuanTriHoiThiController extends BaseController {
 	public function store()
 	{
 		$input = Input::all();
-		$validation = Validator::make($input, Hoi_thi::$rules);
+		$validation = Validator::make($input, Phan_quyen::$rules);
 
 		if ($validation->passes())
 		{
-			$this->hoi_thi->create($input);
+			$this->phan_quyen->create($input);
 
-			return Redirect::route('hoi_this.index');
+			return Redirect::route('phan_quyens.index');
 		}
 
-		return Redirect::route('hoi_this.create')
+		return Redirect::route('phan_quyens.create')
 			->withInput()
 			->withErrors($validation)
 			->with('message', 'There were validation errors.');
@@ -67,9 +67,9 @@ class QuanTriHoiThiController extends BaseController {
 	 */
 	public function show($id)
 	{
-		$hoi_thi = $this->hoi_thi->findOrFail($id);
+		$phan_quyen = $this->phan_quyen->findOrFail($id);
 
-		return View::make('quantrihoithi.show', compact('hoi_thi'));
+		return View::make('phan_quyens.show', compact('phan_quyen'));
 	}
 
 	/**
@@ -80,14 +80,14 @@ class QuanTriHoiThiController extends BaseController {
 	 */
 	public function edit($id)
 	{
-		$hoi_thi = $this->hoi_thi->find($id);
+		$phan_quyen = $this->phan_quyen->find($id);
 
-		if (is_null($hoi_thi))
+		if (is_null($phan_quyen))
 		{
-			return Redirect::route('hoi_this.index');
+			return Redirect::route('phan_quyens.index');
 		}
 
-		return View::make('quantrihoithi.edit', compact('hoi_thi'));
+		return View::make('phan_quyens.edit', compact('phan_quyen'));
 	}
 
 	/**
@@ -99,17 +99,17 @@ class QuanTriHoiThiController extends BaseController {
 	public function update($id)
 	{
 		$input = array_except(Input::all(), '_method');
-		$validation = Validator::make($input, Hoi_thi::$rules);
+		$validation = Validator::make($input, Phan_quyen::$rules);
 
 		if ($validation->passes())
 		{
-			$hoi_thi = $this->hoi_thi->find($id);
-			$hoi_thi->update($input);
+			$phan_quyen = $this->phan_quyen->find($id);
+			$phan_quyen->update($input);
 
-			return Redirect::route('hoi_this.show', $id);
+			return Redirect::route('phan_quyens.show', $id);
 		}
 
-		return Redirect::route('hoi_this.edit', $id)
+		return Redirect::route('phan_quyens.edit', $id)
 			->withInput()
 			->withErrors($validation)
 			->with('message', 'There were validation errors.');
@@ -123,9 +123,9 @@ class QuanTriHoiThiController extends BaseController {
 	 */
 	public function destroy($id)
 	{
-		$this->hoi_thi->find($id)->delete();
+		$this->phan_quyen->find($id)->delete();
 
-		return Redirect::route('hoi_this.index');
+		return Redirect::route('phan_quyens.index');
 	}
 
 }

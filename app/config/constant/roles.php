@@ -45,13 +45,13 @@ define("ADMIN",
             ),
            array(
                 "MENU_HE_THONG" =>"Quản Lý Hội Thi",
-                "LINK" => "hoi_thi",
+                "LINK" => "hoi_this",
                 "ICON" => "icon-list-alt",
                 "CHILD"=> array(
                     array(
                         "MENU_HE_THONG" =>"Khởi Tạo Hội Thi",
                         "ICON" => "icon-list-alt",
-                        "LINK" => ""),
+                        "LINK" => "create"),
                     array(
                         "MENU_HE_THONG" =>"Tạo Thành Viên BGK",
                         "ICON" => "icon-list-alt",

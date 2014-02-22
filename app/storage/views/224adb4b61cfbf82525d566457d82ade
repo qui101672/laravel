@@ -13,7 +13,7 @@
 				<td>Mã Bài Viết</td>
 				<td>Tiêu Đề</td>
 				<td>Nội Dung</td>
-				<td>Ghi Chú</td>
+				<td colspan="3">Ghi Chú</td>
 			</tr>
 		</thead>
 

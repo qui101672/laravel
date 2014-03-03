@@ -1,0 +1,44 @@
+
+<?php $__env->startSection('main'); ?>
+
+<h1>Create Bai_hat</h1>
+
+<?php echo Form::open(array('route' => 'bai_hats.store')); ?>
+	<ul>
+        <li>
+            <?php echo Form::label('ma_bai_hat', 'Ma_bai_hat:'); ?>
+            <?php echo Form::text('ma_bai_hat'); ?>
+        </li>
+
+        <li>
+            <?php echo Form::label('ten_bai_hat', 'Ten_bai_hat:'); ?>
+            <?php echo Form::text('ten_bai_hat'); ?>
+        </li>
+
+        <li>
+            <?php echo Form::label('nam_sang_tac', 'Nam_sang_tac:'); ?>
+            <?php echo Form::input('number', 'nam_sang_tac'); ?>
+        </li>
+
+        <li>
+            <?php echo Form::label('ghi_chu', 'Ghi_chu:'); ?>
+            <?php echo Form::textarea('ghi_chu'); ?>
+        </li>
+
+		<li>
+			<?php echo Form::submit('Submit', array('class' => 'btn btn-info')); ?>
+		</li>
+	</ul>
+<?php echo Form::close(); ?>
+
+<?php if ($errors->any()): ?>
+	<ul>
+		<?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
+	</ul>
+<?php endif; ?>
+
+<?php $__env->stopSection(); ?>
+
+
+
+<?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

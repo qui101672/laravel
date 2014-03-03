@@ -22,7 +22,7 @@ class QuanTriHoiThiController extends BaseController {
 	public function index()
 	{
 		$hoi_this = $this->hoi_thi->all();
-
+		
 		return View::make('quantrihoithi.index', compact('hoi_this'));
 	}
 
@@ -32,8 +32,11 @@ class QuanTriHoiThiController extends BaseController {
 	 * @return Response
 	 */
 	public function create()
-	{
-		return View::make('quantrihoithi.create');
+	{	
+		$danh_muc_nam = Danh_muc_nam::all();
+		$danh_muc_hoi_thi = Danh_muc_hoi_thi::all();
+		return View::make('quantrihoithi.create')->with('danh_muc_nam', $danh_muc_nam)
+										->with('danh_muc_hoi_thi',$danh_muc_hoi_thi);
 	}
 
 	/**
@@ -43,21 +46,20 @@ class QuanTriHoiThiController extends BaseController {
 	 */
 	public function store()
 	{
-		$input = Input::all();
-		$validation = Validator::make($input, Hoi_thi::$rules);
-
-		if ($validation->passes())
-		{
-			$this->hoi_thi->create($input);
-
-			return Redirect::route('hoi_this.index');
-		}
-
-		return Redirect::route('hoi_this.create')
-			->withInput()
-			->withErrors($validation)
-			->with('message', 'There were validation errors.');
+		$value = 0;
+		$input = array(	'ten_chuong_trinh'=> Input::get('ten_chuong_trinh'),
+						'DanhMucNams_Id'=> Input::get('DanhMucNams_Id'),
+                    	'DanhMucHoiThis_Id'=>Input::get('DanhMucHoiThis_Id'),
+                    	'time_start'=> Input::get('time_start'),
+                    	'time_end'=> Input::get('time_end'),
+                    	'ghi_chu'=> Input::get('ghi_chu')
+                		);
+ 		$id = DB::table('hoi_this')->insertGetId($input);
+		$output = $this->hoi_thi->find($id);
+ 
+		return $output;
 	}
+
 
 	/**
 	 * Display the specified resource.
@@ -67,9 +69,14 @@ class QuanTriHoiThiController extends BaseController {
 	 */
 	public function show($id)
 	{
-		$hoi_thi = $this->hoi_thi->findOrFail($id);
 
-		return View::make('quantrihoithi.show', compact('hoi_thi'));
+		$hoi_thi = $this->hoi_thi->findOrFail($id);
+		$hinh_thuc = DB::table('hinh_thuc_du_this')->where('HoiThis_Id', $id)->get();
+		// foreach ($hinh_thuc_du_this as $hinh_thuc_du_this) {
+		// 	echo $hinh_thuc_du_this->noi_dung_hinh_thuc;
+		// }
+		return View::make('quantrihoithi.show')->with('hoi_thi', $hoi_thi)
+											->with('hinh_thuc',$hinh_thuc);
 	}
 
 	/**
@@ -86,7 +93,6 @@ class QuanTriHoiThiController extends BaseController {
 		{
 			return Redirect::route('hoi_this.index');
 		}
-
 		return View::make('quantrihoithi.edit', compact('hoi_thi'));
 	}
 

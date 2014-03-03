@@ -24,7 +24,7 @@
 	                        </li>
 	                        <li><i class="icon-calendar"></i> <span class="info"><?php echo e($bai_viet->created_at); ?></span></li>
 	                    </ul> <!--end post-meta-->
-	                    <p><?php echo e(strip_tags($bai_viet->noi_dung_bai_viet)); ?></p>
+	                    <p><?php echo e(substr(strip_tags($bai_viet->noi_dung_bai_viet),0,300)); ?></p>
 
 	                    <div style="float:right;"><?php echo link_to_route('tin_tuc.show', 'Chi Tiết ....	', array($bai_viet->id)); ?>
 	                    </div>

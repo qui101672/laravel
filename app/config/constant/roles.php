@@ -8,6 +8,21 @@ define("ADMIN",
                 "ICON" => "icon-home",
                 "CHILD"=> null
             ),
+            array(
+                "MENU_HE_THONG" =>"Quản lý Bài Hát",
+                "LINK" => "bai_hats",
+                "ICON" => "icon-edit",
+                "CHILD"=>  array(
+                    array(
+                        "MENU_HE_THONG" =>"Thêm Bài Hát",
+                        "ICON" => "icon-edit",
+                        "LINK" => "create"),
+                    array(
+                        "MENU_HE_THONG" =>"Danh sách Bài Hát",
+                        "ICON" => "edit",
+                        "LINK" => ""))
+            ),
+            
            array(
                 "MENU_HE_THONG" =>"Quản lý Bài Viết",
                 "LINK" => "bai_viet",
@@ -23,25 +38,18 @@ define("ADMIN",
                         "LINK" => ""))
             ),
            array(
-                "MENU_HE_THONG" =>"Quản lý  Thể Loại Bài Viết",
-                "LINK" => "the_loai_bai_viet",
-                "ICON" => "icon-edit",
+                "MENU_HE_THONG" =>"Quản lý Đơn Vị",
+                "LINK" => "don_vi",
+                "ICON" => "icon-user",
                 "CHILD"=>  array(
                     array(
-                        "MENU_HE_THONG" =>"Thêm Thể Loại bài viết",
+                        "MENU_HE_THONG" =>"Thêm Đơn Vị",
                         "ICON" => "icon-edit",
                         "LINK" => "create"),
                     array(
-                        "MENU_HE_THONG" =>"Danh sách Thể Loại bài viết",
+                        "MENU_HE_THONG" =>"Danh sách Đơn Vị",
                         "ICON" => "icon-edit",
                         "LINK" => ""))
-            ),
-
-           array(
-                "MENU_HE_THONG" =>"Quản lý Tài Khoản",
-                "LINK" => "tai_khoan",
-                "ICON" => "icon-edit",
-                "CHILD"=>  null
             ),
            array(
                 "MENU_HE_THONG" =>"Quản Lý Hội Thi",
@@ -57,29 +65,11 @@ define("ADMIN",
                         "ICON" => "icon-list-alt",
                         "LINK" => ""),
                     array(
-                        "MENU_HE_THONG" =>"Tạo Thành Viên BTC",
-                        "ICON" => "icon-list-alt",
-                        "LINK" => ""),
-                    array(
-                        "MENU_HE_THONG" =>"Tạo Thành Viên BGK",
+                        "MENU_HE_THONG" =>"Danh Sách Hội Thi",
                         "ICON" => "icon-list-alt",
                         "LINK" => ""))
             ),
-            array(
-                "MENU_HE_THONG" =>"Quản lý Đơn Vị",
-                "LINK" => "don_vi",
-                "ICON" => "icon-user",
-                "CHILD"=>  array(
-                    array(
-                        "MENU_HE_THONG" =>"Thêm Đơn Vị",
-                        "ICON" => "icon-edit",
-                        "LINK" => "create"),
-                    array(
-                        "MENU_HE_THONG" =>"Danh sách Đơn Vị",
-                        "ICON" => "icon-edit",
-                        "LINK" => ""))
-            ),
-            array(
+           array(
                 "MENU_HE_THONG" =>"Quản lý Lớp",
                 "LINK" => "lop",
                 "ICON" => "icon-user",
@@ -93,7 +83,7 @@ define("ADMIN",
                         "ICON" => "icon-edit",
                         "LINK" => ""))
             ),
-            array(
+           array(
                 "MENU_HE_THONG" =>"Quản lý Ngành",
                 "LINK" => "nganh",
                 "ICON" => "icon-user",
@@ -106,7 +96,27 @@ define("ADMIN",
                         "MENU_HE_THONG" =>"Danh sách Ngành",
                         "ICON" => "icon-edit",
                         "LINK" => ""))
-            )
+            ),
+           array(
+                "MENU_HE_THONG" =>"Quản lý Tài Khoản",
+                "LINK" => "tai_khoan",
+                "ICON" => "icon-edit",
+                "CHILD"=>  null
+            ),
+           array(
+                "MENU_HE_THONG" =>"Quản lý  Thể Loại Bài Viết",
+                "LINK" => "the_loai_bai_viet",
+                "ICON" => "icon-edit",
+                "CHILD"=>  array(
+                    array(
+                        "MENU_HE_THONG" =>"Thêm Thể Loại bài viết",
+                        "ICON" => "icon-edit",
+                        "LINK" => "create"),
+                    array(
+                        "MENU_HE_THONG" =>"Danh sách Thể Loại bài viết",
+                        "ICON" => "icon-edit",
+                        "LINK" => ""))
+            )                       
             )));
 
 define("SINH_VIEN", 

@@ -16,3 +16,4 @@ class Bai_viet extends Eloquent {
 		'ghi_chu' => ''
 	);
 }
+

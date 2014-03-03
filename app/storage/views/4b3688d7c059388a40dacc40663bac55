@@ -28,7 +28,8 @@
         <link rel="apple-touch-icon-precomposed" href="<?php echo asset('public/admin/ico/apple-touch-icon-57-precomposed.png'); ?>" />
         <link rel="shortcut icon" href="<?php echo asset('public/admin/favicon.ico'); ?>" />
         <!-- end: Favicon and Touch Icons -->   
-
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 
     <body>
@@ -81,29 +82,49 @@
             <script src="<?php echo asset('public/admin/js/jquery-migrate-1.2.1.min.js') ?>"></script>
             <script src="<?php echo asset('public/admin/js/bootstrap.min.js') ?>"></script>
             <!-- page scripts -->
-                <script src="<?php echo asset('public/admin/js/jquery-ui-1.10.3.custom.min.js') ?>"></script>
-                <script src="<?php echo asset('public/admin/js/jquery.sparkline.min.js') ?>"></script>
-                <script src="<?php echo asset('public/admin/js/jquery.chosen.min.js') ?>"></script>
-                <script src="<?php echo asset('public/admin/js/jquery.cleditor.min.js') ?>"></script>
-                <script src="<?php echo asset('public/admin/js/jquery.autosize.min.js') ?>"></script>
-                <script src="<?php echo asset('public/admin/js/jquery.placeholder.min.js') ?>"></script>
-                <script src="<?php echo asset('public/admin/js/jquery.maskedinput.min.js') ?>"></script>
-                <script src="<?php echo asset('public/admin/js/jquery.inputlimiter.1.3.1.min.js') ?>"></script>
-                <script src="<?php echo asset('public/admin/js/bootstrap-datepicker.min.js') ?>"></script>
-                <script src="<?php echo asset('public/admin/js/bootstrap-timepicker.min.js') ?>"></script>
-                <script src="<?php echo asset('public/admin/js/moment.min.js') ?>"></script>
-                <script src="<?php echo asset('public/admin/js/daterangepicker.min.js') ?>"></script>
-                <script src="<?php echo asset('public/admin/js/jquery.hotkeys.min.js') ?>"></script>
-                <script src="<?php echo asset('public/admin/js/bootstrap-wysiwyg.min.js') ?>"></script>
-                <script src="<?php echo asset('public/admin/js/bootstrap-colorpicker.min.js') ?>"></script>
-                
-                <!-- theme scripts -->
-                <script src="<?php echo asset('public/admin/js/custom.min.js') ?>"></script>
-                <script src="<?php echo asset('public/admin/js/core.min.js') ?>"></script>
-                
-                <!-- inline scripts related to this page -->
-                <script src="<?php echo asset('public/admin/js/pages/form-elements.js') ?>"></script>
-                
+            <script src="<?php echo asset('public/admin/js/jquery-ui-1.10.3.custom.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.sparkline.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.chosen.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.cleditor.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.autosize.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.placeholder.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.maskedinput.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.inputlimiter.1.3.1.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/bootstrap-datepicker.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/bootstrap-timepicker.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/moment.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/daterangepicker.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.hotkeys.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/bootstrap-wysiwyg.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/bootstrap-colorpicker.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/wizard.min.js') ?>"></script>
+            
+             
+            
+            <!-- theme scripts -->
+            <script src="<?php echo asset('public/admin/js/custom.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/core.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.noty.min.js') ?>"></script>
+            
+            <!-- inline scripts related to this page -->
+            <script src="<?php echo asset('public/admin/js/pages/form-elements.js') ?>"></script>
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function($) {
+                        $('#btn-hinhthucht').click(function(event) {
+                            /* Act on the event */
+                            $('#box-hinhthucht').removeClass('hidden');
+                        });
+                        $('#btn-taovongthi').click(function(event) {
+                            /* Act on the event */
+                            $('#box-taovongthi').removeClass('hidden');
+                        });
+                        $('#btn-taogiaithuong').click(function(event) {
+                            /* Act on the event */
+                            $('#box-taogiaithuong').removeClass('hidden');
+                        });
+                    });
+                    </script>
                 <!-- end: JavaScript-->
 
     </body>

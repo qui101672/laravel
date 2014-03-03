@@ -21,9 +21,12 @@ Route::group(array('before' => 'guest'), function()
     }));
     
 });
-Route::resource('tin_tuc', 'NguoiDungBaiVietController');
-Route::get('/', array('as' => 'home', 'uses' => 'NguoiDungBaiVietController@index'));
+Route::get('postthu', array('uses' => 'QuanTriHinhThucDuThiController@store'));
 
+Route::resource('tin_tuc', 'NguoiDungBaiVietController');
+
+Route::get('/', array('as' => 'home', 'uses' => 'NguoiDungBaiVietController@index'));
+// Route::get('hoi_this/getid', array('uses' => 'QuanTriHoiThiController@getid'));
 Route::group(array('before' => 'auth'), function()
 {
         //Dang Xuat
@@ -49,7 +52,9 @@ Route::group(array('before' => 'auth'), function()
         Route::resource('tai_khoan','QuanTriTaiKhoanController');
         //quan ly hoi thi
         Route::resource('hoi_this', 'QuanTriHoiThiController');
-        
+        //quan ly hinh thuc du thi
+        Route::resource('hinh_thuc_du_this', 'QuanTriHinhThucDuThiController');
+
     } elseif(Session::get('role') == 'sinhvien'){
 
     } elseif(Session::get('role') == 'canbo'){
@@ -65,11 +70,14 @@ Route::group(array('before' => 'auth'), function()
     }
 });
 
+// Route::resource('danh_muc_nams', 'Danh_muc_namsController');
 
-//Route::resource('hinh_thuc_du_this', 'Hinh_thuc_du_thisController');
+// Route::resource('danh_muc_hoi_this', 'Danh_muc_hoi_thisController');
+
+// Route::resource('bai_hats', 'Bai_hatsController');
+
+// Route::resource('tac_gia', 'Tac_giaController');
+
  
 
-
-//Route::resource('vong_this', 'Vong_thisController');
-
-
+Route::resource('phieu_dang_kies', 'Phieu_dang_kiesController');

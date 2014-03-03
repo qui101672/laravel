@@ -1,6 +1,6 @@
 <?php
 
-class Hinh_thuc_du_thisController extends BaseController {
+class QuanTriHinhThucDuThiController extends BaseController {
 
 	/**
 	 * Hinh_thuc_du_thi Repository
@@ -42,21 +42,22 @@ class Hinh_thuc_du_thisController extends BaseController {
 	 * @return Response
 	 */
 	public function store()
-	{
-		$input = Input::all();
-		$validation = Validator::make($input, Hinh_thuc_du_thi::$rules);
-
-		if ($validation->passes())
-		{
-			$this->hinh_thuc_du_thi->create($input);
-
-			return Redirect::route('hinh_thuc_du_this.index');
-		}
-
-		return Redirect::route('hinh_thuc_du_this.create')
-			->withInput()
-			->withErrors($validation)
-			->with('message', 'There were validation errors.');
+	{	
+		$input = array(
+				'ma_hinh_thuc' => Input::get('ma_hinh_thuc'),
+                'ten_hinh_thuc' => Input::get('ten_hinh_thuc'),
+                'noi_dung_hinh_thuc' => Input::get('noi_dung_hinh_thuc'),
+                'so_luong_yeu_cau' => Input::get('so_luong_yeu_cau'),
+                'so_vong_thi' => Input::get('so_vong_thi'),
+                'ghi_chu' => Input::get('ghi_chu'),
+                'HoiThis_DanhMucNamsId' => Input::get('HoiThis_DanhMucNamsId'),
+                'HoiThis_Id' => Input::get('HoiThis_Id'),
+                'HoiThis_DanhMucHoiThisId' => Input::get('HoiThis_DanhMucHoiThisId')
+			);
+		$id = DB::table('hinh_thuc_du_this')->insertGetId($input);
+		$output = $this->hinh_thuc_du_thi->find($id);
+		return $output;
+		
 	}
 
 	/**

@@ -13,7 +13,7 @@
             <fieldset class="col-sm-12">
  
           <div class="form-group">
-            <label class="control-label">Mã Đơn Vị:</label>
+              <label class="control-label">Mã Đơn Vị:</label>
             <div class="controls row">
             <div class="input-group col-sm-4">
               <span class="input-group-addon"><i class="icon-edit"></i></span>

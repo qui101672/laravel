@@ -72,11 +72,19 @@ class QuanTriHoiThiController extends BaseController {
 
 		$hoi_thi = $this->hoi_thi->findOrFail($id);
 		$hinh_thuc = DB::table('hinh_thuc_du_this')->where('HoiThis_Id', $id)->get();
-		// foreach ($hinh_thuc_du_this as $hinh_thuc_du_this) {
-		// 	echo $hinh_thuc_du_this->noi_dung_hinh_thuc;
-		// }
+		$temp = $hinh_thuc;
+ 
+		foreach ($temp as $key => $value) {
+			$vong_thi[$key] = DB::table('vong_this')->where('HinhThucDuThis_Id', $value->id)->get();
+			$giai_thuong[$key] = DB::table('giai_thuongs')->where('HinhThucDuThis_Id', $value->id)->get();
+		}
+
+ 
+
 		return View::make('quantrihoithi.show')->with('hoi_thi', $hoi_thi)
-											->with('hinh_thuc',$hinh_thuc);
+											->with('hinh_thuc',$hinh_thuc)
+											->with('vong_thi',$vong_thi)
+											->with('giai_thuong',$giai_thuong);
 	}
 
 	/**

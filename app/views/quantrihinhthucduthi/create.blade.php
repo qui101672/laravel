@@ -1,4 +1,4 @@
-@extends('layouts.scaffold')
+@extends('layouts.admin')
 
 @section('main')
 
@@ -38,7 +38,7 @@
 
         <li>
             {{ Form::label('HoiThis_DanhMucsId', 'HoiThis_DanhMucsId:') }}
-            {{ Form::input('number', 'HoiThis_DanhMucsId') }}
+            {{ Form::input('number', 'HoiThis_DanhMucNamsId') }}
         </li>
 
         <li>

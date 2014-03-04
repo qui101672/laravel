@@ -23,7 +23,7 @@ class QuanTriHinhThucDuThiController extends BaseController {
 	{
 		$hinh_thuc_du_this = $this->hinh_thuc_du_thi->all();
 
-		return View::make('hinh_thuc_du_this.index', compact('hinh_thuc_du_this'));
+		return View::make('quantrihinhthucduthi.index', compact('hinh_thuc_du_this'));
 	}
 
 	/**
@@ -33,7 +33,7 @@ class QuanTriHinhThucDuThiController extends BaseController {
 	 */
 	public function create()
 	{
-		return View::make('hinh_thuc_du_this.create');
+		return View::make('quantrihinhthucduthi.create');
 	}
 
 	/**
@@ -70,7 +70,7 @@ class QuanTriHinhThucDuThiController extends BaseController {
 	{
 		$hinh_thuc_du_thi = $this->hinh_thuc_du_thi->findOrFail($id);
 
-		return View::make('hinh_thuc_du_this.show', compact('hinh_thuc_du_thi'));
+		return View::make('quantrihinhthucduthi.show', compact('hinh_thuc_du_thi'));
 	}
 
 	/**
@@ -88,7 +88,7 @@ class QuanTriHinhThucDuThiController extends BaseController {
 			return Redirect::route('hinh_thuc_du_this.index');
 		}
 
-		return View::make('hinh_thuc_du_this.edit', compact('hinh_thuc_du_thi'));
+		return View::make('quantrihinhthucduthi.edit', compact('hinh_thuc_du_thi'));
 	}
 
 	/**

@@ -21,7 +21,6 @@ Route::group(array('before' => 'guest'), function()
     }));
     
 });
-Route::get('postthu', array('uses' => 'QuanTriHinhThucDuThiController@store'));
 
 Route::resource('tin_tuc', 'NguoiDungBaiVietController');
 
@@ -35,7 +34,7 @@ Route::group(array('before' => 'auth'), function()
         Route::get('profile', array('uses' => 'NguoiDungTaiKhoanController@profile'));
         Route::resource('thong_tin','NguoiDungTaiKhoanController');
         //hoi thi
-        Route::resource('tai_khoan','QuanTriTaiKhoanController');
+       
 
     if(Session::get('role') == 'admin'){
     	//quan ly bai viet

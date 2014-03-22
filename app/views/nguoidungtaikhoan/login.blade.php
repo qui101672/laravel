@@ -2,14 +2,16 @@
 
 @section('main')
 
-<form action="" method="POST" class="form-horizontal" role="form">
+<form action="" method="POST" class="" role="form">
     <div class="form-group">
         <legend>Đăng Nhập</legend>
     </div>
+
     {{ Form::label('username', 'Mã Số Sinh Viên/ Cán Bộ') }} 
     {{ Form::text('username', Input::old('username')) }}
     {{ Form::label('password', 'Mật Khẩu') }} 
     {{ Form::password('password') }}
+    <br> 
     <div class="form-group">
         <div class="col-sm-10 col-sm-offset-2">
             <button type="submit" class="btn btn-primary">Đăng Nhập</button>

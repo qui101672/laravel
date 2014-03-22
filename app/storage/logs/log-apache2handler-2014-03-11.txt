@@ -1,0 +1,15 @@
+[2014-03-11 09:25:58] log.ERROR: exception 'Illuminate\Database\Eloquent\ModelNotFoundException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:498
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriHoiThiController.php(73): Illuminate\Database\Eloquent\Model::findOrFail('3')
+#1 [internal function]: QuanTriHoiThiController->show('3')
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('show', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'show', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('3')
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []

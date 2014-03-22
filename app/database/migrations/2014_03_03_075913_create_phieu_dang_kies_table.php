@@ -12,7 +12,7 @@ class CreatePhieuDangKiesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('phieu_dang_kies', function(Blueprint $table) {
+		Schema::create('phieu_dang_kys', function(Blueprint $table) {
 			$table->increments('id');
 			$table->string('ma_phieu_dang_ky', 10);
 			$table->boolean('trang_thai_phieu');

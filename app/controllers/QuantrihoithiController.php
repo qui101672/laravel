@@ -46,17 +46,16 @@ class QuanTriHoiThiController extends BaseController {
 	 */
 	public function store()
 	{
-		$value = 0;
 		$input = array(	'ten_chuong_trinh'=> Input::get('ten_chuong_trinh'),
 						'DanhMucNams_Id'=> Input::get('DanhMucNams_Id'),
-                    	'DanhMucHoiThis_Id'=>Input::get('DanhMucHoiThis_Id'),
+                    	'DanhMucHoiThis_Id'=> Input::get('DanhMucHoiThis_Id'),
                     	'time_start'=> Input::get('time_start'),
                     	'time_end'=> Input::get('time_end'),
                     	'ghi_chu'=> Input::get('ghi_chu')
                 		);
- 		$id = DB::table('hoi_this')->insertGetId($input);
-		$output = $this->hoi_thi->find($id);
- 
+ 	// 	$id = DB::table('hoi_this')->insertGetId($input);
+		// $output = $this->hoi_thi->find($id);
+ 		$output = $this->hoi_thi->find('1');
 		return $output;
 	}
 
@@ -71,7 +70,9 @@ class QuanTriHoiThiController extends BaseController {
 	{
 
 		$hoi_thi = $this->hoi_thi->findOrFail($id);
+
 		$hinh_thuc = DB::table('hinh_thuc_du_this')->where('HoiThis_Id', $id)->get();
+		
 		$temp = $hinh_thuc;
  
 		foreach ($temp as $key => $value) {

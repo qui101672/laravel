@@ -9,12 +9,14 @@
     </div>
     <div class="box-content">
         @if ($don_vis->count())
-        <table class="table table-striped table-bordered">
+        <table class="table table-striped table-bordered bootstrap-datatable datatable">
             <thead>
                 <tr>
                     <td>Mã Đơn Vị</td>
                     <td>Tên Đơn Vị</td>
-                    <td colspan="3">Ghi Chú</td>
+                    <th>Ghi Chú</th>
+                    <th>Chỉnh Sửa</th>
+                    <th>Xóa</th>
                 </tr>
             </thead>
 

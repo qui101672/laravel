@@ -61,9 +61,13 @@ define("ADMIN",
                         "ICON" => "icon-list-alt",
                         "LINK" => "create"),
                     array(
-                        "MENU_HE_THONG" =>"Tạo Thành Viên BGK",
+                        "MENU_HE_THONG" =>"BGK/Thư Ký",
                         "ICON" => "icon-list-alt",
-                        "LINK" => ""),
+                        "LINK" => "../ban_giam_khaos"),
+                    array(
+                        "MENU_HE_THONG" =>"Ban Tổ Chức",
+                        "ICON" => "icon-list-alt",
+                        "LINK" => "../ban_to_chuc"),
                     array(
                         "MENU_HE_THONG" =>"Danh Sách Hội Thi",
                         "ICON" => "icon-list-alt",

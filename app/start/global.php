@@ -86,3 +86,4 @@ App::missing(function($exception)
 {
   return Response::make(View::make('errors.404')->with('title','Lỗi 404'), 404);
 });
+ 

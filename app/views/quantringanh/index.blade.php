@@ -8,16 +8,17 @@
        <h2><i class="icon-edit"> </i>Danh Sách Ngành</h2>
     </div>
     <div class="box-content">
-    <p>{{ link_to_route('nganh.create', 'Add new nganh') }}</p>
-
-@if ($nganhs->count())
-	<table class="table table-striped table-bordered">
+	<p>{{ link_to_route('nganh.create', 'Tạo Ngành',array(),array('class'=>'btn btn-primary')) }}</p>
+	@if ($nganhs->count())
+	<table class="table table-striped table-bordered bootstrap-datatable datatable">
 		<thead>
 			<tr>
 				<td>Mã Ngành</td>
 				<td>Tên Ngành</td>
 				<td>Đơn Vị</td>
-				<td colspan="3">Ghi Chú</td>
+				<td>Ghi Chú</td>
+				<td>Chỉnh Sửa</td>
+				<td>Xóa</td>
 			</tr>
 		</thead>
 

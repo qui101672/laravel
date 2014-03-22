@@ -30,6 +30,11 @@ class DatabaseSeeder extends Seeder {
 		$this->call('Bai_hatsTableSeeder');
 		$this->call('Tac_giaTableSeeder');
 		$this->call('Phieu_dang_kiesTableSeeder');
+		$this->call('Thanh_vien_bgksTableSeeder');
+		$this->call('Ban_to_chucsTableSeeder');
+		$this->call('BtcsTableSeeder');
+		$this->call('Tiet_muc_du_thisTableSeeder');
+		$this->call('Thanh_phan_tham_giaTableSeeder');
 	}
 
 }

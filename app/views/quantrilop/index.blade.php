@@ -8,9 +8,9 @@
        <h2><i class="icon-edit"> </i>Danh Sách Lớp</h2>
     </div>
     <div class="box-content">
-    <p>{{ link_to_route('lop.create', 'Add new lop') }}</p>
+    <p>{{ link_to_route('lop.create', 'Tạo Lớp',array(),array('class'=>'btn btn-primary')) }}</p>
 	@if ($lops->count())
-	<table class="table table-striped table-bordered">
+	<table class="table table-striped table-bordered bootstrap-datatable datatable">
 		<thead>
 			<tr>
 				<td>Mã Lớp</td>
@@ -18,7 +18,9 @@
 				<td>Số SV</td>
 				<td>Khóa Học</td>
 				<td>Ngành Học</td>
-				<td colspan="3">Ghi Chú</td>
+				<td>Ghi Chú</td>
+				<td>Chỉnh Sửa</td>
+				<td>Xóa</td>
 			</tr>
 		</thead>
 		<tbody>

@@ -1,6 +1,19 @@
 
 <?php $__env->startSection('main'); ?>
-
+<style type="text/css">
+    .form-control[readonly]{
+        background-color: #fff;
+    }
+    input[type="text"]{
+        border-color: #FFFFFF!important;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+</style>
 <p><?php echo link_to_route('hoi_this.index', 'Return to all hoi_this'); ?></p>
 
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -10,7 +23,7 @@
         </div>
         <div class="box-content">
 
-            <table class="table table-striped table-bordered">
+            <table class="table table-hover ">
                 <thead>
                     <tr>
                         <td>Tên Chương Trình</td>
@@ -23,13 +36,19 @@
                 </thead>
                 <tbody>
 				<tr>
-					<td><?php echo e($hoi_thi->ten_chuong_trinh); ?></td>
-					<td><?php echo e($hoi_thi->time_start); ?></td>
-					<td><?php echo e($hoi_thi->time_end); ?></td>
-					<td><?php echo e($hoi_thi->DanhMucNams_Id); ?></td>
-					<td><?php echo e($hoi_thi->DanhMucHoiThis_Id); ?></td>
-					<td><?php echo e($hoi_thi->ghi_chu); ?></td>
-		            <td><?php echo link_to_route('hoi_this.edit', 'Edit', array($hoi_thi->id), array('class' => 'btn btn-info')); ?></td>
+                    <td><input type="text" name="ten_chuong_trinh_<?php echo e($hoi_thi->id); ?>" id="id_hinh_thuc_<?php echo e($hoi_thi->id); ?>" class="form-control" value="<?php echo e($hoi_thi->ten_chuong_trinh); ?>" required="required" pattern="" title="<?php echo e($hoi_thi->ten_chuong_trinh); ?>" readonly></td>
+
+                    <td><input type="text" name="time_start_<?php echo e($hoi_thi->id); ?>" id="time_start_<?php echo e($hoi_thi->id); ?>" class="form-control" value="<?php echo e($hoi_thi->time_start); ?>" required="required" pattern="" title="" readonly></td>
+
+                    <td><input type="text" name="time_end_<?php echo e($hoi_thi->id); ?>" id="time_end_<?php echo e($hoi_thi->id); ?>" class="form-control" value="<?php echo e($hoi_thi->time_end); ?>" required="required" pattern="" title="" readonly></td>
+
+                    <td><input type="text" name="DanhMucNams_Id_<?php echo e($hoi_thi->id); ?>" id="DanhMucNams_Id_<?php echo e($hoi_thi->id); ?>" class="form-control" value="<?php echo e($hoi_thi->DanhMucNams_Id); ?>" required="required" pattern="" title="" readonly></td>
+
+                    <td><input type="text" name="DanhMucHoiThis_Id_<?php echo e($hoi_thi->id); ?>" id="DanhMucHoiThis_Id_<?php echo e($hoi_thi->id); ?>" class="form-control" value="<?php echo e($hoi_thi->DanhMucHoiThis_Id); ?>" required="required" pattern="" title="" readonly></td>
+
+                    <td><input type="text" name="ghi_chu_hoi_thi<?php echo e($hoi_thi->ghi_chu); ?>" id="id_highi_chu_hoi_thinh_thuc_<?php echo e($hoi_thi->id); ?>" class="form-control" value="<?php echo e($hoi_thi->ghi_chu); ?>" required="required" pattern="" title="" readonly></td>
+ 
+		            <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#edit_hoithi" id="modal-data">Sửa</button></td>
 		            <td>
 		                <?php echo Form::open(array('method' => 'DELETE', 'route' => array('hoi_this.destroy', $hoi_thi->id))); ?>
 		                    <?php echo Form::submit('Delete', array('class' => 'btn btn-danger')); ?>
@@ -48,12 +67,11 @@
         </div>
         <div class="box-content">
 
-	<table class="table table-striped table-bordered">
+	<table class="table table-hover">
 		<fieldset>
 			<thead>
 			<tr>
 				<th>ID Hình Thức</th>
-				<th>Mã Hình Thức</th>
 				<th>Tên Hình Thức</th>
 				<th>Nội Dung Hình Thức</th>
 				<th>Số Lượng SV Yêu Cầu</th>
@@ -65,14 +83,19 @@
 		<tbody>
 			<?php foreach ($hinh_thuc as $hinh_thuc): ?>
 				<tr>
-					<td><?php echo e($hinh_thuc->id); ?></td>
-					<td><?php echo e($hinh_thuc->ma_hinh_thuc); ?></td>
-					<td><?php echo e($hinh_thuc->ten_hinh_thuc); ?></td>
-					<td><?php echo e($hinh_thuc->noi_dung_hinh_thuc); ?></td>
-					<td><?php echo e($hinh_thuc->so_luong_yeu_cau); ?></td>
-					<td><?php echo e($hinh_thuc->so_vong_thi); ?></td>
-					<td><?php echo e($hinh_thuc->ghi_chu); ?></td>
-                    <td><?php echo link_to_route('hinh_thuc_du_this.edit', 'Edit', array($hinh_thuc->id), array('class' => 'btn btn-info')); ?></td>
+				    <td><input type="text" name="id_hinh_thuc_<?php echo e($hinh_thuc->id); ?>" id="id_hinh_thuc_<?php echo e($hinh_thuc->id); ?>" class="form-control" value="<?php echo e($hinh_thuc->id); ?>" required="required" pattern="" title="" readonly></td>
+
+                    <td><input type="text" name="ten_hinh_thuc_<?php echo e($hinh_thuc->id); ?>" id="<?php echo e($hinh_thuc->ten_hinh_thuc); ?>" class="form-control" value="<?php echo e($hinh_thuc->ten_hinh_thuc); ?>" required="required" pattern="" title="" readonly></td>
+
+                    <td><input type="text" name="noi_dung_hinh_thuc_<?php echo e($hinh_thuc->id); ?>" id="noi_dung_hinh_thuc_<?php echo e($hinh_thuc->id); ?>" class="form-control" value="<?php echo e($hinh_thuc->noi_dung_hinh_thuc); ?>" required="required" pattern="" title="" readonly></td>
+
+                    <td><input type="text" name="so_luong_sv_<?php echo e($hinh_thuc->id); ?>" id="so_luong_sv_<?php echo e($hinh_thuc->id); ?>" class="form-control" value="<?php echo e($hinh_thuc->so_luong_yeu_cau); ?>" required="required" pattern="" title="" readonly></td>
+
+                    <td><input type="text" name="so_vong_thi_<?php echo e($hinh_thuc->id); ?>" id="so_vong_thi_<?php echo e($hinh_thuc->id); ?>" class="form-control" value="<?php echo e($hinh_thuc->so_vong_thi); ?>" required="required" pattern="" title="" readonly></td>
+
+                    <td><input type="text" name="ghi_chu_hinh_thuc_<?php echo e($hinh_thuc->id); ?>" id="<?php echo e($hinh_thuc->id); ?>" class="form-control" value="<?php echo e($hinh_thuc->ghi_chu); ?>" required="required" pattern="" title="" readonly></td>
+		 
+                    <td><?php echo link_to_route('hinh_thuc_du_this.edit', 'Sửa', array($hinh_thuc->id), array('class' => 'btn btn-default')); ?></td>
                     <td>
                         <?php echo Form::open(array('method' => 'DELETE', 'route' => array('hinh_thuc_du_this.destroy', $hinh_thuc->id))); ?>
                             <?php echo Form::submit('Delete', array('class' => 'btn btn-danger')); ?>
@@ -80,7 +103,7 @@
                     </td>
 				</tr>
 			<?php endforeach; ?>
-			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#hinhthucduthi" id="modal-data">Thêm Hình Thức</button>
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#hinhthucduthi" id="add_hinh_thuc">Thêm Hình Thức</button>
 				</tbody>
 		</fieldset>
 			</table>
@@ -95,24 +118,35 @@
         </div>
         <div class="box-content">
 
-	<table class="table table-striped table-bordered">
+	<table class="table table-hover">
 		<fieldset>
 			<thead>
 			<tr>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit_vongthi" id="modal-data">Thêm Vòng Thi</button>
 				<th>Hình Thức Dự Thi ID</th>
 				<th>Mã Vòng Thi</th>
 				<th>Tên Vòng Thi</th>
-				<th>Ghi Chú</th>
+				<th colspan="3">Ghi Chú</th>
 			</tr>
 		</thead>
 
 		<?php foreach ($vong_thi as $key => $value): ?> 
 			<?php foreach ($value as $value): ?> 
 				<tr>
-					<td><?php echo e($value->HinhThucDuThis_Id); ?></td>
-					<td><?php echo e($value->ma_vong_thi); ?></td>
-					<td><?php echo e($value->ten_vong_thi); ?></td>
-					<td><?php echo e($value->ghi_chu); ?></td>
+					<td><input type="text" name="id_hinh_thuc_<?php echo e($value->HinhThucDuThis_Id); ?>" id="id_hinh_thuc_<?php echo e($value->HinhThucDuThis_Id); ?>" class="form-control" value="<?php echo e($value->HinhThucDuThis_Id); ?>" required="required" pattern="" title="" readonly></td>
+
+					<td><input type="text" name="ma_vong_thi_<?php echo e($value->HinhThucDuThis_Id); ?>" id="ma_vong_thi_<?php echo e($value->ma_vong_thi); ?>" class="form-control" value="<?php echo e($value->ma_vong_thi); ?>" required="required" pattern="" title="" readonly></td>
+
+					<td><input type="text" name="ten_vong_thi_<?php echo e($value->HinhThucDuThis_Id); ?>" id="ten_vong_thi_<?php echo e($value->HinhThucDuThis_Id); ?>" class="form-control" value="<?php echo e($value->ten_vong_thi); ?>" required="required" pattern="" title="" readonly></td>
+
+					<td><input type="text" name="ghi_chu_<?php echo e($value->HinhThucDuThis_Id); ?>" id="ghi_chu_vong_thi_<?php echo e($value->HinhThucDuThis_Id); ?>" class="form-control" value="<?php echo e($value->ghi_chu); ?>" required="required" pattern="" title="" readonly></td>
+
+                    <td><?php echo link_to_route('vong_this.edit', 'Sửa', array($value->id), array('class' => 'btn btn-default')); ?></td>
+                    <td>
+                        <?php echo Form::open(array('method' => 'DELETE', 'route' => array('vong_this.destroy', $value->id))); ?>
+                            <?php echo Form::submit('Delete', array('class' => 'btn btn-danger')); ?>
+                        <?php echo Form::close(); ?>
+                    </td>
 				</tr>
 			<?php endforeach; ?>
 		<?php endforeach; ?>
@@ -130,10 +164,11 @@
         </div>
         <div class="box-content">
 
-	<table class="table table-striped table-bordered">
+	<table class="table table-hover">
 		<fieldset>
 			<thead>
 			<tr>
+
 				<th>Hình Thức Dự Thi ID</th>
 				<th>Mã Giải Thưởng</th>
 				<th>Tên Giải Thưởng</th>
@@ -161,7 +196,7 @@
 	</div>
 </div>
 
-
+<!-- form chỉnh sửa hình thức dự thi -->
 <div class="modal fade" id="hinhthucduthi">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -264,7 +299,152 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
+<!-- form chỉnh sửa hội thi -->
+<!-- modal edit hoi thi   -->   
+ <div class="modal fade" id="edit_hoithi">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Chỉnh Sủa Hội Thi</h4>
+              </div>
+              <div class="modal-body">
+              <?php echo Form::model( array('name'=>'edit_hoithi','id'=>'edit_hoithi','method' => 'PATCH', 'route' => 'hoi_this.update')); ?>
+                    <fieldset>
+                    
+                        <div class="form-group">
+                                <label class="control-label">Năm</label>
+                                <div class="controls row">
+                                    <div class="input-group col-sm-12">
+                                        <span class="input-group-addon"><i class="icon-star"></i></span>
+                                        <select name='DanhMucNams_Id' id='DanhMucNams_Id' class="form-control" required="required">
+                                            <option>---Chọn---</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Hội Thi</label>
+                                <div class="controls row">
+                                    <div class="input-group col-sm-12">
+                                        <span class="input-group-addon"><i class="icon-star"></i></span>
+                                        <select name='DanhMucHoiThis_Id' id='DanhMucHoiThis_Id' class="form-control" required="required">
+                                            <option>---Chọn---</option>
+                                             
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                            <div class="form-group">
+                                <label class="control-label">Tên Chương Trình</label>
+                                <div class="controls row">
+                                    <div class="input-group col-sm-12">
+                                        <span class="input-group-addon"><i class="icon-calendar"></i></span>
+                                        
+                                            <?php echo Form::text('ten_chuong_trinh',null,array('class'=> 'form-control', 'id' => 'ten_chuong_trinh','data-validation' => 'length','data-validation-length'=>'5-100','data-validation-error-msg'=>'Tên Chương Trình dài từ 5-100 ký tự')); ?>
+                                
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Thời Gian Bắt Đầu:</label>
+                                <div class="controls row">
+                                    <div class="input-group col-sm-12">
+                                        <span class="input-group-addon"><i class="icon-calendar"></i></span>
 
+                                        <?php echo Form::text('time_start',null,array('class'=> 'form-control date-picker','data-date-format' =>'yyyy-mm-dd','id'=>'time_start','data-validation'=>'date' ,'data-validation-format'=>'yyyy-mm-dd')); ?>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Thời Gian Kết Thúc:</label>
+                                <div class="controls row">
+                                    <div class="input-group col-sm-12">
+                                        <span class="input-group-addon"><i class="icon-calendar"></i></span>
+                                        <?php echo Form::text('time_end',null,array('class'=> 'form-control date-picker','data-date-format' =>'yyyy-mm-dd','id'=>'time_end','data-validation'=>'date' ,'data-validation-format'=>'yyyy-mm-dd')); ?>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Ghi Chú:</label>
+                                <div class="controls row">
+                                    <div class="input-group col-sm-12">
+                                        <span class="input-group-addon"><i class="icon-edit"></i></span>
+                                        <?php echo Form::text('ghi_chu',null,array('class'=> 'form-control','id'=>'ghi_chu')); ?>
+                                    </div>  
+                                </div>
+                            </div>                   
+                           <div class="modal-footer">
+                               <div class="col-sm-10 col-sm-offset-2">
+                                   <button type="button" class="btn btn-primary" id="edit_hoi_thi">Sửa</button>
+                               </div>
+                           </div>
+                           </fieldset>
+                   <?php echo Form::close(); ?>
+              </div>
+           
+       </div> 
+   </div> 
+</div> 
+<!-- form tao - sua vong thi -->
+ <div class="modal fade" id="edit_vongthi">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Chỉnh Sủa Hội Thi</h4>
+              </div>
+              <div class="modal-body">
+              <?php echo Form::model( array('name'=>'edit_hoithi','id'=>'edit_hoithi','method' => 'PATCH', 'route' => 'hoi_this.update')); ?>
+                    <?php echo Form::open(array('route' => 'vong_this.store')); ?>
+                <ul>
+                    <li>
+                        <?php echo Form::label('ma_vong_thi', 'Ma_vong_thi:'); ?>
+                        <?php echo Form::text('ma_vong_thi'); ?>
+                    </li>
+
+                    <li>
+                        <?php echo Form::label('ten_vong_thi', 'Ten_vong_thi:'); ?>
+                        <?php echo Form::text('ten_vong_thi'); ?>
+                    </li>
+
+                    <li>
+                        <?php echo Form::label('HinhThucDuThis_Id', 'HinhThucDuThis_Id:'); ?>
+                        <?php echo Form::input('number', 'HinhThucDuThis_Id'); ?>
+                    </li>
+
+                    <li>
+                        <?php echo Form::label('ghi_chu', 'Ghi_chu:'); ?>
+                        <?php echo Form::text('ghi_chu'); ?>
+                    </li>
+
+                    <li>
+                        <?php echo Form::submit('Submit', array('class' => 'btn btn-info')); ?>
+                    </li>
+                </ul>
+            <?php echo Form::close(); ?>
+            
+              </div>
+       </div> 
+   </div> 
+</div> 
+<script type="text/javascript">
+// jQuery(document).ready(function($) {
+//     $('#add_hinh_thuc').click(function($) {
+//         $('#ma_hinh_thuc').val('');
+//         $('#ten_hinh_thuc').val('');
+//         $('#noi_dung_hinh_thuc').val('');
+//         $('#so_vong_thi').val('');
+//         $('#ghi_chu').val('');
+//         $('#HoiThis_DanhMucNamsId').val($('#result_hoithi').find( 'input[name=danh_muc_nam_id]' ).val());
+//         $('#HoiThis_Id').val($('#result_hoithi').find( 'input[name=id_hoi_thi]' ).val());
+//         $('#HoiThis_DanhMucHoiThisId').val($('#result_hoithi').find( 'input[name=danh_muc_hoi_thi_id_result]' ).val());
+//     });
+// });
+    
+ 
+</script>
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

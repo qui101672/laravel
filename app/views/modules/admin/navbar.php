@@ -18,6 +18,7 @@
                     <li class="dropdown">
                         <a class="btn account dropdown-toggle" data-toggle="dropdown" href="form-wizard.html#">
                             <div class="avatar"><img src="<?php echo asset('public/admin/img/avatar.jpg'); ?>" alt="Avatar" /></div>
+                            
                             <div class="user">
                                 <span class="hello">Xin Chào!</span>
                                 <span class="name"><?php echo Auth::user()->username;?></span>

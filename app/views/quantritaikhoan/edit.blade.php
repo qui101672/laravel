@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('main')
-<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="box">
       <div class="box-header">
             <h2><i class="icon-edit"></i><span>Chỉnh Sửa Tài Khoản</span></h2>
@@ -13,10 +13,10 @@
             <div class="form-group">
                     <label class="control-label"><h2>Username:</h2></label>
                     <div class="controls row">
-                    <div class="input-group col-sm-10">
-                      <span class="input-group-addon"><i class="icon-edit"></i></span>
-                      {{ Form::text('username',null,array('class'=> 'form-control')) }}
-                    </div>  
+                      <div class="input-group col-sm-4">
+                        <span class="input-group-addon"><i class="icon-edit"></i></span>
+                        {{ Form::text('username',null,array('class'=> 'form-control')) }}
+                      </div>  
                     </div>
               </div>
               

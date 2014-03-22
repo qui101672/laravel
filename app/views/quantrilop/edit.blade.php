@@ -2,7 +2,7 @@
 
 @section('main')
 
-<div class="box span12">
+<div class="box">
     <div class="box-header">
         <h2><i class="icon-edit"></i>Chỉnh Sửa Lớp</h2>
     </div>

@@ -30,7 +30,6 @@
 								$nganh = Nganh::find($lop->Nganhs_Id);
 								echo '<td>'.$nganh->ten_nganh.'</td>';
 								?>
-					 
 							<td><?php echo e($lop->ghi_chu); ?></td>
 		                    <td><?php echo link_to_route('lop.edit', 'Edit', array($lop->id), array('class' => 'btn btn-info')); ?></td>
 		                    <td>

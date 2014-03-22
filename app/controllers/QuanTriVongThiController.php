@@ -1,6 +1,6 @@
 <?php
 
-class QuanTriVongThi extends BaseController {
+class QuanTriVongThiController extends BaseController {
 
 	/**
 	 * Vong_thi Repository
@@ -23,7 +23,7 @@ class QuanTriVongThi extends BaseController {
 	{
 		$vong_this = $this->vong_thi->all();
 
-		return View::make('vong_this.index', compact('vong_this'));
+		return View::make('quantrivongthi.index', compact('vong_this'));
 	}
 
 	/**
@@ -33,7 +33,7 @@ class QuanTriVongThi extends BaseController {
 	 */
 	public function create()
 	{
-		return View::make('vong_this.create');
+		return View::make('quantrivongthi.create');
 	}
 
 	/**
@@ -69,7 +69,7 @@ class QuanTriVongThi extends BaseController {
 	{
 		$vong_thi = $this->vong_thi->findOrFail($id);
 
-		return View::make('vong_this.show', compact('vong_thi'));
+		return View::make('quantrivongthi.show', compact('vong_thi'));
 	}
 
 	/**
@@ -87,7 +87,7 @@ class QuanTriVongThi extends BaseController {
 			return Redirect::route('vong_this.index');
 		}
 
-		return View::make('vong_this.edit', compact('vong_thi'));
+		return View::make('quantrivongthi.edit', compact('vong_thi'));
 	}
 
 	/**
@@ -126,6 +126,13 @@ class QuanTriVongThi extends BaseController {
 		$this->vong_thi->find($id)->delete();
 
 		return Redirect::route('vong_this.index');
+	}
+	public function post_dsvongthi(){
+		$id = Input::get('id_hinh_thuc');
+		//lay danh sach hinh thuc cua hoi thi
+	 	$vong_thi = new Vong_thi();
+	 	$results = $vong_thi->get_dsvongthi($id);
+	 	return $results;
 	}
 
 }

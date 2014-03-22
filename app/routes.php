@@ -12,6 +12,11 @@
 */
 include('config/constant/roles.php');
 
+
+Route::resource('tin_tuc', 'NguoiDungBaiVietController');
+
+Route::get('/', array('as' => 'home', 'uses' => 'NguoiDungBaiVietController@index'));
+
 Route::group(array('before' => 'guest'), function()
 {
     //Dang nhap
@@ -22,19 +27,18 @@ Route::group(array('before' => 'guest'), function()
     
 });
 
-Route::resource('tin_tuc', 'NguoiDungBaiVietController');
-
-Route::get('/', array('as' => 'home', 'uses' => 'NguoiDungBaiVietController@index'));
-// Route::get('hoi_this/getid', array('uses' => 'QuanTriHoiThiController@getid'));
 Route::group(array('before' => 'auth'), function()
 {
         //Dang Xuat
         Route::get('logout', array('uses' => 'QuanTriTaiKhoanController@logout'));
         //nguoi dung thong tin
         Route::get('profile', array('uses' => 'NguoiDungTaiKhoanController@profile'));
+        
         Route::resource('thong_tin','NguoiDungTaiKhoanController');
-        //hoi thi
-       
+
+        Route::resource('dang_ky_phieus', 'NguoiDungPhieuDangKyController');
+
+        Route::resource('dang_ky_tiet_mucs', 'NguoiDungPhieuDangKyController');
 
     if(Session::get('role') == 'admin'){
     	//quan ly bai viet
@@ -53,6 +57,22 @@ Route::group(array('before' => 'auth'), function()
         Route::resource('hoi_this', 'QuanTriHoiThiController');
         //quan ly hinh thuc du thi
         Route::resource('hinh_thuc_du_this', 'QuanTriHinhThucDuThiController');
+        Route::post('post_dshinhthuc',array('uses'=>'QuanTriHinhThucDuThiController@post_dshinhthuc'));
+        //quan ly vong thi
+        Route::resource('vong_this', '');
+        Route::post('post_dsvongthi',array('uses'=>'QuanTriVongThiController@post_dsvongthi'));
+        //quan ly bgks
+        Route::resource('ban_giam_khaos', 'QuanTriBGKController');
+        //quan ly btc
+        Route::resource('ban_to_chuc', 'QuanTriBTCController');
+        //quan phieu dang ky
+        Route::resource('phieu_dang_kies', 'QuanTriPhieuDangKyController');
+        
+        Route::resource('tiet_muc_du_this', 'QuanTriTietMucController');
+
+        Route::resource('quan_tri_ket_qua', 'QuanTriKetQuaController');
+        Route::post('ds_tietmuc_cham_diem',array('uses'=>'QuanTriKetQuaController@ds_tietmuc_cham_diem'));
+        
 
     } elseif(Session::get('role') == 'sinhvien'){
 
@@ -77,6 +97,4 @@ Route::group(array('before' => 'auth'), function()
 
 // Route::resource('tac_gia', 'Tac_giaController');
 
- 
-
-Route::resource('phieu_dang_kies', 'Phieu_dang_kiesController');
+//Route::resource('thanh_phan_tham_gia', 'Thanh_phan_tham_giaController');

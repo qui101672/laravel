@@ -50,11 +50,26 @@ class QuanTriHinhThucDuThiController extends BaseController {
                 'so_luong_yeu_cau' => Input::get('so_luong_yeu_cau'),
                 'so_vong_thi' => Input::get('so_vong_thi'),
                 'ghi_chu' => Input::get('ghi_chu'),
+                'bat_buoc' => Input::get('bat_buoc'),
                 'HoiThis_DanhMucNamsId' => Input::get('HoiThis_DanhMucNamsId'),
                 'HoiThis_Id' => Input::get('HoiThis_Id'),
                 'HoiThis_DanhMucHoiThisId' => Input::get('HoiThis_DanhMucHoiThisId')
 			);
 		$id = DB::table('hinh_thuc_du_this')->insertGetId($input);
+		if(Input::get('so_vong_thi') == '2'){
+			DB::table('vong_this')->insert(array(
+	    				array('ma_vong_thi' => '1','ten_vong_thi' => 'Vòng Sơ Khảo','HinhThucDuThis_Id' => $id,'ghi_chu' => ''),
+	    				array('ma_vong_thi' => '2','ten_vong_thi' => 'Vòng Chung Kết Xếp Hạng','HinhThucDuThis_Id' => $id,'ghi_chu' => '')
+	    			));
+		}
+		if(Input::get('so_vong_thi') == '3'){
+			DB::table('vong_this')->insert(array(
+	    				array('ma_vong_thi' => '1','ten_vong_thi' => 'Vòng Sơ Khảo','HinhThucDuThis_Id' => $id,'ghi_chu' => ''),
+						array('ma_vong_thi' => '2','ten_vong_thi' => 'Vòng Chung Khảo','HinhThucDuThis_Id' => $id,'ghi_chu' => ''),
+	    				array('ma_vong_thi' => '3','ten_vong_thi' => 'Vòng Chung Kết Xếp Hạng','HinhThucDuThis_Id' => $id,'ghi_chu' => '')
+	    			));
+		}
+
 		$output = $this->hinh_thuc_du_thi->find($id);
 		return $output;
 		
@@ -127,6 +142,14 @@ class QuanTriHinhThucDuThiController extends BaseController {
 		$this->hinh_thuc_du_thi->find($id)->delete();
 
 		return Redirect::route('hinh_thuc_du_this.index');
+	}
+
+	public function post_dshinhthuc(){
+		$id = Input::get('id_chuong_trinh');
+		//lay danh sach hinh thuc cua hoi thi
+	 	$hinh_thuc = new Hinh_thuc_du_thi();
+	 	$results = $hinh_thuc->get_dshinhthuc($id);
+	 	return $results;
 	}
 
 }

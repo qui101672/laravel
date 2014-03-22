@@ -1,53 +1,47 @@
 
 <?php $__env->startSection('main'); ?>
- 
-
-
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <div class="box">
         <div class="box-header">
             <h2><i class="icon-edit"> </i>Chi Tiết Hội Thi</h2>
         </div>
         <div class="box-content">
+        <p><?php echo link_to_route('hoi_this.create', 'Tạo Hội Thi',array(),array('class'=>'btn btn-primary')); ?></p>
+		<?php if ($hoi_this->count()): ?>
+			<table class="table table-striped table-bordered bootstrap-datatable datatable">
+            	<thead>
+					<tr>
+						<th>Tên Chương Trình</th>
+						<th>Thời Gian Bắt Đầu</th>
+						<th>Thời  Gian Kết Thúc</th>
+						<th>Ghi Chú</th>
+						<th>Chi Tiết</th>
+                    	<th>Xóa</th>
+					</tr>
+				</thead>
 
-         <p><?php echo link_to_route('hoi_this.create', 'Add new hoi_thi'); ?></p>
-<?php if ($hoi_this->count()): ?>
-	<table class="table table-striped table-bordered">
-		<thead>
-			<tr>
-				<th>Ten_chuong_trinh</th>
-				<th>Time_start</th>
-				<th>Time_end</th>
-				<th>DanhMucNams_Id</th>
-				<th>DanhMucHoiThis_Id</th>
-				<th colspan="3">Ghi_chu</th>
-			</tr>
-		</thead>
-
-		<tbody>
-			<?php foreach ($hoi_this as $hoi_thi): ?>
-				<tr>
-					<td><?php echo e($hoi_thi->ten_chuong_trinh); ?></td>
-					<td><?php echo e($hoi_thi->time_start); ?></td>
-					<td><?php echo e($hoi_thi->time_end); ?></td>
-					<td><?php echo e($hoi_thi->DanhMucNams_Id); ?></td>
-					<td><?php echo e($hoi_thi->DanhMucHoiThis_Id); ?></td>
-					<td><?php echo e($hoi_thi->ghi_chu); ?></td>
-                    <td><?php echo link_to_route('hoi_this.show', 'Chi Tiết', $hoi_thi->id, array('class' => 'btn btn-primary')); ?></td>
-                    <td>
-                        <?php echo Form::open(array('method' => 'DELETE', 'route' => array('hoi_this.destroy', $hoi_thi->id))); ?>
-                            <?php echo Form::submit('Delete', array('class' => 'btn btn-danger')); ?>
-                        <?php echo Form::close(); ?>
-                    </td>
-				</tr>
-			<?php endforeach; ?>
-		</tbody>
-	</table>
-<?php else: ?>
-	There are no hoi_this
-<?php endif; ?>
-</div>
-</div>
+				<tbody>
+					<?php foreach ($hoi_this as $hoi_thi): ?>
+						<tr>
+							<td><?php echo e($hoi_thi->ten_chuong_trinh); ?></td>
+							<td><?php echo e($hoi_thi->time_start); ?></td>
+							<td><?php echo e($hoi_thi->time_end); ?></td>
+							<td><?php echo e($hoi_thi->ghi_chu); ?></td>
+		                    <td><?php echo link_to_route('hoi_this.show', 'Chi Tiết', $hoi_thi->id, array('class' => 'btn btn-primary')); ?></td>
+		                    <td>
+		                        <?php echo Form::open(array('method' => 'DELETE', 'route' => array('hoi_this.destroy', $hoi_thi->id))); ?>
+		                            <?php echo Form::submit('Delete', array('class' => 'btn btn-danger')); ?>
+		                        <?php echo Form::close(); ?>
+		                    </td>
+						</tr>
+					<?php endforeach; ?>
+				</tbody>
+			</table>
+				<?php else: ?>
+			There are no hoi_this
+		<?php endif; ?>
+		</div>
+	</div>
 </div>
 <?php $__env->stopSection(); ?>
 

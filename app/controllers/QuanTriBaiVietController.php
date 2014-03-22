@@ -51,8 +51,6 @@ class QuanTriBaiVietController extends BaseController {
 			'TheLoaiBaiViets_Id' => Input::get('TheLoaiBaiViets_Id'),
 			'TaiKhoans_Id' => Auth::user()->id,
 			'id_nguoi_sua' => '',
-			'created_at' => '',
-			'updated_at' => '',
 			'tag' => Input::get('tag'),
 			'ghi_chu' => Input::get('ghi_chu')
 			);
@@ -103,18 +101,15 @@ class QuanTriBaiVietController extends BaseController {
 	 */
 	public function update($id)
 	{
-		$input = array_except(array(
+		$input = array(
 			'ma_bai_viet' => Input::get('ma_bai_viet'),
 			'tieu_de_bai_viet' => Input::get('tieu_de_bai_viet'),
 			'noi_dung_bai_viet' => Input::get('noi_dung_bai_viet'),
 			'TheLoaiBaiViets_Id' => Input::get('TheLoaiBaiViets_Id'),
-			'TaiKhoans_Id' => Auth::user()->id,
 			'id_nguoi_sua' => Auth::user()->id,
-			'created_at' => '',
-			'updated_at' => '',
 			'tag' => Input::get('tag'),
 			'ghi_chu' => Input::get('ghi_chu')
-			), '_method');
+			);
 		$validation = Validator::make($input, Bai_viet::$rules);
 		if ($validation->passes())
 		{

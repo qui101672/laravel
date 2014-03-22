@@ -1,0 +1,211 @@
+[2014-03-21 08:08:57] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'array' (T_ARRAY), expecting ')'' in D:\xampp\htdocs\laravel\app\database\seeds\Tai_khoansTableSeeder.php:26
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-21 08:09:09] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ma_quyen' in 'field list'' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:331
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): PDO->prepare('insert into `ta...')
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `ta...', Array)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `ta...', Array, Object(Closure))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `ta...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `ta...', Array)
+#5 D:\xampp\htdocs\laravel\app\database\seeds\Tai_khoansTableSeeder.php(30): Illuminate\Database\Query\Builder->insert(Array)
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): Tai_khoansTableSeeder->run()
+#7 D:\xampp\htdocs\laravel\app\database\seeds\DatabaseSeeder.php(15): Illuminate\Database\Seeder->call('Tai_khoansTable...')
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#10 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(898): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 D:\xampp\htdocs\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#16 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ma_quyen' in 'field list' (SQL: insert into `tai_khoans` (`ma_quyen`, `password`, `username`) values (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?)) (Bindings: array (
+  0 => '1',
+  1 => '$2y$08$mSDw4OkQRGV9HLJW35/A.eu7wbV/OzUaGYIzEJTDV6m.X31DKRt5K',
+  2 => '1101675',
+  3 => '2',
+  4 => '$2y$08$21iEkBhZDXYoq3tA2efvXuvhaQ.YSn6H6GfiOp0WgOX4j8kaDWdZy',
+  5 => '1101676',
+  6 => '3',
+  7 => '$2y$08$DLhM4H.K4VXwl7ZQRZFae.WxEbzTnzu3aWUxc8ykYiAnfQufzFi4q',
+  8 => '1101677',
+  9 => '4',
+  10 => '$2y$08$8ye3liCOioZGoeG4MU0XNO4FKOWMdQwYaqIGebnwa94dVDIlE45mO',
+  11 => '1101678',
+  12 => '5',
+  13 => '$2y$08$rb76p/KXoNT3..50K6gRqutWHgHNfV82T8hvRCG2OR61kF5B1olkG',
+  14 => '1101679',
+  15 => '6',
+  16 => '$2y$08$SkvKFm194KIq80s4BnbvhO2HCY13BsfEjE18QswnDlHUpfQpdzosS',
+  17 => '1101680',
+  18 => '7',
+  19 => '$2y$08$MXY2Ptp4RlyAAqBEiRrRZufp5y2O3oOlSraikTCq4bPwYplsxWFwm',
+  20 => '1101681',
+  21 => '1',
+  22 => '$2y$08$YamN6hZ2h3JIYgc3CrHZ4Om/SZsGfMz0O4dTPrvFLGovZBXnMmfpG',
+  23 => '1101682',
+  24 => '2',
+  25 => '$2y$08$RU8GvDboSS7CNZvVQLd8UOO.6ZQPFDhRba5caU4Ur2A3XXzsoDSXK',
+  26 => '1101683',
+  27 => '3',
+  28 => '$2y$08$I1vpxPuIvw2F0mBlAkJMsOZzca5ddrHoPiyALyd/URGJeMl9KV8nu',
+  29 => '1101684',
+  30 => '4',
+  31 => '$2y$08$lGsWRjhBruLCfXGCpiD3Q.w6XtegG0fpYeSuvipVInhN6C1rBsKX.',
+  32 => '1101685',
+  33 => '5',
+  34 => '$2y$08$qyM4pn3Kn4ym6sXFbAF8LOI/3GrKP9a50FFq/jk5yUCE18Jwnp3Ae',
+  35 => '1101686',
+  36 => '6',
+  37 => '$2y$08$vlEuo9GcA5f4gnRrTtHQbusmtFMJkPFq6DghpRKg63mSlOh8ACo1q',
+  38 => '1101687',
+  39 => '7',
+  40 => '$2y$08$D1gGuyUxeyywSNY8syy1d.GAwNeL8wIfq/Cm6kKLkEGfxrmZ/MMZG',
+  41 => '1101688',
+  42 => '1',
+  43 => '$2y$08$OHDbtd5uwnDmV/FHG.EWzudlgiRB1WmdPHBTmO..stumHowRMScnK',
+  44 => '1101689',
+  45 => '1',
+  46 => '$2y$08$UU88xXuPxEBLvzxnnQf2Su0J3mMjRVFKmgr.aQIMQdMbUcaIUX8TG',
+  47 => '1101690',
+))' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `ta...', Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `ta...', Array, Object(Closure))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `ta...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `ta...', Array)
+#4 D:\xampp\htdocs\laravel\app\database\seeds\Tai_khoansTableSeeder.php(30): Illuminate\Database\Query\Builder->insert(Array)
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): Tai_khoansTableSeeder->run()
+#6 D:\xampp\htdocs\laravel\app\database\seeds\DatabaseSeeder.php(15): Illuminate\Database\Seeder->call('Tai_khoansTable...')
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#9 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(898): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\xampp\htdocs\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#15 {main} [] []
+[2014-03-21 08:14:54] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PhanQuyens_Id' in 'field list'' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:331
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): PDO->prepare('insert into `ta...')
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `ta...', Array)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `ta...', Array, Object(Closure))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `ta...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `ta...', Array)
+#5 D:\xampp\htdocs\laravel\app\database\seeds\Tai_khoansTableSeeder.php(30): Illuminate\Database\Query\Builder->insert(Array)
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): Tai_khoansTableSeeder->run()
+#7 D:\xampp\htdocs\laravel\app\database\seeds\DatabaseSeeder.php(15): Illuminate\Database\Seeder->call('Tai_khoansTable...')
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#10 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(898): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 D:\xampp\htdocs\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#16 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PhanQuyens_Id' in 'field list' (SQL: insert into `tai_khoans` (`PhanQuyens_Id`, `doi_tuong`, `password`, `username`) values (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?)) (Bindings: array (
+  0 => '3',
+  1 => 'Cán Bộ',
+  2 => '$2y$08$SnP4b9k3R.uWRphkImV2BO.vSaGrI0S3altZnA15mM3jPOXWhSaDS',
+  3 => '1101675',
+  4 => '2',
+  5 => 'Sinh Viên',
+  6 => '$2y$08$JGFHopwByZAo4B0GvhzhaeKqOw1cEfcNmb283Vi0mVLoMmFNFZ4OO',
+  7 => '1101676',
+  8 => '3',
+  9 => 'Cán Bộ',
+  10 => '$2y$08$CP8p1EKfk1LHJVZcIvPubug0i5kM0WboZbUdZ4Ip9IMjtErqwBmtG',
+  11 => '1101677',
+  12 => '4',
+  13 => 'Cán Bộ',
+  14 => '$2y$08$vTTvTPozWkpE9hYqQS/IheLOlzaMOH2mfpndfH5skwmcnq30/kRZq',
+  15 => '1101678',
+  16 => '5',
+  17 => 'Cán Bộ',
+  18 => '$2y$08$eCVHlKQUg3.bWfrBS7Hh3eKrZWq9VtKevTGCvmEM8aEiiBe4shQAe',
+  19 => '1101679',
+  20 => '6',
+  21 => 'Cán Bộ',
+  22 => '$2y$08$Q5bn/x2i9KC6o6kD7DU1Qe/VEvRlcZjt7F4e3lUikQetI0rNZdFC6',
+  23 => '1101680',
+  24 => '7',
+  25 => 'Cán Bộ',
+  26 => '$2y$08$QEZoHIJaAN8jAUWXDoUO7OrI7hlY/xZYWfjDoQA.639rnAIURwsBm',
+  27 => '1101681',
+  28 => '1',
+  29 => 'Cán Bộ',
+  30 => '$2y$08$FGXL.NLv.2FjgMRFoXT6O.GEGvovyEXqGW5f6sei.H7BF72loRdOW',
+  31 => '1101682',
+  32 => '2',
+  33 => 'Sinh Viên',
+  34 => '$2y$08$S6lFH24lYaUl4TMpR2M71.u3sLROmhn3YPB898HlkLkJ1SZDxCMvW',
+  35 => '1101683',
+  36 => '3',
+  37 => 'Cán Bộ',
+  38 => '$2y$08$5RaY0dkkIpLl6W1Wd/ohp..69cZghw4H5xZ4kJyAQbsoOac5BHGBK',
+  39 => '1101684',
+  40 => '4',
+  41 => 'Cán Bộ',
+  42 => '$2y$08$TMQHUCp12xjUd9t3m1fokeuTwv30t1N6.BsClUwtrT3PZewnrJs.S',
+  43 => '1101685',
+  44 => '5',
+  45 => 'Sinh Viên',
+  46 => '$2y$08$vPqmM4sS21wxwiI4fsDGe.BMp7pF3jsOvfVjZAMKQ3YOdkRu0qhKq',
+  47 => '1101686',
+  48 => '6',
+  49 => 'Cán Bộ',
+  50 => '$2y$08$rtDvWW9Egqe4CPSTNNw7cODLfcynv.uym6ulX/9FcPlOoIZXwfsX.',
+  51 => '1101687',
+  52 => '7',
+  53 => 'Cán Bộ',
+  54 => '$2y$08$gsmqQbmZTJaubob..yKjlul3E4xcgDIzS0SiLtUbAT2oVg4Wy2KU2',
+  55 => '1101688',
+  56 => '3',
+  57 => 'Cán Bộ',
+  58 => '$2y$08$C2q4yhRx3o1Sj2RZOtSA7uJmWAcLQkGjq7xrT1atoD4YGSAFtub2.',
+  59 => '1101689',
+  60 => '3',
+  61 => 'Cán Bộ',
+  62 => '$2y$08$8ggm0Ml3fCkqNTHHRVJZr.mHPZSyDB8hFlXjrpcJlh.vscWD2OZCu',
+  63 => '1101690',
+))' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `ta...', Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `ta...', Array, Object(Closure))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `ta...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `ta...', Array)
+#4 D:\xampp\htdocs\laravel\app\database\seeds\Tai_khoansTableSeeder.php(30): Illuminate\Database\Query\Builder->insert(Array)
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): Tai_khoansTableSeeder->run()
+#6 D:\xampp\htdocs\laravel\app\database\seeds\DatabaseSeeder.php(15): Illuminate\Database\Seeder->call('Tai_khoansTable...')
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#9 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(898): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\xampp\htdocs\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#15 {main} [] []
+[2014-03-21 08:15:20] log.ERROR: exception 'ReflectionException' with message 'Class Thanh_phan_tham_giaTableSeeder does not exist' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:308
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(308): ReflectionClass->__construct('Thanh_phan_tham...')
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(250): Illuminate\Container\Container->build('Thanh_phan_tham...', Array)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(480): Illuminate\Container\Container->make('Thanh_phan_tham...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(56): Illuminate\Foundation\Application->make('Thanh_phan_tham...')
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): Illuminate\Database\Seeder->resolve('Thanh_phan_tham...')
+#5 D:\xampp\htdocs\laravel\app\database\seeds\DatabaseSeeder.php(37): Illuminate\Database\Seeder->call('Thanh_phan_tham...')
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#8 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(898): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\xampp\htdocs\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#14 {main} [] []

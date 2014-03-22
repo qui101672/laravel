@@ -42,7 +42,6 @@
                 <!-- start: Content -->
 
                 <div id="content" class="col-lg-10 col-sm-11" style="min-height: 590px;">
-
                     <div class="row">
                         @yield('main')                                
                     </div>
@@ -75,10 +74,9 @@
 
             </div>
             <!--/.fluid-container-->
+
             <script src="<?php echo asset('public/admin/js/jquery-2.0.3.min.js')?>"></script>
-            <script type="text/javascript">
-            window.jQuery || document.write("<script src='<?php echo asset('public/admin/js/jquery-2.0.3.min.js')?>>"+"<"+"/script>");
-            </script>
+       
             <script src="<?php echo asset('public/admin/js/jquery-migrate-1.2.1.min.js') ?>"></script>
             <script src="<?php echo asset('public/admin/js/bootstrap.min.js') ?>"></script>
             <!-- page scripts -->
@@ -99,12 +97,19 @@
             <script src="<?php echo asset('public/admin/js/bootstrap-colorpicker.min.js') ?>"></script>
             <script src="<?php echo asset('public/admin/js/wizard.min.js') ?>"></script>
             
-             
             
             <!-- theme scripts -->
             <script src="<?php echo asset('public/admin/js/custom.min.js') ?>"></script>
             <script src="<?php echo asset('public/admin/js/core.min.js') ?>"></script>
             <script src="<?php echo asset('public/admin/js/jquery.noty.min.js') ?>"></script>
+            
+            <!-- page scripts -->
+            <script src="public/admin/js/jquery-ui-1.10.3.custom.min.js"></script>
+            <script src="public/admin/js/jquery.sparkline.min.js"></script>
+            <script src="public/admin/js/jquery.dataTables.min.js"></script>
+            <script src="public/admin/js/dataTables.bootstrap.min.js"></script>
+            <!-- inline scripts related to this page -->
+            <script src="public/admin/js/pages/table.js"></script>
             
             <!-- inline scripts related to this page -->
             <script src="<?php echo asset('public/admin/js/pages/form-elements.js') ?>"></script>

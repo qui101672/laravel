@@ -1,7 +1,8 @@
 @extends('layouts.admin')
 
 @section('main')
-
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 <div class="box">
     <div class="box-header">
         <h2>
@@ -10,7 +11,7 @@
     </div>
     <div class="box-content">
     {{ Form::open(array('route' => 'lop.store','class'=>'form-horizontal','role'=>'form')) }}
-                <legend class="col-sm-12">
+                <fieldset class="col-sm-12">
                  <div class="form-group">
                     <label class="control-label"><h2>Mã Lớp:</h2></label>
                     <div class="controls row">
@@ -47,6 +48,8 @@
                     </div>  
                     </div>
                   </div>
+
+
                   <div class="form-group">
                     <label class="control-label"><h2>Ngành Học:</h2></label>
                     <div class="controls row">
@@ -62,6 +65,10 @@
                     </div>  
                     </div>
                   </div>
+
+
+
+                  
                   <div class="form-group">
                     <label class="control-label"><h2>Ghi Chú:</h2></label>
                     <div class="controls row">
@@ -82,11 +89,12 @@
                         {{ implode('', $errors->all('<li class="error">:message</li>')) }}
                     </ul>
                 @endif
-        </legend>
+        </fieldset>
     {{ Form::close() }}
  
 
-        
+        </div>
+        </div>
 </div>
 </div>
 @stop

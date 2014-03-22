@@ -56,15 +56,7 @@
                 </div>
             </div>
 
-            <div class="form-group">
-                <label class="control-label" for="date01">Thời Gian Tạo:</label>
-                <div class="controls row">
-                    <div class="input-group date col-sm-4">
-                        <span class="input-group-addon"><i class="icon-calendar"></i></span>
-                        <input type="text" class="form-control date-picker" name='created_at' data-date-format="dd/mm/yyyy"/>
-                    </div>  
-                </div>
-            </div>
+ 
 
             <div class="form-group">
                 <label class="control-label">Ghi Chú:</label>

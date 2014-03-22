@@ -2,157 +2,157 @@
 <?php $__env->startSection('main'); ?>
 <div class="box">
     <div class="box-header">
-    <?php if(Auth::user()->doi_tuong == 'Sinh Viên'): ?>
+        <?php if(Auth::user()->doi_tuong == 'Sinh Viên'): ?>
         <h2><i class="icon-user"></i><span>Chỉnh Sửa Thông Tin Sinh Viên</span></h2>
     </div>
     <div class="box-content">
-            <?php echo Form::model($sinh_vien, array('method' => 'PATCH', 'route' => array('thong_tin.update', $sinh_vien->id))); ?>
-            <div>
-                <?php echo Form::label('mssv', 'MSSV:'); ?>
-                <?php echo Form::text('mssv'); ?>
-            </div>
+        <?php echo Form::model($sinh_vien, array('method' => 'PATCH', 'route' => array('thong_tin.update', $sinh_vien->id))); ?>
+        <div>
+            <?php echo Form::label('mssv', 'MSSV:'); ?>
+            <?php echo Form::text('mssv'); ?>
+        </div>
 
-            <div>
-                <?php echo Form::label('ho_ten', 'Họ Tên:'); ?>
-                <?php echo Form::text('ho_ten'); ?>
-            </div>
-            <?php echo Form::label('Lops_Id', 'Lớp:'); ?>
-                <select name='Lops_Id' class="form-control" required="required">
-                        <?php
-                          $lop = Lop::all();
-                          foreach ($lop as $lop){
-                            ?>
-                            <option value="<?php echo $lop->id; ?>" <?php if ($sinh_vien->Lops_Id == $lop->id) echo "selected='selected'"; ?>><?php echo $lop->ten_lop; ?></option>
-                            <?php
-                          }
-                          ?>
-                  </select> 
-            <div>
-                <?php echo Form::label('ngay_sinh', 'Ngày Sinh:'); ?>
-                <?php echo Form::text('ngay_sinh'); ?>
-            </div>
+        <div>
+            <?php echo Form::label('ho_ten', 'Họ Tên:'); ?>
+            <?php echo Form::text('ho_ten'); ?>
+        </div>
+        <?php echo Form::label('Lops_Id', 'Lớp:'); ?>
+        <select name='Lops_Id' class="form-control" required="required">
+            <?php
+            $lop = Lop::all();
+            foreach ($lop as $lop) {
+                ?>
+                <option value="<?php echo $lop->id; ?>" <?php if ($sinh_vien->Lops_Id == $lop->id) echo "selected='selected'"; ?>><?php echo $lop->ten_lop; ?></option>
+                <?php
+            }
+            ?>
+        </select> 
+        <div>
+            <?php echo Form::label('ngay_sinh', 'Ngày Sinh:'); ?>
+            <?php echo Form::text('ngay_sinh'); ?>
+        </div>
 
-            <div>
-                <?php echo Form::label('gioi_tinh', 'Giới Tính:'); ?>
-                <?php echo Form::text('gioi_tinh'); ?>
-            </div>
+        <div>
+            <?php echo Form::label('gioi_tinh', 'Giới Tính:'); ?>
+            <?php echo Form::text('gioi_tinh'); ?>
+        </div>
 
-            <div>
-                <?php echo Form::label('dia_chi', 'Địa Chỉ:'); ?>
-                <?php echo Form::text('dia_chi'); ?>
-            </div>
+        <div>
+            <?php echo Form::label('dia_chi', 'Địa Chỉ:'); ?>
+            <?php echo Form::text('dia_chi'); ?>
+        </div>
 
-            <div>
-                <?php echo Form::label('que_quan', 'Quê Quán:'); ?>
-                <?php echo Form::text('que_quan'); ?>
-            </div>
+        <div>
+            <?php echo Form::label('que_quan', 'Quê Quán:'); ?>
+            <?php echo Form::text('que_quan'); ?>
+        </div>
 
-            <div>
-                <?php echo Form::label('email', 'Email:'); ?>
-                <?php echo Form::text('email'); ?>
-            </div>
+        <div>
+            <?php echo Form::label('email', 'Email:'); ?>
+            <?php echo Form::text('email'); ?>
+        </div>
 
-            <div>
-                <?php echo Form::label('sdt', 'SĐT:'); ?>
-                <?php echo Form::text('sdt'); ?>
-            </div>
+        <div>
+            <?php echo Form::label('sdt', 'SĐT:'); ?>
+            <?php echo Form::text('sdt'); ?>
+        </div>
 
-            <div>
-                <?php echo Form::label('ghi_chu', 'Ghi Chú:'); ?>
-                <?php echo Form::text('ghi_chu'); ?>
-            </div>
- 
-            
+        <div>
+            <?php echo Form::label('ghi_chu', 'Ghi Chú:'); ?>
+            <?php echo Form::text('ghi_chu'); ?>
+        </div>
 
-            <?php echo Form::submit('Update', array('class' => 'btn btn-info')); ?>
-            
 
-            <?php echo Form::close(); ?>
+
+        <?php echo Form::submit('Update', array('class' => 'btn btn-info')); ?>
+
+
+        <?php echo Form::close(); ?>
         <?php else: ?>
         <h2><i class="icon-user"></i><span>Chỉnh Sửa Thông Tin Cán Bộ</span></h2>
-            </div>
-            <div class="box-content">
-            <?php echo Form::model($can_bo, array('method' => 'PATCH', 'route' => array('thong_tin.update', $can_bo->id))); ?>
-            <div>
-                <?php echo Form::label('mscb', 'MSCB:'); ?>
-                <?php echo Form::text('mscb'); ?>
-            </div>
+    </div>
+    <div class="box-content">
+        <?php echo Form::model($can_bo, array('method' => 'PATCH', 'route' => array('thong_tin.update', $can_bo->id))); ?>
+        <div>
+            <?php echo Form::label('mscb', 'MSCB:'); ?>
+            <?php echo Form::text('mscb'); ?>
+        </div>
 
-            <div>
-                <?php echo Form::label('ho_ten', 'Họ Tên:'); ?>
-                <?php echo Form::text('ho_ten'); ?>
-            </div>
-            <div>
-                <?php echo Form::label('chuc_vu', 'Chức Vụ:'); ?>
-                <?php echo Form::text('chuc_vu'); ?>
-            </div>
-                    
+        <div>
+            <?php echo Form::label('ho_ten', 'Họ Tên:'); ?>
+            <?php echo Form::text('ho_ten'); ?>
+        </div>
+        <div>
+            <?php echo Form::label('chuc_vu', 'Chức Vụ:'); ?>
+            <?php echo Form::text('chuc_vu'); ?>
+        </div>
 
-            <div>
-                <?php echo Form::label('DonVis_Id', 'Đơn Vị:'); ?>
-                <select name='DonVis_Id' class="form-control" required="required">
-                        <?php
-                          $donvi = Don_vi::all();
-                          foreach ($donvi as $donvi){
-                            ?>
-                            <option value="<?php echo $donvi->id; ?>" <?php if ($can_bo->DonVis_Id == $donvi->id) echo "selected='selected'"; ?>><?php echo $donvi->ten_don_vi; ?></option>
-                            <?php
-                          }
-                          ?>
-                  </select> 
-            </div>
-            <div>
-                <?php echo Form::label('ngay_sinh', 'Ngày Sinh:'); ?>
-                <?php echo Form::text('ngay_sinh'); ?>
-            </div>
 
-            <div>
-                <?php echo Form::label('gioi_tinh', 'Giới Tính:'); ?>
-                <?php echo Form::text('gioi_tinh'); ?>
-            </div>
+        <div>
+            <?php echo Form::label('DonVis_Id', 'Đơn Vị:'); ?>
+            <select name='DonVis_Id' class="form-control" required="required">
+                <?php
+                $donvi = Don_vi::all();
+                foreach ($donvi as $donvi) {
+                    ?>
+                    <option value="<?php echo $donvi->id; ?>" <?php if ($can_bo->DonVis_Id == $donvi->id) echo "selected='selected'"; ?>><?php echo $donvi->ten_don_vi; ?></option>
+                    <?php
+                }
+                ?>
+            </select> 
+        </div>
+        <div>
+            <?php echo Form::label('ngay_sinh', 'Ngày Sinh:'); ?>
+            <?php echo Form::text('ngay_sinh'); ?>
+        </div>
 
-            <div>
-                <?php echo Form::label('dia_chi', 'Địa Chỉ:'); ?>
-                <?php echo Form::text('dia_chi'); ?>
-            </div>
+        <div>
+            <?php echo Form::label('gioi_tinh', 'Giới Tính:'); ?>
+            <?php echo Form::text('gioi_tinh'); ?>
+        </div>
 
-            <div>
-                <?php echo Form::label('que_quan', 'Quê Quán:'); ?>
-                <?php echo Form::text('que_quan'); ?>
-            </div>
+        <div>
+            <?php echo Form::label('dia_chi', 'Địa Chỉ:'); ?>
+            <?php echo Form::text('dia_chi'); ?>
+        </div>
 
-            <div>
-                <?php echo Form::label('email', 'Email:'); ?>
-                <?php echo Form::text('email'); ?>
-            </div>
+        <div>
+            <?php echo Form::label('que_quan', 'Quê Quán:'); ?>
+            <?php echo Form::text('que_quan'); ?>
+        </div>
 
-            <div>
-                <?php echo Form::label('sdt', 'SĐT:'); ?>
-                <?php echo Form::text('sdt'); ?>
-            </div>
+        <div>
+            <?php echo Form::label('email', 'Email:'); ?>
+            <?php echo Form::text('email'); ?>
+        </div>
 
-            <div>
-                <?php echo Form::label('ghi_chu', 'Ghi Chú:'); ?>
-                <?php echo Form::text('ghi_chu'); ?>
-            </div>
-             <?php echo Form::submit('Update', array('class' => 'btn btn-info')); ?>
-            
+        <div>
+            <?php echo Form::label('sdt', 'SĐT:'); ?>
+            <?php echo Form::text('sdt'); ?>
+        </div>
 
-            <?php echo Form::close(); ?>
+        <div>
+            <?php echo Form::label('ghi_chu', 'Ghi Chú:'); ?>
+            <?php echo Form::text('ghi_chu'); ?>
+        </div>
+        <?php echo Form::submit('Update', array('class' => 'btn btn-info')); ?>
+
+
+        <?php echo Form::close(); ?>
         <?php endif; ?>
         <?php if ($errors->any()): ?>
-        	<ul>
-        		<?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
-        	</ul>
+        <ul>
+            <?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
+        </ul>
         <?php endif; ?>
-</div>
+    </div>
 </div>
 <?php $__env->stopSection(); ?>
 
 
- 
 
-    
 
- 
+
+
+
 <?php echo $__env->make('layouts.scaffold', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

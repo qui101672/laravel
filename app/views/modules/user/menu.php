@@ -62,10 +62,7 @@
 					                }
 					            }
 					            ?>
-		                        
-		                       
-		                 
-		                  
+
 		                </ul><!-- end nav -->
 		                <ul class="nav pull-right">
 		                 <?php

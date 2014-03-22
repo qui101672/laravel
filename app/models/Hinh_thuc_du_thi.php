@@ -16,4 +16,8 @@ class Hinh_thuc_du_thi extends Eloquent {
 		'HoiThis_DanhMucHoiThisId' => 'required',
 		'ghi_chu' => ''
 	);
+	public function get_dshinhthuc($id){
+		$results = DB::table('hinh_thuc_du_this')->where('HoiThis_Id','=',$id)->get();
+		return $results;
+	}
 }

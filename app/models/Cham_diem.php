@@ -10,4 +10,5 @@ class Cham_diem extends Eloquent {
 		'ThanhVienBgks_Id'=> 'required',
 		'TietMucDuThis_Id'=> 'required'
 		);
+	
 }

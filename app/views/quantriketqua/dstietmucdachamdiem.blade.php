@@ -1,5 +1,6 @@
+@extends('layouts.admin')
 
-<?php $__env->startSection('main'); ?>
+@section('main')
 
 <div class="row">
 
@@ -12,7 +13,7 @@
 	        </h2>
 	    </div>
 	    <div class="box-content">
-	    	<?php echo Form::open(array('url' =>'ds_tietmuc_cham_diem','role'=>'form', 'name'=>'form_search','id'=>'form_search')); ?>
+	    	{{Form::open(array('url' =>'dstietmucdachamdiem','role'=>'form', 'name'=>'form_search','id'=>'form_search'))}}
 		    <fieldset>
 		    	 <div class="row">
 			    	 <div class="col-md-4">
@@ -53,7 +54,7 @@
 		    	 </div>
 		    	 </div>
 	    	</fieldset>
-	    	<?php echo Form::close(); ?>
+	    	{{Form::close()}}
 	  
 			</div>
 
@@ -215,7 +216,8 @@
 		 				id_phieu_dang_ky: document.form_search.dvthamgia.value,
 		 				id_hinh_thuc: document.form_search.hinhthucduthi.value,
 					 	id_vong_thi: document.form_search.vongthi.value,
-						id_chuong_trinh: document.form_search.tenchuongtrinh.value
+						id_chuong_trinh: document.form_search.tenchuongtrinh.value,
+
 					},
 		 	dataType: 'json',
 		 	success: function(results){
@@ -228,9 +230,10 @@
 
 		 		 for(var key in results) {
 				   	var obj = results[key];				   	
-				   	$('#tr_ds').append("<tr><td><input type='text' name='ten_tiet_muc_"+obj.id+"' id='ten_tiet_muc_"+obj.id+"' value='"+obj.ten_tiet_muc+"' class='form-control' readonly></td><td><input type='text' name='trinh_bay_"+obj.id+"' id='trinh_bay_"+obj.id+"' value='"+obj.trinh_bay+"' class='form-control' readonly></td><td><input type='text' name='input_diem_so_"+obj.id+"' id='input_diem_so_"+obj.id+"' class='form-control' required='required' value=''></td><td><button id='btn_diem_so_"+obj.id+"' type='button' class='btn btn-default'>Lưu Điểm</button></td></tr>");
+				   	if(obj.diem_so != ''){
+				   		$('#tr_ds').append("<tr><td><input type='text' name='ten_tiet_muc_"+obj.id+"' id='ten_tiet_muc_"+obj.id+"' value='"+obj.ten_tiet_muc+"' class='form-control' readonly></td><td><input type='text' name='trinh_bay_"+obj.id+"' id='trinh_bay_"+obj.id+"' value='"+obj.trinh_bay+"' class='form-control' readonly></td><td><input type='text' name='input_diem_so_"+obj.id+"' id='input_diem_so_"+obj.id+"' class='form-control' required='required' value='"+obj.so_diem+"'></td><td><button id='btn_diem_so_"+obj.id+"' type='button' class='btn btn-default'>Lưu Điểm</button></td></tr>");
+				   	}
 
-				   	$('#tr_ds').append("\<script\>$('#btn_diem_so_"+obj.id+"').on('click', function add(event){event.preventDefault();});\<\/script\>");
 				}
             }
 		 })  
@@ -241,5 +244,4 @@
  
 </script>
 
-<?php $__env->stopSection(); ?>
-<?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+@stop

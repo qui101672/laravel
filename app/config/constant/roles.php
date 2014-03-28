@@ -120,7 +120,21 @@ define("ADMIN",
                         "MENU_HE_THONG" =>"Danh sách Thể Loại bài viết",
                         "ICON" => "icon-edit",
                         "LINK" => ""))
-            )                       
+            ),
+            array(
+                "MENU_HE_THONG" =>"Quản lý Diểm",
+                "LINK" => "",
+                "ICON" => "icon-edit",
+                "CHILD"=>  array(
+                    array(
+                        "MENU_HE_THONG" =>"Xét Duyệt Điểm",
+                        "ICON" => "icon-edit",
+                        "LINK" => "../quanlydiem"),
+                    array(
+                        "MENU_HE_THONG" =>"Danh Sách Đã Chấm",
+                        "ICON" => "icon-edit",
+                        "LINK" => "../dstietmucdachamdiem"))
+            )                        
             )));
 
 define("SINH_VIEN", 
@@ -169,5 +183,28 @@ define("QUAN_LY",
                 "ICON" => "icon-edit",
                 "CHILD"=>  array(
                     )
+            )
+            )));
+define("BAN_GIAM_KHAO", 
+        serialize(array 
+            (array(
+                "MENU_HE_THONG" =>"Trang chủ",
+                "LINK" => "/",
+                "ICON" => "icon-home",
+                "CHILD"=> null
+            ),
+           array(
+                "MENU_HE_THONG" =>"Quản lý Chấm Diểm",
+                "LINK" => "",
+                "ICON" => "icon-edit",
+                "CHILD"=>  array(
+                    array(
+                        "MENU_HE_THONG" =>"Chấm Điểm",
+                        "ICON" => "icon-edit",
+                        "LINK" => "../chamdiem"),
+                    array(
+                        "MENU_HE_THONG" =>"Danh Sách Đã Chấm",
+                        "ICON" => "icon-edit",
+                        "LINK" => "../dstietmucdachamdiem"))
             )
             )));

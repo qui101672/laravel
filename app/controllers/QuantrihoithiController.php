@@ -53,9 +53,8 @@ class QuanTriHoiThiController extends BaseController {
                     	'time_end'=> Input::get('time_end'),
                     	'ghi_chu'=> Input::get('ghi_chu')
                 		);
- 	// 	$id = DB::table('hoi_this')->insertGetId($input);
-		// $output = $this->hoi_thi->find($id);
- 		$output = $this->hoi_thi->find('1');
+ 		$id = DB::table('hoi_this')->insertGetId($input);
+		$output = $this->hoi_thi->find($id);
 		return $output;
 	}
 

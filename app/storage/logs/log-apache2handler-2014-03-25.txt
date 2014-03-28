@@ -1,0 +1,27 @@
+[2014-03-25 13:03:51] log.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(20): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2472): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2438): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1527): Illuminate\Database\Eloquent\Model->getConnection()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1461): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2651): Illuminate\Database\Eloquent\Model->newQuery()
+#10 D:\xampp\htdocs\laravel\app\controllers\NguoiDungBaiVietController.php(19): Illuminate\Database\Eloquent\Model->__call('orderBy', Array)
+#11 D:\xampp\htdocs\laravel\app\controllers\NguoiDungBaiVietController.php(19): Bai_viet->orderBy('id', 'desc')
+#12 [internal function]: NguoiDungBaiVietController->index()
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []

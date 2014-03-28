@@ -14,8 +14,8 @@
         </li>
         <li><i class="icon-calendar"></i> <span class="info"><?php echo e($bai_viet->created_at); ?></span></li>
     </ul> <!--end post-meta-->
-    <p><?php echo e(strip_tags($bai_viet->noi_dung_bai_viet)); ?></p>
-    <p><?php echo e($bai_viet->tag); ?></p>
+    <p><?php echo $bai_viet->noi_dung_bai_viet; ?></p>
+    <p><?php echo $bai_viet->tag; ?></p>
     <p><?php echo link_to_route('tin_tuc.index', 'Quay Lại Trang Chính', array(),array('class' => 'btn btn-primary' )); ?></p>
     
 </div> <!--end post-content-->

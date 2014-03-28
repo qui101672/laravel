@@ -1,0 +1,943 @@
+[2014-03-24 08:01:52] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:86
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(86): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 86, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:01:59] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:86
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(86): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 86, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:03:29] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '*'' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:90
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-24 08:03:58] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:87
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(87): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 87, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:11:55] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:96
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(96): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 96, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:11:56] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:96
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(96): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 96, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:11:56] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:96
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(96): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 96, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:11:56] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:96
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(96): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 96, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:12:33] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'hinh_thuc_du_this.id' in 'on clause'' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(96): Illuminate\Database\Query\Builder->get()
+#7 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'hinh_thuc_du_this.id' in 'on clause' (SQL: select * from `tiet_muc_du_this` inner join `vong_this` on `vong_this`.`HinhThucDuThis_Id` = `hinh_thuc_du_this`.`id` and `tiet_muc_du_this`.`VongThis_Id` = `tiet_muc_du_this`.`VongThis_Id` inner join `hoi_this` on `hinh_thuc_du_this`.`HoiThis_DanhMucNamsId` = `hoi_this`.`DanhMucNams_Id` and `hinh_thuc_du_this`.`HoiThis_DanhMucHoiThisId` = `hoi_this`.`DanhMucHoiThis_Id` and `hinh_thuc_du_this`.`HoiThis_Id` = `hoi_this`.`id` left join `hinh_thuc_du_this` on `tiet_muc_du_this`.`HinhThucDuThis_Id` = `hinh_thuc_du_this`.`id`) (Bindings: array (
+))' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(96): Illuminate\Database\Query\Builder->get()
+#6 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#10 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#17 {main} [] []
+[2014-03-24 08:13:29] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'hinh_thuc_du_this.id' in 'on clause'' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(96): Illuminate\Database\Query\Builder->get()
+#7 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'hinh_thuc_du_this.id' in 'on clause' (SQL: select * from `tiet_muc_du_this` inner join `vong_this` on `vong_this`.`HinhThucDuThis_Id` = `hinh_thuc_du_this`.`id` and `tiet_muc_du_this`.`VongThis_Id` = `tiet_muc_du_this`.`VongThis_Id = vong_this`.`id` inner join `hoi_this` on `hinh_thuc_du_this`.`HoiThis_DanhMucNamsId` = `hoi_this`.`DanhMucNams_Id` and `hinh_thuc_du_this`.`HoiThis_DanhMucHoiThisId` = `hoi_this`.`DanhMucHoiThis_Id` and `hinh_thuc_du_this`.`HoiThis_Id` = `hoi_this`.`id` left join `hinh_thuc_du_this` on `tiet_muc_du_this`.`HinhThucDuThis_Id` = `hinh_thuc_du_this`.`id`) (Bindings: array (
+))' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(96): Illuminate\Database\Query\Builder->get()
+#6 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#10 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#17 {main} [] []
+[2014-03-24 08:27:58] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ''`'' (T_CONSTANT_ENCAPSED_STRING)' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:88
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-24 08:28:00] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ''`'' (T_CONSTANT_ENCAPSED_STRING)' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:88
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-24 08:31:08] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:87
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(87): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 87, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:32:58] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:82
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(82): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 82, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:33:55] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-24 08:34:06] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'hinh_thuc_du_this.id' in 'on clause'' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(97): Illuminate\Database\Query\Builder->get()
+#7 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'hinh_thuc_du_this.id' in 'on clause' (SQL: select * from `tiet_muc_du_this` inner join `vong_this` on `vong_this`.`HinhThucDuThis_Id` = `hinh_thuc_du_this`.`id` and `tiet_muc_du_this`.`VongThis_Id` = `tiet_muc_du_this`.`VongThis_Id = vong_this`.`id` inner join `hoi_this` on `hinh_thuc_du_this`.`HoiThis_DanhMucNamsId` = `hoi_this`.`DanhMucNams_Id` and `hinh_thuc_du_this`.`HoiThis_DanhMucHoiThisId` = `hoi_this`.`DanhMucHoiThis_Id` and `hinh_thuc_du_this`.`HoiThis_Id` = `hoi_this`.`id` left join `hinh_thuc_du_this` on `tiet_muc_du_this`.`HinhThucDuThis_Id` = `hinh_thuc_du_this`.`id`) (Bindings: array (
+))' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(97): Illuminate\Database\Query\Builder->get()
+#6 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#10 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#17 {main} [] []
+[2014-03-24 08:37:46] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-24 08:37:54] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tiet_muc_du_this.VongThis_Id = vong_this.id' in 'on clause'' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(98): Illuminate\Database\Query\Builder->get()
+#7 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tiet_muc_du_this.VongThis_Id = vong_this.id' in 'on clause' (SQL: select * from `tiet_muc_du_this` left join `hinh_thuc_du_this` on `tiet_muc_du_this`.`HinhThucDuThis_Id` = `hinh_thuc_du_this`.`id` inner join `vong_this` on `vong_this`.`HinhThucDuThis_Id` = `hinh_thuc_du_this`.`id` and `tiet_muc_du_this`.`VongThis_Id` = `tiet_muc_du_this`.`VongThis_Id = vong_this`.`id` inner join `hoi_this` on `hinh_thuc_du_this`.`HoiThis_DanhMucNamsId` = `hoi_this`.`DanhMucNams_Id` and `hinh_thuc_du_this`.`HoiThis_DanhMucHoiThisId` = `hoi_this`.`DanhMucHoiThis_Id` and `hinh_thuc_du_this`.`HoiThis_Id` = `hoi_this`.`id`) (Bindings: array (
+))' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(98): Illuminate\Database\Query\Builder->get()
+#6 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#10 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#17 {main} [] []
+[2014-03-24 08:40:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-24 08:40:27] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:96
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(96): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 96, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:43:59] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:96
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(96): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 96, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:44:23] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-24 08:45:14] log.ERROR: exception 'ErrorException' with message 'Undefined variable: input' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:96
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(96): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 96, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:45:30] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:96
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(96): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 96, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:47:00] log.ERROR: exception 'ErrorException' with message 'Undefined variable: id_hoi_thi' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:104
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(104): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 104, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:54:12] log.ERROR: exception 'ErrorException' with message 'Undefined variable: input' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:97
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(97): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 97, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:54:19] log.ERROR: exception 'ErrorException' with message 'Undefined variable: input' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:97
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(97): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 97, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:54:24] log.ERROR: exception 'ErrorException' with message 'Undefined variable: input' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:97
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(97): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 97, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:54:49] log.ERROR: exception 'ErrorException' with message 'Undefined variable: input' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:98
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(98): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 98, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:54:53] log.ERROR: exception 'ErrorException' with message 'Undefined variable: input' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:98
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(98): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 98, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 08:55:08] log.ERROR: exception 'ErrorException' with message 'Undefined variable: input' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:98
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(98): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 98, Array)
+#1 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-24 09:06:48] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'danhsachtietmuc' (T_STRING), expecting variable (T_VARIABLE)' in D:\xampp\htdocs\laravel\app\models\Tiet_muc_du_thi.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-24 09:06:50] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'danhsachtietmuc' (T_STRING), expecting variable (T_VARIABLE)' in D:\xampp\htdocs\laravel\app\models\Tiet_muc_du_thi.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-24 09:06:51] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'danhsachtietmuc' (T_STRING), expecting variable (T_VARIABLE)' in D:\xampp\htdocs\laravel\app\models\Tiet_muc_du_thi.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-24 09:06:54] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'danhsachtietmuc' (T_STRING), expecting variable (T_VARIABLE)' in D:\xampp\htdocs\laravel\app\models\Tiet_muc_du_thi.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-24 09:11:20] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in D:\xampp\htdocs\laravel\app\views\modules\user\theloaibaiviet.php:9
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-24 09:13:23] log.ERROR: exception 'Symfony\Component\Routing\Exception\RouteNotFoundException' with message 'Unable to generate a URL for the named route "" as such route does not exist.' in D:\xampp\htdocs\laravel\vendor\symfony\routing\Symfony\Component\Routing\Generator\UrlGenerator.php:134
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php(192): Symfony\Component\Routing\Generator\UrlGenerator->generate('', Array, true)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Html\HtmlBuilder.php(184): Illuminate\Routing\UrlGenerator->route('', 1)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Support\helpers.php(602): Illuminate\Html\HtmlBuilder->linkRoute('', 'Tin T???c', 1, Array)
+#3 D:\xampp\htdocs\laravel\app\views\modules\user\theloaibaiviet.php(9): link_to_route('', 'Tin T???c', 1, Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(17): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\PhpEngine->get('D:\xampp\htdocs...', Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#8 D:\xampp\htdocs\laravel\app\storage\views\57f94335399a81fee46f8db9eec05c04(56): Illuminate\View\View->render()
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#13 D:\xampp\htdocs\laravel\app\storage\views\eaaec831fe6a8c74a3dd04c63a233d3f(45): Illuminate\View\View->render()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#17 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#18 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#19 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#20 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#21 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#22 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#23 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#24 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#25 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#26 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#27 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#28 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#29 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#30 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#31 {main} [] []
+[2014-03-24 09:18:58] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::left()' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1658
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\NguoiDungBaiVietController.php(39): Illuminate\Database\Query\Builder->__call('left', Array)
+#1 D:\xampp\htdocs\laravel\app\controllers\NguoiDungBaiVietController.php(39): Illuminate\Database\Query\Builder->left('the_loai_bai_vi...', 'bai_viets.TheLo...', '=', 'the_loai_bai_vi...')
+#2 [internal function]: NguoiDungBaiVietController->theloai('6')
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('theloai', Array)
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'theloai', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('6')
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2014-03-24 09:19:37] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lv_test.bai_viet' doesn't exist' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select `the_loa...')
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select `the_loa...', Array)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `the_loa...', Array, Object(Closure))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select `the_loa...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\laravel\app\controllers\NguoiDungBaiVietController.php(42): Illuminate\Database\Query\Builder->get()
+#7 [internal function]: NguoiDungBaiVietController->theloai('6')
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('theloai', Array)
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'theloai', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('6')
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lv_test.bai_viet' doesn't exist (SQL: select `the_loai_bai_viets`.`id`, `bai_viets`.`tieu_de_bai_viet` from `bai_viet` left join `the_loai_bai_viets` on `bai_viets`.`TheLoaiBaiViets_Id` = `the_loai_bai_viets`.`id` where `the_loai_bai_viets`.`id` = ?) (Bindings: array (
+  0 => '6',
+))' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `the_loa...', Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `the_loa...', Array, Object(Closure))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select `the_loa...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\laravel\app\controllers\NguoiDungBaiVietController.php(42): Illuminate\Database\Query\Builder->get()
+#6 [internal function]: NguoiDungBaiVietController->theloai('6')
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('theloai', Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'theloai', Array)
+#10 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('6')
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#17 {main} [] []
+[2014-03-24 09:19:57] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function count() on a non-object' in D:\xampp\htdocs\laravel\app\storage\views\54348bef92f70bf1c131b469b58e031a:3
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-24 09:20:13] log.ERROR: exception 'ErrorException' with message 'Undefined property: stdClass::$TaiKhoans_Id' in D:\xampp\htdocs\laravel\app\storage\views\54348bef92f70bf1c131b469b58e031a:20
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\storage\views\54348bef92f70bf1c131b469b58e031a(20): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', 'D:\xampp\htdocs...', 20, Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#6 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'theloai', Object(Illuminate\View\View))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'theloai', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1')
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2014-03-24 09:23:39] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function count() on a non-object' in D:\xampp\htdocs\laravel\app\storage\views\eaaec831fe6a8c74a3dd04c63a233d3f:3
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-24 09:41:16] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-24 09:42:23] log.ERROR: exception 'ErrorException' with message 'Object of class Illuminate\Database\Query\Builder could not be converted to string' in D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php:361
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(361): Illuminate\Exception\Handler->handleError(4096, 'Object of class...', 'D:\xampp\htdocs...', 361, Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(73): Symfony\Component\HttpFoundation\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#2 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\Database\Query\Builder))
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\Database\Query\Builder), Object(Illuminate\Http\Request))
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Object(Illuminate\Database\Query\Builder))
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-03-24 09:42:24] log.ERROR: exception 'ErrorException' with message 'Object of class Illuminate\Database\Query\Builder could not be converted to string' in D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php:361
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(361): Illuminate\Exception\Handler->handleError(4096, 'Object of class...', 'D:\xampp\htdocs...', 361, Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(73): Symfony\Component\HttpFoundation\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#2 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\Database\Query\Builder))
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\Database\Query\Builder), Object(Illuminate\Http\Request))
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Object(Illuminate\Database\Query\Builder))
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-03-24 09:43:09] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined function get()' in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php:100
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-24 09:43:49] log.ERROR: exception 'ErrorException' with message 'Object of class Illuminate\Database\Query\Builder could not be converted to string' in D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php:361
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(361): Illuminate\Exception\Handler->handleError(4096, 'Object of class...', 'D:\xampp\htdocs...', 361, Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(73): Symfony\Component\HttpFoundation\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#2 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\Database\Query\Builder))
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\Database\Query\Builder), Object(Illuminate\Http\Request))
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Object(Illuminate\Database\Query\Builder))
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-03-24 09:44:24] log.ERROR: exception 'ErrorException' with message 'Object of class Illuminate\Database\Query\Builder could not be converted to string' in D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php:361
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(361): Illuminate\Exception\Handler->handleError(4096, 'Object of class...', 'D:\xampp\htdocs...', 361, Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(73): Symfony\Component\HttpFoundation\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#2 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\Database\Query\Builder))
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\Database\Query\Builder), Object(Illuminate\Http\Request))
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Object(Illuminate\Database\Query\Builder))
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-03-24 09:44:25] log.ERROR: exception 'ErrorException' with message 'Object of class Illuminate\Database\Query\Builder could not be converted to string' in D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php:361
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(361): Illuminate\Exception\Handler->handleError(4096, 'Object of class...', 'D:\xampp\htdocs...', 361, Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(73): Symfony\Component\HttpFoundation\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#2 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\Database\Query\Builder))
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\Database\Query\Builder), Object(Illuminate\Http\Request))
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Object(Illuminate\Database\Query\Builder))
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-03-24 09:44:58] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-24 09:45:21] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-03-24 09:45:43] log.ERROR: exception 'ErrorException' with message 'Object of class Illuminate\Database\Query\Builder could not be converted to string' in D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php:361
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(361): Illuminate\Exception\Handler->handleError(4096, 'Object of class...', 'D:\xampp\htdocs...', 361, Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(73): Symfony\Component\HttpFoundation\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#2 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\Database\Query\Builder))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\Database\Query\Builder))
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\Database\Query\Builder), Object(Illuminate\Http\Request))
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Object(Illuminate\Database\Query\Builder))
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-03-24 10:33:31] log.ERROR: exception 'Symfony\Component\Routing\Exception\RouteNotFoundException' with message 'Unable to generate a URL for the named route "tin_tuc/theloai" as such route does not exist.' in D:\xampp\htdocs\laravel\vendor\symfony\routing\Symfony\Component\Routing\Generator\UrlGenerator.php:134
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php(192): Symfony\Component\Routing\Generator\UrlGenerator->generate('tin_tuc/theloai', Array, true)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Html\HtmlBuilder.php(184): Illuminate\Routing\UrlGenerator->route('tin_tuc/theloai', Array)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Support\helpers.php(602): Illuminate\Html\HtmlBuilder->linkRoute('tin_tuc/theloai', 'Tin T???c', Array, Array)
+#3 D:\xampp\htdocs\laravel\app\views\modules\user\theloaibaiviet.php(9): link_to_route('tin_tuc/theloai', 'Tin T???c', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(17): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\PhpEngine->get('D:\xampp\htdocs...', Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#8 D:\xampp\htdocs\laravel\app\storage\views\57f94335399a81fee46f8db9eec05c04(56): Illuminate\View\View->render()
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#13 D:\xampp\htdocs\laravel\app\storage\views\eaaec831fe6a8c74a3dd04c63a233d3f(45): Illuminate\View\View->render()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#17 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#18 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#19 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#20 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#21 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#22 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#23 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#24 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#25 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#26 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#27 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#28 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#29 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#30 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#31 {main} [] []
+[2014-03-24 10:33:49] log.ERROR: exception 'Symfony\Component\Routing\Exception\RouteNotFoundException' with message 'Unable to generate a URL for the named route "tin_tuc.theloai" as such route does not exist.' in D:\xampp\htdocs\laravel\vendor\symfony\routing\Symfony\Component\Routing\Generator\UrlGenerator.php:134
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php(192): Symfony\Component\Routing\Generator\UrlGenerator->generate('tin_tuc.theloai', Array, true)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Html\HtmlBuilder.php(184): Illuminate\Routing\UrlGenerator->route('tin_tuc.theloai', Array)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Support\helpers.php(602): Illuminate\Html\HtmlBuilder->linkRoute('tin_tuc.theloai', 'Tin T???c', Array, Array)
+#3 D:\xampp\htdocs\laravel\app\views\modules\user\theloaibaiviet.php(9): link_to_route('tin_tuc.theloai', 'Tin T???c', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(17): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\PhpEngine->get('D:\xampp\htdocs...', Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#8 D:\xampp\htdocs\laravel\app\storage\views\57f94335399a81fee46f8db9eec05c04(56): Illuminate\View\View->render()
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#13 D:\xampp\htdocs\laravel\app\storage\views\eaaec831fe6a8c74a3dd04c63a233d3f(45): Illuminate\View\View->render()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#17 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#18 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#19 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#20 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#21 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#22 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#23 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#24 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#25 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#26 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#27 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#28 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#29 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#30 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#31 {main} [] []
+[2014-03-24 11:43:16] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'danhsachtietmuc' (T_STRING), expecting variable (T_VARIABLE)' in D:\xampp\htdocs\laravel\app\models\Tiet_muc_du_thi.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-24 11:43:26] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'danhsachtietmuc' (T_STRING), expecting variable (T_VARIABLE)' in D:\xampp\htdocs\laravel\app\models\Tiet_muc_du_thi.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-24 14:04:10] log.ERROR: exception 'ErrorException' with message 'Missing argument 1 for Tiet_muc_du_thi::danhsachtietmuc(), called in D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php on line 86 and defined' in D:\xampp\htdocs\laravel\app\models\Tiet_muc_du_thi.php:18
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\models\Tiet_muc_du_thi.php(18): Illuminate\Exception\Handler->handleError(2, 'Missing argumen...', 'D:\xampp\htdocs...', 18, Array)
+#1 D:\xampp\htdocs\laravel\app\controllers\QuanTriKetQuaController.php(86): Tiet_muc_du_thi->danhsachtietmuc()
+#2 [internal function]: QuanTriKetQuaController->ds_tietmuc_cham_diem()
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('ds_tietmuc_cham...', Array)
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'ds_tietmuc_cham...', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2014-03-24 15:07:53] log.ERROR: exception 'ErrorException' with message 'Undefined variable: menus' in D:\xampp\htdocs\laravel\app\views\modules\admin\menu.php:22
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\views\modules\admin\menu.php(22): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 22, Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(17): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\PhpEngine->get('D:\xampp\htdocs...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 D:\xampp\htdocs\laravel\app\storage\views\4b3688d7c059388a40dacc40663bac55(40): Illuminate\View\View->render()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#10 D:\xampp\htdocs\laravel\app\storage\views\d052cce53cc6f6d04d6066a67b82d0e6(161): Illuminate\View\View->render()
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#16 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#17 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#18 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#20 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#21 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#22 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#23 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#24 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#25 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#26 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#27 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#28 {main} [] []
+[2014-03-24 15:07:54] log.ERROR: exception 'ErrorException' with message 'Undefined variable: menus' in D:\xampp\htdocs\laravel\app\views\modules\admin\menu.php:22
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\views\modules\admin\menu.php(22): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 22, Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(17): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\PhpEngine->get('D:\xampp\htdocs...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 D:\xampp\htdocs\laravel\app\storage\views\4b3688d7c059388a40dacc40663bac55(40): Illuminate\View\View->render()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#10 D:\xampp\htdocs\laravel\app\storage\views\d052cce53cc6f6d04d6066a67b82d0e6(161): Illuminate\View\View->render()
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#16 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#17 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#18 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'index', Object(Illuminate\View\View))
+#20 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#21 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#22 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#23 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#24 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#25 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#26 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#27 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#28 {main} [] []

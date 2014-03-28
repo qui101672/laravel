@@ -18,6 +18,8 @@
                 break;
             case 4: $menus = unserialize(QUAN_LY); 
                 break;
+            case 7: $menus = unserialize(BAN_GIAM_KHAO); 
+                break;
             }
         foreach ($menus as $menu) {
             if (is_array($menu["CHILD"])) {

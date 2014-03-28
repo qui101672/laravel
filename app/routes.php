@@ -19,7 +19,7 @@ Route::get('/', array('as' => 'home', 'uses' => 'NguoiDungBaiVietController@inde
 
 Route::group(array('before' => 'guest'), function()
 {
-    //Dang nhap
+    //Người dùng đăng nhập
     Route::post('login', array('before' => 'csrf', 'uses' => 'NguoiDungTaiKhoanController@login'));
     Route::get('login', array('as' => 'login', function () { 
         return View::make('nguoidungtaikhoan.login');
@@ -27,52 +27,71 @@ Route::group(array('before' => 'guest'), function()
     
 });
 
+Route::get('tin_tuc/theloai/{id}', array('as' => 'tin_tuc.theloai', 'uses'=>'NguoiDungBaiVietController@theloai'))
+            ->where(array('id' => '[0-9]+'));
+
 Route::group(array('before' => 'auth'), function()
 {
-        //Dang Xuat
+        //Đăng Xuất
         Route::get('logout', array('uses' => 'QuanTriTaiKhoanController@logout'));
-        //nguoi dung thong tin
+        //Thông Tin Người Dùng
         Route::get('profile', array('uses' => 'NguoiDungTaiKhoanController@profile'));
-        
+        //Tài Khoản Người Dùng
         Route::resource('thong_tin','NguoiDungTaiKhoanController');
-
+        //Người Dùng Đăng Ký Phiếu
         Route::resource('dang_ky_phieus', 'NguoiDungPhieuDangKyController');
-
+        //Người Dùng Đăng Ký Tiết Mục
         Route::resource('dang_ky_tiet_mucs', 'NguoiDungPhieuDangKyController');
 
     if(Session::get('role') == 'admin'){
-    	//quan ly bai viet
+    	//Admin quản lý bài viết
         Route::resource('bai_viet','QuanTriBaiVietController');
-        //quan ly don vi
+        //Admin quản lý đơn vị
         Route::resource('don_vi','QuanTriDonViController');
-        //quan ly lop
+        //Admin quản lý lớp
         Route::resource('lop', 'QuanTriLopController');
-        //quan ly nganh
+        //Admin quản lý ngành
         Route::resource('nganh', 'QuanTriNganhController');
-        //quan ly the loai bai viet
+        //Admin quản lý the loai bai viet
         Route::resource('the_loai_bai_viet', 'QuanTriTheLoaiBaiHatController');
-        //quan ly tai khoan
+        //Admin quản lý tài khoản
         Route::resource('tai_khoan','QuanTriTaiKhoanController');
-        //quan ly hoi thi
+        //Admin quản lý hội thi
         Route::resource('hoi_this', 'QuanTriHoiThiController');
-        //quan ly hinh thuc du thi
+        //Admin quản lý hình thức dự thi
         Route::resource('hinh_thuc_du_this', 'QuanTriHinhThucDuThiController');
-        Route::post('post_dshinhthuc',array('uses'=>'QuanTriHinhThucDuThiController@post_dshinhthuc'));
-        //quan ly vong thi
-        Route::resource('vong_this', '');
-        Route::post('post_dsvongthi',array('uses'=>'QuanTriVongThiController@post_dsvongthi'));
-        //quan ly bgks
+            //Ajax post hình thức dự thi
+            Route::post('post_dshinhthuc',array('uses'=>'QuanTriHinhThucDuThiController@post_dshinhthuc'));
+        //Admin quản lý vòng thi
+        Route::resource('vong_this', 'QuanTriVongThiController');
+            //Ajax post vòng thi dự thi
+            Route::post('post_dsvongthi',array('uses'=>'QuanTriVongThiController@post_dsvongthi'));
+        //Admin quản lý thành viên ban giám khảo
         Route::resource('ban_giam_khaos', 'QuanTriBGKController');
-        //quan ly btc
+        //Admin quản lý ban tổ chức
         Route::resource('ban_to_chuc', 'QuanTriBTCController');
-        //quan phieu dang ky
+        //Admin Quản lý phiếu đăng ký
         Route::resource('phieu_dang_kies', 'QuanTriPhieuDangKyController');
-        
+        //Admin đăng ký tiết mục dự thi
         Route::resource('tiet_muc_du_this', 'QuanTriTietMucController');
 
-        Route::resource('quan_tri_ket_qua', 'QuanTriKetQuaController');
-        Route::post('ds_tietmuc_cham_diem',array('uses'=>'QuanTriKetQuaController@ds_tietmuc_cham_diem'));
+        Route::resource('chamdiem','QuanTriKetQuaController');
+
+        Route::get('dstietmucdachamdiem', array('uses'=>'QuanTriKetQuaController@dstietmucdachamdiem'));
+
+        Route::post('dstietmucdachamdiem', array('uses'=>'QuanTriKetQuaController@tietmuc_da_cham_diem'));
+
+        Route::get('quanlydiem', array('uses'=>'QuanTriKetQuaController@quanlydiem'));
+
+        Route::post('ds_tietmuc', array('uses'=>'QuanTriKetQuaController@ds_tietmuc'));
+
+        Route::post('ds_tietmuc_cham_diem', array('uses'=>'QuanTriKetQuaController@ds_tietmuc_cham_diem'));
+
+        Route::post('ds_dvthamgia', array('uses'=>'QuanTriKetQuaController@danhsachdonvithamgia'));
         
+        Route::resource('danh_muc_hoi_this', 'Danh_muc_hoi_thisController');
+
+        Route::post('kiemtramahoithi', array('uses'=>'Danh_muc_hoi_thisController@get_mahoithi'));
 
     } elseif(Session::get('role') == 'sinhvien'){
 
@@ -86,6 +105,30 @@ Route::group(array('before' => 'auth'), function()
 
     } elseif(Session::get('role') == 'bangiamkhao'){
 
+        //Ajax post hình thức dự thi
+        Route::post('post_dshinhthuc',array('uses'=>'QuanTriHinhThucDuThiController@post_dshinhthuc'));
+     
+        //Ajax post vòng thi dự thi
+        Route::post('post_dsvongthi',array('uses'=>'QuanTriVongThiController@post_dsvongthi'));
+         
+        Route::resource('chamdiem','QuanTriKetQuaController');
+
+        Route::get('dstietmucdachamdiem', array('uses'=>'QuanTriKetQuaController@dstietmucdachamdiem'));
+
+        Route::post('dstietmucdachamdiem', array('uses'=>'QuanTriKetQuaController@tietmuc_da_cham_diem'));
+
+        Route::get('quanlydiem', array('uses'=>'QuanTriKetQuaController@quanlydiem'));
+
+        Route::post('ds_tietmuc', array('uses'=>'QuanTriKetQuaController@ds_tietmuc'));
+
+        Route::post('ds_tietmuc_cham_diem', array('uses'=>'QuanTriKetQuaController@ds_tietmuc_cham_diem'));
+
+        Route::post('ds_dvthamgia', array('uses'=>'QuanTriKetQuaController@danhsachdonvithamgia'));
+        
+        Route::resource('danh_muc_hoi_this', 'Danh_muc_hoi_thisController');
+
+        Route::post('kiemtramahoithi', array('uses'=>'Danh_muc_hoi_thisController@get_mahoithi'));
+            
     }
 });
 

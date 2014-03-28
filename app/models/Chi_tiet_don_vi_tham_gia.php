@@ -16,4 +16,5 @@ class Chi_tiet_don_vi_tham_gia extends Eloquent {
 		'DonVis_Id'=> 'required',
 
 		);
+	 
 }

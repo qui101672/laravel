@@ -128,4 +128,12 @@ class Danh_muc_hoi_thisController extends BaseController {
 		return Redirect::route('danh_muc_hoi_this.index');
 	}
 
+
+	public function get_mahoithi(){
+		$id_chuong_trinh = Input::get('id_chuong_trinh');
+		$danh_muc_hoi_thi = new Danh_muc_hoi_thi();
+		$results = $danh_muc_hoi_thi->get_mahoithi($id_chuong_trinh);
+		return $results;
+	}
+
 }

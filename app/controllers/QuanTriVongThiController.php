@@ -132,6 +132,7 @@ class QuanTriVongThiController extends BaseController {
 		//lay danh sach hinh thuc cua hoi thi
 	 	$vong_thi = new Vong_thi();
 	 	$results = $vong_thi->get_dsvongthi($id);
+	 	
 	 	return $results;
 	}
 

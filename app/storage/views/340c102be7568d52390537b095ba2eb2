@@ -1,0 +1,237 @@
+
+<?php $__env->startSection('main'); ?>
+<div class="box">
+    <div class="box-header">
+        <?php if(Auth::user()->doi_tuong == 'Sinh Viên'): ?>
+        <center><h3><span>Cập Nhật Thông Tin Sinh Viên</span></h3></center>
+    </div>
+    <div class="box-content">
+        <table class="table table-striped">
+            <tbody>
+                <?php echo Form::model($sinh_vien, array('method' => 'PATCH', 'route' => array('thong_tin.update', $sinh_vien->id))); ?>
+                <tr>
+                    <td><?php echo Form::label('mssv', 'MSSV:'); ?></td>
+                    <td><?php echo Form::text('mssv'); ?></td>
+                </tr>
+                <tr>
+                    <td><?php echo Form::label('ho_ten', 'Họ Tên:'); ?></td>
+                    <td><?php echo Form::text('ho_ten'); ?></td>
+                </tr>
+                <tr>
+                    <td> <?php echo Form::label('Lops_Id', 'Lớp:'); ?></td>
+                    <td>      <select name='Lops_Id' class="form-control" required="required">
+                            <?php
+                            $lop = Lop::all();
+                            foreach ($lop as $lop) {
+                                ?>
+                                <option value="<?php echo $lop->id; ?>" <?php if ($sinh_vien->Lops_Id == $lop->id) echo "selected='selected'"; ?>><?php echo $lop->ten_lop; ?></option>
+                                <?php
+                            }
+                            ?>
+                        </select>
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        <?php echo Form::label('ngay_sinh', 'Ngày Sinh:'); ?> 
+                    </td>
+                    <td> 
+                        <?php echo Form::text('ngay_sinh'); ?> 
+                    </td>
+                </tr>
+
+                <tr> 
+                    <td>
+                        <?php echo Form::label('gioi_tinh', 'Giới Tính:'); ?>
+                    </td>
+                    <td> 
+                        <?php echo Form::text('gioi_tinh'); ?>
+                    </td>
+                </tr>
+
+                <tr> 
+                    <td>
+                        <?php echo Form::label('dia_chi', 'Địa Chỉ:'); ?>
+                    </td>
+                    <td>
+                        <?php echo Form::text('dia_chi'); ?>
+                    </td>
+                </tr>
+
+                <tr> 
+                    <td>
+                        <?php echo Form::label('que_quan', 'Quê Quán:'); ?>
+                    </td>
+                    <td>   
+                        <?php echo Form::text('que_quan'); ?>
+                    </td>
+                </tr>
+
+                <tr> 
+                    <td>
+                        <?php echo Form::label('email', 'Email:'); ?>
+                    </td>
+                    <td>    
+                        <?php echo Form::text('email'); ?>
+                    </td>
+                </tr>
+
+                <tr> 
+                    <td>
+                        <?php echo Form::label('sdt', 'SĐT:'); ?>
+                    </td>
+                    <td>  
+                        <?php echo Form::text('sdt'); ?>
+                    </td>
+                </tr>
+
+                <tr> 
+                    <td>
+                        <?php echo Form::label('ghi_chu', 'Ghi Chú:'); ?>
+                    </td>
+                    <td>   
+                        <?php echo Form::text('ghi_chu'); ?>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td colspan="2">
+                        <?php echo Form::submit('Cập Nhật', array('class' => 'btn btn-info')); ?>
+                    </td>
+                </tr>
+                <?php echo Form::close(); ?>
+            </tbody>
+        </table>
+        <?php else: ?>
+        <center><h3><span>Cập Nhật Thông Tin Cán Bộ</span></h3></center>
+    </div>
+    <div class="box-content">
+        <table class="table table-striped">
+            <tbody>
+                <?php echo Form::model($can_bo, array('method' => 'PATCH', 'route' => array('thong_tin.update', $can_bo->id))); ?>
+                <tr> 
+                    <td>
+                        <?php echo Form::label('mscb', 'MSCB:'); ?>
+                    </td>
+                    <td>
+                        <?php echo Form::text('mscb'); ?>
+                    </td>
+                </tr>
+
+                <tr> 
+                    <td>
+                        <?php echo Form::label('ho_ten', 'Họ Tên:'); ?>
+                    </td>
+                    <td>
+                        <?php echo Form::text('ho_ten'); ?>
+                    </td>
+                <tr> 
+                    <td>
+                        <?php echo Form::label('chuc_vu', 'Chức Vụ:'); ?>
+                    </td>
+                    <td>
+                        <?php echo Form::text('chuc_vu'); ?>
+                    </td>
+
+                </tr>
+                <tr> 
+                    <td>
+                        <?php echo Form::label('DonVis_Id', 'Đơn Vị:'); ?>
+                    </td>
+                    <td>
+                        <select name='DonVis_Id' class="form-control" required="required">
+                            <?php
+                            $donvi = Don_vi::all();
+                            foreach ($donvi as $donvi) {
+                                ?>
+                                <option value="<?php echo $donvi->id; ?>" <?php if ($can_bo->DonVis_Id == $donvi->id) echo "selected='selected'"; ?>><?php echo $donvi->ten_don_vi; ?></option>
+                                <?php
+                            }
+                            ?>
+                        </select> 
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        <?php echo Form::label('ngay_sinh', 'Ngày Sinh:'); ?>
+                    </td>
+                    <td>
+                        <?php echo Form::text('ngay_sinh'); ?>
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        <?php echo Form::label('gioi_tinh', 'Giới Tính:'); ?>
+                    </td>
+                    <td>
+                        <?php echo Form::text('gioi_tinh'); ?>
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        <?php echo Form::label('dia_chi', 'Địa Chỉ:'); ?>
+                    </td>
+                    <td>
+                        <?php echo Form::text('dia_chi'); ?>
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        <?php echo Form::label('que_quan', 'Quê Quán:'); ?>
+                    </td>
+                    <td>
+                        <?php echo Form::text('que_quan'); ?>
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        <?php echo Form::label('email', 'Email:'); ?>
+                    </td>
+                    <td>
+                        <?php echo Form::text('email'); ?>
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        <?php echo Form::label('sdt', 'SĐT:'); ?>
+                    </td>
+                    <td>
+                        <?php echo Form::text('sdt'); ?>
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        <?php echo Form::label('ghi_chu', 'Ghi Chú:'); ?>
+                    </td>
+                    <td>
+                        <?php echo Form::text('ghi_chu'); ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <?php echo Form::submit('Cập Nhật', array('class' => 'btn btn-info')); ?>
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+        <?php echo Form::close(); ?>
+        <?php endif; ?>
+        <?php if ($errors->any()): ?>
+        <ul>
+            <?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
+        </ul>
+        <?php endif; ?>
+    </div>
+</div>
+<?php $__env->stopSection(); ?>
+
+
+
+
+
+
+
+<?php echo $__env->make('layouts.scaffold', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

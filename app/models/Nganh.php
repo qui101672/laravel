@@ -9,4 +9,5 @@ class Nganh extends Eloquent {
 		'DonVis_Id' => 'required',
 		'ghi_chu' => ''
 	);
+        
 }

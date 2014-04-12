@@ -27,11 +27,11 @@
                         <td>{{{ $bai_viet->tieu_de_bai_viet }}}</td>
                         <td>{{{ strip_tags($bai_viet->noi_dung_bai_viet) }}}</td>
                         <td>{{{ $bai_viet->ghi_chu }}}</td>
-                        <td>{{ link_to_route('bai_viet.edit', 'Edit', array($bai_viet->id), array('class' => 'btn btn-info')) }}
+                        <td>{{ link_to_route('bai_viet.edit', 'Chỉnh Sửa', array($bai_viet->id), array('class' => 'btn btn-info')) }}
                         </td>
                         <td>
                             {{ Form::open(array('method' => 'DELETE', 'route' => array('bai_viet.destroy', $bai_viet->id))) }}
-                            {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}
+                            {{ Form::submit('Xoá', array('class' => 'btn btn-danger')) }}
                             {{ Form::close() }}
                         </td>
                     </tr>

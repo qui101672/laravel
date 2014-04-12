@@ -5,6 +5,6 @@ class Danh_muc_nam extends Eloquent {
 
 	public static $rules = array(
 		'nam' => 'required',
-		'ghi_chu' => 'required'
+		'ghi_chu' => ''
 	);
 }

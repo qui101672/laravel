@@ -29,7 +29,7 @@ class NguoiDungBaiVietController extends BaseController {
 	 */
 	public function show($id)
 	{
-		$bai_viet = $this->bai_viet->findOrFail($id);
+		$bai_viet = DB::table('bai_viets')->where('id','=',$id)->first();
 
 		return View::make('nguoidungbaiviet.show', compact('bai_viet'));
 	}
@@ -39,6 +39,7 @@ class NguoiDungBaiVietController extends BaseController {
 		$bai_viet = DB::table('bai_viets')
 				->leftjoin('the_loai_bai_viets','bai_viets.TheLoaiBaiViets_Id','=','the_loai_bai_viets.id')
 				->where('the_loai_bai_viets.id','=',$id)
+                                ->select('bai_viets.id','bai_viets.TaiKhoans_Id','bai_viets.created_at','bai_viets.noi_dung_bai_viet','bai_viets.tieu_de_bai_viet')
 				->get();
 
 		return View::make('nguoidungbaiviet.theloai', compact('bai_viet'));

@@ -1,0 +1,71 @@
+<?php $__env->startSection('main'); ?>
+
+<table class="table table-striped">
+    <tbody>
+        <tr>
+            <td colspan="2"><center><h2>Thông Tin Cán Bộ</h2></center></td>
+</tr>
+<?php
+foreach ($info_user as $info_user) {
+    ?>
+    <tr>
+        <td>Mã Số Cán Bộ</td>
+        <td><?php echo e($info_user->mscb); ?></td>
+    </tr>
+    <tr>
+        <td>Họ Tên</td>
+        <td><?php echo e($info_user->ho_ten); ?></td>
+    </tr>
+    <tr>
+        <td>Chức Vụ</td>
+        <td><?php echo e($info_user->chuc_vu); ?></td>
+    </tr>
+    <tr>
+        <td>Đơn Vị</td>
+        <td>
+            <?php
+            $don_vi = Don_vi::find($info_user->DonVis_Id);
+            echo $don_vi->ten_don_vi;
+            ?>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Giới Tính</td>
+        <td><?php echo e($info_user->gioi_tinh); ?></td>
+    </tr>
+    <tr>
+        <td>Ngày Sinh</td>
+        <td><?php echo e($info_user->ngay_sinh); ?></td>
+    </tr>
+    <tr>
+        <td>Địa Chỉ</td>
+        <td><?php echo e($info_user->dia_chi); ?></td>
+    </tr>
+    <tr>
+        <td>Quê Quán</td>
+        <td><?php echo e($info_user->que_quan); ?></td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td><?php echo e($info_user->email); ?></td>
+    </tr>
+    <tr>
+        <td>Số Điện Thoại</td>
+        <td><?php echo e($info_user->sdt); ?></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <?php echo link_to_route('thong_tin.edit', 'Chỉnh Sửa Thông Tin', array($info_user->id), array('class' => 'btn btn-info')); ?>
+        </td>
+    </tr>
+<?php }
+?>
+</tbody>
+</table>
+
+<?php $__env->stopSection(); ?>
+
+
+
+<?php echo $__env->make('layouts.scaffold', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

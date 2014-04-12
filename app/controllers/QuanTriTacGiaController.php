@@ -1,17 +1,17 @@
 <?php
 
-class Tac_giaController extends BaseController {
+class QuanTriTacGiaController extends BaseController {
 
 	/**
-	 * Tac_gium Repository
+	 * Tac_gia Repository
 	 *
-	 * @var Tac_gium
+	 * @var Tac_gia
 	 */
-	protected $tac_gium;
+	protected $tac_gia;
 
-	public function __construct(Tac_gium $tac_gium)
+	public function __construct(Tac_gia $tac_gia)
 	{
-		$this->tac_gium = $tac_gium;
+		$this->tac_gia = $tac_gia;
 	}
 
 	/**
@@ -21,9 +21,9 @@ class Tac_giaController extends BaseController {
 	 */
 	public function index()
 	{
-		$tac_gia = $this->tac_gium->all();
+		$tac_gia = $this->tac_gia->all();
 
-		return View::make('tac_gia.index', compact('tac_gia'));
+		return View::make('quantritacgia.index', compact('tac_gia'));
 	}
 
 	/**
@@ -33,7 +33,7 @@ class Tac_giaController extends BaseController {
 	 */
 	public function create()
 	{
-		return View::make('tac_gia.create');
+		return View::make('quantritacgia.create');
 	}
 
 	/**
@@ -44,11 +44,11 @@ class Tac_giaController extends BaseController {
 	public function store()
 	{
 		$input = Input::all();
-		$validation = Validator::make($input, Tac_gium::$rules);
+		$validation = Validator::make($input, Tac_gia::$rules);
 
 		if ($validation->passes())
 		{
-			$this->tac_gium->create($input);
+			$this->tac_gia->create($input);
 
 			return Redirect::route('tac_gia.index');
 		}
@@ -67,9 +67,9 @@ class Tac_giaController extends BaseController {
 	 */
 	public function show($id)
 	{
-		$tac_gium = $this->tac_gium->findOrFail($id);
+		$tac_gia = $this->tac_gia->findOrFail($id);
 
-		return View::make('tac_gia.show', compact('tac_gium'));
+		return View::make('quantritacgia.show', compact('tac_gia'));
 	}
 
 	/**
@@ -80,14 +80,14 @@ class Tac_giaController extends BaseController {
 	 */
 	public function edit($id)
 	{
-		$tac_gium = $this->tac_gium->find($id);
+		$tac_gia = $this->tac_gia->find($id);
 
-		if (is_null($tac_gium))
+		if (is_null($tac_gia))
 		{
 			return Redirect::route('tac_gia.index');
 		}
 
-		return View::make('tac_gia.edit', compact('tac_gium'));
+		return View::make('quantritacgia.edit', compact('tac_gia'));
 	}
 
 	/**
@@ -99,17 +99,17 @@ class Tac_giaController extends BaseController {
 	public function update($id)
 	{
 		$input = array_except(Input::all(), '_method');
-		$validation = Validator::make($input, Tac_gium::$rules);
+		$validation = Validator::make($input, Tac_gia::$rules);
 
 		if ($validation->passes())
 		{
-			$tac_gium = $this->tac_gium->find($id);
-			$tac_gium->update($input);
+			$tac_gia = $this->tac_gia->find($id);
+			$tac_gia->update($input);
 
-			return Redirect::route('tac_gia.show', $id);
+			return Redirect::route('tac_gias.show', $id);
 		}
 
-		return Redirect::route('tac_gia.edit', $id)
+		return Redirect::route('tac_gias.edit', $id)
 			->withInput()
 			->withErrors($validation)
 			->with('message', 'There were validation errors.');
@@ -123,7 +123,7 @@ class Tac_giaController extends BaseController {
 	 */
 	public function destroy($id)
 	{
-		$this->tac_gium->find($id)->delete();
+		$this->tac_gia->find($id)->delete();
 
 		return Redirect::route('tac_gia.index');
 	}

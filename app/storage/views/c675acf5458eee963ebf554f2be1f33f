@@ -1,0 +1,52 @@
+
+<?php $__env->startSection('main'); ?>
+<div class="box span12">
+    <div class="box-header">
+        <h2><i class="icon-edit"></i>
+            <span>Chỉnh Sửa Tài Khoản</span>
+        </h2>
+    </div>
+    <div class="box-content">
+        <?php echo Form::model($tai_khoan, array('method' => 'PATCH', 'route' => array('tai_khoan.update', $tai_khoan->id))); ?>
+        <fieldset class="col-sm-12">
+            <div class="form-group">
+                <label class="control-label"><h2>Username:</h2></label>
+                <div class="controls row">
+                    <div class="input-group col-sm-4">
+                        <span class="input-group-addon"><i class="icon-edit"></i></span>
+                        <?php echo Form::text('username',null,array('class'=> 'form-control','readonly')); ?>
+                    </div>  
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label"><h2>Quyền:</h2></label>
+                <div class="controls row">
+                    <div class="input-group col-sm-4">
+                        <select name='PhanQuyen_Id' class="form-control" required="required">
+                            <?php
+                            $phan_quyen = Phan_quyen::all();
+                            foreach ($phan_quyen as $phan_quyen) {
+                                ?>
+                                <option value="<?php echo $phan_quyen->id; ?>" <?php if ($tai_khoan->PhanQuyen_Id == $phan_quyen->id) echo "selected='selected'"; ?>>
+                                    <?php echo $phan_quyen->ten_quyen; ?></option>
+                                <?php
+                            }
+                            ?>
+                        </select> 
+                    </div>
+                </div>
+            </div>
+            <?php echo Form::submit('Cập Nhật', array('class' => 'btn btn-info')); ?>
+            <?php echo link_to_route('tai_khoan.show', 'Huỷ', $tai_khoan->id, array('class' => 'btn')); ?>
+        </fieldset>
+        <?php echo Form::close(); ?>
+        <?php if ($errors->any()): ?>
+        <ul>
+            <?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
+        </ul>
+        <?php endif; ?>
+    </div>
+</div> 
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

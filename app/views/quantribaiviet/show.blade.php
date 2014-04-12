@@ -17,7 +17,7 @@
     </ul> <!--end post-meta-->
     <p>{{{ strip_tags($bai_viet->noi_dung_bai_viet) }}}</p>
     <p>{{{ $bai_viet->tag }}}</p>
-    <p>{{ link_to_route('bai_viet.index', 'Quay Lại Trang Chính', array(),array('class' => 'btn btn-primary' )) }}</p>
+    <p>{{ link_to_route('bai_viet.index', 'Quay Lại Trang Chính', array(),array('class' => 'btn btn-info' )) }}</p>
 
 </div> <!--end post-content-->
 @stop

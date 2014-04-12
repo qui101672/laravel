@@ -1,0 +1,11 @@
+<?php if(Auth::check()): ?>
+<?php else: ?>
+<div class="modules"> 
+        <center style="margin:10px;">
+        	<?php echo link_to_route('login', 'Đăng Nhập',array(), array('class' => 'btn btn-info')); ?>
+	        <?php if(Session::has('flash_notice')): ?>
+	        <div id="flash_notice"><?php echo Session::get('flash_notice'); ?></div>
+		    <?php endif; ?>
+		    </center>
+		</div>
+<?php endif; ?>

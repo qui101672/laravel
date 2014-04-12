@@ -6,6 +6,5 @@ class Tiet_muc_dat_giai extends Eloquent {
 	public static $rules = array(
 		'TietMucDuThis_Id' => 'required',
 		'GiaiThuongs_Id'=> 'required'
-
 		);
 }

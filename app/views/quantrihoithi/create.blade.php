@@ -5,7 +5,7 @@
         <div class="box">
             <div class="box-header">
                 <h2>
-                <i class="icon-user"></i><span>Tạo Hội Thi</span>
+                    <i class="icon-user"></i><span>Tạo Hội Thi</span>
                 </h2>
             </div>
             <div class="box-content">
@@ -30,11 +30,11 @@
                                 <div class="controls row">
                                     <div class="input-group col-sm-4">
                                         <span class="input-group-addon"><i class="icon-star"></i></span>
-                                        <select name='DanhMucNams_Id' id='DanhMucNams_Id' class="form-control" required="required">
+                                        <select name='DanhMucNams_Id' id='DanhMucNams_Id' class="form-control" required>
                                             <option value="">---Chọn---</option>
                                             <?php
                                             foreach ($danh_muc_nam as $danh_muc_nam)
-                                            echo '<option value=' . $danh_muc_nam->id . '>' . $danh_muc_nam->nam . '</option>';
+                                                echo '<option value=' . $danh_muc_nam->id . '>' . $danh_muc_nam->nam . '</option>';
                                             ?>
                                         </select>
                                     </div>
@@ -45,25 +45,23 @@
                                 <div class="controls row">
                                     <div class="input-group col-sm-4">
                                         <span class="input-group-addon"><i class="icon-star"></i></span>
-                                        <select name='DanhMucHoiThis_Id' id='DanhMucHoiThis_Id' class="form-control" required="required">
-                                            <option>---Chọn---</option>
+                                        <select name='DanhMucHoiThis_Id' id='DanhMucHoiThis_Id' class="form-control" required>
+                                            <option value="">---Chọn---</option>
                                             <?php
                                             foreach ($danh_muc_hoi_thi as $danh_muc_hoi_thi)
-                                            echo '<option value=' . $danh_muc_hoi_thi->id . '>' . $danh_muc_hoi_thi->ten_hoi_thi . '</option>';
+                                                echo '<option value=' . $danh_muc_hoi_thi->id . '>' . $danh_muc_hoi_thi->ten_hoi_thi . '</option>';
                                             ?>
                                         </select>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label class="control-label">Tên Chương Trình</label>
                                 <div class="controls row">
                                     <div class="input-group col-sm-4">
                                         <span class="input-group-addon"><i class="icon-calendar"></i></span>
-                                        
-                                        {{ Form::text('ten_chuong_trinh',null,array('class'=> 'form-control', 'id' => 'ten_chuong_trinh','data-validation' => 'length','data-validation-length'=>'5-100','data-validation-error-msg'=>'Tên Chương Trình dài từ 5-100 ký tự')) }}
-                                        
+                                        {{ Form::text('ten_chuong_trinh',null,array('class'=> 'form-control', 'id' => 'ten_chuong_trinh','required')) }}
                                     </div>
                                 </div>
                             </div>
@@ -73,7 +71,7 @@
                                 <div class="controls row">
                                     <div class="input-group col-sm-4">
                                         <span class="input-group-addon"><i class="icon-calendar"></i></span>
-                                        {{ Form::text('time_start',null,array('class'=> 'form-control date-picker','data-date-format' =>'yyyy-mm-dd','id'=>'time_start','data-validation'=>'date' ,'data-validation-format'=>'yyyy-mm-dd')) }}
+                                        {{ Form::text('time_start',null,array('class'=> 'form-control date-picker','id'=>'time_start')) }}
                                     </div>
                                 </div>
                             </div>
@@ -82,10 +80,11 @@
                                 <div class="controls row">
                                     <div class="input-group col-sm-4">
                                         <span class="input-group-addon"><i class="icon-calendar"></i></span>
-                                        {{ Form::text('time_end',null,array('class'=> 'form-control date-picker','data-date-format' =>'yyyy-mm-dd','id'=>'time_end','data-validation'=>'date' ,'data-validation-format'=>'yyyy-mm-dd')) }}
+                                        {{ Form::text('time_end',null,array('class'=> 'form-control date-picker','id'=>'time_end')) }}
                                     </div>
                                 </div>
                             </div>
+
                             <div class="form-group">
                                 <label class="control-label">Ghi Chú:</label>
                                 <div class="controls row">
@@ -95,8 +94,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-                            
+                            <button type="submit" class="btn btn-primary" id="submit">Tạo</button>
+
                             {{ Form::close() }}
                             @if ($errors->any())
                             <ul>
@@ -118,21 +117,21 @@
                                     </tr>
                                 </thead>
                                 <tbody id="table_hinh_thuc_du_thi">
-                                    
+
                                 </tbody>
                             </table>
                             <hr>
                             <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#hinhthucduthi" id="modal-data">
-                            Tạo Hình Thức Dự Thi
+                                Tạo Hình Thức Dự Thi
                             </button>
                         </fieldset>
-                        
+
                     </div>
                     <div class="step-pane" id="step3">
                         <fieldset class="col-sm-12">
-                            <div id="thong_tin_hoi_thi">
+                            <table id="thong_tin_hoi_thi" class="table table_tennis">
                                 
-                            </div>
+                            </table>
                         </fieldset>
                     </div>
                 </div>
@@ -190,16 +189,17 @@
                     <div class="controls row">
                         <div class="input-group col-sm-8">
                             <span class="input-group-addon"><i class="icon-edit"></i></span>
-                                <select name='ten_hinh_thuc' id='ten_hinh_thuc' class="form-control" required="required">
-                                    <option value="Đơn Ca">Đơn Ca</option>
-                                    <option value="Song Ca">Song Ca</option>
-                                    <option value="Tam Ca">Tam Ca</option>
-                                    <option value="Tốp Ca">Tốp Ca</option>
-                                    <option value="Ca Múa">Ca Múa</option>
-                                    <option value="Múa">Múa</option>
-                                    <option value="Kịch">Kịch</option>
-                                </select>
-                             
+                            <select name='ten_hinh_thuc' id='ten_hinh_thuc' class="form-control" required="required">
+                                <option value="Đơn Ca">Đơn Ca</option>
+                                <option value="Song Ca">Song Ca</option>
+                                <option value="Tam Ca">Tam Ca</option>
+                                <option value="Tốp Ca">Tốp Ca</option>
+                                <option value="Ca Múa">Ca Múa</option>
+                                <option value="Múa">Múa</option>
+                                <option value="Kịch">Kịch</option>
+                                <option value="Tiến Quân Ca">Tiến Quân Ca</option>
+                            </select>
+
                         </div>
                     </div>
                 </div>
@@ -227,11 +227,11 @@
                         <div class="input-group col-sm-8">
                             <span class="input-group-addon"><i class="icon-edit"></i></span>
                             <select name='so_vong_thi' id='so_vong_thi' class="form-control" required="required">
-                                    <option>--Chọn---</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    </select>
+                                <option>--Chọn---</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -241,8 +241,6 @@
                         <div class="input-group col-sm-8">
                             <span class="input-group-addon"><i class="icon-edit"></i></span>
                             <input type="checkbox" name="bat_buoc" id="bat_buoc" checked="checked" /> 
-                     
-                            
                         </div>
                     </div>
                 </div>
@@ -261,96 +259,92 @@
                 </div>
                 {{ Form::close() }}
             </div>
-            
-            </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-            </div><!-- /.modal -->
-            
-            <script type="text/javascript">
 
-            $("#next").click(function() { 
-                if($('#step_vongthi').attr('class') == 'active'){ 
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
-                var n = noty({text: 'Khởi Tạo Hội Thi Thành Công', type: 'success'}); 
-                //chuyển trang về danh sách hội thi
-                var url = "../hoi_this";
-                window.location.replace(url);
-                //
-                } 
-            });
+<script type="text/javascript">
+    $("#next").click(function() {
+        if ($('#step_vongthi').attr('class') == 'active') {
 
-            jQuery(document).ready(function($){
-                //Truyền Data hội thi vào DB
-                $('#hoi_thi').on('submit', function() {
-                var request = $.ajax({
+            var n = noty({text: 'Khởi Tạo Hội Thi Thành Công', type: 'success'});
+            //chuyển trang về danh sách hội thi
+            var url = "../hoi_this";
+            window.location.replace(url);
+            //
+        }
+    });
+
+    jQuery(document).ready(function($) {
+        //Truyền Data hội thi vào DB
+        $('#hoi_thi').on('submit', function() {
+            var request = $.ajax({
                 url: $(this).prop('action'),
                 type: "POST",
                 data: {
-                DanhMucNams_Id: document.hoi_thi.DanhMucNams_Id.value,
-                DanhMucHoiThis_Id: document.hoi_thi.DanhMucHoiThis_Id.value,
-                ten_chuong_trinh: document.hoi_thi.ten_chuong_trinh.value,
-                time_start: document.hoi_thi.time_start.value,
-                time_end: document.hoi_thi.time_end.value,
-                ghi_chu: document.hoi_thi.DanhMucNams_Id.value
-            },
-            dataType: "json",
-            success: function(result){
-                $("#hoi_thi").remove();
-                 
-                $("#data-table").append("<table id='result_ht' class='table table-hover'><thead><tr><th>ID Hội Thi</th><th>Tên Chương Trình</th><th>Thời Gian Bắt Đầu</th><th>Thời Gian Kết Thúc</th><th hidden>ID Danh Mục Năm</th><th hidden>ID Danh Mục Hội Thi</th><th colspan='2'>Ghi Chú</th></tr></thead><tbody><tr><td id='id_hoi_thi'>"+result.id+"</td><td id='ten_chuong_trinh_result'>"+result.ten_chuong_trinh+"</td><td id='time_start_result'>"+result.time_start+"</td><td id='time_end_result'>"+result.time_end+"</td><td id='danh_muc_nam_id' hidden>"+result.DanhMucNams_Id+"</td><td id='danh_muc_hoi_thi_id_result' hidden>"+result.DanhMucHoiThis_Id+"</td><td id='ghi_chu_hoi_thi_result'>"+result.ghi_chu+"</td></tr></tbody></table>");
-                $('#next').removeAttr("disabled");
-                $('#thong_tin_hoi_thi').append("<h1><center>"+result.ten_chuong_trinh+"</center></h1>");
-            }
+                    DanhMucNams_Id: document.hoi_thi.DanhMucNams_Id.value,
+                    DanhMucHoiThis_Id: document.hoi_thi.DanhMucHoiThis_Id.value,
+                    ten_chuong_trinh: document.hoi_thi.ten_chuong_trinh.value,
+                    time_start: document.hoi_thi.time_start.value,
+                    time_end: document.hoi_thi.time_end.value,
+                    ghi_chu: document.hoi_thi.DanhMucNams_Id.value
+                },
+                dataType: "json",
+                success: function(result) {
+                    $("#hoi_thi").remove();
+                    $("#data-table").append("<table id='result_ht' class='table table-hover'><thead><tr><th>ID Hội Thi</th><th>Tên Chương Trình</th><th>Thời Gian Bắt Đầu</th><th>Thời Gian Kết Thúc</th><th hidden>ID Danh Mục Năm</th><th hidden>ID Danh Mục Hội Thi</th><th colspan='2'>Ghi Chú</th></tr></thead><tbody><tr><td id='id_hoi_thi'>" + result.id + "</td><td id='ten_chuong_trinh_result'>" + result.ten_chuong_trinh + "</td><td id='time_start_result'>" + result.time_start + "</td><td id='time_end_result'>" + result.time_end + "</td><td id='danh_muc_nam_id' hidden>" + result.DanhMucNams_Id + "</td><td id='danh_muc_hoi_thi_id_result' hidden>" + result.DanhMucHoiThis_Id + "</td><td id='ghi_chu_hoi_thi_result'>" + result.ghi_chu + "</td></tr></tbody></table>");
+                    $('#next').removeAttr("disabled");
+                    $('#thong_tin_hoi_thi').append("<thead><tr><td colspan='2'><h1><center>" + result.ten_chuong_trinh + "</center></h1></td></tr><tr><th>Tên Hình Thức</th><th>Nội dung</th><th>Số Vòng Thi</th><th>Số Lượng Yêu Cầu</th></tr></thead><tr>");
+                }
             });
             return false;
+        });
+
+//Get data hoi thi var user_id = $(this).closest('#result_hoithi').attr("danh_muc_nam_id");
+        $('#modal-data').click(function(event) {
+            $('#ma_hinh_thuc').val('');
+            $('#ten_hinh_thuc').val('---Chọn---');
+            $('#noi_dung_hinh_thuc').val('');
+            $('#so_vong_thi').val('');
+            $('#ghi_chu').val('');
+            $('#HoiThis_DanhMucNamsId').val(document.getElementById("danh_muc_nam_id").innerHTML);
+            $('#HoiThis_Id').val(document.getElementById("id_hoi_thi").innerHTML);
+            $('#HoiThis_DanhMucHoiThisId').val(document.getElementById("danh_muc_hoi_thi_id_result").innerHTML);
+        });
+
+//Form tao hinh thuc
+        $('#tao_hinh_thuc').click(function(event) {
+            /* Act on the event */
+            if ($('#bat_buoc').attr('checked') == 'checked') {
+                bat_buoc = 1;
+            } else {
+                bat_buoc = 0;
+            }
+            var request = $.ajax({
+                url: $('#hinh_thuc_du_thi').prop('action'),
+                type: "POST",
+                data: {
+                    ma_hinh_thuc: document.hinh_thuc_du_thi.ma_hinh_thuc.value,
+                    ten_hinh_thuc: document.hinh_thuc_du_thi.ten_hinh_thuc.value,
+                    noi_dung_hinh_thuc: document.hinh_thuc_du_thi.noi_dung_hinh_thuc.value,
+                    so_luong_yeu_cau: document.hinh_thuc_du_thi.so_luong_yeu_cau.value,
+                    so_vong_thi: document.hinh_thuc_du_thi.so_vong_thi.value,
+                    ghi_chu: document.hinh_thuc_du_thi.ghi_chu.value,
+                    bat_buoc: bat_buoc,
+                    HoiThis_Id: document.hinh_thuc_du_thi.HoiThis_Id.value,
+                    HoiThis_DanhMucNamsId: document.hinh_thuc_du_thi.HoiThis_DanhMucNamsId.value,
+                    HoiThis_DanhMucHoiThisId: document.hinh_thuc_du_thi.HoiThis_DanhMucHoiThisId.value
+                },
+                dataType: "json"
             });
-            
-            //Get data hoi thi var user_id = $(this).closest('#result_hoithi').attr("danh_muc_nam_id");
-            $('#modal-data').click(function(event) {
-                $('#ma_hinh_thuc').val('');
-                $('#ten_hinh_thuc').val('---Chọn---');
-                $('#noi_dung_hinh_thuc').val('');
-                $('#so_vong_thi').val('');
-                $('#ghi_chu').val('');
-                $('#HoiThis_DanhMucNamsId').val(document.getElementById("danh_muc_nam_id").innerHTML);
-                $('#HoiThis_Id').val(document.getElementById("id_hoi_thi").innerHTML);
-                $('#HoiThis_DanhMucHoiThisId').val(document.getElementById("danh_muc_hoi_thi_id_result").innerHTML);
+            request.done(function(result) {
+                $('#table_hinh_thuc_du_thi').append("<tr><td>" + result.id + "</td><td>" + result.ma_hinh_thuc + "</td><td>" + result.ten_hinh_thuc + "</td><td>" + result.noi_dung_hinh_thuc + "</td><td>" + result.so_luong_yeu_cau + "</td><td>" + result.so_vong_thi + "</td><td></td></tr>");
+                $('#thong_tin_hoi_thi').append("<tr><td>" + result.ten_hinh_thuc + "</td><td>" + result.noi_dung_hinh_thuc + "</td><td>" + result.so_vong_thi + "</td><td>" + result.so_luong_yeu_cau + "</td></tr>");
+                var n = noty({text: 'Khởi Tạo Hình Thức Thành Công', type: 'success'});
 
             });
-           
-            //Form tao hinh thuc
-            $('#tao_hinh_thuc').click(function(event) {
-                  /* Act on the event */
-                   if ($('#bat_buoc').attr('checked') == 'checked') {
-                        bat_buoc = 1;
-                    } else {
-                            bat_buoc = 0;
-                    }
-                  var request = $.ajax({
-                         url: $('#hinh_thuc_du_thi').prop('action'),
-                         type: "POST",
-                         data: {
-                               ma_hinh_thuc: document.hinh_thuc_du_thi.ma_hinh_thuc.value,
-                               ten_hinh_thuc: document.hinh_thuc_du_thi.ten_hinh_thuc.value,
-                               noi_dung_hinh_thuc: document.hinh_thuc_du_thi.noi_dung_hinh_thuc.value,
-                               so_luong_yeu_cau: document.hinh_thuc_du_thi.so_luong_yeu_cau.value,
-                               so_vong_thi: document.hinh_thuc_du_thi.so_vong_thi.value,
-                               ghi_chu: document.hinh_thuc_du_thi.ghi_chu.value,
-                               bat_buoc: bat_buoc,
-                               HoiThis_Id: document.hinh_thuc_du_thi.HoiThis_Id.value,
-                               HoiThis_DanhMucNamsId: document.hinh_thuc_du_thi.HoiThis_DanhMucNamsId.value,
-                               HoiThis_DanhMucHoiThisId: document.hinh_thuc_du_thi.HoiThis_DanhMucHoiThisId.value
-                           },
-                         dataType: "json"
-                       });
-                   request.done(function(result){
-                       $('#table_hinh_thuc_du_thi').append("<tr><td>"+result.id+"</td><td>"+result.ma_hinh_thuc+"</td><td>"+result.ten_hinh_thuc+"</td><td>"+result.noi_dung_hinh_thuc+"</td><td>"+result.so_luong_yeu_cau+"</td><td>"+result.so_vong_thi+"</td><td></td></tr>");
-                       //var n = noty({text: 'Khởi Tạo Hình Thức Thành Công', type: 'success'});
-
-                       $('#thong_tin_hoi_thi').append("<p>Tên Hình Thức: "+result.ten_hinh_thuc+"</p></br><p>Nội dung: "+result.noi_dung_hinh_thuc+"</p></br><p>Gồm có:"+result.so_vong_thi+" vòng thi</p></br><p>Số Lượng Yêu Cầu:"+result.so_luong_yeu_cau+"</p></br><hr>");
-            
-                   });
-              });
-            });//end jquery
-            </script>
-            @stop
+        });
+    });//end jquery
+</script>
+@stop

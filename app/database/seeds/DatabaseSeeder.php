@@ -35,6 +35,7 @@ class DatabaseSeeder extends Seeder {
 		$this->call('BtcsTableSeeder');
 		$this->call('Tiet_muc_du_thisTableSeeder');
 		$this->call('Thanh_phan_tham_giaTableSeeder');
+		$this->call('Giai_thuongsTableSeeder');
 	}
 
 }

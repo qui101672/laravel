@@ -1,0 +1,438 @@
+[2014-04-12 16:20:29] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-12 16:21:41] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-12 16:25:37] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-12 16:27:28] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-12 16:27:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-12 16:28:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-12 16:29:10] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-12 16:31:01] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-04-12 21:35:02] log.ERROR: exception 'ErrorException' with message 'Undefined variable: ds_tacgia' in D:\xampp\htdocs\laravel\app\storage\views\6b08eb0106deaf9b74d9062f6b90bdc6:42
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\storage\views\6b08eb0106deaf9b74d9062f6b90bdc6(42): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 42, Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\PhpEngine.php(38): include('D:\xampp\htdocs...')
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(100): Illuminate\View\Engines\CompilerEngine->get('D:\xampp\htdocs...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\View\View.php(81): Illuminate\View\View->getContents()
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Http\Response.php(70): Illuminate\View\View->render()
+#6 D:\xampp\htdocs\laravel\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\Response.php(141): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1414): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'edit', Object(Illuminate\View\View))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('3')
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2014-04-12 21:41:23] log.ERROR: exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`lv_test`.`hoi_this`, CONSTRAINT `hoi_this_ibfk_2` FOREIGN KEY (`DanhMucHoiThis_Id`) REFERENCES `danh_muc_hoi_this` (`id`) ON DELETE CASCADE)' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:331
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `ho...', Array)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `ho...', Array, Object(Closure))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `ho...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php(30): Illuminate\Database\Connection->insert('insert into `ho...', Array)
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `ho...', Array, NULL)
+#6 D:\xampp\htdocs\laravel\app\controllers\QuanTriHoiThiController.php(56): Illuminate\Database\Query\Builder->insertGetId(Array)
+#7 [internal function]: QuanTriHoiThiController->store()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`lv_test`.`hoi_this`, CONSTRAINT `hoi_this_ibfk_2` FOREIGN KEY (`DanhMucHoiThis_Id`) REFERENCES `danh_muc_hoi_this` (`id`) ON DELETE CASCADE) (SQL: insert into `hoi_this` (`ten_chuong_trinh`, `DanhMucNams_Id`, `DanhMucHoiThis_Id`, `time_start`, `time_end`, `ghi_chu`) values (?, ?, ?, ?, ?, ?)) (Bindings: array (
+  0 => '',
+  1 => '2014',
+  2 => '---Chọn---',
+  3 => '',
+  4 => '',
+  5 => '2014',
+))' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `ho...', Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `ho...', Array, Object(Closure))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `ho...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php(30): Illuminate\Database\Connection->insert('insert into `ho...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `ho...', Array, NULL)
+#5 D:\xampp\htdocs\laravel\app\controllers\QuanTriHoiThiController.php(56): Illuminate\Database\Query\Builder->insertGetId(Array)
+#6 [internal function]: QuanTriHoiThiController->store()
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#10 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#17 {main} [] []
+[2014-04-12 21:41:24] log.ERROR: exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`lv_test`.`hoi_this`, CONSTRAINT `hoi_this_ibfk_2` FOREIGN KEY (`DanhMucHoiThis_Id`) REFERENCES `danh_muc_hoi_this` (`id`) ON DELETE CASCADE)' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:331
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `ho...', Array)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `ho...', Array, Object(Closure))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `ho...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php(30): Illuminate\Database\Connection->insert('insert into `ho...', Array)
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `ho...', Array, NULL)
+#6 D:\xampp\htdocs\laravel\app\controllers\QuanTriHoiThiController.php(56): Illuminate\Database\Query\Builder->insertGetId(Array)
+#7 [internal function]: QuanTriHoiThiController->store()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`lv_test`.`hoi_this`, CONSTRAINT `hoi_this_ibfk_2` FOREIGN KEY (`DanhMucHoiThis_Id`) REFERENCES `danh_muc_hoi_this` (`id`) ON DELETE CASCADE) (SQL: insert into `hoi_this` (`ten_chuong_trinh`, `DanhMucNams_Id`, `DanhMucHoiThis_Id`, `time_start`, `time_end`, `ghi_chu`) values (?, ?, ?, ?, ?, ?)) (Bindings: array (
+  0 => '',
+  1 => '2014',
+  2 => '---Chọn---',
+  3 => '',
+  4 => '',
+  5 => '2014',
+))' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `ho...', Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `ho...', Array, Object(Closure))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `ho...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php(30): Illuminate\Database\Connection->insert('insert into `ho...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `ho...', Array, NULL)
+#5 D:\xampp\htdocs\laravel\app\controllers\QuanTriHoiThiController.php(56): Illuminate\Database\Query\Builder->insertGetId(Array)
+#6 [internal function]: QuanTriHoiThiController->store()
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#10 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#17 {main} [] []
+[2014-04-12 22:48:29] log.ERROR: exception 'ErrorException' with message 'Undefined variable: vong_thi' in D:\xampp\htdocs\laravel\app\controllers\QuanTriHoiThiController.php:81
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriHoiThiController.php(81): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 81, Array)
+#1 [internal function]: QuanTriHoiThiController->show('3')
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('show', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'show', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('3')
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-04-12 22:48:31] log.ERROR: exception 'ErrorException' with message 'Undefined variable: vong_thi' in D:\xampp\htdocs\laravel\app\controllers\QuanTriHoiThiController.php:81
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriHoiThiController.php(81): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 81, Array)
+#1 [internal function]: QuanTriHoiThiController->show('7')
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('show', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'show', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('7')
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-04-12 22:48:36] log.ERROR: exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`lv_test`.`thanh_vien_bgks`, CONSTRAINT `thanh_vien_bgks_ibfk_3` FOREIGN KEY (`HoiThis_Id`) REFERENCES `hoi_this` (`id`))' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:353
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(353): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'delete from `ho...', Array)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from `ho...', Array, Object(Closure))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from `ho...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from `ho...', Array)
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(338): Illuminate\Database\Query\Builder->delete()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(834): Illuminate\Database\Eloquent\Builder->delete()
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(785): Illuminate\Database\Eloquent\Model->performDeleteOnModel()
+#8 D:\xampp\htdocs\laravel\app\controllers\QuanTriHoiThiController.php(131): Illuminate\Database\Eloquent\Model->delete()
+#9 [internal function]: QuanTriHoiThiController->destroy('7')
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('destroy', Array)
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'destroy', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('7')
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`lv_test`.`thanh_vien_bgks`, CONSTRAINT `thanh_vien_bgks_ibfk_3` FOREIGN KEY (`HoiThis_Id`) REFERENCES `hoi_this` (`id`)) (SQL: delete from `hoi_this` where `id` = ?) (Bindings: array (
+  0 => 7,
+))' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'delete from `ho...', Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from `ho...', Array, Object(Closure))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from `ho...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from `ho...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(338): Illuminate\Database\Query\Builder->delete()
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(834): Illuminate\Database\Eloquent\Builder->delete()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(785): Illuminate\Database\Eloquent\Model->performDeleteOnModel()
+#7 D:\xampp\htdocs\laravel\app\controllers\QuanTriHoiThiController.php(131): Illuminate\Database\Eloquent\Model->delete()
+#8 [internal function]: QuanTriHoiThiController->destroy('7')
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('destroy', Array)
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'destroy', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('7')
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2014-04-12 22:48:50] log.ERROR: exception 'ErrorException' with message 'Undefined variable: vong_thi' in D:\xampp\htdocs\laravel\app\controllers\QuanTriHoiThiController.php:81
+Stack trace:
+#0 D:\xampp\htdocs\laravel\app\controllers\QuanTriHoiThiController.php(81): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 81, Array)
+#1 [internal function]: QuanTriHoiThiController->show('3')
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('show', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'show', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('3')
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-04-12 23:39:11] log.ERROR: exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`lv_test`.`thanh_vien_bgks`, CONSTRAINT `thanh_vien_bgks_ibfk_3` FOREIGN KEY (`HoiThis_Id`) REFERENCES `hoi_this` (`id`))' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:353
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(353): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'delete from `ho...', Array)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from `ho...', Array, Object(Closure))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from `ho...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from `ho...', Array)
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(338): Illuminate\Database\Query\Builder->delete()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(834): Illuminate\Database\Eloquent\Builder->delete()
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(785): Illuminate\Database\Eloquent\Model->performDeleteOnModel()
+#8 D:\xampp\htdocs\laravel\app\controllers\QuanTriHoiThiController.php(131): Illuminate\Database\Eloquent\Model->delete()
+#9 [internal function]: QuanTriHoiThiController->destroy('7')
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('destroy', Array)
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'destroy', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('7')
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`lv_test`.`thanh_vien_bgks`, CONSTRAINT `thanh_vien_bgks_ibfk_3` FOREIGN KEY (`HoiThis_Id`) REFERENCES `hoi_this` (`id`)) (SQL: delete from `hoi_this` where `id` = ?) (Bindings: array (
+  0 => 7,
+))' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'delete from `ho...', Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from `ho...', Array, Object(Closure))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from `ho...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from `ho...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(338): Illuminate\Database\Query\Builder->delete()
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(834): Illuminate\Database\Eloquent\Builder->delete()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(785): Illuminate\Database\Eloquent\Model->performDeleteOnModel()
+#7 D:\xampp\htdocs\laravel\app\controllers\QuanTriHoiThiController.php(131): Illuminate\Database\Eloquent\Model->delete()
+#8 [internal function]: QuanTriHoiThiController->destroy('7')
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('destroy', Array)
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'destroy', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('7')
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2014-04-12 23:39:53] log.ERROR: exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`lv_test`.`phieu_dang_kies`, CONSTRAINT `phieu_dang_kies_ibfk_4` FOREIGN KEY (`HoiThis_Id`) REFERENCES `hoi_this` (`id`))' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:353
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(353): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'delete from `ho...', Array)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from `ho...', Array, Object(Closure))
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from `ho...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from `ho...', Array)
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(338): Illuminate\Database\Query\Builder->delete()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(834): Illuminate\Database\Eloquent\Builder->delete()
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(785): Illuminate\Database\Eloquent\Model->performDeleteOnModel()
+#8 D:\xampp\htdocs\laravel\app\controllers\QuanTriHoiThiController.php(131): Illuminate\Database\Eloquent\Model->delete()
+#9 [internal function]: QuanTriHoiThiController->destroy('3')
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('destroy', Array)
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'destroy', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('3')
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`lv_test`.`phieu_dang_kies`, CONSTRAINT `phieu_dang_kies_ibfk_4` FOREIGN KEY (`HoiThis_Id`) REFERENCES `hoi_this` (`id`)) (SQL: delete from `hoi_this` where `id` = ?) (Bindings: array (
+  0 => 3,
+))' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'delete from `ho...', Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from `ho...', Array, Object(Closure))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from `ho...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from `ho...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(338): Illuminate\Database\Query\Builder->delete()
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(834): Illuminate\Database\Eloquent\Builder->delete()
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(785): Illuminate\Database\Eloquent\Model->performDeleteOnModel()
+#7 D:\xampp\htdocs\laravel\app\controllers\QuanTriHoiThiController.php(131): Illuminate\Database\Eloquent\Model->delete()
+#8 [internal function]: QuanTriHoiThiController->destroy('3')
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('destroy', Array)
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'destroy', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('3')
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2014-04-12 23:56:53] log.ERROR: exception 'ErrorException' with message 'Array to string conversion' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:331
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(8, 'Array to string...', 'D:\xampp\htdocs...', 331, Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): PDOStatement->execute(Array)
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `th...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `th...', Array, Object(Closure))
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `th...', Array)
+#5 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php(30): Illuminate\Database\Connection->insert('insert into `th...', Array)
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `th...', Array, 'id')
+#7 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#12 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#13 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(377): Illuminate\Database\Eloquent\Model->save()
+#14 D:\xampp\htdocs\laravel\app\controllers\QuanTriBGKController.php(54): Illuminate\Database\Eloquent\Model::create(Array)
+#15 [internal function]: QuanTriBGKController->store()
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#17 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#18 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#19 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#20 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#21 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#22 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#23 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#24 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#25 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#26 {main}
+
+Next exception 'Exception' with message 'Array to string conversion (SQL: insert into `thanh_vien_bgks` (`ma_thanh_vien`, `ho_ten`, `HoiThis_Id`, `TaiKhoans_Id`, `vi_tri`, `ghi_chu`) values (?, ?, ?, ?, ?, ?)) (Bindings: array (
+  0 => 'BGK001',
+  1 => 'Đinh Khắc Quyền',
+  2 => '7',
+  3 => 
+  array (
+  ),
+  4 => 'Trưởng Ban',
+  5 => '',
+))' in D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(ErrorException), 'insert into `th...', Array)
+#1 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `th...', Array, Object(Closure))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `th...', Array)
+#3 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php(30): Illuminate\Database\Connection->insert('insert into `th...', Array)
+#4 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1444): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `th...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1259): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1229): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1140): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(377): Illuminate\Database\Eloquent\Model->save()
+#12 D:\xampp\htdocs\laravel\app\controllers\QuanTriBGKController.php(54): Illuminate\Database\Eloquent\Model::create(Array)
+#13 [internal function]: QuanTriBGKController->store()
+#14 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#15 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#16 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 D:\xampp\htdocs\laravel\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []

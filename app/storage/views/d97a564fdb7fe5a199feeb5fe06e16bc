@@ -1,0 +1,43 @@
+
+<?php $__env->startSection('main'); ?>
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="row">
+        <div class="box">
+            <div class="box-header">
+                <h2><i class="icon-edit"></i>Chi Tiết Danh Mục Hội Thi</h2>
+            </div>
+            <div class="box-content">
+                <p><?php echo link_to_route('danh_muc_hoi_thi.index', 'Về trang danh sách',null,array('class'=>'btn btn-primary')); ?></p>
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Mã Hội Thi</th>
+                            <th>Tên Hội Thi</th>
+                            <th>Ghi Chú</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo e($danh_muc_hoi_thi->ma_hoi_thi); ?></td>
+                            <td><?php echo e($danh_muc_hoi_thi->ten_hoi_thi); ?></td>
+                            <td><?php echo e($danh_muc_hoi_thi->ghi_chu); ?></td>
+                            <td><?php echo link_to_route('danh_muc_hoi_thi.edit', 'Chỉnh Sửa', array($danh_muc_hoi_thi->id), array('class' => 'btn btn-info')); ?></td>
+                            <td>
+                                <?php echo Form::open(array('method' => 'DELETE', 'route' => array('danh_muc_hoi_thi.destroy', $danh_muc_hoi_thi->id))); ?>
+                                <?php echo Form::submit('Xoá', array('class' => 'btn btn-danger')); ?>
+                                <?php echo Form::close(); ?>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

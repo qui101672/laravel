@@ -8,4 +8,8 @@ class The_loai_bai_viet extends Eloquent {
 		'ten_the_loai_bai_viet' => 'required',
 		'ghi_chu' => ''
 	);
+        public function the_loai_bai_viet(){
+            $the_loai_bai_viets = DB::table('the_loai_bai_viets')->get();
+            return $the_loai_bai_viets;
+        }
 }

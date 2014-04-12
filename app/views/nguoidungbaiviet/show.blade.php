@@ -2,7 +2,7 @@
 
 @section('main')
 
-<div class="post-content">
+<div class="post-content" style="padding: 20px;">
     <h4 class="title"><b>{{{ $bai_viet->tieu_de_bai_viet}}}</b></a></h4>
     <ul class="unstyled post-meta v2 inline">
         <li><i class="icon-user"></i> 
@@ -17,7 +17,7 @@
     </ul> <!--end post-meta-->
     <p>{{ $bai_viet->noi_dung_bai_viet }}</p>
     <p>{{ $bai_viet->tag }}</p>
-    <p>{{ link_to_route('tin_tuc.index', 'Quay Lại Trang Chính', array(),array('class' => 'btn btn-primary' )) }}</p>
+    <p>{{ link_to_route('tin_tuc.index', 'Quay Lại Trang Chính', array(),array('class' => 'btn btn-info' )) }}</p>
     
 </div> <!--end post-content-->
 @stop

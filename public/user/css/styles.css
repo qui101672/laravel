@@ -1,9 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Orienta);
-
-
 body {
-    font-family: 'Orienta', sans-serif;
-    color: #868f97;
     background-color: #f1f3f5;
     width: 80%;
     margin: auto;
@@ -2610,5 +2605,19 @@ footer .footer-widget .social-icons li:hover {
     border: 1px solid #dde0e3;
     filter: none; 
     margin-bottom:10px;
-    padding: 10px;
 }
+.nav-modules{
+height: 30px;
+padding: 8px 5px 2px 30px;
+ 
+padding-right: 20px;
+padding-left: 20px;
+background-color: #fafafa;
+background-image: -moz-linear-gradient(top,#fff,#f2f2f2);
+background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#f2f2f2));
+background-image: -webkit-linear-gradient(top,#fff,#f2f2f2);
+background-image: -o-linear-gradient(top,#fff,#f2f2f2);
+background-image: linear-gradient(to bottom,#fff,#f2f2f2);
+background-repeat: repeat-x;
+}
+ 

@@ -8,7 +8,7 @@
     </div>
     <div class="box-content">
 
-<p><?php echo link_to_route('tai_khoan.index', 'Return to all tai_khoans'); ?></p>
+<p><?php echo link_to_route('tai_khoan.index', 'Trở về danh sách tài khoản',null,array('class'=>'btn btn-primary')); ?></p>
 
 <table class="table table-striped table-bordered">
 	<thead>

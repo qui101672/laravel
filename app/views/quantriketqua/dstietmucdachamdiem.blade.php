@@ -22,7 +22,7 @@
 			    	 		<?php 
 			    	 		 echo "<option value='null'>Chọn Chương Trình</option>";
 			    	 		 $hoi_thi = new Hoi_thi();
-			    	 		 $ds_hoithi = $hoi_thi->get_dshoithi();
+			    	 		 $ds_hoithi = $hoi_thi->get_dshoithi_bgk();
 			    	 		 foreach ($ds_hoithi as $ds_hoithi) {
 			    	 		 	echo "<option value='".$ds_hoithi->id."'>".$ds_hoithi->ten_chuong_trinh."</option>";
 			    	 		 }
@@ -64,7 +64,7 @@
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id='box_danh_sach' hidden='true'>
 	    <div class="box">
 	        <div class="box-header">
-	            <h2><i class="icon-edit"> </i>Chi Tiết Hội Thi</h2>
+	            <h2><i class="icon-edit"> </i>Danh Sách</h2>
 	        </div>
 	        <div class="box-content" id="danhsachtietmuc" >
 					<table class='table table-hover' id='table_tiet_muc'>
@@ -232,6 +232,7 @@
 				   	var obj = results[key];				   	
 				   	if(obj.diem_so != ''){
 				   		$('#tr_ds').append("<tr><td><input type='text' name='ten_tiet_muc_"+obj.id+"' id='ten_tiet_muc_"+obj.id+"' value='"+obj.ten_tiet_muc+"' class='form-control' readonly></td><td><input type='text' name='trinh_bay_"+obj.id+"' id='trinh_bay_"+obj.id+"' value='"+obj.trinh_bay+"' class='form-control' readonly></td><td><input type='text' name='input_diem_so_"+obj.id+"' id='input_diem_so_"+obj.id+"' class='form-control' required='required' value='"+obj.so_diem+"'></td><td><button id='btn_diem_so_"+obj.id+"' type='button' class='btn btn-default'>Lưu Điểm</button></td></tr>");
+				   		$('#tr_ds').append("\<script\>$('#btn_diem_so_"+obj.id+"').on('click', function add(event){suadiem(document.getElementById('input_diem_so_"+obj.id+"').value,"+obj.id+");});\<\/script\>");
 				   	}
 
 				}
@@ -240,7 +241,29 @@
 		return false;	
 		});
 	});
+	
+	function suadiem(diem,id){
 
+		$.ajax({
+			url: 'suadiem',
+			type: 'post',
+			dataType: 'json',
+			data: {id_tiet_muc: id,
+				so_diem: diem
+			},
+		})
+		.done(function(data) {
+		if(data == 1)
+			var n = noty({text: 'Sửa điểm thành công!!!', type: 'success'}); 
+		})
+		.fail(function() {
+			var n = noty({text: 'Sửa điểm không thành công!!!', type: 'error'}); 
+		})
+		.always(function() {
+			console.log("complete");
+		});
+		
+	}
  
 </script>
 

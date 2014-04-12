@@ -2,9 +2,9 @@
 
 class Bai_viet extends Eloquent {
 	protected $guarded = array();
-	public $timestamps = true;
+ 
 	public static $rules = array(
-		'ma_bai_viet' => 'required',
+		'ma_bai_viet' => '',
 		'tieu_de_bai_viet' => 'required',
 		'noi_dung_bai_viet' => 'required',
 		'id_nguoi_sua' => '',

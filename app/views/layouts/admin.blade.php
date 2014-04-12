@@ -28,8 +28,9 @@
         <link rel="apple-touch-icon-precomposed" href="<?php echo asset('public/admin/ico/apple-touch-icon-57-precomposed.png'); ?>" />
         <link rel="shortcut icon" href="<?php echo asset('public/admin/favicon.ico'); ?>" />
         <!-- end: Favicon and Touch Icons -->   
-        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="<?php echo asset('public/admin/js/jquery-1.11.0.min.js') ?>"></script>
+        <script src="<?php echo asset('public/admin/js/jquery-migrate-1.2.1.min.js') ?>"></script>
+ 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 
     <body>
@@ -104,12 +105,12 @@
             <script src="<?php echo asset('public/admin/js/jquery.noty.min.js') ?>"></script>
             
             <!-- page scripts -->
-            <script src="public/admin/js/jquery-ui-1.10.3.custom.min.js"></script>
-            <script src="public/admin/js/jquery.sparkline.min.js"></script>
-            <script src="public/admin/js/jquery.dataTables.min.js"></script>
-            <script src="public/admin/js/dataTables.bootstrap.min.js"></script>
+            <script src="<?php echo asset('public/admin/js/jquery-ui-1.10.3.custom.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.sparkline.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/jquery.dataTables.min.js') ?>"></script>
+            <script src="<?php echo asset('public/admin/js/dataTables.bootstrap.min.js') ?>"></script>
             <!-- inline scripts related to this page -->
-            <script src="public/admin/js/pages/table.js"></script>
+            <script src="<?php echo asset('public/admin/js/pages/table.js') ?>"></script>
             
             <!-- inline scripts related to this page -->
             <script src="<?php echo asset('public/admin/js/pages/form-elements.js') ?>"></script>

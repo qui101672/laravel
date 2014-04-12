@@ -65,7 +65,7 @@ class QuanTriHinhThucDuThiController extends BaseController {
 		if(Input::get('so_vong_thi') == '3'){
 			DB::table('vong_this')->insert(array(
 	    				array('ma_vong_thi' => '1','ten_vong_thi' => 'Vòng Sơ Khảo','HinhThucDuThis_Id' => $id,'ghi_chu' => ''),
-						array('ma_vong_thi' => '2','ten_vong_thi' => 'Vòng Chung Khảo','HinhThucDuThis_Id' => $id,'ghi_chu' => ''),
+					array('ma_vong_thi' => '2','ten_vong_thi' => 'Vòng Chung Khảo','HinhThucDuThis_Id' => $id,'ghi_chu' => ''),
 	    				array('ma_vong_thi' => '3','ten_vong_thi' => 'Vòng Chung Kết Xếp Hạng','HinhThucDuThis_Id' => $id,'ghi_chu' => '')
 	    			));
 		}

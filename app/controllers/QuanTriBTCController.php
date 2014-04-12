@@ -10,7 +10,7 @@ class QuanTriBTCController extends BaseController {
 	protected $btc;
 
 	public function __construct(Btc $btc)
-	{
+	{       
 		$this->btc = $btc;
 	}
 
@@ -21,9 +21,9 @@ class QuanTriBTCController extends BaseController {
 	 */
 	public function index()
 	{
-		$btcs = $this->btc->all();
-
-		return View::make('quantribtc.index', compact('btcs'));
+		$btcs = new Btc();
+                $ds_btcs = $btcs->get_dsbtc();
+		return View::make('quantribtc.index')->with('ds_btcs',$ds_btcs);
 	}
 
 	/**
@@ -41,22 +41,20 @@ class QuanTriBTCController extends BaseController {
 	 *
 	 * @return Response
 	 */
-	public function store()
-	{
-		$input = Input::all();
-		$validation = Validator::make($input, Btc::$rules);
-
-		if ($validation->passes())
-		{
-			$this->btc->create($input);
-
+	public function store(){ 
+                $vi_tri_btcs = Input::get('vi_tri_btcs');
+                $username = Input::get('username');
+                $id_hoi_thi = Input::get('HoiThis_Id');
+                $TaiKhoans_Id = DB::table('tai_khoans')->where('username','=',$username)->pluck('id');
+		$input = array('TaiKhoans_Id'=>$TaiKhoans_Id,'ghi_chu'=>Input::get('ghi_chu'));
+		$id_btcs = DB::table('btcs')->insertGetId($input);
+                $id = DB::table('to_chuc_hoi_thi')->insertGetId(array('btcs_Id'=>$id_btcs,'HoiThis_Id'=>$id_hoi_thi,'vi_tri_btcs'=>$vi_tri_btcs));
+		 
+		if($id != null){
 			return Redirect::route('ban_to_chuc.index');
-		}
+                }
 
-		return Redirect::route('ban_to_chuc.create')
-			->withInput()
-			->withErrors($validation)
-			->with('message', 'There were validation errors.');
+		return Redirect::route('ban_to_chuc.create');
 	}
 
 	/**

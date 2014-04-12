@@ -1,7 +1,4 @@
-
 <?php $__env->startSection('main'); ?>
-
-
 <div class="box">
     <div class="box-header">
         <h2>
@@ -17,7 +14,7 @@
                 <div class="controls row">
                     <div class="input-group col-sm-4">
                         <span class="input-group-addon"><i class="icon-edit"></i></span>
-                        <?php echo Form::text('ma_don_vi',null,array('class'=> 'form-control')); ?>
+                        <?php echo Form::text('ma_don_vi',null,array('class'=> 'form-control','required')); ?>
                     </div>  
                 </div>
             </div>
@@ -27,7 +24,7 @@
                 <div class="controls row">
                     <div class="input-group col-sm-4">
                         <span class="input-group-addon"><i class="icon-edit"></i></span>
-                        <?php echo Form::text('ten_don_vi',null,array('class'=> 'form-control')); ?>
+                        <?php echo Form::text('ten_don_vi',null,array('class'=> 'form-control','required')); ?>
                     </div>  
                 </div>
             </div>
@@ -44,7 +41,7 @@
 
 
             <div class="form-actions">
-                <?php echo Form::submit('Submit', array('class' => 'btn btn-info')); ?>
+                <?php echo Form::submit('Tạo Đơn Vị', array('class' => 'btn btn-info')); ?>
             </div>
             <?php if ($errors->any()): ?>
             <ul>

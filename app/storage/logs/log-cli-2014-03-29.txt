@@ -1,0 +1,10 @@
+[2014-03-29 00:14:06] log.ERROR: exception 'InvalidArgumentException' with message 'Model does not exist!' in D:\xampp\htdocs\laravel\vendor\way\generators\src\Way\Generators\Commands\FormDumperCommand.php:55
+Stack trace:
+#0 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Way\Generators\Commands\FormDumperCommand->fire()
+#1 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\xampp\htdocs\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(898): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Way\Generators\Commands\FormDumperCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 D:\xampp\htdocs\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 D:\xampp\htdocs\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#7 {main} [] []

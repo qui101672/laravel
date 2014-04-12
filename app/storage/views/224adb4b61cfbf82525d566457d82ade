@@ -26,11 +26,11 @@
                         <td><?php echo e($bai_viet->tieu_de_bai_viet); ?></td>
                         <td><?php echo e(strip_tags($bai_viet->noi_dung_bai_viet)); ?></td>
                         <td><?php echo e($bai_viet->ghi_chu); ?></td>
-                        <td><?php echo link_to_route('bai_viet.edit', 'Edit', array($bai_viet->id), array('class' => 'btn btn-info')); ?>
+                        <td><?php echo link_to_route('bai_viet.edit', 'Chỉnh Sửa', array($bai_viet->id), array('class' => 'btn btn-info')); ?>
                         </td>
                         <td>
                             <?php echo Form::open(array('method' => 'DELETE', 'route' => array('bai_viet.destroy', $bai_viet->id))); ?>
-                            <?php echo Form::submit('Delete', array('class' => 'btn btn-danger')); ?>
+                            <?php echo Form::submit('Xoá', array('class' => 'btn btn-danger')); ?>
                             <?php echo Form::close(); ?>
                         </td>
                     </tr>

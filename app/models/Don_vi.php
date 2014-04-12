@@ -8,4 +8,8 @@ class Don_vi extends Eloquent {
 		'ten_don_vi' => 'required',
 		'ghi_chu' => ''
 	);
+        public function get_dsDonVi(){
+            $results = DB::table('don_vis')->get();
+            return $results;
+        }
 }

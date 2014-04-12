@@ -44,12 +44,18 @@ class QuanTriBGKController extends BaseController {
 	public function store()
 	{
 		$input = Input::all();
+                $temp = $input['TaiKhoans_Id'];
+                $results = DB::table('tai_khoans')->where('username','=',$temp)->select('id')->get();
+                foreach ($results as $results){
+                    $input['TaiKhoans_Id'] = $results->id;
+                }
 		$validation = Validator::make($input, Thanh_vien_bgk::$rules);
-
+                
+                
 		if ($validation->passes())
 		{
 			$this->thanh_vien_bgk->create($input);
-
+                        DB::table('tai_khoans')->where('id',$input['TaiKhoans_Id'])->update(array('PhanQuyen_Id'=>'6'));                     
 			return Redirect::route('ban_giam_khaos.index');
 		}
 
@@ -100,7 +106,8 @@ class QuanTriBGKController extends BaseController {
 	{
 		$input = array_except(Input::all(), '_method');
 		$validation = Validator::make($input, Thanh_vien_bgk::$rules);
-
+                $temp = $input['TaiKhoans_Id'];
+                $input['TaiKhoans_Id'] = DB::table('tai_khoans')->where('username','=',$temp)->pluck('id');
 		if ($validation->passes())
 		{
 			$thanh_vien_bgk = $this->thanh_vien_bgk->find($id);

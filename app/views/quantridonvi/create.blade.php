@@ -1,8 +1,5 @@
 @extends('layouts.admin')
-
 @section('main')
-
-
 <div class="box">
     <div class="box-header">
         <h2>
@@ -18,7 +15,7 @@
                 <div class="controls row">
                     <div class="input-group col-sm-4">
                         <span class="input-group-addon"><i class="icon-edit"></i></span>
-                        {{ Form::text('ma_don_vi',null,array('class'=> 'form-control')) }}
+                        {{ Form::text('ma_don_vi',null,array('class'=> 'form-control','required')) }}
                     </div>  
                 </div>
             </div>
@@ -28,7 +25,7 @@
                 <div class="controls row">
                     <div class="input-group col-sm-4">
                         <span class="input-group-addon"><i class="icon-edit"></i></span>
-                        {{ Form::text('ten_don_vi',null,array('class'=> 'form-control')) }}
+                        {{ Form::text('ten_don_vi',null,array('class'=> 'form-control','required')) }}
                     </div>  
                 </div>
             </div>
@@ -45,7 +42,7 @@
 
 
             <div class="form-actions">
-                {{ Form::submit('Submit', array('class' => 'btn btn-info')) }}
+                {{ Form::submit('Tạo Đơn Vị', array('class' => 'btn btn-info')) }}
             </div>
             @if ($errors->any())
             <ul>

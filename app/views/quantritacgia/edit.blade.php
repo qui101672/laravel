@@ -1,36 +1,52 @@
-@extends('layouts.scaffold')
+@extends('layouts.admin')
 
 @section('main')
+<div class="box">
+    <div class="box-header">
+        <h2><i class="icon-edit"></i>Sửa Tác Giả</h2>
 
-<h1>Edit Tac_gium</h1>
-{{ Form::model($tac_gium, array('method' => 'PATCH', 'route' => array('tac_gia.update', $tac_gium->id))) }}
-	<ul>
-        <li>
-            {{ Form::label('ma_tac_gia', 'Ma_tac_gia:') }}
-            {{ Form::text('ma_tac_gia') }}
-        </li>
+    </div>
+    <div class="box-content">
+        {{ Form::model($tac_gia, array('method' => 'PATCH', 'route' => array('tac_gias.update', $tac_gia->id))) }}
+        <fieldset class="col-sm-12">
+            <div class="form-group">
+                <label class="control-label"><h2>Mã Tác Giả:</h2></label>
+                <div class="controls row">
+                    <div class="input-group col-sm-4">
+                        <span class="input-group-addon"><i class="icon-edit"></i></span>
+                        {{ Form::text('ma_tac_gia',null,array('class'=> 'form-control')) }}
+                    </div>  
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label"><h2>Họ Tên Tác Giả:</h2></label>
+                <div class="controls row">
+                    <div class="input-group col-sm-4">
+                        <span class="input-group-addon"><i class="icon-edit"></i></span>
+                        {{ Form::text('ho_ten',null,array('class'=> 'form-control')) }}
+                    </div>  
+                </div>
+            </div>         
+            <div class="form-group">
+                <label class="control-label"><h2>Ghi Chú:</h2></label>
+                <div class="controls row">
+                    <div class="input-group col-sm-4">
+                        <span class="input-group-addon"><i class="icon-edit"></i></span>
+                        {{ Form::text('ghi_chu',null,array('class'=> 'form-control')) }}
+                    </div>  
+                </div>
+            </div>
+            {{ Form::submit('Cập Nhật', array('class' => 'btn btn-info')) }}
+            {{ link_to_route('tac_gias.show', 'Huỷ', $tac_gia->id, array('class' => 'btn')) }}
 
-        <li>
-            {{ Form::label('ho_ten', 'Ho_ten:') }}
-            {{ Form::text('ho_ten') }}
-        </li>
+        </fieldset>
+        {{ Form::close() }}
 
-        <li>
-            {{ Form::label('ghi_chu', 'Ghi_chu:') }}
-            {{ Form::textarea('ghi_chu') }}
-        </li>
-
-		<li>
-			{{ Form::submit('Update', array('class' => 'btn btn-info')) }}
-			{{ link_to_route('tac_gia.show', 'Cancel', $tac_gium->id, array('class' => 'btn')) }}
-		</li>
-	</ul>
-{{ Form::close() }}
-
-@if ($errors->any())
-	<ul>
-		{{ implode('', $errors->all('<li class="error">:message</li>')) }}
-	</ul>
-@endif
-
+        @if ($errors->any())
+        <ul>
+            {{ implode('', $errors->all('<li class="error">:message</li>')) }}
+        </ul>
+        @endif
+    </div>
+</div>
 @stop

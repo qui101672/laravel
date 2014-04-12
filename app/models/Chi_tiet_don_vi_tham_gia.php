@@ -12,9 +12,7 @@ class Chi_tiet_don_vi_tham_gia extends Eloquent {
 		'giai_toan_doan'=> 'required',
 		'ghi_chu'=> '',
 		'PhieuDangKys_Id'=> 'required',
-		'DonVis_Id'=> 'required',
-		'DonVis_Id'=> 'required',
-
+		'DonVis_Id'=> 'required'
 		);
 	 
 }

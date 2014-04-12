@@ -1,0 +1,52 @@
+
+<?php $__env->startSection('main'); ?>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="row">
+        <div class="box">
+            <div class="box-header">
+                <h2><i class="icon-edit"></i>Chỉnh Sửa Danh Mục Năm</h2>
+            </div>
+            <div class="box-content">
+                <fieldset class="col-sm-12">
+                    <?php echo Form::model($danh_muc_nam, array('method' => 'PATCH', 'route' => array('danh_muc_nams.update', $danh_muc_nam->id))); ?>
+                    
+                    <div class="form-group">
+                        <label class="control-label">Năm:</label>
+                        <div class="controls row">
+                            <div class="input-group col-sm-4">
+                                <span class="input-group-addon"><i class="icon-edit"></i></span>
+                                <?php echo Form::text('nam',null,array('class'=> 'form-control')); ?>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Ghi Chú:</label>
+                        <div class="controls row">
+                            <div class="input-group col-sm-4">
+                                <span class="input-group-addon"><i class="icon-edit"></i></span>
+                                <?php echo Form::text('ghi_chu',null,array('class'=> 'form-control')); ?>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="form-action">
+                        <?php echo Form::submit('Cập Nhật', array('class' => 'btn btn-info')); ?>
+                        <?php echo link_to_route('danh_muc_nams.show', 'Huỷ', $danh_muc_nam->id, array('class' => 'btn')); ?>
+                    </div>
+                    <?php echo Form::close(); ?>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+<?php if ($errors->any()): ?>
+<ul>
+    <?php echo implode('', $errors->all('<li class="error">:message</li>')); ?>
+</ul>
+<?php endif; ?>
+
+<?php $__env->stopSection(); ?>
+
+
+
+
+<?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
